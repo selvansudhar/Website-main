@@ -1,0 +1,533 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "../assets/bootstrap-icons/bootstrap-icons-subset.css";
+
+/* ---- Global Resets ---- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #1e293b;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---- Gradient text utility (can't do with Tailwind alone) ---- */
+.text-gradient {
+  background: linear-gradient(135deg, #4353ff, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #0d75ec 0%, #0a5bc4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---- Skip to content ---- */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.skip-to-content:focus {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: auto;
+  height: auto;
+  padding: 1rem 2rem;
+  background: #4353ff;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  z-index: 9999;
+}
+
+/* ---- Header Mega Menu (complex positioning/animations need CSS) ---- */
+.mega-menu {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.nav-item-active .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Nav link dropdown arrow */
+.nav-link-arrow::after {
+  content: '\25BC';
+  font-size: 0.7rem;
+  margin-left: 0.3rem;
+  opacity: 0.6;
+}
+
+/* Solutions mega menu layout */
+.mega-menu-solutions .mega-menu-content-inner {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding: 0;
+  height: 100%;
+}
+
+/* Solutions hero area mesh background */
+.solutions-hero-area,
+.resources-hero-area {
+  background-color: #ffecd2;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(255, 222, 183, 0.6) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(255, 205, 135, 0.6) 0px, transparent 50%),
+    radial-gradient(at 50% 0%, rgba(255, 244, 180, 0.6) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(255, 236, 139, 0.6) 0px, transparent 50%),
+    radial-gradient(at 50% 100%, rgba(224, 176, 255, 0.6) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(195, 111, 255, 0.6) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(255, 255, 255, 0.4) 0px, transparent 50%);
+  background-size: 100% 100%;
+}
+
+/* Promo card gradient */
+.promo-card-gradient {
+  background: linear-gradient(135deg, #2d1b4e 0%, #4a2c6d 40%, #6b4c8a 100%);
+}
+
+.promo-title-gradient {
+  background: linear-gradient(135deg, #ff6b9d 0%, #c77dff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Mobile nav overlay */
+.mobile-nav-overlay {
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav-overlay.open {
+  transform: translateX(0);
+}
+
+/* Hamburger animation */
+.hamburger-active .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-active .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Work AI banner gradient */
+.work-ai-banner-gradient {
+  background: linear-gradient(90deg, #fff1f2 0%, #fff7ed 100%);
+}
+
+/* ---- Hero gradient fade (industry pages) ---- */
+.hero-gradient-fade::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(180deg, rgb(245, 244, 255) 0%, rgba(255, 255, 255, 0) 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ---- Gradient backgrounds ---- */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #4353ff, #8b5cf6);
+}
+
+.bg-gradient-blue {
+  background: linear-gradient(135deg, #0d75ec 0%, #0a5bc4 100%);
+}
+
+.bg-gradient-primary-subtle {
+  background: linear-gradient(135deg, rgba(67, 83, 255, 0.04), rgba(139, 92, 246, 0.04));
+}
+
+/* ---- Keyframe Animations ---- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes barGrow {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
+}
+
+@keyframes blockFloat {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(8px, -12px); }
+}
+
+.animate-float { animation: float 5s ease-in-out infinite; }
+.animate-float-slow { animation: floatSlow 5s ease-in-out infinite; }
+.animate-float-delay-1 { animation: float 5s ease-in-out infinite; animation-delay: 1s; }
+.animate-float-delay-2 { animation: float 5s ease-in-out infinite; animation-delay: 2s; }
+.animate-float-delay-3 { animation: float 5s ease-in-out infinite; animation-delay: 3s; }
+.animate-block-float { animation: blockFloat 6s ease-in-out infinite; }
+.animate-block-float-delay-2 { animation: blockFloat 6s ease-in-out infinite; animation-delay: 2s; }
+.animate-block-float-delay-4 { animation: blockFloat 6s ease-in-out infinite; animation-delay: 4s; }
+
+/* Bar grow animations for SaaS page */
+.animate-bar-grow { animation: barGrow 1.5s ease-out forwards; transform-origin: bottom; }
+.animate-bar-delay-1 { animation-delay: 0.1s; }
+.animate-bar-delay-2 { animation-delay: 0.2s; }
+.animate-bar-delay-3 { animation-delay: 0.3s; }
+.animate-bar-delay-4 { animation-delay: 0.4s; }
+.animate-bar-delay-5 { animation-delay: 0.5s; }
+
+/* ---- Check list pseudo-element (product pages) ---- */
+.check-list li {
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+  color: #475569;
+  font-size: 1rem;
+}
+
+.check-list li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: #10b981;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* ---- Dot list pseudo-element (SaaS pages) ---- */
+.dot-list li {
+  position: relative;
+  padding-left: 1.2rem;
+}
+
+.dot-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4353ff, #8b5cf6);
+}
+
+/* ---- Title underline highlight (ecommerce) ---- */
+.title-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: rgba(67, 83, 255, 0.15);
+  border-radius: 3px;
+}
+
+/* ---- Neural orb rings (AI Solutions) ---- */
+@keyframes orbPulse1 {
+  0%, 100% { transform: rotate(0deg); opacity: 0.6; }
+  50% { transform: rotate(180deg); opacity: 1; }
+}
+
+@keyframes orbPulse2 {
+  0%, 100% { transform: rotate(0deg); opacity: 0.4; }
+  50% { transform: rotate(-180deg); opacity: 0.8; }
+}
+
+@keyframes orbPulse3 {
+  0%, 100% { transform: rotate(0deg); opacity: 0.3; }
+  50% { transform: rotate(90deg); opacity: 0.6; }
+}
+
+.orb-ring-1 { animation: orbPulse1 8s ease-in-out infinite; }
+.orb-ring-2 { animation: orbPulse2 12s ease-in-out infinite; }
+.orb-ring-3 { animation: orbPulse3 16s ease-in-out infinite; }
+
+/* ---- Badge pulse (AI Solutions) ---- */
+@keyframes badgePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.5); }
+}
+
+.badge-pulse {
+  width: 8px;
+  height: 8px;
+  background: #4353ff;
+  border-radius: 50%;
+  animation: badgePulse 2s ease-in-out infinite;
+}
+
+/* ---- Process timeline line ---- */
+.process-line {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e2e8f0;
+}
+
+/* Capability nav progress bar */
+.cap-nav-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #4353ff;
+  transition: width 0.3s ease;
+}
+
+.cap-nav-active .cap-nav-progress {
+  width: 100%;
+}
+
+/* ---- Floating tags (AI Solutions) ---- */
+@keyframes tagFloat1 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+@keyframes tagFloat2 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+@keyframes tagFloat3 { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-15px); } }
+
+.floating-tag-1 { animation: tagFloat1 4s ease-in-out infinite; }
+.floating-tag-2 { animation: tagFloat2 5s ease-in-out infinite 1s; }
+.floating-tag-3 { animation: tagFloat3 6s ease-in-out infinite 2s; }
+
+/* ---- Home Page Animations ---- */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes floatingBot {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes twinkle {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.2); opacity: 0.5; }
+}
+
+.animate-fade-in-up { animation: fadeInUp 0.6s ease-out forwards; opacity: 0; }
+.animate-fade-in-up-delay-1 { animation: fadeInUp 0.6s ease-out forwards; animation-delay: 0.2s; opacity: 0; }
+.animate-fade-in-up-delay-2 { animation: fadeInUp 0.6s ease-out forwards; animation-delay: 0.6s; opacity: 0; }
+.animate-fade-in-left { animation: fadeInLeft 0.8s ease-out forwards; animation-delay: 0.3s; opacity: 0; }
+.animate-floating-bot { animation: floatingBot 3s ease-in-out infinite; }
+.animate-twinkle { animation: twinkle 3s ease-in-out infinite; opacity: 0.3; }
+.animate-twinkle-delay-1 { animation: twinkle 3s ease-in-out infinite; animation-delay: 1s; opacity: 0.3; }
+.animate-twinkle-delay-2 { animation: twinkle 3s ease-in-out infinite; animation-delay: 2s; opacity: 0.3; }
+
+/* SVG arcs */
+.arc-path {
+  fill: none;
+  stroke: rgba(0, 0, 0, 0.08);
+  stroke-width: 1.5;
+  stroke-dasharray: 4 4;
+}
+
+/* Product pillar card check list */
+.pillar-check-list li {
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+.pillar-check-list li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  color: #111111;
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+/* ---- Enterprise page decorative lines ---- */
+.ent-deco-line {
+  position: absolute;
+  background: rgba(67, 83, 255, 0.08);
+  border-radius: 999px;
+}
+
+/* ---- Financial services deco lines ---- */
+.fin-deco-line {
+  position: absolute;
+  background: rgba(67, 83, 255, 0.06);
+  border-radius: 999px;
+}
+
+/* ---- Manufacturing geometric shapes ---- */
+.mfg-geo-shape {
+  position: absolute;
+  border: 2px solid rgba(67, 83, 255, 0.1);
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+/* ---- Ecom hero shapes ---- */
+.ecom-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+}
+
+/* ---- Globe rotation animation ---- */
+@keyframes globeSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes globePulse {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.25; }
+}
+
+@keyframes dotPing {
+  0% { r: 3; opacity: 1; }
+  100% { r: 12; opacity: 0; }
+}
+
+.animate-globe-spin {
+  animation: globeSpin 30s linear infinite;
+  transform-origin: center center;
+}
+
+.animate-globe-pulse {
+  animation: globePulse 6s ease-in-out infinite;
+}
+
+.animate-dot-ping {
+  animation: dotPing 2s ease-out infinite;
+}
+
+.animate-dot-ping-delay-1 {
+  animation: dotPing 2s ease-out infinite 0.5s;
+}
+
+.animate-dot-ping-delay-2 {
+  animation: dotPing 2s ease-out infinite 1s;
+}
+
+/* ---- Marquee animations (AssistantHub) ---- */
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes scrollRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-scroll-left {
+  animation: scrollLeft 60s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scrollRight 60s linear infinite;
+}
+
+/* ---- YenAI page animations ---- */
+@keyframes yenaiRing1 {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.05); opacity: 0.5; }
+}
+
+@keyframes yenaiRing2 {
+  0%, 100% { transform: scale(1); opacity: 0.2; }
+  50% { transform: scale(1.08); opacity: 0.4; }
+}
+
+@keyframes yenaiRing3 {
+  0%, 100% { transform: scale(1); opacity: 0.15; }
+  50% { transform: scale(1.12); opacity: 0.3; }
+}
+
+@keyframes yenaiTypingDot {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+.yenai-ring-1 { animation: yenaiRing1 4s ease-in-out infinite; }
+.yenai-ring-2 { animation: yenaiRing2 5s ease-in-out infinite 0.5s; }
+.yenai-ring-3 { animation: yenaiRing3 6s ease-in-out infinite 1s; }
+.yenai-typing-dot { animation: yenaiTypingDot 1.4s ease-in-out infinite; }
+
+/* YenAI voice waveform bars */
+@keyframes yenaiBar {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+
+.yenai-bar {
+  animation: yenaiBar 1.2s ease-in-out infinite;
+  transform-origin: bottom;
+}
+
+@keyframes yenaiOrbit {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.yenai-orbit-node {
+  animation: yenaiOrbit 12s linear infinite;
+}
