@@ -34,7 +34,7 @@ export default function Contact() {
 
       {/* ===== HERO ===== */}
       <section className="bg-[#111111] text-white pt-40 max-md:pt-24 pb-24 px-6">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center" data-animate="fade-up">
           <p className="text-sm text-white/50 mb-8">Home / Contact</p>
           <span className="inline-block bg-white/10 text-white/70 text-xs font-semibold tracking-[0.1em] uppercase px-4 py-2 mb-6">
             GET IN TOUCH
@@ -53,7 +53,7 @@ export default function Contact() {
         <div className="max-w-5xl mx-auto grid grid-cols-[1fr_1.4fr] max-lg:grid-cols-1 gap-16">
 
           {/* Left — Contact Info */}
-          <div>
+          <div data-animate="fade-left">
             <h2 className="text-2xl font-bold text-[#111111] mb-6">Reach Us Directly</h2>
             <p className="text-sm text-[#555555] leading-relaxed mb-10">
               Fill out the form and a member of our team will get back to you within one business day. Or reach out through any of these channels.
@@ -103,7 +103,7 @@ export default function Contact() {
           </div>
 
           {/* Right — Form */}
-          <div className="bg-[#f5f5f5] border border-[#e0e0e0] p-10 max-md:p-6">
+          <div className="bg-[#f5f5f5] border border-[#e0e0e0] p-10 max-md:p-6" data-animate="fade-right">
             <h3 className="text-xl font-bold text-[#111111] mb-2">Send Us a Message</h3>
             <p className="text-sm text-[#555555] mb-8">We typically respond within 24 hours.</p>
 
@@ -203,11 +203,11 @@ export default function Contact() {
       {/* ===== OFFICES ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem]">
+          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem]" data-animate="fade-up">
             Our Offices
           </h2>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
               {
                 city: 'Bangalore',
@@ -241,7 +241,7 @@ export default function Contact() {
 
       {/* ===== CTA ===== */}
       <section className="bg-[#111111] text-white py-24 px-6 text-center">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">
             Not Sure Where to Start?
           </h2>

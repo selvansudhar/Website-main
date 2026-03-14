@@ -1,3 +1,5 @@
+import CountUp from '@/components/CountUp';
+
 export const metadata = {
   title: "Manufacturing Solutions | Zynex",
   description:
@@ -14,7 +16,7 @@ export default function ManufacturingPage() {
         </p>
         <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-16 max-[480px]:gap-10 items-center max-w-6xl mx-auto">
           {/* Left */}
-          <div>
+          <div data-animate="fade-up">
             <span className="inline-block bg-[#F60014]/20 text-[#F60014] text-sm font-medium px-4 py-1.5 rounded-full mb-6">
               Manufacturing Solutions
             </span>
@@ -29,9 +31,9 @@ export default function ManufacturingPage() {
             <div className="flex flex-wrap gap-4 mb-8">
               <a
                 href="/contact"
-                className="bg-[#F60014] text-white px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:opacity-90 transition"
+                className="group bg-[#F60014] text-white px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:opacity-90 transition"
               >
-                Get Started
+                Get Started <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
               </a>
               <a
                 href="/contact"
@@ -103,7 +105,7 @@ export default function ManufacturingPage() {
 
       {/* ───────── Section 2: Production Metrics Ribbon ───────── */}
       <section className="bg-[#F60014] text-white py-5 max-[480px]:py-4">
-        <div className="grid grid-cols-4 max-md:grid-cols-2 gap-6 max-[480px]:gap-3 text-center max-w-6xl mx-auto px-6 max-[480px]:px-4">
+        <div className="grid grid-cols-4 max-md:grid-cols-2 gap-6 max-[480px]:gap-3 text-center max-w-6xl mx-auto px-6 max-[480px]:px-4" data-animate="fade-up">
           {[
             { value: "500+", label: "Factories" },
             { value: "99.7%", label: "Quality Rate" },
@@ -111,7 +113,7 @@ export default function ManufacturingPage() {
             { value: "35%", label: "Cost Reduction" },
           ].map((stat) => (
             <div key={stat.label}>
-              <p className="text-2xl font-bold">{stat.value}</p>
+              <p className="text-2xl font-bold"><CountUp value={stat.value} /></p>
               <p className="text-sm text-white/80">{stat.label}</p>
             </div>
           ))}
@@ -120,7 +122,7 @@ export default function ManufacturingPage() {
 
       {/* ───────── Section 3: Production Line Flow ───────── */}
       <section className="bg-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
-        <div className="text-center mb-16 max-[480px]:mb-10">
+        <div className="text-center mb-16 max-[480px]:mb-10" data-animate="fade-up">
           <h2 className="text-4xl max-md:text-2xl max-[480px]:text-xl font-bold text-[#111111] mb-4">
             End-to-End Production Intelligence
           </h2>
@@ -210,7 +212,7 @@ export default function ManufacturingPage() {
 
       {/* ───────── Section 4: Smart Factory Modules ───────── */}
       <section className="bg-[#f5f5f5] py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
-        <div className="text-center mb-16 max-[480px]:mb-10">
+        <div className="text-center mb-16 max-[480px]:mb-10" data-animate="fade-up">
           <h2 className="text-4xl max-md:text-2xl max-[480px]:text-xl font-bold text-[#111111] mb-4">
             Smart Factory Modules
           </h2>
@@ -220,7 +222,7 @@ export default function ManufacturingPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6 max-w-5xl mx-auto" data-animate="fade-up" data-delay="2">
           {[
             {
               icon: "bi-activity",
@@ -288,7 +290,7 @@ export default function ManufacturingPage() {
 
       {/* ───────── Section 5: ROI Impact ───────── */}
       <section className="bg-[#111111] text-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
-        <div className="text-center mb-16 max-[480px]:mb-10">
+        <div className="text-center mb-16 max-[480px]:mb-10" data-animate="fade-up">
           <h2 className="text-4xl max-md:text-2xl max-[480px]:text-xl font-bold mb-4">
             Measurable Production Impact
           </h2>
@@ -298,7 +300,7 @@ export default function ManufacturingPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 max-md:grid-cols-1 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-3 max-md:grid-cols-1 gap-8 max-w-4xl mx-auto" data-animate="fade-up">
           {[
             {
               value: "35%",
@@ -330,7 +332,7 @@ export default function ManufacturingPage() {
                 className="text-6xl max-[480px]:text-4xl font-bold mb-3"
                 style={{ color: stat.color }}
               >
-                {stat.value}
+                <CountUp value={stat.value} />
               </p>
               <p className="text-lg font-semibold mb-2">{stat.label}</p>
               <p className="text-sm text-white/50 leading-relaxed">
@@ -343,7 +345,7 @@ export default function ManufacturingPage() {
 
       {/* ───────── Section 6: Industry 4.0 Checklist ───────── */}
       <section className="bg-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
-        <div className="text-center mb-16 max-[480px]:mb-10">
+        <div className="text-center mb-16 max-[480px]:mb-10" data-animate="fade-up">
           <h2 className="text-4xl max-md:text-2xl max-[480px]:text-xl font-bold text-[#111111] mb-4">
             Industry 4.0 Ready
           </h2>
@@ -375,6 +377,7 @@ export default function ManufacturingPage() {
 
       {/* ───────── Section 7: CTA ───────── */}
       <section className="bg-[#f5f5f5] py-24 px-6 max-[480px]:px-4 max-[480px]:py-16 text-center">
+        <div data-animate="fade-up">
         <h2 className="text-4xl max-md:text-2xl max-[480px]:text-xl font-bold text-[#111111] mb-4">
           Ready to Build Your Smart Factory?
         </h2>
@@ -386,9 +389,9 @@ export default function ManufacturingPage() {
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           <a
             href="/contact"
-            className="bg-[#F60014] text-white px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:opacity-90 transition"
+            className="group bg-[#F60014] text-white px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:opacity-90 transition"
           >
-            Schedule Factory Tour
+            Schedule Factory Tour <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
           </a>
           <a
             href="/contact"
@@ -400,6 +403,7 @@ export default function ManufacturingPage() {
         <p className="text-sm text-[#555555]">
           Trusted by manufacturers in 30+ countries
         </p>
+        </div>
       </section>
     </>
   );

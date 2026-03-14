@@ -23,7 +23,7 @@ export default function HumanResources() {
                 </div>
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
                     {/* Left — Text */}
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-6" data-animate="fade-up">
                         <div className="inline-flex items-center gap-2 bg-white border border-[#e0e0e0] rounded-[100px] px-4 py-1.5 w-fit max-lg:mx-auto max-sm:px-3 max-sm:py-1">
                             <span className="w-1.5 h-1.5 rounded-full bg-[#056CB8]"></span>
                             <span className="text-[0.82rem] font-medium text-[#555555]">Modern HRMS</span>
@@ -35,12 +35,12 @@ export default function HumanResources() {
                             Empower your HR team with comprehensive tools to manage employees, track attendance, handle leave requests, and conduct performance reviews — all from one integrated platform.
                         </p>
                         <div className="flex gap-4 mt-2 max-lg:justify-center max-sm:flex-col max-sm:items-center">
-                            <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
+                            <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                                 Talk Sales
-                            </button>
+                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                             <button className="bg-transparent text-[#111111] border-2 border-[#e0e0e0] px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
                                 See demo
-                            </button>
+                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                         </div>
                         <p className="text-[0.78rem] text-[#888888] m-0">
                             Trusted by 500+ businesses &nbsp;&bull;&nbsp; Free setup &nbsp;&bull;&nbsp; No credit card
@@ -112,7 +112,7 @@ export default function HumanResources() {
             {/* Employee Lifecycle — Horizontal Flow */}
             <section className="border-y border-[#e0e0e0] bg-[#f5f5f5]">
                 <div className="max-w-[1400px] mx-auto px-12 py-20 max-md:px-6 max-md:py-14 max-sm:px-4 max-sm:py-10">
-                    <h2 className="text-[1.8rem] font-extrabold text-[#111111] tracking-[-0.02em] text-center mb-14 max-md:text-[1.5rem] max-sm:text-[1.3rem] max-sm:mb-10">
+                    <h2 className="text-[1.8rem] font-extrabold text-[#111111] tracking-[-0.02em] text-center mb-14 max-md:text-[1.5rem] max-sm:text-[1.3rem] max-sm:mb-10" data-animate="fade-up">
                         The complete employee lifecycle — in one platform
                     </h2>
                     <div className="grid grid-cols-5 gap-0 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-4">
@@ -144,7 +144,7 @@ export default function HumanResources() {
 
             {/* Core Capabilities — Cards with Image Placeholder */}
             <section className="max-w-[1400px] mx-auto px-12 py-32 max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-12">
-                <div className="text-center mb-16 max-sm:mb-10">
+                <div className="text-center mb-16 max-sm:mb-10" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] mb-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                         Everything you need to manage your workforce
                     </h2>
@@ -153,51 +153,51 @@ export default function HumanResources() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1">
+                <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1" data-animate="fade-up">
                     {[
                         {
                             icon: 'bi-people-fill',
+                            color: '#056CB8',
+                            bg: '#056CB8',
+                            num: '01',
                             title: 'Employee Management',
                             desc: 'Maintain comprehensive employee records, track organizational hierarchy, and manage onboarding and offboarding processes seamlessly.',
-                            image: '/images/hr-employee-management.webp',
                         },
                         {
                             icon: 'bi-calendar-check-fill',
+                            color: '#09983A',
+                            bg: '#09983A',
+                            num: '02',
                             title: 'Attendance Tracking',
                             desc: 'Monitor employee attendance in real-time with automated clock-in/out systems, shift management, and overtime calculations.',
-                            image: '/images/hr-attendance-tracking.webp',
                         },
                         {
                             icon: 'bi-calendar-x-fill',
+                            color: '#F60014',
+                            bg: '#F60014',
+                            num: '03',
                             title: 'Leave Management',
                             desc: 'Streamline leave requests and approvals with automated workflows, balance tracking, and comprehensive leave policy management.',
-                            image: '/images/hr-leave-management.webp',
                         },
                         {
                             icon: 'bi-graph-up-arrow',
+                            color: '#8b5cf6',
+                            bg: '#8b5cf6',
+                            num: '04',
                             title: 'Performance Reviews',
                             desc: 'Conduct structured evaluations, set goals, track progress, and provide continuous feedback to drive employee growth.',
-                            image: '/images/hr-performance-reviews.webp',
                         },
-                    ].map((cap) => (
-                        <div key={cap.title} className="border border-[#e0e0e0] rounded-md overflow-hidden bg-white">
-                            {/* Image Placeholder */}
-                            <div className="w-full h-[220px] bg-[#f5f5f5] border-b border-[#e0e0e0] flex items-center justify-center max-sm:h-[160px]">
-                                {/* Replace with: <Image src={cap.image} alt={cap.title} width={600} height={220} className="w-full h-full object-cover" /> */}
-                                <div className="flex flex-col items-center gap-2 text-[#d1d5db]">
-                                    <i className={`bi ${cap.icon} text-3xl`}></i>
-                                    <span className="text-[0.7rem] font-medium">Image coming soon</span>
+                    ].map((cap, i) => (
+                        <div key={cap.title} className="relative border border-[#e0e0e0] rounded-md p-8 bg-white transition-all duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:-translate-y-1 max-sm:p-6" data-animate="fade-up" data-delay={i + 1}>
+                            <div className="flex items-start gap-5">
+                                <div className="w-14 h-14 rounded-xl flex items-center justify-center shrink-0" style={{ backgroundColor: `${cap.bg}10` }}>
+                                    <i className={`bi ${cap.icon} text-2xl`} style={{ color: cap.color }}></i>
                                 </div>
-                            </div>
-                            {/* Content */}
-                            <div className="p-6 max-sm:p-4">
-                                <div className="flex items-center gap-3 mb-3">
-                                    <div className="w-9 h-9 rounded-md bg-[#056CB8]/8 flex items-center justify-center shrink-0">
-                                        <i className={`bi ${cap.icon} text-[#056CB8] text-sm`}></i>
-                                    </div>
-                                    <h3 className="text-[1.05rem] font-bold text-[#111111]">{cap.title}</h3>
+                                <div className="flex-1">
+                                    <span className="text-[0.7rem] font-bold uppercase tracking-[0.15em] mb-2 block" style={{ color: cap.color }}>{cap.num}</span>
+                                    <h3 className="text-[1.15rem] font-bold text-[#111111] mb-3">{cap.title}</h3>
+                                    <p className="text-[0.9rem] text-[#555555] leading-[1.7] m-0">{cap.desc}</p>
                                 </div>
-                                <p className="text-[0.9rem] text-[#555555] leading-relaxed m-0">{cap.desc}</p>
                             </div>
                         </div>
                     ))}
@@ -207,7 +207,7 @@ export default function HumanResources() {
             {/* Benefits — Offset Grid */}
             <section className="bg-[#111111] text-white">
                 <div className="max-w-[1400px] mx-auto px-12 py-28 max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-12">
-                    <div className="text-center mb-16 max-sm:mb-10">
+                    <div className="text-center mb-16 max-sm:mb-10" data-animate="fade-up">
                         <h2 className="text-[2.2rem] font-extrabold tracking-[-0.02em] mb-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                             Why businesses choose Zynex HR
                         </h2>
@@ -216,7 +216,7 @@ export default function HumanResources() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1">
+                    <div className="grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1" data-animate="fade-up">
                         {[
                             {
                                 icon: 'bi-lightning-charge-fill',
@@ -263,16 +263,12 @@ export default function HumanResources() {
             <section className="max-w-[1400px] mx-auto px-12 py-28 max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-12">
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:gap-10">
                     {/* Image Placeholder */}
-                    <div className="w-full h-[400px] bg-[#f5f5f5] border border-[#e0e0e0] rounded-md flex items-center justify-center max-sm:h-[260px]">
-                        {/* Replace with: <Image src="/images/hr-dashboard-overview.webp" alt="HR Dashboard" width={640} height={400} className="w-full h-full object-cover rounded-md" /> */}
-                        <div className="flex flex-col items-center gap-2 text-[#d1d5db]">
-                            <i className="bi bi-people-fill text-4xl"></i>
-                            <span className="text-[0.75rem] font-medium">Dashboard image coming soon</span>
-                        </div>
+                    <div className="w-full" data-animate="fade-left">
+                        <Image src="/images/hr-dashboard.webp" alt="HR Dashboard across devices" width={1536} height={1024} className="w-full h-auto object-contain rounded-md" loading="lazy" sizes="(max-width: 768px) 100vw, 50vw" />
                     </div>
 
                     {/* Text */}
-                    <div>
+                    <div data-animate="fade-right">
                         <h2 className="text-[2rem] font-extrabold text-[#111111] tracking-[-0.02em] mb-6 max-md:text-[1.6rem] max-sm:text-[1.4rem]">
                             One dashboard for your entire workforce
                         </h2>
@@ -298,16 +294,16 @@ export default function HumanResources() {
 
             {/* CTA Section */}
             <section className="py-32 px-12 bg-white flex justify-center items-center w-full border-t border-[#e0e0e0] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <div className="max-w-[680px] w-full text-center flex flex-col items-center gap-6 max-sm:gap-4">
+                <div className="max-w-[680px] w-full text-center flex flex-col items-center gap-6 max-sm:gap-4" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                         Ready to transform your HR operations?
                     </h2>
                     <p className="text-[1.05rem] text-[#555555] leading-relaxed max-sm:text-[0.9rem]">
                         Experience the power of integrated workforce management. Start building a more engaged and productive team today.
                     </p>
-                    <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
+                    <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                         Get started now
-                    </button>
+                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                 </div>
             </section>
         </div>

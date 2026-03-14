@@ -17,7 +17,7 @@ export default function EnterpriseSolutionsPage() {
         <div className="max-w-6xl mx-auto">
           <p className="text-sm text-[#555555] mb-8">Home / Solutions / Enterprise Solutions</p>
           <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-16 items-center">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6" data-animate="fade-up">
               <span className="inline-block bg-[#056CB8]/10 text-[#056CB8] text-xs font-semibold tracking-[0.1em] uppercase px-4 py-2 w-fit">
                 ENTERPRISE SOLUTIONS
               </span>
@@ -30,8 +30,8 @@ export default function EnterpriseSolutionsPage() {
                 From ERP to CRM to BI — one integrated ecosystem.
               </p>
               <div className="flex gap-4 flex-wrap mt-2">
-                <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-                  Talk to an Expert
+                <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+                  Talk to an Expert <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
                 </a>
                 <a href="/resources/partners" className="inline-flex items-center justify-center px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#f5f5f5] transition-colors">
                   View Case Studies
@@ -41,7 +41,7 @@ export default function EnterpriseSolutionsPage() {
             </div>
 
             {/* Stacked Metric Cards */}
-            <div className="flex flex-col gap-4 max-lg:max-w-md">
+            <div className="flex flex-col gap-4 max-lg:max-w-md" data-animate="fade-right">
               {[
                 { icon: 'bi-graph-up-arrow', label: 'Revenue Growth', value: '+34%' },
                 { icon: 'bi-clock-history', label: 'Time Saved', value: '120h/mo', indent: true },
@@ -77,14 +77,16 @@ export default function EnterpriseSolutionsPage() {
       {/* ===== SOLUTIONS GRID ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
-            End-to-End Enterprise Platforms
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            Every solution is modular, extensible, and designed to integrate with your existing landscape.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
+              End-to-End Enterprise Platforms
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              Every solution is modular, extensible, and designed to integrate with your existing landscape.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
               { icon: 'bi-diagram-3', title: 'ERP Systems', desc: 'Unified resource planning connecting finance, operations, HR, and supply chain.', modules: ['Financial Management', 'Supply Chain', 'Procurement'] },
               { icon: 'bi-people-fill', title: 'CRM Platforms', desc: 'Customer relationship management for complex sales cycles and multi-channel engagement.', modules: ['Lead Scoring', 'Pipeline Intelligence', 'Account Management'] },
@@ -113,7 +115,7 @@ export default function EnterpriseSolutionsPage() {
       {/* ===== OUR APPROACH ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-5 max-md:grid-cols-1 gap-12">
-          <div className="col-span-2 max-md:col-span-1">
+          <div className="col-span-2 max-md:col-span-1" data-animate="fade-left">
             <h2 className="text-[2rem] font-bold text-[#111111] mb-4 max-md:text-[1.5rem]">
               Built Different. Delivered Faster.
             </h2>
@@ -123,7 +125,7 @@ export default function EnterpriseSolutionsPage() {
               redefine what is possible for your operations.
             </p>
           </div>
-          <div className="col-span-3 max-md:col-span-1 grid grid-cols-2 max-sm:grid-cols-1 gap-4">
+          <div className="col-span-3 max-md:col-span-1 grid grid-cols-2 max-sm:grid-cols-1 gap-4" data-animate="fade-right">
             {[
               { num: '01', title: 'Discovery & Architecture', desc: 'Deep-dive into your processes, pain points, and growth targets to architect the perfect solution.' },
               { num: '02', title: 'Agile Development', desc: 'Two-week sprint cycles with continuous stakeholder demos. You see progress, not just promises.' },
@@ -143,10 +145,12 @@ export default function EnterpriseSolutionsPage() {
       {/* ===== INDUSTRIES IMPACT ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem]">
-            Proven Impact Across Sectors
-          </h2>
-          <div className="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6">
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem]">
+              Proven Impact Across Sectors
+            </h2>
+          </div>
+          <div className="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
               { stat: '45%', label: 'Reduction in production waste', industry: 'Manufacturing' },
               { stat: '3x', label: 'Faster regulatory reporting', industry: 'Financial Services' },
@@ -167,7 +171,7 @@ export default function EnterpriseSolutionsPage() {
 
       {/* ===== CTA ===== */}
       <section className="bg-[#111111] text-white py-24 px-6 text-center">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">
             Your Enterprise Deserves Software That Keeps Up
           </h2>
@@ -175,8 +179,8 @@ export default function EnterpriseSolutionsPage() {
             Let us architect a solution tailored to your scale, your industry, and your vision.
           </p>
           <div className="flex flex-col items-center gap-4">
-            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Schedule a Discovery Call
+            <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+              Schedule a Discovery Call <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="/" className="text-white/50 text-sm hover:text-white transition-colors">
               Back to home &rarr;

@@ -1,4 +1,5 @@
 import CapabilitySelector from './CapabilitySelector';
+import CountUp from '@/components/CountUp';
 
 export const metadata = {
   title: 'AI Solutions | Zynex',
@@ -19,7 +20,7 @@ export default function AISolutionsPage() {
         <div className="max-w-6xl mx-auto">
           <p className="text-sm text-white/50 mb-8">Home / Solutions / AI Solutions</p>
           <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-16 items-center">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6" data-animate="fade-up">
               <span className="inline-block bg-white/10 text-white/70 text-xs font-semibold tracking-[0.1em] uppercase px-4 py-2 w-fit">
                 AI SOLUTIONS
               </span>
@@ -43,7 +44,7 @@ export default function AISolutionsPage() {
             </div>
 
             {/* AI Model Dashboard Mockup */}
-            <div className="bg-white/5 border border-white/10 p-6 max-lg:max-w-lg">
+            <div className="bg-white/5 border border-white/10 p-6 max-lg:max-w-lg" data-animate="fade-right">
               <div className="flex items-center justify-between mb-6">
                 <span className="text-sm font-semibold text-white/80">AI Model Dashboard</span>
                 <span className="flex items-center gap-2 text-xs text-[#22c55e]">
@@ -84,7 +85,7 @@ export default function AISolutionsPage() {
 
       {/* ===== STATS RIBBON ===== */}
       <section className="bg-[#056CB8] text-white py-6 px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 text-center">
+        <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 text-center" data-animate="fade-in">
           {[
             { value: '10x', label: 'Faster Deployment' },
             { value: '99.9%', label: 'Uptime SLA' },
@@ -92,7 +93,7 @@ export default function AISolutionsPage() {
             { value: '300%', label: 'Average ROI' },
           ].map((stat, i) => (
             <div key={i}>
-              <p className="text-2xl font-bold">{stat.value}</p>
+              <p className="text-2xl font-bold"><CountUp value={stat.value} /></p>
               <p className="text-xs text-white/80 uppercase tracking-wider mt-1">{stat.label}</p>
             </div>
           ))}
@@ -102,12 +103,14 @@ export default function AISolutionsPage() {
       {/* ===== CAPABILITIES (CapabilitySelector) ===== */}
       <section className="bg-white py-24 px-6 max-md:py-16 max-sm:py-12 max-sm:px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem] max-sm:text-[1.5rem]">
-            Four Pillars of Enterprise Intelligence
-          </h2>
-          <p className="text-[#555555] text-center mb-12 max-w-2xl mx-auto">
-            Explore our core AI capabilities — each designed to solve real business problems at scale.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem] max-sm:text-[1.5rem]">
+              Four Pillars of Enterprise Intelligence
+            </h2>
+            <p className="text-[#555555] text-center mb-12 max-w-2xl mx-auto">
+              Explore our core AI capabilities — each designed to solve real business problems at scale.
+            </p>
+          </div>
           <CapabilitySelector />
         </div>
       </section>
@@ -115,13 +118,15 @@ export default function AISolutionsPage() {
       {/* ===== HOW IT WORKS — 4 Steps ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6 max-md:py-16 max-sm:py-12 max-sm:px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem] max-sm:text-[1.5rem] max-sm:mb-10">
-            From Data to Decisions in Four Steps
-          </h2>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem] max-sm:text-[1.5rem] max-sm:mb-10">
+              From Data to Decisions in Four Steps
+            </h2>
+          </div>
           <div className="relative">
             {/* Connecting line */}
             <div className="absolute top-6 left-[12%] right-[12%] h-px bg-[#e0e0e0] max-md:hidden"></div>
-            <div className="grid grid-cols-4 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-8">
+            <div className="grid grid-cols-4 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-8" data-animate="fade-up">
               {[
                 { num: '01', title: 'Connect', desc: 'Plug in your data sources — databases, APIs, file stores, SaaS tools. Automatic schema mapping and normalization.' },
                 { num: '02', title: 'Train', desc: 'Select from pre-built models or bring your own. Fine-tune on proprietary data with our no-code training interface.' },
@@ -144,13 +149,15 @@ export default function AISolutionsPage() {
       {/* ===== USE CASES ===== */}
       <section className="bg-white py-24 px-6 max-md:py-16 max-sm:py-12 max-sm:px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem] max-sm:text-[1.5rem]">
-            AI at Work Across Every Industry
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            Real-world applications delivering measurable results.
-          </p>
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6">
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem] max-sm:text-[1.5rem]">
+              AI at Work Across Every Industry
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              Real-world applications delivering measurable results.
+            </p>
+          </div>
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
               { num: '01', industry: 'HEALTHCARE', title: 'Diagnostic Assistance', desc: 'AI-powered imaging analysis reducing diagnostic time by 60% with 99.2% accuracy across radiology workflows.' },
               { num: '02', industry: 'FINANCE', title: 'Risk Intelligence', desc: 'Real-time fraud detection and credit scoring processing 10M+ transactions daily with sub-second latency.' },
@@ -173,13 +180,15 @@ export default function AISolutionsPage() {
       {/* ===== INTEGRATION ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6 max-md:py-16 max-sm:py-12 max-sm:px-4">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] mb-4 max-md:text-[1.75rem] max-sm:text-[1.5rem]">
-            Works With Your Existing Stack
-          </h2>
-          <p className="text-[#555555] mb-12 max-w-2xl mx-auto">
-            Zynex AI integrates seamlessly with 200+ enterprise tools and platforms.
-            REST APIs, webhooks, SDKs for Python, Node.js, and Java.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] mb-4 max-md:text-[1.75rem] max-sm:text-[1.5rem]">
+              Works With Your Existing Stack
+            </h2>
+            <p className="text-[#555555] mb-12 max-w-2xl mx-auto">
+              Zynex AI integrates seamlessly with 200+ enterprise tools and platforms.
+              REST APIs, webhooks, SDKs for Python, Node.js, and Java.
+            </p>
+          </div>
           <div className="flex flex-wrap justify-center gap-3">
             {['PostgreSQL', 'MongoDB', 'AWS S3', 'Snowflake', 'Salesforce', 'SAP', 'Slack', 'Teams'].map((tool, i) => (
               <div key={i} className="bg-white border border-[#e0e0e0] px-6 py-2.5 text-sm font-semibold text-[#111111] hover:border-[#056CB8] hover:text-[#056CB8] transition-colors">
@@ -192,7 +201,7 @@ export default function AISolutionsPage() {
 
       {/* ===== CTA ===== */}
       <section className="bg-[#111111] text-white py-24 px-6 text-center max-md:py-16 max-sm:py-12 max-sm:px-4">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem] max-sm:text-[1.5rem]">
             Ready to Make AI Your Competitive Edge?
           </h2>
@@ -200,8 +209,8 @@ export default function AISolutionsPage() {
             Talk to our AI specialists. Get a custom roadmap for your industry and use case.
           </p>
           <div className="flex flex-col items-center gap-4">
-            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Schedule a Consultation
+            <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+              Schedule a Consultation <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="/" className="text-white/50 text-sm hover:text-white transition-colors">
               Explore the platform &rarr;

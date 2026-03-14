@@ -1,3 +1,5 @@
+import CountUp from '@/components/CountUp';
+
 export const metadata = {
   title: 'E-Commerce Solutions | Zynex',
   description: 'Headless commerce development with custom storefronts, payment integration, and AI-powered personalization.',
@@ -17,7 +19,7 @@ export default function EcommercePage() {
         <div className="max-w-6xl mx-auto">
           <p className="text-sm text-[#555555] mb-8 max-[480px]:text-xs">Home / Solutions / E-Commerce</p>
           <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-16 max-[480px]:gap-10 items-center">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6" data-animate="fade-up">
               <span className="inline-block bg-[#056CB8]/10 text-[#056CB8] text-xs font-semibold tracking-[0.1em] uppercase px-4 py-2 w-fit">
                 E-COMMERCE SOLUTIONS
               </span>
@@ -29,8 +31,8 @@ export default function EcommercePage() {
                 platforms. We build online commerce experiences that turn browsers into buyers.
               </p>
               <div className="flex gap-4 flex-wrap mt-2">
-                <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-                  Launch Your Store
+                <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+                  Launch Your Store <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
                 </a>
                 <a href="/resources/partners" className="inline-flex items-center justify-center px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#f5f5f5] transition-colors">
                   See Our Work
@@ -40,7 +42,7 @@ export default function EcommercePage() {
             </div>
 
             {/* Store Mockup */}
-            <div className="bg-[#f5f5f5] border border-[#e0e0e0] p-6 max-[480px]:p-4 max-lg:max-w-lg overflow-hidden">
+            <div className="bg-[#f5f5f5] border border-[#e0e0e0] p-6 max-[480px]:p-4 max-lg:max-w-lg overflow-hidden" data-animate="fade-right">
               <div className="flex items-center justify-between mb-6">
                 <span className="text-sm font-semibold text-[#111111] max-[480px]:text-xs">Store Dashboard</span>
                 <span className="flex items-center gap-2 text-xs text-[#22c55e] max-[480px]:text-[10px]">
@@ -84,7 +86,7 @@ export default function EcommercePage() {
 
       {/* ===== STATS ===== */}
       <section className="bg-[#056CB8] text-white py-6 px-6 max-[480px]:px-4">
-        <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 max-[480px]:gap-4 text-center">
+        <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 max-[480px]:gap-4 text-center" data-animate="fade-in">
           {[
             { value: '$500M+', label: 'Revenue Processed' },
             { value: '150+', label: 'Stores Launched' },
@@ -92,7 +94,7 @@ export default function EcommercePage() {
             { value: '< 1s', label: 'Page Load Time' },
           ].map((stat, i) => (
             <div key={i}>
-              <p className="text-2xl font-bold">{stat.value}</p>
+              <p className="text-2xl font-bold"><CountUp value={stat.value} /></p>
               <p className="text-xs text-white/80 uppercase tracking-wider mt-1">{stat.label}</p>
             </div>
           ))}
@@ -102,14 +104,16 @@ export default function EcommercePage() {
       {/* ===== CAPABILITIES — 6 Cards ===== */}
       <section className="bg-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
-            Everything You Need to Sell Online
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            A complete commerce toolkit from storefront to fulfillment.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
+              Everything You Need to Sell Online
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              A complete commerce toolkit from storefront to fulfillment.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
               { icon: 'bi-inbox-fill', title: 'Storefront Development', desc: 'Custom storefronts with lightning-fast performance, SEO optimization, and conversion-focused UX on headless architecture.' },
               { icon: 'bi-shield-check', title: 'Payment & Checkout', desc: 'Seamless checkout with multi-gateway support, one-click payments, subscription billing, and PCI-DSS compliance.' },
@@ -133,7 +137,7 @@ export default function EcommercePage() {
       {/* ===== WHY ZYNEX — Checklist + Revenue Card ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-2 max-md:grid-cols-1 gap-16 max-[480px]:gap-10 items-center">
-          <div>
+          <div data-animate="fade-left">
             <h2 className="text-[2rem] font-bold text-[#111111] mb-4 max-md:text-[1.5rem] max-[480px]:text-[1.3rem]">
               Built for Commerce. Optimized for Growth.
             </h2>
@@ -157,7 +161,7 @@ export default function EcommercePage() {
           </div>
 
           {/* Revenue Card */}
-          <div className="bg-white border border-[#e0e0e0] p-8">
+          <div className="bg-white border border-[#e0e0e0] p-8" data-animate="fade-right">
             <p className="text-xs text-[#555555] font-semibold mb-1">Monthly Revenue</p>
             <p className="text-3xl font-bold text-[#111111] mb-1">$847,293</p>
             <p className="text-sm text-[#22c55e] font-semibold mb-6">&uarr; 23.5% vs last month</p>
@@ -177,13 +181,15 @@ export default function EcommercePage() {
       {/* ===== PLATFORMS ===== */}
       <section className="bg-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
-            We Work With the Best
-          </h2>
-          <p className="text-[#555555] mb-12 max-w-2xl mx-auto">
-            Whether you need a hosted solution or a fully custom headless build,
-            we have expertise across every major commerce platform.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
+              We Work With the Best
+            </h2>
+            <p className="text-[#555555] mb-12 max-w-2xl mx-auto">
+              Whether you need a hosted solution or a fully custom headless build,
+              we have expertise across every major commerce platform.
+            </p>
+          </div>
           <div className="flex flex-wrap justify-center gap-4">
             {['Shopify Plus', 'WooCommerce', 'Magento', 'BigCommerce', 'Custom Headless', 'Stripe', 'Razorpay', 'PayPal'].map((p, i) => (
               <div key={i} className="bg-[#f5f5f5] border border-[#e0e0e0] px-6 py-3 text-sm font-semibold text-[#111111] hover:border-[#056CB8] hover:text-[#056CB8] transition-colors">
@@ -197,10 +203,12 @@ export default function EcommercePage() {
       {/* ===== PROCESS ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem] max-[480px]:text-[1.4rem] max-[480px]:mb-10">
-            From Idea to First Sale
-          </h2>
-          <div className="grid grid-cols-4 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-6">
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem] max-[480px]:text-[1.4rem] max-[480px]:mb-10">
+              From Idea to First Sale
+            </h2>
+          </div>
+          <div className="grid grid-cols-4 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-6" data-animate="fade-up">
             {[
               { num: '01', title: 'Strategy', desc: 'Market analysis, platform selection, feature prioritization, and go-to-market planning.' },
               { num: '02', title: 'Design', desc: 'Conversion-optimized UI/UX with brand-aligned visual design and mobile-first prototyping.' },
@@ -219,7 +227,7 @@ export default function EcommercePage() {
 
       {/* ===== CTA ===== */}
       <section className="bg-[#111111] text-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16 text-center">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
             Ready to Launch Your Commerce Platform?
           </h2>
@@ -228,8 +236,8 @@ export default function EcommercePage() {
             We will build the store that gets you there.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Get a Free Quote
+            <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+              Get a Free Quote <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="/" className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white/70 font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
               Explore Platform

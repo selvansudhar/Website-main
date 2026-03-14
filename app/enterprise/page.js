@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import CountUp from '@/components/CountUp';
 
 export const metadata = {
     title: 'Enterprise Platform — Intelligent Software for Growth',
@@ -41,7 +42,7 @@ export default function Enterprise() {
                     <span className="text-[#056CB8] uppercase">Enterprise</span>
                 </div>
 
-                <div className="max-w-[900px] mx-auto flex flex-col items-center text-center gap-6 max-sm:gap-4">
+                <div className="max-w-[900px] mx-auto flex flex-col items-center text-center gap-6 max-sm:gap-4" data-animate="fade-up">
                     <div className="inline-flex items-center gap-2 bg-white border border-[#e0e0e0] rounded-[100px] px-4 py-1.5 max-sm:px-3 max-sm:py-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#22c55e]"></span>
                         <span className="text-[0.82rem] font-medium text-[#555555]">AI-Powered Enterprise Software</span>
@@ -53,12 +54,12 @@ export default function Enterprise() {
                         We build scalable, enterprise-grade software that helps organizations work smarter and grow faster. Our solutions simplify operations, strengthen collaboration across teams, and transform data into meaningful insights.
                     </p>
                     <div className="flex gap-4 mt-2 max-sm:flex-col max-sm:items-center">
-                        <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
+                        <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                             Contact sales
-                        </button>
+                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                         <button className="bg-transparent text-[#111111] border-2 border-[#e0e0e0] px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
                             See demo
-                        </button>
+                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                     </div>
                     <p className="text-[0.78rem] text-[#888888] m-0">
                         Trusted by 500+ businesses &nbsp;&bull;&nbsp; 16 data centers &nbsp;&bull;&nbsp; 150+ countries
@@ -67,8 +68,8 @@ export default function Enterprise() {
             </section>
 
             {/* Banner Image */}
-            <section className="max-w-[1200px] mx-auto px-12 pb-20 max-md:px-6 max-sm:px-4 max-sm:pb-12">
-                <div className="w-full overflow-hidden rounded-md border border-[#e0e0e0] shadow-[0_8px_24px_rgba(0,0,0,0.06)]">
+            <section className="max-w-[1400px] mx-auto px-12 pb-20 max-md:px-6 max-sm:px-4 max-sm:pb-12">
+                <div className="w-full overflow-hidden">
                     <Image
                         src="/images/enterprise-banner.webp"
                         alt="Zynex Enterprise Platform Dashboard"
@@ -83,7 +84,7 @@ export default function Enterprise() {
 
             {/* Stats Ribbon */}
             <section className="bg-[#111111] text-white">
-                <div className="max-w-[1400px] mx-auto px-12 py-14 grid grid-cols-6 gap-8 max-lg:grid-cols-3 max-md:px-6 max-md:py-10 max-sm:px-4 max-sm:grid-cols-2 max-sm:gap-6">
+                <div className="max-w-[1400px] mx-auto px-12 py-14 grid grid-cols-6 gap-8 max-lg:grid-cols-3 max-md:px-6 max-md:py-10 max-sm:px-4 max-sm:grid-cols-2 max-sm:gap-6" data-animate="fade-in">
                     {[
                         { value: '130M+', label: 'Users Worldwide' },
                         { value: '29+', label: 'Years' },
@@ -94,7 +95,7 @@ export default function Enterprise() {
                     ].map((stat) => (
                         <div key={stat.label} className="text-center">
                             <div className="text-[2.2rem] font-extrabold leading-none tracking-tight max-sm:text-[1.8rem]">
-                                {stat.value}
+                                <CountUp value={stat.value} />
                             </div>
                             <div className="text-[0.82rem] text-white/60 font-medium mt-2">{stat.label}</div>
                         </div>
@@ -104,12 +105,12 @@ export default function Enterprise() {
 
             {/* Solutions Section */}
             <section className="max-w-[1400px] mx-auto px-12 py-32 max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-12">
-                <div className="text-center mb-16 max-sm:mb-10">
+                <div className="text-center mb-16 max-sm:mb-10" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] mb-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                         Flexible Solutions Built for Enterprise Operations
                     </h2>
                 </div>
-                <div className="grid grid-cols-3 gap-6 max-md:grid-cols-1">
+                <div className="grid grid-cols-3 gap-6 max-md:grid-cols-1" data-animate="fade-up" data-delay="2">
                     {[
                         {
                             category: 'CUSTOMER EXPERIENCE',
@@ -159,12 +160,14 @@ export default function Enterprise() {
             {/* Enterprise Software Hub — Marquee */}
             <section className="border-y border-[#e0e0e0] bg-[#f5f5f5]">
                 <div className="max-w-[1400px] mx-auto px-12 pt-20 pb-8 max-md:px-6 max-md:pt-14 max-sm:px-4 max-sm:pt-10">
-                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] text-center mb-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]">
-                        Enterprise Software Hub
-                    </h2>
-                    <p className="text-[1.05rem] text-[#555555] text-center max-w-[560px] mx-auto mb-12 max-sm:text-[0.9rem] max-sm:mb-8">
-                        16 integrated modules powering every department.
-                    </p>
+                    <div data-animate="fade-up">
+                        <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] text-center mb-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]">
+                            Enterprise Software Hub
+                        </h2>
+                        <p className="text-[1.05rem] text-[#555555] text-center max-w-[560px] mx-auto mb-12 max-sm:text-[0.9rem] max-sm:mb-8">
+                            16 integrated modules powering every department.
+                        </p>
+                    </div>
                 </div>
                 <div className="w-full overflow-hidden pb-16 flex flex-col gap-5 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] [-webkit-mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)] max-sm:pb-10 max-sm:gap-4">
                     {/* Row 1: scrolls left */}
@@ -205,7 +208,7 @@ export default function Enterprise() {
             {/* Security Section */}
             <section className="bg-[#111111] text-white">
                 <div className="max-w-[1400px] mx-auto px-12 py-28 max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-12">
-                    <div className="text-center mb-16 max-sm:mb-10">
+                    <div className="text-center mb-16 max-sm:mb-10" data-animate="fade-up">
                         <h2 className="text-[2.2rem] font-extrabold tracking-[-0.02em] mb-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                             Security Built for the Enterprise
                         </h2>
@@ -214,7 +217,7 @@ export default function Enterprise() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-1">
+                    <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-1" data-animate="fade-up" data-delay="2">
                         {[
                             {
                                 icon: 'bi-shield-fill-check',
@@ -245,17 +248,27 @@ export default function Enterprise() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-32 px-12 bg-white flex justify-center items-center w-full max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <div className="max-w-[680px] w-full text-center flex flex-col items-center gap-6 max-sm:gap-4">
+            <section className="py-32 px-12 bg-white flex justify-center items-center w-full max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4 relative overflow-hidden">
+                {/* Rotating SVG background */}
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 pointer-events-none overflow-visible" aria-hidden="true">
+                    <Image
+                        src="/images/enterprise-footer.svg"
+                        alt=""
+                        width={517}
+                        height={517}
+                        className="w-[400px] h-[400px] max-md:w-[280px] max-md:h-[280px] opacity-50 animate-spin-slow"
+                    />
+                </div>
+                <div className="max-w-[680px] w-full text-center flex flex-col items-center gap-6 max-sm:gap-4 relative z-10">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                         Explore how our solutions can help your enterprise
                     </h2>
                     <p className="text-[1.05rem] text-[#555555] leading-relaxed max-sm:text-[0.9rem]">
                         Our team will get in touch with you for an exploratory call.
                     </p>
-                    <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
+                    <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                         Contact sales
-                    </button>
+                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                 </div>
             </section>
         </div>

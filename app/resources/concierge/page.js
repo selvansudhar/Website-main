@@ -121,7 +121,7 @@ export default function Concierge() {
 
       {/* ===== HERO ===== */}
       <section className="bg-white pt-40 max-md:pt-24 pb-24 px-6 max-[480px]:px-4 max-[480px]:pb-16">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center" data-animate="fade-up">
           <p className="text-sm text-[#555555] mb-8">Home / Resources / Concierge</p>
           <span className="inline-block bg-[#056CB8]/10 text-[#056CB8] text-xs font-semibold tracking-[0.1em] uppercase px-4 py-2 mb-6">
             FREE CONSULTATION
@@ -134,8 +134,8 @@ export default function Concierge() {
             Let our experts do the thinking — tell us your challenges and we'll recommend exactly what you need.
           </p>
           <div className="flex gap-4 justify-center flex-wrap mb-6">
-            <a href="/contact" className="inline-flex items-center justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Book Free Consultation
+            <a href="/contact" className="group inline-flex items-center justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+              Book Free Consultation <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="#how-it-works" className="inline-flex items-center justify-center px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#f5f5f5] transition-colors">
               See How It Works
@@ -149,7 +149,7 @@ export default function Concierge() {
 
       {/* ===== TRUST STATS ===== */}
       <section className="bg-[#056CB8] text-white py-6 px-6 max-[480px]:px-4">
-        <div className="max-w-5xl mx-auto grid grid-cols-3 max-md:grid-cols-1 gap-6 text-center">
+        <div className="max-w-5xl mx-auto grid grid-cols-3 max-md:grid-cols-1 gap-6 text-center" data-animate="fade-in">
           <div>
             <p className="text-2xl font-bold">2,500+</p>
             <p className="text-xs text-white/80 uppercase tracking-wider mt-1">Businesses Guided</p>
@@ -168,11 +168,11 @@ export default function Concierge() {
       {/* ===== WHAT YOU GET / WHAT YOU DON'T ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem] max-[480px]:text-[1.4rem] max-[480px]:mb-10">
+          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem] max-[480px]:text-[1.4rem] max-[480px]:mb-10" data-animate="fade-up">
             Honest Guidance, Not a Sales Call
           </h2>
 
-          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-8">
+          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-8" data-animate="fade-up" data-delay="2">
             {/* What you get */}
             <div className="bg-white border border-[#e0e0e0] p-8">
               <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[#e0e0e0]">
@@ -211,14 +211,16 @@ export default function Concierge() {
       {/* ===== WHY CONCIERGE ===== */}
       <section className="bg-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
-            Why Zynex Concierge?
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            Skip the months of trial and error. Get expert guidance tailored to your business from day one.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
+              Why Zynex Concierge?
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              Skip the months of trial and error. Get expert guidance tailored to your business from day one.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {benefits.map((b, i) => (
               <div key={i} className="border border-[#e0e0e0] p-8 hover:border-[#056CB8] transition-colors">
                 <div className="w-11 h-11 bg-[#056CB8]/10 flex items-center justify-center mb-4">
@@ -235,12 +237,14 @@ export default function Concierge() {
       {/* ===== HOW IT WORKS ===== */}
       <section id="how-it-works" className="bg-[#111111] text-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-center mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
-            How It Works
-          </h2>
-          <p className="text-white/60 text-center mb-16">Three steps. Zero pressure. Total clarity.</p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-center mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
+              How It Works
+            </h2>
+            <p className="text-white/60 text-center mb-16">Three steps. Zero pressure. Total clarity.</p>
+          </div>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-8">
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-8" data-animate="fade-up" data-delay="2">
             {steps.map((step, i) => (
               <div key={i} className="relative">
                 {/* Connector line */}
@@ -259,8 +263,8 @@ export default function Concierge() {
           </div>
 
           <div className="text-center mt-12">
-            <a href="/contact" className="inline-flex items-center justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Book Your Free Call
+            <a href="/contact" className="group inline-flex items-center justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+              Book Your Free Call <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
           </div>
         </div>
@@ -269,14 +273,16 @@ export default function Concierge() {
       {/* ===== INDUSTRIES ===== */}
       <section className="bg-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
-            We Speak Your Industry
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            Our specialists have guided businesses across these verticals — they understand your compliance needs, workflows, and pain points.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
+              We Speak Your Industry
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              Our specialists have guided businesses across these verticals — they understand your compliance needs, workflows, and pain points.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-5 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-4">
+          <div className="grid grid-cols-5 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-4" data-animate="fade-up" data-delay="2">
             {industries.map((ind, i) => (
               <div key={i} className="border border-[#e0e0e0] p-6 text-center hover:border-[#056CB8] transition-colors">
                 <div className="w-12 h-12 bg-[#056CB8]/10 flex items-center justify-center mx-auto mb-3">
@@ -292,11 +298,11 @@ export default function Concierge() {
       {/* ===== TESTIMONIALS ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem] max-[480px]:text-[1.4rem] max-[480px]:mb-10">
+          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem] max-[480px]:text-[1.4rem] max-[480px]:mb-10" data-animate="fade-up">
             What Businesses Are Saying
           </h2>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {testimonials.map((t, i) => (
               <div key={i} className="bg-white border border-[#e0e0e0] p-8 flex flex-col">
                 <p className="text-6xl text-[#056CB8]/15 font-serif leading-none mb-2">&ldquo;</p>
@@ -319,12 +325,14 @@ export default function Concierge() {
       {/* ===== FAQ ===== */}
       <section className="bg-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
-            Frequently Asked Questions
-          </h2>
-          <p className="text-[#555555] text-center mb-16">Everything you need to know before booking</p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-[#555555] text-center mb-16">Everything you need to know before booking</p>
+          </div>
 
-          <div className="flex flex-col gap-0">
+          <div className="flex flex-col gap-0" data-animate="fade-up">
             {faqs.map((faq, i) => (
               <div
                 key={i}
@@ -351,15 +359,15 @@ export default function Concierge() {
 
       {/* ===== FINAL CTA ===== */}
       <section className="bg-[#111111] text-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16 text-center">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
             Your Perfect Setup Is One Conversation Away
           </h2>
           <p className="text-white/60 mb-8">
             2,500+ businesses have found their ideal Zynex stack through Concierge. Book your free consultation today — no strings attached.
           </p>
-          <a href="/contact" className="inline-flex items-center justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-            Book Free Consultation
+          <a href="/contact" className="group inline-flex items-center justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+            Book Free Consultation <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
           </a>
           <p className="text-white/40 text-xs mt-6">Average call: 25 minutes &nbsp;&bull;&nbsp; Written recommendation within 48 hours</p>
         </div>

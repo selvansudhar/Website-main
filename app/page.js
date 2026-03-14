@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import CountUp from '@/components/CountUp';
 
 export const metadata = {
   title: 'AI-Powered Business Platform for Growing Teams',
@@ -22,7 +23,7 @@ export default function Home() {
     <div className="bg-white text-[#111111]">
       {/* Hero Section */}
       <section className="max-w-[1400px] mx-auto px-12 pt-20 pb-20 grid grid-cols-2 gap-16 items-center max-lg:grid-cols-1 max-lg:gap-12 max-md:px-6 max-md:pt-24 max-md:pb-12 max-sm:px-4">
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6" data-animate="fade-up">
         <div className="inline-flex items-center gap-2 py-1.5 px-4 bg-white border border-[#e0e0e0] rounded-[100px] text-[0.82rem] font-medium text-[#555555] w-fit">
           <span className="w-1.5 h-1.5 bg-[#111111] rounded-full inline-block"></span>
           Innovation Experts
@@ -119,7 +120,7 @@ export default function Home() {
       {/* Use Cases */}
       <section className="max-w-[1400px] mx-auto px-12 max-md:px-6 max-sm:px-4">
         <h2 className="sr-only">Use Cases</h2>
-        <div className="grid grid-cols-5 gap-4 max-[1200px]:grid-cols-3 max-md:grid-cols-2 max-[480px]:grid-cols-1">
+        <div className="grid grid-cols-5 gap-4 max-[1200px]:grid-cols-3 max-md:grid-cols-2 max-[480px]:grid-cols-1" data-animate="fade-up" data-delay="1">
           {useCases.map((uc, i) => (
             <div key={i} className="bg-white border border-[#e0e0e0] rounded-md p-6 px-5 flex flex-row items-center gap-4 transition-all duration-300 cursor-pointer min-h-[110px] hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] hover:border-[#111111]">
               <div className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0 bg-[#f5f5f5] text-[#111111]">{uc.icon}</div>
@@ -134,7 +135,7 @@ export default function Home() {
 
       {/* IVA Section */}
       <section className="relative py-20 px-8 text-center overflow-hidden bg-white max-md:py-16 max-md:px-6 max-[480px]:px-4 max-[480px]:py-12">
-        <div className="relative z-2 max-w-[900px] mx-auto">
+        <div className="relative z-2 max-w-[900px] mx-auto" data-animate="scale-up">
           <div className="mb-4 max-[480px]:mb-2">
             <Image src="/images/iva-logo.webp" alt="IVA Logo" width={549} height={455} className="w-[200px] h-auto object-contain inline-block max-[480px]:w-[160px]" loading="lazy" />
           </div>
@@ -152,7 +153,7 @@ export default function Home() {
 
       {/* Intelligence Section */}
       <section className="py-8 bg-white">
-        <div className="max-w-[1400px] mx-auto rounded-[40px] p-4 flex items-center gap-8 text-white relative overflow-hidden max-lg:flex-col max-lg:p-8 max-lg:px-8 max-lg:gap-12 max-lg:text-center max-sm:rounded-[20px] max-sm:p-6 max-sm:mx-4" style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #056CB8 100%)' }}>
+        <div className="max-w-[1400px] mx-auto rounded-[40px] p-4 flex items-center gap-8 text-white relative overflow-hidden max-lg:flex-col max-lg:p-8 max-lg:px-8 max-lg:gap-12 max-lg:text-center max-sm:rounded-[20px] max-sm:p-6 max-sm:mx-4" data-animate="fade-up" style={{ background: 'linear-gradient(135deg, #0f172a 0%, #1e3a5f 40%, #056CB8 100%)' }}>
           <div className="flex-1 flex justify-center items-center relative">
             <div className="relative w-[220px] h-[220px] flex justify-center items-center">
               {['-100px', '-50px', '0px', '50px', '100px'].map((tx, i) => (
@@ -176,7 +177,7 @@ export default function Home() {
       <section className="py-24 px-8 bg-white max-md:py-16 max-md:px-6 max-sm:px-4">
         <div className="max-w-[1200px] mx-auto rounded-3xl overflow-hidden bg-white">
           <div className="grid grid-cols-2 items-center max-lg:grid-cols-1">
-            <div className="p-12 max-md:p-8 flex flex-col gap-6">
+            <div className="p-12 max-md:p-8 flex flex-col gap-6" data-animate="fade-up">
               <span className="text-[0.75rem] font-bold uppercase tracking-[0.15em] text-[#09983A]">Zynex for Enterprise</span>
               <h2 className="text-[1.8rem] font-extrabold text-[#111111] leading-[1.15] tracking-[-0.02em] max-md:text-[1.5rem]">One connected platform that replaces your disconnected tools</h2>
               <p className="text-base text-[#555555] leading-[1.7]">Your CRM talks to your invoicing, your HR syncs with payroll, your AI accesses everything — natively. Stop juggling separate tools that don&apos;t talk to each other.</p>
@@ -187,8 +188,8 @@ export default function Home() {
               </div>
               <Link href="/enterprise" className="bg-[#F60014] text-white py-3.5 px-8 rounded-none border-none text-[0.9rem] font-bold cursor-pointer inline-flex items-center gap-3 uppercase tracking-[0.05em] no-underline w-fit group mt-2">LEARN MORE <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
             </div>
-            <div className="flex justify-center items-center p-8 max-lg:pb-12">
-              <Image src="/images/enterprise-1.webp" alt="Enterprise Dashboard" width={1536} height={1024} className="w-full h-auto object-contain rounded-xl shadow-lg" loading="lazy" sizes="(max-width: 768px) 100vw, 50vw" />
+            <div className="flex justify-center items-center p-8 max-lg:pb-12" data-animate="fade-up" data-delay="2">
+              <Image src="/images/enterprise-section.webp" alt="Enterprise Data Platform" width={1233} height={1068} className="w-full h-auto object-contain" loading="lazy" sizes="(max-width: 768px) 100vw, 50vw" />
             </div>
           </div>
         </div>
@@ -198,17 +199,17 @@ export default function Home() {
       <section className="py-24 bg-[#056CB8] text-white relative overflow-hidden max-md:py-16">
         <div className="max-w-[1200px] mx-auto px-12 max-md:px-6 relative">
           <div className="relative z-10">
-            <h2 className="text-[2.2rem] font-extrabold leading-[1.2] mb-16 max-md:text-[1.8rem] max-md:mb-10">Made in India.<br />Made for the World.</h2>
+            <h2 className="text-[2.2rem] font-extrabold leading-[1.2] mb-16 max-md:text-[1.8rem] max-md:mb-10">Made in India.<br />Build for the World.</h2>
             <div className="grid grid-cols-2 gap-x-20 gap-y-12 max-w-[600px] max-md:gap-x-10 max-md:gap-y-8">
               {[
-                { value: '25+', label: 'Products\nBuilt' },
-                { value: '50+', label: 'Projects\nDelivered' },
-                { value: '100+', label: 'Happy\nClients' },
-                { value: '10+', label: 'Countries\nServed' },
-                { value: '60+', label: 'Products' },
+                { value: '10+', label: 'Products\nBuilt' },
+                { value: '25+', label: 'Projects\nDelivered' },
+                { value: '30+', label: 'Happy\nClients' },
+                { value: '99.9%', label: 'Uptime' },
+                { value: '5+', label: 'Industries\nServed' },
               ].map((stat, i) => (
                 <div key={i} className="flex items-baseline gap-4">
-                  <span className="text-[2.2rem] font-extrabold leading-none whitespace-nowrap max-md:text-[1.8rem]">{stat.value}</span>
+                  <span className="text-[2.2rem] font-extrabold leading-none whitespace-nowrap max-md:text-[1.8rem] min-w-[90px]"><CountUp value={stat.value} /></span>
                   <div className="flex flex-col">
                     <span className="text-sm font-medium text-white/80 leading-tight whitespace-pre-line">{stat.label}</span>
                     <div className="w-full h-[2px] bg-white/30 mt-2"></div>
@@ -252,7 +253,7 @@ export default function Home() {
       <section className="py-24 px-8 bg-white max-md:py-16 max-md:px-6 max-sm:px-4">
         <div className="max-w-[1200px] mx-auto">
           <div className="grid grid-cols-2 gap-16 items-center max-lg:grid-cols-1">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6" data-animate="fade-left">
               <h2 className="text-[1.8rem] font-extrabold text-[#111111] leading-[1.15] tracking-[-0.02em] max-md:text-[1.5rem]">Your privacy, our promise.</h2>
               <p className="text-base text-[#555555] leading-[1.7]">We don&apos;t sell your data. We don&apos;t show you ads. We don&apos;t let third parties peek at your business information. Our only revenue comes from the software you choose to pay for.</p>
               <div className="flex flex-col gap-4 mt-2">
@@ -264,7 +265,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="flex justify-center items-center" aria-hidden="true">
+            <div className="flex justify-center items-center" data-animate="fade-right" aria-hidden="true">
               <svg viewBox="0 0 400 400" fill="none" className="w-[360px] h-[360px] max-md:w-[280px] max-md:h-[280px]">
                 {/* Outer circle */}
                 <circle cx="200" cy="200" r="180" stroke="#111111" strokeWidth="1" strokeDasharray="6 6" opacity="0.15" />
@@ -331,14 +332,14 @@ export default function Home() {
       {/* Values Section */}
       <section className="py-32 px-8 bg-white col-span-full max-md:py-16 max-md:px-6 max-sm:px-4">
         <div className="max-w-[1200px] mx-auto text-center">
-          <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-20 max-w-[800px] mx-auto leading-[1.2] tracking-[-0.02em] max-md:text-[1.8rem] max-sm:text-[1.5rem] max-sm:mb-12">What drives us</h2>
+          <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-20 max-w-[800px] mx-auto leading-[1.2] tracking-[-0.02em] max-md:text-[1.8rem] max-sm:text-[1.5rem] max-sm:mb-12" data-animate="fade-up">What drives us</h2>
           <div className="grid grid-cols-3 gap-16 text-left max-lg:grid-cols-1 max-lg:max-w-[500px] max-lg:mx-auto max-lg:text-center">
             {[
               { img: '/images/value-commitment.webp', w: 95, h: 83, title: 'AI at the core', desc: 'Not an afterthought or add-on. Every tool in Zynex has intelligence built in from day one — from automated workflows to predictive insights that help you make better decisions faster.' },
               { img: '/images/value-research.webp', w: 96, h: 89, title: 'Made for small teams', desc: "Enterprise power without the enterprise bloat. Simple to set up, easy to use, and priced for growing businesses. You shouldn't need a dedicated IT team to run your business software." },
               { img: '/images/value-customer.webp', w: 107, h: 82, title: 'Customer-first, always', desc: 'We grow when you grow. No lock-in contracts, no hidden fees, no selling your data. Just straightforward software that earns your trust by being genuinely useful every single day.' },
             ].map((v, i) => (
-              <div key={i} className="flex flex-col gap-6 group">
+              <div key={i} className="flex flex-col gap-6 group" data-animate="fade-up" data-delay={i + 1}>
                 <div className="w-[100px] h-[100px] flex items-center justify-center bg-white rounded-md transition-all duration-300 overflow-hidden p-2 group-hover:-translate-y-1.5 max-lg:mx-auto">
                   <Image src={v.img} alt="" width={v.w} height={v.h} className="w-full h-full object-contain" loading="lazy" />
                 </div>
@@ -352,7 +353,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-32 px-8 bg-white text-center max-md:py-20 max-md:px-6 max-sm:px-4">
-        <div className="max-w-[600px] mx-auto flex flex-col items-center gap-6">
+        <div className="max-w-[600px] mx-auto flex flex-col items-center gap-6" data-animate="fade-up">
           <h2 className="text-[2.5rem] font-extrabold text-[#111111] m-0 leading-[1.2] tracking-[-0.02em] max-md:text-[2rem] max-sm:text-[1.6rem]">Ready to simplify your stack?</h2>
           <p className="text-lg text-[#555555] leading-relaxed m-0">Stop paying for 10 different tools. Get one platform that does it all — with AI that actually helps.</p>
           <div className="mt-2">

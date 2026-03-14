@@ -1,3 +1,5 @@
+import CountUp from '@/components/CountUp';
+
 export const metadata = {
   title: 'Higher Education Solutions',
   description: 'Digital campus solutions for student management, online learning, admissions, and academic analytics.',
@@ -69,7 +71,7 @@ export default function HigherEducationPage() {
       {/* ===== SECTION 1: HERO ===== */}
       <section className="bg-[#f5f5f5] pt-40 max-md:pt-24 pb-32 px-6">
         <p className="text-sm text-[#555555] mb-8 text-center">Home / Industries / Higher Education</p>
-        <div className="text-center max-w-3xl mx-auto">
+        <div className="text-center max-w-3xl mx-auto" data-animate="fade-up">
           <span className="inline-block bg-[#056CB8]/10 text-[#056CB8] text-xs font-semibold tracking-[0.08em] uppercase px-4 py-1.5 rounded-full mb-6">
             Higher Education Platform
           </span>
@@ -100,7 +102,7 @@ export default function HigherEducationPage() {
               { value: '98%', label: 'Satisfaction' },
             ].map((stat, i) => (
               <div key={i} className="bg-white border border-[#e0e0e0] p-6 text-center">
-                <p className="text-3xl font-bold text-[#056CB8] mb-1">{stat.value}</p>
+                <p className="text-3xl font-bold text-[#056CB8] mb-1"><CountUp value={stat.value} /></p>
                 <p className="text-sm text-[#555555]">{stat.label}</p>
               </div>
             ))}
@@ -111,9 +113,11 @@ export default function HigherEducationPage() {
       {/* ===== SECTION 2: STUDENT JOURNEY ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
+          <div data-animate="fade-up">
           <h2 className="text-3xl max-md:text-2xl font-bold text-[#111111] text-center mb-16">
             The Complete Student Lifecycle
           </h2>
+          </div>
           <div className="flex max-md:flex-col items-start justify-between gap-4 max-w-5xl mx-auto">
             {journeySteps.map((step, i) => (
               <div key={i} className="flex max-md:flex-row items-center max-md:items-start flex-col text-center max-md:text-left gap-3 flex-1">
@@ -137,9 +141,11 @@ export default function HigherEducationPage() {
       {/* ===== SECTION 3: CAMPUS SOLUTIONS ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
+          <div data-animate="fade-up">
           <h2 className="text-3xl max-md:text-2xl font-bold text-[#111111] text-center mb-16">
             Solutions for Every Campus Need
           </h2>
+          </div>
           {campusSolutions.map((feature, i) => (
             <div
               key={i}
@@ -185,10 +191,12 @@ export default function HigherEducationPage() {
       {/* ===== SECTION 5: BY THE NUMBERS ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
+          <div data-animate="fade-up">
           <h2 className="text-3xl max-md:text-2xl font-bold text-[#111111] text-center mb-16">
             Impact by the Numbers
           </h2>
-          <div className="grid grid-cols-4 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-6 max-w-5xl mx-auto">
+          </div>
+          <div className="grid grid-cols-4 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-6 max-w-5xl mx-auto" data-animate="fade-up">
             {[
               { number: '40%', metric: 'Reduction in Admin Time', description: 'Automated workflows free up staff to focus on student success instead of paperwork.' },
               { number: '3x', metric: 'Faster Enrollment', description: 'Streamlined processes cut enrollment cycle times from weeks to days.' },
@@ -196,7 +204,7 @@ export default function HigherEducationPage() {
               { number: '$2M+', metric: 'Annual Savings', description: 'Institutions save significantly through operational efficiency and resource optimization.' },
             ].map((stat, i) => (
               <div key={i} className="bg-white border border-[#e0e0e0] p-6 text-center">
-                <p className="text-4xl font-bold text-[#056CB8] mb-2">{stat.number}</p>
+                <p className="text-4xl font-bold text-[#056CB8] mb-2"><CountUp value={stat.number} /></p>
                 <p className="text-sm font-semibold text-[#111111] mb-2">{stat.metric}</p>
                 <p className="text-xs text-[#555555] leading-relaxed">{stat.description}</p>
               </div>
@@ -208,9 +216,11 @@ export default function HigherEducationPage() {
       {/* ===== SECTION 6: PLATFORM CAPABILITIES ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-4xl mx-auto">
+          <div data-animate="fade-up">
           <h2 className="text-3xl max-md:text-2xl font-bold text-[#111111] text-center mb-16">
             Everything You Need for Modern Education
           </h2>
+          </div>
           <div className="grid grid-cols-3 max-md:grid-cols-1 gap-x-12 max-md:gap-4 gap-y-4 max-w-4xl mx-auto">
             {capabilities.map((item, i) => (
               <div key={i} className="flex items-center gap-3 py-2">
@@ -224,7 +234,7 @@ export default function HigherEducationPage() {
 
       {/* ===== SECTION 7: CTA ===== */}
       <section className="bg-[#111111] text-white py-24 px-6">
-        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12 items-center max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12 items-center max-w-5xl mx-auto" data-animate="fade-up">
           <div>
             <h2 className="text-3xl max-md:text-2xl font-bold leading-tight mb-4">
               Transform Your Campus Today
@@ -235,9 +245,9 @@ export default function HigherEducationPage() {
             <div className="flex items-center gap-6 flex-wrap">
               <a
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-3.5 bg-[#056CB8] text-white font-semibold text-sm uppercase tracking-[0.05em] rounded-none"
+                className="group inline-flex items-center justify-center px-8 py-3.5 bg-[#056CB8] text-white font-semibold text-sm uppercase tracking-[0.05em] rounded-none"
               >
-                Get Started
+                Get Started <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
               </a>
               <a href="/resources/help-center" className="text-white text-sm font-medium underline underline-offset-4">
                 Talk to an Expert
@@ -251,7 +261,7 @@ export default function HigherEducationPage() {
               { value: '24/7', label: 'Support' },
             ].map((item, i) => (
               <div key={i} className="border-l-2 border-[#056CB8] pl-5 py-2">
-                <p className="text-2xl font-bold text-white mb-1">{item.value}</p>
+                <p className="text-2xl font-bold text-white mb-1"><CountUp value={item.value} /></p>
                 <p className="text-sm text-white/60">{item.label}</p>
               </div>
             ))}

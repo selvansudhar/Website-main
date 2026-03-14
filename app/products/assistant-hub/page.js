@@ -112,7 +112,7 @@ export default function AssistantHub() {
                 </div>
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
                     {/* Left — Text */}
-                    <div>
+                    <div data-animate="fade-up">
                         <div className="inline-flex items-center gap-2 bg-white border border-[#e0e0e0] rounded-[100px] px-4 py-1.5 mb-6 w-fit max-lg:mx-auto max-sm:px-3 max-sm:py-1">
                             <span className="w-1.5 h-1.5 rounded-full bg-[#056CB8]"></span>
                             <span className="text-[0.82rem] font-medium text-[#555555]">16 AI Assistants</span>
@@ -124,12 +124,12 @@ export default function AssistantHub() {
                             Deploy specialized AI assistants across sales, finance, HR, support, and more. They learn your data, follow your rules, and work 24/7 — no code required.
                         </p>
                         <div className="flex gap-4 max-lg:justify-center max-sm:flex-col max-sm:items-center">
-                            <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
+                            <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                                 Deploy assistants
-                            </button>
+                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                             <button className="bg-transparent text-[#111111] border-2 border-[#e0e0e0] px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
                                 Watch demo
-                            </button>
+                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                         </div>
                     </div>
 
@@ -190,16 +190,16 @@ export default function AssistantHub() {
             {/* ─── Section 2: How It Works — Central Hub + 4 Spoke Cards ─── */}
             <section className="py-28 px-12 bg-[#f5f5f5] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
                 <div className="max-w-[1200px] mx-auto">
-                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]">
+                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]" data-animate="fade-up">
                         How it works
                     </h2>
-                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center mb-16 max-w-[600px] mx-auto max-md:text-base max-sm:text-[0.9rem] max-sm:mb-10">
+                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center mb-16 max-w-[600px] mx-auto max-md:text-base max-sm:text-[0.9rem] max-sm:mb-10" data-animate="fade-up">
                         From connection to insight in four simple steps
                     </p>
 
                     <div className="relative">
                         {/* 4 Step Cards */}
-                        <div className="grid grid-cols-4 gap-6 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-4">
+                        <div className="grid grid-cols-4 gap-6 max-lg:grid-cols-2 max-sm:grid-cols-1 max-sm:gap-4" data-animate="fade-up">
                             {howItWorks.map((item) => (
                                 <div key={item.step} className="bg-white border border-[#e0e0e0] rounded-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] hover:border-[#111111] max-sm:p-5">
                                     <div className="flex items-center gap-3 mb-4">
@@ -220,10 +220,10 @@ export default function AssistantHub() {
             {/* ─── Section 3: Assistant Roster — Left Directory + Right Detail Panel ─── */}
             <section className="py-28 px-12 bg-white max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
                 <div className="max-w-[1200px] mx-auto">
-                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]">
+                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]" data-animate="fade-up">
                         Meet your AI workforce
                     </h2>
-                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center mb-16 max-w-[600px] mx-auto max-md:text-base max-sm:text-[0.9rem] max-sm:mb-10">
+                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center mb-16 max-w-[600px] mx-auto max-md:text-base max-sm:text-[0.9rem] max-sm:mb-10" data-animate="fade-up">
                         16 specialized assistants, each trained for a specific business function
                     </p>
 
@@ -284,10 +284,10 @@ export default function AssistantHub() {
             {/* ─── Section 4: Staggered Two-Row Grid — Intelligence Features ─── */}
             <section className="py-28 px-12 bg-[#f5f5f5] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
                 <div className="max-w-[1200px] mx-auto">
-                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]">
+                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]" data-animate="fade-up">
                         What makes each assistant smart
                     </h2>
-                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center mb-16 max-w-[600px] mx-auto max-md:text-base max-sm:text-[0.9rem] max-sm:mb-10">
+                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center mb-16 max-w-[600px] mx-auto max-md:text-base max-sm:text-[0.9rem] max-sm:mb-10" data-animate="fade-up">
                         Built-in intelligence that goes far beyond simple automation
                     </p>
 
@@ -322,10 +322,10 @@ export default function AssistantHub() {
             {/* ─── Section 5: Deployment Journey — Vertical Alternating Timeline ─── */}
             <section className="py-28 px-12 bg-white max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
                 <div className="max-w-[900px] mx-auto">
-                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]">
+                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]" data-animate="fade-up">
                         Your deployment journey
                     </h2>
-                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center mb-16 max-w-[600px] mx-auto max-md:text-base max-sm:text-[0.9rem] max-sm:mb-10">
+                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center mb-16 max-w-[600px] mx-auto max-md:text-base max-sm:text-[0.9rem] max-sm:mb-10" data-animate="fade-up">
                         From zero to fully automated in under a week
                     </p>
 
@@ -385,10 +385,10 @@ export default function AssistantHub() {
             {/* ─── Section 6: Integration Map — Single Oversized Card ─── */}
             <section className="py-28 px-12 bg-[#f5f5f5] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
                 <div className="max-w-[1200px] mx-auto">
-                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]">
+                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]" data-animate="fade-up">
                         Connected to your entire Zynex ecosystem
                     </h2>
-                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center mb-16 max-w-[600px] mx-auto max-md:text-base max-sm:text-[0.9rem] max-sm:mb-10">
+                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center mb-16 max-w-[600px] mx-auto max-md:text-base max-sm:text-[0.9rem] max-sm:mb-10" data-animate="fade-up">
                         Every module, every assistant — working together
                     </p>
 
@@ -416,30 +416,30 @@ export default function AssistantHub() {
             </section>
 
             {/* ─── Section 7: Split Dark CTA with Stats Sidebar ─── */}
-            <section className="py-28 px-12 bg-[#111111] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
+            <section className="py-28 px-12 bg-[#056CB8] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
                 <div className="max-w-[1200px] mx-auto grid grid-cols-[1.2fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10">
                     {/* Left — CTA */}
-                    <div>
+                    <div data-animate="fade-left">
                         <h2 className="text-[2.2rem] font-extrabold text-white mb-4 tracking-[-0.02em] leading-[1.2] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                             Ready to deploy your AI workforce?
                         </h2>
                         <p className="text-[1.05rem] text-white/60 leading-relaxed mb-10 max-w-[500px] max-lg:mx-auto max-md:text-base max-sm:text-[0.9rem]">
                             Start with one assistant or deploy all 16. No code, no consultants — just results from day one.
                         </p>
-                        <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-lg:mx-auto max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
+                        <button className="bg-white text-[#056CB8] border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:bg-white/90 max-lg:mx-auto max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
                             Talk Sales
-                        </button>
+                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                     </div>
 
                     {/* Right — Stats */}
-                    <div className="grid grid-cols-2 gap-6 max-sm:gap-4">
+                    <div className="grid grid-cols-2 gap-6 max-sm:gap-4" data-animate="fade-right">
                         {[
                             { value: '16', label: 'Specialized assistants' },
                             { value: '<5 min', label: 'Average deploy time' },
                             { value: '85%', label: 'Task reduction rate' },
                             { value: '0', label: 'Lines of code needed' },
                         ].map((stat) => (
-                            <div key={stat.label} className="border-l-2 border-[#056CB8] pl-5 py-2">
+                            <div key={stat.label} className="border-l-2 border-white/30 pl-5 py-2">
                                 <div className="text-[1.8rem] font-extrabold text-white mb-0.5 max-sm:text-[1.4rem]">{stat.value}</div>
                                 <div className="text-[0.8rem] text-white/50 font-semibold max-sm:text-[0.72rem]">{stat.label}</div>
                             </div>

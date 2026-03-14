@@ -86,7 +86,7 @@ export default function HelpCenter() {
 
       {/* ===== HERO ===== */}
       <section className="bg-[#056CB8] text-white pt-40 max-md:pt-24 pb-20 px-6">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center" data-animate="fade-up">
           <p className="text-sm text-white/50 mb-8">Home / Resources / Help Center</p>
           <span className="inline-block bg-white/10 text-white/70 text-xs font-semibold tracking-[0.1em] uppercase px-4 py-2 mb-6">
             HELP CENTER
@@ -124,14 +124,16 @@ export default function HelpCenter() {
       {/* ===== CATEGORIES ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
-            Browse by Category
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            Find help organized by product, feature, or topic.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
+              Browse by Category
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              Find help organized by product, feature, or topic.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {categories.map((cat, i) => (
               <div
                 key={i}
@@ -157,7 +159,7 @@ export default function HelpCenter() {
       {/* ===== POPULAR ARTICLES ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="flex max-md:flex-col justify-between items-end mb-12 gap-4">
+          <div className="flex max-md:flex-col justify-between items-end mb-12 gap-4" data-animate="fade-up">
             <div>
               <h2 className="text-[2.25rem] font-bold text-[#111111] max-md:text-[1.75rem]">Popular Articles</h2>
               <p className="text-[#555555] mt-2">Most read by the Zynex community this month</p>
@@ -165,7 +167,7 @@ export default function HelpCenter() {
             <a href="/contact" className="text-sm text-[#056CB8] font-semibold">View all articles &rarr;</a>
           </div>
 
-          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4">
+          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4" data-animate="fade-up" data-delay="2">
             {popularArticles.map((article, i) => (
               <div
                 key={i}
@@ -190,12 +192,12 @@ export default function HelpCenter() {
       {/* ===== FAQ ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16" data-animate="fade-up">
             <h2 className="text-[2.25rem] font-bold text-[#111111] mb-4 max-md:text-[1.75rem]">Frequently Asked Questions</h2>
             <p className="text-[#555555]">Quick answers to the most common questions</p>
           </div>
 
-          <div className="flex flex-col gap-0">
+          <div className="flex flex-col gap-0" data-animate="fade-up">
             {faqs.map((faq, i) => (
               <div
                 key={i}
@@ -223,10 +225,12 @@ export default function HelpCenter() {
       {/* ===== CONTACT SUPPORT ===== */}
       <section className="bg-[#111111] text-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-center mb-4 max-md:text-[1.75rem]">Still Need Help?</h2>
-          <p className="text-white/60 text-center mb-16">Our support team is here for you — pick the channel that works best.</p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-center mb-4 max-md:text-[1.75rem]">Still Need Help?</h2>
+            <p className="text-white/60 text-center mb-16">Our support team is here for you — pick the channel that works best.</p>
+          </div>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
               {
                 icon: 'bi-headset',

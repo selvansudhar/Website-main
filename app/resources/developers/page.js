@@ -107,7 +107,7 @@ export default function Developers() {
         <div className="max-w-6xl mx-auto">
           <p className="text-sm text-white/50 mb-8">Home / Resources / Developers</p>
           <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-16 items-center">
-            <div>
+            <div data-animate="fade-left">
               <span className="inline-block bg-white/10 text-white/70 text-xs font-semibold tracking-[0.1em] uppercase px-4 py-2 mb-6">
                 FOR DEVELOPERS
               </span>
@@ -119,8 +119,8 @@ export default function Developers() {
                 Zynex builds enterprise-grade software using modern technologies. Explore our tech stack, integration capabilities, and custom development services.
               </p>
               <div className="flex gap-4 flex-wrap">
-                <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-                  Start a Project
+                <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+                  Start a Project <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
                 </a>
                 <a href="/solutions/ai-solutions" className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white/70 font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
                   Explore Solutions
@@ -129,7 +129,7 @@ export default function Developers() {
             </div>
 
             {/* Terminal-style mockup */}
-            <div className="bg-[#0a0a0a] border border-white/10 overflow-hidden max-lg:max-w-lg">
+            <div className="bg-[#0a0a0a] border border-white/10 overflow-hidden max-lg:max-w-lg" data-animate="fade-right">
               <div className="bg-white/5 border-b border-white/10 px-4 py-3 flex items-center gap-3">
                 <div className="flex gap-1.5">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#F60014]"></span>
@@ -158,12 +158,14 @@ export default function Developers() {
       {/* ===== TECH STACK ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
-            Our Tech Stack
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            We choose the right tools for each challenge — modern, battle-tested technologies that scale.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
+              Our Tech Stack
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              We choose the right tools for each challenge — modern, battle-tested technologies that scale.
+            </p>
+          </div>
 
           {/* Category tabs */}
           <div className="flex gap-3 justify-center mb-12 flex-wrap">
@@ -183,7 +185,7 @@ export default function Developers() {
           </div>
 
           {/* Tools grid */}
-          <div className="grid grid-cols-4 max-md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-4 max-md:grid-cols-2 gap-4" data-animate="fade-up" data-delay="2">
             {techStack[activeStack].tools.map((tool, i) => (
               <div key={i} className="bg-white border border-[#e0e0e0] p-6 text-center hover:border-[#056CB8] transition-colors">
                 <p className="text-base font-bold text-[#111111]">{tool}</p>
@@ -197,14 +199,16 @@ export default function Developers() {
       {/* ===== INTEGRATION CAPABILITIES ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
-            Integration Capabilities
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            Connect Zynex with the tools your team already uses. Pre-built integrations and custom connectors for seamless workflows.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
+              Integration Capabilities
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              Connect Zynex with the tools your team already uses. Pre-built integrations and custom connectors for seamless workflows.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {integrations.map((item, i) => (
               <div key={i} className="border border-[#e0e0e0] p-6 hover:border-[#056CB8] transition-colors">
                 <div className="w-11 h-11 bg-[#056CB8]/10 flex items-center justify-center mb-4">
@@ -221,14 +225,16 @@ export default function Developers() {
       {/* ===== DEVELOPMENT SERVICES ===== */}
       <section className="bg-[#111111] text-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-center mb-4 max-md:text-[1.75rem]">
-            Custom Development Services
-          </h2>
-          <p className="text-white/60 text-center mb-16 max-w-2xl mx-auto">
-            Beyond our platform — we build custom software tailored to your business needs.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-center mb-4 max-md:text-[1.75rem]">
+              Custom Development Services
+            </h2>
+            <p className="text-white/60 text-center mb-16 max-w-2xl mx-auto">
+              Beyond our platform — we build custom software tailored to your business needs.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {devServices.map((service, i) => (
               <a key={i} href={service.link} className="group bg-white/5 border border-white/10 p-8 hover:bg-white/10 hover:border-white/20 transition-colors">
                 <div className="w-11 h-11 bg-[#056CB8]/20 flex items-center justify-center mb-4">
@@ -246,14 +252,16 @@ export default function Developers() {
       {/* ===== OUR PROCESS ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
-            How We Build
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            A proven development process that balances speed with quality.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
+              How We Build
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              A proven development process that balances speed with quality.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-4 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-6">
+          <div className="grid grid-cols-4 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {processSteps.map((step, i) => (
               <div key={i} className="border border-[#e0e0e0] p-6">
                 <span className="text-3xl font-bold text-[#e0e0e0] block mb-4">{step.num}</span>
@@ -268,14 +276,16 @@ export default function Developers() {
       {/* ===== PLATFORM MODULES ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
-            Built-In Platform Modules
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            The Zynex platform comes with 8 integrated modules — each designed to work together seamlessly.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
+              Built-In Platform Modules
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              The Zynex platform comes with 8 integrated modules — each designed to work together seamlessly.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-4">
+          <div className="grid grid-cols-3 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-4" data-animate="fade-up" data-delay="2">
             {[
               { name: 'YenAI', desc: 'AI Digital Twin that responds like you', href: '/products/yenai' },
               { name: 'Assistant Hub', desc: 'Deploy AI assistants across departments', href: '/products/assistant-hub' },
@@ -302,7 +312,7 @@ export default function Developers() {
 
       {/* ===== CTA ===== */}
       <section className="bg-[#111111] text-white py-24 px-6 text-center">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">
             Let's Build Something Great
           </h2>
@@ -310,8 +320,8 @@ export default function Developers() {
             Whether you need to integrate Zynex with your existing systems or build a custom application from scratch — our engineering team is ready.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Talk to Our Team
+            <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+              Talk to Our Team <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="/enterprise" className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white/70 font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
               Explore the Platform

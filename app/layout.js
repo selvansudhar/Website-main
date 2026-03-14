@@ -1,6 +1,7 @@
 import { inter, outfit, bricolage, instrumentSerif, plusJakarta } from './fonts';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import ScrollAnimator from '@/components/ScrollAnimator';
 import './globals.css';
 
 export const metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
+        <ScrollAnimator />
       </body>
     </html>
   );

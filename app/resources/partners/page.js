@@ -70,7 +70,7 @@ export default function Partners() {
 
       {/* ===== HERO ===== */}
       <section className="bg-[#111111] text-white pt-40 max-md:pt-24 pb-24 px-6 text-center">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto" data-animate="fade-up">
           <p className="text-sm text-white/50 mb-8">Home / Resources / Partners</p>
           <span className="inline-block bg-white/10 text-white/70 text-xs font-semibold tracking-[0.1em] uppercase px-4 py-2 mb-6">
             PARTNER PROGRAM
@@ -82,8 +82,8 @@ export default function Partners() {
             Join the Zynex Partner Program and unlock new revenue streams, co-selling opportunities, and world-class support to accelerate your business.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Become a Partner
+            <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+              Become a Partner <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white/70 font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
               Partner Login
@@ -94,7 +94,7 @@ export default function Partners() {
 
       {/* ===== STATS BAR ===== */}
       <section className="bg-[#056CB8] text-white py-6 px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 text-center">
+        <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 text-center" data-animate="fade-in">
           {stats.map((stat, i) => (
             <div key={i}>
               <p className="text-2xl font-bold">{stat.value}</p>
@@ -107,12 +107,14 @@ export default function Partners() {
       {/* ===== PARTNER TYPES ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
-            Find Your Path
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            Three partnership models designed for different business types and growth strategies.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
+              Find Your Path
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              Three partnership models designed for different business types and growth strategies.
+            </p>
+          </div>
 
           {/* Type selector tabs */}
           <div className="flex gap-3 justify-center mb-12 max-md:flex-col max-md:items-center">
@@ -134,18 +136,18 @@ export default function Partners() {
 
           {/* Active type details */}
           <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-12 items-start">
-            <div>
+            <div data-animate="fade-left">
               <div className="w-14 h-14 bg-[#056CB8]/10 flex items-center justify-center mb-6">
                 <i className={`bi ${partnerTypes[activeType].icon} text-2xl text-[#056CB8]`}></i>
               </div>
               <h3 className="text-2xl font-bold text-[#111111] mb-4">{partnerTypes[activeType].title}</h3>
               <p className="text-[#555555] leading-relaxed text-base mb-8">{partnerTypes[activeType].desc}</p>
-              <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-                Apply Now
+              <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+                Apply Now <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
               </a>
             </div>
 
-            <div className="bg-[#f5f5f5] border border-[#e0e0e0] p-8">
+            <div className="bg-[#f5f5f5] border border-[#e0e0e0] p-8" data-animate="fade-right">
               <h4 className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#056CB8] mb-6 pb-3 border-b border-[#e0e0e0]">
                 Key Benefits
               </h4>
@@ -165,14 +167,16 @@ export default function Partners() {
       {/* ===== PARTNER TIERS ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
-            Partner Tiers
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            Grow your partnership and unlock more value at every level.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
+              Partner Tiers
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              Grow your partnership and unlock more value at every level.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {tiers.map((tier, i) => (
               <div
                 key={i}
@@ -206,11 +210,11 @@ export default function Partners() {
       {/* ===== TESTIMONIALS ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem]">
+          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem]" data-animate="fade-up">
             Partner Stories
           </h2>
 
-          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {testimonials.map((t, i) => (
               <div key={i} className="border border-[#e0e0e0] p-8">
                 <p className="text-6xl text-[#056CB8]/15 font-serif leading-none mb-2">&ldquo;</p>
@@ -228,14 +232,16 @@ export default function Partners() {
       {/* ===== INDUSTRY FOCUS ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
-            Industries We Serve Together
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            Our partners help Zynex deliver industry-specific solutions across five key verticals.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
+              Industries We Serve Together
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              Our partners help Zynex deliver industry-specific solutions across five key verticals.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-5 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-4">
+          <div className="grid grid-cols-5 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-4" data-animate="fade-up" data-delay="2">
             {[
               { icon: 'bi-activity', name: 'Healthcare' },
               { icon: 'bi-bar-chart-line-fill', name: 'Financial Services' },
@@ -256,7 +262,7 @@ export default function Partners() {
 
       {/* ===== CTA ===== */}
       <section className="bg-[#111111] text-white py-24 px-6 text-center">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">
             Ready to Partner with Zynex?
           </h2>
@@ -264,8 +270,8 @@ export default function Partners() {
             Apply today and our partner team will get back to you within 48 hours.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
-            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Apply to Partner Program
+            <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+              Apply to Partner Program <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white/70 font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
               Download Partner Guide

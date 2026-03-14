@@ -24,7 +24,7 @@ export default function MarketingAutomation() {
                     <span className="text-[#056CB8] uppercase">Marketing Automation</span>
                 </div>
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
-                <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-6" data-animate="fade-up">
                     <div className="inline-flex items-center gap-2 bg-white border border-[#e0e0e0] rounded-[100px] px-4 py-1.5 w-fit max-lg:mx-auto max-sm:px-3 max-sm:py-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#F60014]"></span>
                         <span className="text-[0.82rem] font-medium text-[#555555]">AI-Powered Campaigns</span>
@@ -36,12 +36,12 @@ export default function MarketingAutomation() {
                         Tell us about your business, pick your platforms, and let AI generate everything — posters, ad copy, Instagram captions, email sequences, and Canva-ready designs. One input, every format.
                     </p>
                     <div className="flex gap-4 mt-2 max-lg:justify-center max-sm:flex-col max-sm:items-center">
-                        <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
+                        <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                             Launch a campaign
-                        </button>
+                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                         <button className="bg-transparent text-[#111111] border-2 border-[#e0e0e0] px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
                             See examples
-                        </button>
+                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                     </div>
                     <p className="text-[0.78rem] text-[#888888] m-0">
                         10x faster than manual design &nbsp;&bull;&nbsp; 6+ platforms &nbsp;&bull;&nbsp; 50+ template styles
@@ -118,7 +118,7 @@ export default function MarketingAutomation() {
 
             {/* What AI Generates */}
             <section className="py-28 px-12 bg-[#f5f5f5] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <div className="text-center max-w-[900px] mx-auto mb-20 max-sm:mb-12">
+                <div className="text-center max-w-[900px] mx-auto mb-20 max-sm:mb-12" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] max-md:text-[1.8rem] max-sm:text-[1.5rem] max-sm:mb-4">
                         One brief. Every asset.
                     </h2>
@@ -127,7 +127,7 @@ export default function MarketingAutomation() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-3 gap-6 max-w-[1400px] mx-auto max-lg:grid-cols-2 max-md:grid-cols-1">
+                <div className="grid grid-cols-3 gap-6 max-w-[1400px] mx-auto max-lg:grid-cols-2 max-md:grid-cols-1" data-animate="fade-up">
                     {[
                         {
                             icon: 'bi bi-bullseye',
@@ -184,7 +184,7 @@ export default function MarketingAutomation() {
 
             {/* Interactive Campaign Builder Steps */}
             <section className="py-28 px-12 bg-white max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <div className="text-center max-w-[900px] mx-auto mb-16 max-sm:mb-10">
+                <div className="text-center max-w-[900px] mx-auto mb-16 max-sm:mb-10" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] max-md:text-[1.8rem] max-sm:text-[1.5rem] max-sm:mb-4">
                         10 inputs. Infinite outputs.
                     </h2>
@@ -198,7 +198,7 @@ export default function MarketingAutomation() {
 
             {/* How It Works — Simple Flow */}
             <section className="py-28 px-12 bg-[#f5f5f5] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-20 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem] max-sm:mb-12">
+                <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-20 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem] max-sm:mb-12" data-animate="fade-up">
                     Brief to live in four steps
                 </h2>
                 <div className="flex items-center justify-center max-w-[1400px] mx-auto gap-6 max-lg:flex-wrap max-md:flex-col max-sm:gap-4">
@@ -243,14 +243,14 @@ export default function MarketingAutomation() {
 
             {/* Use Cases */}
             <section className="py-28 px-12 bg-[#f5f5f5] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]">
+                <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]" data-animate="fade-up">
                     Campaigns that deliver results
                 </h2>
-                <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center max-w-[800px] mx-auto mb-20 max-md:text-base max-sm:text-[0.9rem] max-sm:mb-12">
+                <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center max-w-[800px] mx-auto mb-20 max-md:text-base max-sm:text-[0.9rem] max-sm:mb-12" data-animate="fade-up">
                     Real businesses using Marketing Automation to launch faster and convert more
                 </p>
 
-                <div className="grid grid-cols-3 gap-8 max-w-[1400px] mx-auto max-lg:grid-cols-2 max-md:grid-cols-1 max-sm:gap-6">
+                <div className="grid grid-cols-3 gap-8 max-w-[1400px] mx-auto max-lg:grid-cols-2 max-md:grid-cols-1 max-sm:gap-6" data-animate="fade-up">
                     {[
                         {
                             title: 'Product Launch Campaign',
@@ -289,16 +289,16 @@ export default function MarketingAutomation() {
 
             {/* CTA Section */}
             <section className="py-28 px-12 bg-white max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <div className="text-center max-w-[800px] mx-auto">
+                <div className="text-center max-w-[800px] mx-auto" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                         Stop designing. Start launching.
                     </h2>
                     <p className="text-[1.1rem] text-[#555555] leading-[1.7] mb-10 max-md:text-base max-sm:text-[0.9rem]">
                         Your next campaign is 10 questions away. Let AI handle the creative so you can focus on strategy and results.
                     </p>
-                    <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
+                    <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                         Start your first campaign
-                    </button>
+                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                 </div>
             </section>
         </div>

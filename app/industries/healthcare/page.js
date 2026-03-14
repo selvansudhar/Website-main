@@ -1,3 +1,5 @@
+import CountUp from '@/components/CountUp';
+
 export const metadata = {
   title: 'Healthcare Solutions',
   description:
@@ -83,7 +85,7 @@ export default function HealthcarePage() {
         </p>
         <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-16 max-[480px]:gap-10 items-center max-w-6xl mx-auto">
           {/* Left */}
-          <div>
+          <div data-animate="fade-up">
             <span className="inline-block bg-[#22c55e]/10 text-[#22c55e] text-xs font-semibold tracking-[0.05em] uppercase px-4 py-1.5 rounded-full mb-6">
               Healthcare Solutions
             </span>
@@ -98,9 +100,9 @@ export default function HealthcarePage() {
             <div className="flex flex-wrap gap-4 mb-8">
               <a
                 href="/contact"
-                className="inline-block bg-[#056CB8] text-white px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
+                className="group inline-block bg-[#056CB8] text-white px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
               >
-                Request a Demo
+                Request a Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
               </a>
               <a
                 href="/solutions"
@@ -179,9 +181,11 @@ export default function HealthcarePage() {
       {/* ===== Section 2: Patient Care Flow — Horizontal Pipeline ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
         <div className="max-w-5xl mx-auto">
+          <div data-animate="fade-up">
           <h2 className="text-3xl max-[480px]:text-2xl font-bold text-[#111111] text-center mb-14 max-[480px]:mb-8">
             Streamlined Patient Care Journey
           </h2>
+          </div>
           <div className="flex max-md:flex-col items-center gap-0 max-w-5xl mx-auto overflow-x-auto max-[480px]:items-stretch">
             {careFlowStages.map((stage, i) => (
               <div key={stage.name} className="flex max-md:flex-col items-center max-[480px]:w-full">
@@ -204,10 +208,12 @@ export default function HealthcarePage() {
       {/* ===== Section 3: Core Modules — Left-Accent Cards ===== */}
       <section className="bg-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
         <div className="max-w-5xl mx-auto">
+          <div data-animate="fade-up">
           <h2 className="text-3xl max-[480px]:text-2xl font-bold text-[#111111] text-center mb-14 max-[480px]:mb-8">
             Comprehensive Healthcare Modules
           </h2>
-          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6">
+          </div>
+          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {modules.map((mod) => (
               <div
                 key={mod.title}
@@ -236,7 +242,7 @@ export default function HealthcarePage() {
 
       {/* ===== Section 4: Compliance & Security — Full-Width Dark Banner ===== */}
       <section className="bg-[#111111] text-white py-20 px-6 max-[480px]:px-4 max-[480px]:py-14">
-        <div className="grid grid-cols-5 max-md:grid-cols-1 gap-8 items-center max-w-5xl mx-auto">
+        <div className="grid grid-cols-5 max-md:grid-cols-1 gap-8 items-center max-w-5xl mx-auto" data-animate="fade-up">
           <div className="col-span-3 max-md:col-span-1">
             <h2 className="text-3xl max-[480px]:text-2xl font-bold mb-4">
               Healthcare-Grade Security &amp; Compliance
@@ -272,10 +278,12 @@ export default function HealthcarePage() {
       {/* ===== Section 5: Before vs After — Comparison Table ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
         <div className="max-w-3xl mx-auto">
+          <div data-animate="fade-up">
           <h2 className="text-3xl max-[480px]:text-2xl font-bold text-[#111111] text-center mb-14 max-[480px]:mb-8">
             The Zynex Difference
           </h2>
-          <div className="bg-white border border-[#e0e0e0]">
+          </div>
+          <div className="bg-white border border-[#e0e0e0]" data-animate="fade-up">
             {/* Table Header */}
             <div className="grid grid-cols-2 border-b border-[#e0e0e0]">
               <div className="p-4 text-sm font-bold text-[#555555] uppercase tracking-wider">
@@ -307,10 +315,10 @@ export default function HealthcarePage() {
 
       {/* ===== Section 6: Impact Metrics ===== */}
       <section className="bg-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
-        <div className="grid grid-cols-4 max-md:grid-cols-2 gap-8 max-[480px]:gap-4 max-w-5xl mx-auto text-center">
+        <div className="grid grid-cols-4 max-md:grid-cols-2 gap-8 max-[480px]:gap-4 max-w-5xl mx-auto text-center" data-animate="fade-up">
           {metrics.map((m) => (
             <div key={m.label} className="border-t-2 border-[#056CB8] pt-6 max-[480px]:pt-4">
-              <p className="text-5xl font-bold text-[#056CB8] m-0 mb-2 max-[480px]:text-3xl">{m.value}</p>
+              <p className="text-5xl font-bold text-[#056CB8] m-0 mb-2 max-[480px]:text-3xl"><CountUp value={m.value} /></p>
               <p className="text-sm text-[#555555] m-0 max-[480px]:text-xs">{m.label}</p>
             </div>
           ))}
@@ -319,7 +327,7 @@ export default function HealthcarePage() {
 
       {/* ===== Section 7: CTA ===== */}
       <section className="bg-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16 text-center">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-3xl max-[480px]:text-2xl font-bold text-[#111111] mb-4">
             Ready to Transform Patient Care?
           </h2>
@@ -330,15 +338,15 @@ export default function HealthcarePage() {
           <div className="flex flex-wrap justify-center gap-4 mb-6">
             <a
               href="/contact"
-              className="inline-block bg-[#056CB8] text-white px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
+              className="group inline-block bg-[#056CB8] text-white px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
             >
-              Request a Demo
+              Request a Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a
               href="/contact"
-              className="inline-block border border-[#111111] text-[#111111] px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
+              className="group inline-block border border-[#111111] text-[#111111] px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
             >
-              Talk to Sales
+              Talk to Sales <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
           </div>
           <p className="text-xs text-[#555555] tracking-[0.05em] uppercase font-medium">

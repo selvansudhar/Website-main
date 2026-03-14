@@ -16,7 +16,7 @@ export default function CommunityPage() {
       <section className="bg-[#056CB8] text-white pt-40 max-md:pt-24 pb-24 px-6">
         <div className="max-w-5xl mx-auto">
           <p className="text-sm text-white/50 mb-8 text-center">Home / Resources / Community</p>
-          <div className="text-center max-w-3xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto" data-animate="fade-up">
             <h1 className="text-[3.5rem] font-bold leading-[1.05] mb-6 max-md:text-[2.5rem] max-[480px]:text-[2rem]">
               Build Together. Grow Together.
             </h1>
@@ -25,8 +25,8 @@ export default function CommunityPage() {
               building the future of enterprise technology with Zynex.
             </p>
             <div className="flex justify-center gap-4 flex-wrap">
-              <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#056CB8] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/90 transition-colors">
-                Join the Community
+              <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-white text-[#056CB8] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/90 transition-colors">
+                Join the Community <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
               </a>
               <a href="/resources/developers" className="inline-flex items-center justify-center px-8 py-4 border border-white/50 text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
                 Developer Docs
@@ -35,7 +35,7 @@ export default function CommunityPage() {
           </div>
 
           {/* Community Stats */}
-          <div className="grid grid-cols-4 max-md:grid-cols-2 gap-4 mt-16 max-w-3xl mx-auto">
+          <div className="grid grid-cols-4 max-md:grid-cols-2 gap-4 mt-16 max-w-3xl mx-auto" data-animate="fade-in">
             {[
               { value: '12K+', label: 'Members' },
               { value: '500+', label: 'Contributors' },
@@ -54,14 +54,16 @@ export default function CommunityPage() {
       {/* ===== COMMUNITY SPACES — 3 Large Cards ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
-            Find Your Space
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            Whether you are a developer, a business leader, or an AI enthusiast — there is a place for you.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
+              Find Your Space
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              Whether you are a developer, a business leader, or an AI enthusiast — there is a place for you.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
               {
                 icon: 'bi-lightning-charge-fill',
@@ -104,12 +106,12 @@ export default function CommunityPage() {
       {/* ===== UPCOMING EVENTS ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="flex max-md:flex-col justify-between items-end mb-12 gap-4">
+          <div className="flex max-md:flex-col justify-between items-end mb-12 gap-4" data-animate="fade-up">
             <h2 className="text-[2.25rem] font-bold text-[#111111] max-md:text-[1.75rem]">Upcoming Events</h2>
             <a href="/contact" className="text-sm text-[#056CB8] font-semibold">View all events &rarr;</a>
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4" data-animate="fade-up" data-delay="2">
             {[
               { date: 'Mar 15', month: 'MAR', title: 'Zynex AI Summit 2026', type: 'VIRTUAL', desc: 'Annual community conference — keynotes, workshops, and product roadmap reveals.' },
               { date: 'Mar 22', month: 'MAR', title: 'Building RAG Systems Workshop', type: 'WORKSHOP', desc: 'Hands-on session on implementing retrieval-augmented generation with Zynex AI.' },
@@ -138,11 +140,11 @@ export default function CommunityPage() {
       {/* ===== COMMUNITY HIGHLIGHTS ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem]">
+          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem]" data-animate="fade-up">
             Community Voices
           </h2>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
               { quote: 'The developer forum saved me weeks of work. Got a production-ready RAG implementation in 3 days with community help.', name: 'Alex Rivera', role: 'Senior Engineer, TechCorp' },
               { quote: 'Zynex community events are the best networking opportunity in enterprise AI. Met my last two hires there.', name: 'Priya Nair', role: 'CTO, HealthBridge' },
@@ -164,14 +166,16 @@ export default function CommunityPage() {
       {/* ===== CONTRIBUTE ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
-            Ways to Contribute
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            The community thrives because of people like you. Here is how you can give back.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
+              Ways to Contribute
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              The community thrives because of people like you. Here is how you can give back.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-4 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-6">
+          <div className="grid grid-cols-4 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
               { icon: 'bi-file-earmark-text', title: 'Write', desc: 'Author blog posts, tutorials, or case studies.' },
               { icon: 'bi-headset', title: 'Mentor', desc: 'Help newcomers get started with Zynex tools.' },
@@ -192,15 +196,15 @@ export default function CommunityPage() {
 
       {/* ===== CTA ===== */}
       <section className="bg-[#111111] text-white py-24 px-6 text-center">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">
             Ready to Join?
           </h2>
           <p className="text-white/60 mb-8">
             It takes 30 seconds to create your community account. Start connecting, learning, and building today.
           </p>
-          <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-            Join the Community
+          <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+            Join the Community <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
           </a>
         </div>
       </section>

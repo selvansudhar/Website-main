@@ -35,7 +35,7 @@ export default function BlogPage() {
 
       {/* ===== HERO ===== */}
       <section className="bg-[#111111] text-white pt-40 max-md:pt-24 pb-20 px-6">
-        <div className="max-w-5xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center" data-animate="fade-up">
           <p className="text-sm text-white/50 mb-8">Home / Resources / Blog</p>
           <span className="inline-block bg-white/10 text-white/70 text-xs font-semibold tracking-[0.1em] uppercase px-4 py-2 mb-6">
             ZYNEX BLOG
@@ -67,7 +67,7 @@ export default function BlogPage() {
       {/* ===== FEATURED POST ===== */}
       <section className="bg-white py-16 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12 items-center border border-[#e0e0e0] p-0 overflow-hidden">
+          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12 items-center border border-[#e0e0e0] p-0 overflow-hidden" data-animate="fade-up">
             <div className="bg-[#f5f5f5] h-full min-h-[300px] flex flex-col items-center justify-center">
               <i className="bi bi-file-earmark-text text-5xl text-[#e0e0e0] mb-3"></i>
               <p className="text-sm text-[#e0e0e0]">Featured image</p>
@@ -93,8 +93,8 @@ export default function BlogPage() {
       {/* ===== POST GRID ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2rem] font-bold text-[#111111] mb-12">Latest Articles</h2>
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6">
+          <h2 className="text-[2rem] font-bold text-[#111111] mb-12" data-animate="fade-up">Latest Articles</h2>
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {posts.map((post, i) => (
               <article key={i} className="bg-white border border-[#e0e0e0] flex flex-col hover:border-[#056CB8] transition-colors">
                 <div className="bg-[#f5f5f5] h-40 flex items-center justify-center border-b border-[#e0e0e0]">
@@ -123,7 +123,7 @@ export default function BlogPage() {
 
       {/* ===== NEWSLETTER CTA ===== */}
       <section className="bg-[#056CB8] text-white py-16 px-6">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center" data-animate="fade-up">
           <h2 className="text-2xl font-bold mb-3">Stay in the Loop</h2>
           <p className="text-white/80 mb-8">
             Get the latest insights on AI, engineering, and product updates delivered to your inbox weekly.
@@ -132,8 +132,8 @@ export default function BlogPage() {
             <div className="flex-1 bg-white/10 border border-white/20 px-4 py-3 text-sm text-white/50">
               your@email.com
             </div>
-            <button className="px-6 py-3 bg-white text-[#056CB8] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/90 transition-colors">
-              Subscribe
+            <button className="group px-6 py-3 bg-white text-[#056CB8] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/90 transition-colors">
+              Subscribe <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </button>
           </div>
         </div>

@@ -21,7 +21,7 @@ export default function KnowledgeBase() {
                 </div>
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
                 {/* Left — Text */}
-                <div>
+                <div data-animate="fade-up">
                     <div className="inline-flex items-center gap-2 bg-white border border-[#e0e0e0] rounded-[100px] px-4 py-1.5 mb-6 w-fit max-lg:mx-auto max-sm:px-3 max-sm:py-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-[#056CB8]"></span>
                         <span className="text-[0.82rem] font-medium text-[#555555]">AI-Powered Knowledge</span>
@@ -33,11 +33,8 @@ export default function KnowledgeBase() {
                         Centralize documents, SOPs, policies, and tribal knowledge into one AI-powered hub. Ask anything — get precise answers with source citations, not 50 links to scroll through.
                     </p>
                     <div className="flex gap-4 max-lg:justify-center max-sm:flex-col max-sm:items-center">
-                        <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
-                            Start building
-                        </button>
-                        <button className="bg-transparent text-[#111111] border-2 border-[#e0e0e0] px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
-                            See demo
+                        <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                            Start building <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
                         </button>
                     </div>
                 </div>
@@ -100,7 +97,7 @@ export default function KnowledgeBase() {
 
             {/* Before / After Comparison */}
             <section className="py-28 px-12 bg-[#f5f5f5] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <div className="text-center max-w-[900px] mx-auto mb-20 max-sm:mb-12">
+                <div className="text-center max-w-[900px] mx-auto mb-20 max-sm:mb-12" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] max-md:text-[1.8rem] max-sm:text-[1.5rem] max-sm:mb-4">
                         The difference is night and day
                     </h2>
@@ -109,7 +106,7 @@ export default function KnowledgeBase() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-2 gap-8 max-w-[1100px] mx-auto max-md:grid-cols-1 max-sm:gap-6">
+                <div className="grid grid-cols-2 gap-8 max-w-[1100px] mx-auto max-md:grid-cols-1 max-sm:gap-6" data-animate="fade-up">
                     {/* Without */}
                     <div className="bg-white border border-[#e0e0e0] rounded-md p-8 max-sm:p-6">
                         <div className="flex items-center gap-3 mb-8 max-sm:mb-6">
@@ -162,14 +159,14 @@ export default function KnowledgeBase() {
 
             {/* Bento Grid Features */}
             <section className="py-28 px-12 bg-white max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]">
+                <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]" data-animate="fade-up">
                     Built for teams that hate searching
                 </h2>
-                <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center max-w-[800px] mx-auto mb-20 max-md:text-base max-sm:text-[0.9rem] max-sm:mb-12">
+                <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center max-w-[800px] mx-auto mb-20 max-md:text-base max-sm:text-[0.9rem] max-sm:mb-12" data-animate="fade-up">
                     Every feature designed to get your team from question to answer in seconds
                 </p>
 
-                <div className="grid grid-cols-3 grid-rows-[auto_auto] gap-6 max-w-[1200px] mx-auto max-lg:grid-cols-2 max-md:grid-cols-1">
+                <div className="grid grid-cols-3 grid-rows-[auto_auto] gap-6 max-w-[1200px] mx-auto max-lg:grid-cols-2 max-md:grid-cols-1" data-animate="fade-up">
                     {/* Hero Card — Semantic Search (spans 2 cols, 2 rows) */}
                     <div className="col-span-2 row-span-2 bg-[#f5f5f5] border border-[#e0e0e0] rounded-md p-10 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] hover:border-[#111111] max-lg:col-span-2 max-md:col-span-1 max-md:row-span-1 max-sm:p-6">
                         <div>
@@ -248,14 +245,14 @@ export default function KnowledgeBase() {
             {/* Works With Section */}
             <section className="py-24 px-12 bg-[#f5f5f5] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
                 <div className="max-w-[1200px] mx-auto">
-                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]">
+                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]" data-animate="fade-up">
                         Works with everything you use
                     </h2>
-                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center mb-16 max-md:text-base max-sm:text-[0.9rem] max-sm:mb-10">
+                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center mb-16 max-md:text-base max-sm:text-[0.9rem] max-sm:mb-10" data-animate="fade-up">
                         Upload documents directly or connect with your Zynex apps
                     </p>
 
-                    <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1 max-sm:gap-6">
+                    <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1 max-sm:gap-6" data-animate="fade-up">
                         {/* Document Formats Card */}
                         <div className="bg-white border border-[#e0e0e0] rounded-md p-8 max-sm:p-6">
                             <div className="flex items-center gap-3 mb-6">
@@ -318,15 +315,15 @@ export default function KnowledgeBase() {
 
             {/* CTA Block */}
             <section className="py-28 px-12 bg-white max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <div className="text-center max-w-[800px] mx-auto">
+                <div className="text-center max-w-[800px] mx-auto" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                         Your team&apos;s knowledge deserves better than a shared drive.
                     </h2>
                     <p className="text-[1.1rem] text-[#555555] leading-[1.7] mb-10 max-md:text-base max-sm:text-[0.9rem]">
                         Stop losing institutional knowledge when people leave. Start building a living, searchable brain for your entire organization.
                     </p>
-                    <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
-                        Get started
+                    <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                        Get started <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
                     </button>
                 </div>
             </section>

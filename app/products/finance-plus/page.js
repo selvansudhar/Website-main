@@ -1,4 +1,5 @@
 import FinanceTabs from './FinanceTabs';
+import CountUp from '@/components/CountUp';
 
 export const metadata = {
     title: 'Finance Plus',
@@ -23,7 +24,7 @@ export default function FinancePlus() {
                 </div>
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
                     {/* Left — Text */}
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-6" data-animate="fade-up">
                         <div className="inline-flex items-center gap-2 bg-white border border-[#e0e0e0] rounded-[100px] px-4 py-1.5 w-fit max-lg:mx-auto max-sm:px-3 max-sm:py-1">
                             <span className="w-1.5 h-1.5 rounded-full bg-[#056CB8]"></span>
                             <span className="text-[0.82rem] font-medium text-[#555555]">Integrated Finance Suite</span>
@@ -35,12 +36,12 @@ export default function FinancePlus() {
                             Simplify billing, order processing, and financial management with a single, integrated system designed for accuracy, efficiency, and full GST compliance.
                         </p>
                         <div className="flex gap-4 mt-2 max-lg:justify-center max-sm:flex-col max-sm:items-center">
-                            <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
+                            <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                                 Talk Sales
-                            </button>
+                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                             <button className="bg-transparent text-[#111111] border-2 border-[#e0e0e0] px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
                                 See demo
-                            </button>
+                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                         </div>
                         <p className="text-[0.78rem] text-[#888888] m-0">
                             Trusted by 500+ businesses &nbsp;&bull;&nbsp; GST-ready &nbsp;&bull;&nbsp; Setup in minutes
@@ -126,7 +127,7 @@ export default function FinancePlus() {
                     ].map((stat) => (
                         <div key={stat.label} className="text-center">
                             <div className="text-[2.4rem] font-extrabold text-[#111111] leading-none tracking-tight max-sm:text-[2rem]">
-                                {stat.value}<span className="text-[#056CB8]">{stat.suffix}</span>
+                                <CountUp value={stat.value} /><span className="text-[#056CB8]">{stat.suffix}</span>
                             </div>
                             <div className="text-[0.82rem] text-[#555555] font-medium mt-2">{stat.label}</div>
                         </div>
@@ -139,7 +140,7 @@ export default function FinancePlus() {
 
             {/* Benefits — Alternating Rows */}
             <section className="max-w-[1400px] mx-auto px-12 py-32 max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-12">
-                <div className="text-center mb-20 max-sm:mb-12">
+                <div className="text-center mb-20 max-sm:mb-12" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] mb-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                         Why businesses choose an integrated finance suite
                     </h2>
@@ -216,7 +217,7 @@ export default function FinancePlus() {
                 <div className="max-w-[1400px] mx-auto px-12 py-28 max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-12">
                     <div className="grid grid-cols-[1fr_1fr] gap-20 items-center max-lg:grid-cols-1 max-lg:gap-12">
                         {/* Left */}
-                        <div>
+                        <div data-animate="fade-left">
                             <div className="inline-flex items-center gap-2 border border-white/20 rounded-[100px] px-4 py-1.5 mb-6 max-sm:px-3 max-sm:py-1">
                                 <i className="bi bi-shield-check text-[#22c55e] text-xs"></i>
                                 <span className="text-[0.82rem] font-medium text-white/70">Enterprise-Grade Security</span>
@@ -230,7 +231,7 @@ export default function FinancePlus() {
                         </div>
 
                         {/* Right — Compliance Cards */}
-                        <div className="grid grid-cols-2 gap-4 max-sm:gap-3">
+                        <div className="grid grid-cols-2 gap-4 max-sm:gap-3" data-animate="fade-right">
                             {[
                                 { icon: 'bi-shield-fill-check', title: 'GST Compliant', desc: 'End-to-end GST support with automated calculations and e-invoicing.' },
                                 { icon: 'bi-lock-fill', title: 'Data Encryption', desc: 'AES-256 encryption at rest and TLS 1.3 in transit.' },
@@ -250,16 +251,16 @@ export default function FinancePlus() {
 
             {/* CTA Section */}
             <section className="py-32 px-12 bg-white flex justify-center items-center w-full max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <div className="max-w-[680px] w-full text-center flex flex-col items-center gap-6 max-sm:gap-4">
+                <div className="max-w-[680px] w-full text-center flex flex-col items-center gap-6 max-sm:gap-4" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                         Ready to streamline your business finance?
                     </h2>
                     <p className="text-[1.05rem] text-[#555555] leading-relaxed max-sm:text-[0.9rem]">
                         Experience the power of a truly integrated finance suite. Start transforming your business operations with Zynex Finance Plus today.
                     </p>
-                    <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
+                    <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                         Get started now
-                    </button>
+                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                 </div>
             </section>
         </div>

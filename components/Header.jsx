@@ -154,7 +154,7 @@ const Header = () => {
 
                                 {/* Sidebar promo */}
                                 <div>
-                                    <div className="promo-card-gradient rounded-2xl p-8 text-white flex flex-col gap-6 min-h-[240px] shadow-[0_8px_24px_rgba(45,27,78,0.4)] mt-10">
+                                    <div className="promo-card-gradient rounded-2xl p-8 text-white flex flex-col gap-6 min-h-[320px] shadow-[0_8px_24px_rgba(45,27,78,0.4)] mt-10">
                                         <div className="flex flex-col items-center gap-1">
                                             <span className="text-5xl font-bold tracking-[0.05em] leading-none promo-title-gradient">IVA</span>
                                         </div>
@@ -177,8 +177,8 @@ const Header = () => {
                     >
                         <span className="text-dark no-underline text-[0.95rem] font-medium relative transition-colors duration-300 cursor-pointer hover:text-primary nav-link-arrow" role="menuitem" aria-haspopup="true" aria-expanded={activeMenu === 'solutions'} tabIndex="0" onMouseEnter={() => setActiveMenu('solutions')} onKeyDown={(e) => handleNavKeyDown(e, 'solutions')}>Solutions</span>
                         <div className="mega-menu mega-menu-solutions" onMouseEnter={() => setActiveMenu('solutions')} onMouseLeave={closeMenu}>
-                            <div className="mega-menu-content-inner max-w-[1400px] mx-auto">
-                                <div className="grid grid-cols-2 gap-12 p-8 pt-6 bg-bg-off border-r border-border-light relative pb-16">
+                            <div className="mega-menu-content-inner max-w-[1400px] mx-auto px-12">
+                                <div className="grid grid-cols-2 gap-12 pt-6 pb-16 relative">
                                     <div>
                                         <div className="text-[0.8rem] font-extrabold text-subtle tracking-[0.1em] mb-5">INDUSTRIES</div>
                                         <ul className="list-none flex flex-col gap-3">
@@ -243,8 +243,8 @@ const Header = () => {
                     >
                         <span className="text-dark no-underline text-[0.95rem] font-medium relative transition-colors duration-300 cursor-pointer hover:text-primary nav-link-arrow" role="menuitem" aria-haspopup="true" aria-expanded={activeMenu === 'resources'} tabIndex="0" onMouseEnter={() => setActiveMenu('resources')} onKeyDown={(e) => handleNavKeyDown(e, 'resources')}>Resources</span>
                         <div className="mega-menu mega-menu-solutions" onMouseEnter={() => setActiveMenu('resources')} onMouseLeave={closeMenu}>
-                            <div className="mega-menu-content-inner max-w-[1400px] mx-auto">
-                                <div className="grid grid-cols-2 gap-6 p-8 pt-6 bg-bg-off border-r border-border-light relative pb-16">
+                            <div className="mega-menu-content-inner max-w-[1400px] mx-auto px-12">
+                                <div className="grid grid-cols-2 gap-6 pt-6 pb-16 relative">
                                     <div>
                                         <div className="text-[0.8rem] font-extrabold text-subtle tracking-[0.1em] mb-5">EXPLORE</div>
                                         <ul className="list-none flex flex-col gap-3">

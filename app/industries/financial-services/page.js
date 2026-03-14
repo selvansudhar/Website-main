@@ -1,3 +1,5 @@
+import CountUp from '@/components/CountUp';
+
 export const metadata = {
   title: 'Financial Services Solutions | Zynex',
   description: 'Secure, compliant fintech solutions for banking, insurance, and investment management with AI-driven risk analysis.',
@@ -17,7 +19,7 @@ export default function FinancialServicesPage() {
         <div className="max-w-6xl mx-auto">
           <p className="text-sm text-white/50 mb-8">Home / Industries / Financial Services</p>
           <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-16 items-center">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6" data-animate="fade-up">
               <span className="inline-block bg-white/10 text-white/70 text-xs font-semibold tracking-[0.1em] uppercase px-4 py-2 w-fit">
                 FINANCIAL SERVICES
               </span>
@@ -30,8 +32,8 @@ export default function FinancialServicesPage() {
                 deliver exceptional customer experiences.
               </p>
               <div className="flex gap-4 flex-wrap mt-2">
-                <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-                  Schedule a Demo
+                <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+                  Schedule a Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
                 </a>
                 <a href="/solutions" className="inline-flex items-center justify-center px-8 py-4 border border-white text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
                   Explore Solutions
@@ -85,7 +87,7 @@ export default function FinancialServicesPage() {
 
       {/* ===== METRICS RIBBON ===== */}
       <section className="bg-[#056CB8] text-white py-6 px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 text-center">
+        <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 text-center" data-animate="fade-up">
           {[
             { value: '99.99%', label: 'Uptime' },
             { value: '$2.4B+', label: 'Processed' },
@@ -93,7 +95,7 @@ export default function FinancialServicesPage() {
             { value: '200+', label: 'Institutions' },
           ].map((stat, i) => (
             <div key={i}>
-              <p className="text-2xl font-bold">{stat.value}</p>
+              <CountUp value={stat.value} className="text-2xl font-bold" />
               <p className="text-xs text-white/80 uppercase tracking-wider mt-1">{stat.label}</p>
             </div>
           ))}
@@ -103,14 +105,16 @@ export default function FinancialServicesPage() {
       {/* ===== OVERLAPPING CARD STACK ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-4xl mx-auto">
+          <div data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
             Comprehensive Financial Solutions
           </h2>
           <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
             Three pillars of intelligent financial technology, designed to work together seamlessly.
           </p>
+          </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col" data-animate="fade-up" data-delay="2">
             {[
               {
                 num: '01',
@@ -166,14 +170,16 @@ export default function FinancialServicesPage() {
       {/* ===== BENTO SECURITY GRID ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
+          <div data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
             Enterprise-Grade Security
           </h2>
           <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
             Built from the ground up for the security demands of financial services.
           </p>
+          </div>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-4">
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-4" data-animate="fade-up" data-delay="2">
             {/* Large card spanning 2 cols and 2 rows */}
             <div className="col-span-2 row-span-2 max-md:col-span-1 max-md:row-span-1 bg-white border border-[#e0e0e0] p-8">
               <i className="bi bi-lock-fill text-3xl text-[#056CB8] mb-4 block"></i>
@@ -214,12 +220,14 @@ export default function FinancialServicesPage() {
       {/* ===== INTEGRATION ECOSYSTEM ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
+          <div data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
             Seamless Integration Ecosystem
           </h2>
           <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
             Connect with your existing financial infrastructure through pre-built connectors.
           </p>
+          </div>
 
           <div className="flex flex-col items-center mb-12">
             <div className="w-32 h-32 rounded-full bg-[#056CB8] flex items-center justify-center mb-8">
@@ -251,7 +259,7 @@ export default function FinancialServicesPage() {
 
       {/* ===== ROI CALCULATOR PREVIEW ===== */}
       <section className="bg-[#111111] text-white py-24 px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-2 max-md:grid-cols-1 gap-16 items-center">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 max-md:grid-cols-1 gap-16 items-center" data-animate="fade-up">
           <div>
             <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">Measure Your ROI</h2>
             <p className="text-white/60 leading-relaxed mb-6">
@@ -273,12 +281,12 @@ export default function FinancialServicesPage() {
               ].map((row, i) => (
                 <div key={i} className="flex items-center justify-between py-3 border-b border-white/10 last:border-b-0">
                   <span className="text-sm text-white/50">{row.label}</span>
-                  <span className={`text-lg font-bold ${row.color}`}>{row.value}</span>
+                  <CountUp value={row.value} className={`text-lg font-bold ${row.color}`} />
                 </div>
               ))}
             </div>
             <div className="bg-[#056CB8]/20 border border-[#056CB8]/30 p-4 text-center">
-              <p className="text-2xl font-bold text-[#056CB8]">73%</p>
+              <CountUp value="73%" className="text-2xl font-bold text-[#056CB8]" />
               <p className="text-xs text-white/60 uppercase tracking-wider">Cost Reduction</p>
             </div>
           </div>
@@ -287,7 +295,7 @@ export default function FinancialServicesPage() {
 
       {/* ===== CTA ===== */}
       <section className="bg-white py-24 px-6 text-center">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold text-[#111111] mb-4 max-md:text-[1.75rem]">
             Ready to Modernize Your Financial Operations?
           </h2>
@@ -296,11 +304,11 @@ export default function FinancialServicesPage() {
             compliance, and deliver intelligent experiences.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Schedule a Demo
+            <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+              Schedule a Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
-            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#f5f5f5] transition-colors">
-              Contact Sales
+            <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#f5f5f5] transition-colors">
+              Contact Sales <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
           </div>
         </div>

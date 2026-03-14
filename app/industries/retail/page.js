@@ -1,3 +1,5 @@
+import CountUp from '@/components/CountUp';
+
 export const metadata = {
     title: 'Retail Industry Solutions — AI-Powered Commerce',
     description: 'AI-powered retail solutions for inventory management, omnichannel commerce, and personalized customer experiences.',
@@ -23,7 +25,7 @@ export default function IndustryRetail() {
                 </div>
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
                     {/* Left — Text */}
-                    <div className="flex flex-col gap-6">
+                    <div className="flex flex-col gap-6" data-animate="fade-up">
                         <div className="inline-flex items-center gap-2 bg-white border border-[#e0e0e0] rounded-[100px] px-4 py-1.5 w-fit max-lg:mx-auto max-sm:px-3 max-sm:py-1">
                             <span className="w-1.5 h-1.5 rounded-full bg-[#056CB8]"></span>
                             <span className="text-[0.82rem] font-medium text-[#555555]">Retail Industry</span>
@@ -35,12 +37,12 @@ export default function IndustryRetail() {
                             Build the future of retail with omnichannel commerce, smart inventory management, and deeply personalized customer experiences — all powered by intelligent automation that scales with your business.
                         </p>
                         <div className="flex gap-4 mt-2 max-lg:justify-center max-sm:flex-col max-sm:items-center">
-                            <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
+                            <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                                 Get started
-                            </button>
+                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                             <button className="bg-transparent text-[#111111] border-2 border-[#e0e0e0] px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
                                 See demo
-                            </button>
+                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                         </div>
                         <p className="text-[0.78rem] text-[#888888] m-0">
                             500+ retail brands &nbsp;&bull;&nbsp; Omnichannel ready &nbsp;&bull;&nbsp; Setup in days
@@ -107,7 +109,7 @@ export default function IndustryRetail() {
             {/* Pain Points — What We Solve */}
             <section className="border-y border-[#e0e0e0] bg-[#f5f5f5]">
                 <div className="max-w-[1400px] mx-auto px-12 py-24 max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-12">
-                    <div className="text-center mb-16 max-sm:mb-10">
+                    <div className="text-center mb-16 max-sm:mb-10" data-animate="fade-up">
                         <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] mb-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                             Retail problems, solved
                         </h2>
@@ -116,7 +118,7 @@ export default function IndustryRetail() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-4 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1">
+                    <div className="grid grid-cols-4 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1" data-animate="fade-up" data-delay="2">
                         {[
                             { icon: 'bi-exclamation-triangle', title: 'Inventory Blindspots', desc: 'Real-time stock visibility across all channels and locations.' },
                             { icon: 'bi-arrow-counterclockwise', title: 'Cart Abandonment', desc: 'AI-driven recovery campaigns that convert abandoned carts to sales.' },
@@ -137,7 +139,7 @@ export default function IndustryRetail() {
 
             {/* Solutions Grid */}
             <section className="max-w-[1400px] mx-auto px-12 py-32 max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-12">
-                <div className="text-center mb-16 max-sm:mb-10">
+                <div className="text-center mb-16 max-sm:mb-10" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] mb-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                         End-to-end retail solutions
                     </h2>
@@ -146,7 +148,7 @@ export default function IndustryRetail() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-2 max-md:grid-cols-1">
+                <div className="grid grid-cols-3 gap-6 max-lg:grid-cols-2 max-md:grid-cols-1" data-animate="fade-up" data-delay="2">
                     {[
                         {
                             icon: 'bi-lightning-charge-fill',
@@ -243,7 +245,7 @@ export default function IndustryRetail() {
             {/* Results / Metrics — Dark Section */}
             <section className="bg-[#111111] text-white">
                 <div className="max-w-[1400px] mx-auto px-12 py-28 max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-12">
-                    <div className="text-center mb-16 max-sm:mb-10">
+                    <div className="text-center mb-16 max-sm:mb-10" data-animate="fade-up">
                         <h2 className="text-[2.2rem] font-extrabold tracking-[-0.02em] mb-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                             Results that speak
                         </h2>
@@ -252,7 +254,7 @@ export default function IndustryRetail() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-4 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1">
+                    <div className="grid grid-cols-4 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1" data-animate="fade-up">
                         {[
                             { value: '3.2x', label: 'Revenue Growth', desc: 'Average increase in revenue within the first 12 months of deployment.' },
                             { value: '67%', label: 'Less Stockouts', desc: 'Reduction in out-of-stock incidents with predictive inventory management.' },
@@ -260,7 +262,7 @@ export default function IndustryRetail() {
                             { value: '42%', label: 'Higher AOV', desc: 'Average order value boost driven by AI-powered recommendations.' },
                         ].map((m) => (
                             <div key={m.label} className="bg-white/5 border border-white/10 rounded-md p-6 text-center max-sm:p-5">
-                                <div className="text-[2.4rem] font-extrabold text-[#056CB8] leading-none mb-2 max-sm:text-[2rem]">{m.value}</div>
+                                <div className="text-[2.4rem] font-extrabold text-[#056CB8] leading-none mb-2 max-sm:text-[2rem]"><CountUp value={m.value} /></div>
                                 <div className="text-[0.95rem] font-bold mb-2">{m.label}</div>
                                 <p className="text-[0.82rem] text-white/45 leading-relaxed m-0">{m.desc}</p>
                             </div>
@@ -271,7 +273,7 @@ export default function IndustryRetail() {
 
             {/* Integrations */}
             <section className="max-w-[1400px] mx-auto px-12 py-28 max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-12">
-                <div className="text-center mb-14 max-sm:mb-10">
+                <div className="text-center mb-14 max-sm:mb-10" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] mb-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                         Works with your stack
                     </h2>
@@ -291,16 +293,16 @@ export default function IndustryRetail() {
 
             {/* CTA Section */}
             <section className="py-32 px-12 bg-white flex justify-center items-center w-full border-t border-[#e0e0e0] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <div className="max-w-[680px] w-full text-center flex flex-col items-center gap-6 max-sm:gap-4">
+                <div className="max-w-[680px] w-full text-center flex flex-col items-center gap-6 max-sm:gap-4" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                         Transform your retail business today
                     </h2>
                     <p className="text-[1.05rem] text-[#555555] leading-relaxed max-sm:text-[0.9rem]">
                         Join 500+ brands using Zynex to power smarter, faster, and more profitable retail operations.
                     </p>
-                    <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
+                    <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                         Get started now
-                    </button>
+                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                 </div>
             </section>
         </div>

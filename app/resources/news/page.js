@@ -52,7 +52,7 @@ export default function NewsPage() {
       <section className="bg-white pt-40 max-md:pt-24 pb-16 px-6">
         <div className="max-w-5xl mx-auto">
           <p className="text-sm text-[#555555] mb-8">Home / Resources / News</p>
-          <div className="flex max-md:flex-col max-md:gap-4 justify-between items-end mb-12">
+          <div className="flex max-md:flex-col max-md:gap-4 justify-between items-end mb-12" data-animate="fade-up">
             <div>
               <span className="inline-block bg-[#056CB8]/10 text-[#056CB8] text-xs font-semibold tracking-[0.1em] uppercase px-4 py-2 mb-4">
                 NEWSROOM
@@ -67,7 +67,7 @@ export default function NewsPage() {
           </div>
 
           {/* Featured Headlines */}
-          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 mb-6">
+          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6 mb-6" data-animate="fade-up" data-delay="2">
             {headlines.map((item, i) => (
               <article key={i} className="border border-[#e0e0e0] bg-white hover:border-[#056CB8] transition-colors group">
                 <div className="bg-[#f5f5f5] h-48 flex items-center justify-center border-b border-[#e0e0e0]">
@@ -90,9 +90,9 @@ export default function NewsPage() {
       {/* ===== NEWS TIMELINE ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2rem] font-bold text-[#111111] mb-12">All Updates</h2>
+          <h2 className="text-[2rem] font-bold text-[#111111] mb-12" data-animate="fade-up">All Updates</h2>
 
-          <div className="flex flex-col gap-0">
+          <div className="flex flex-col gap-0" data-animate="fade-up" data-delay="2">
             {news.map((item, i) => (
               <article key={i} className="bg-white border border-[#e0e0e0] border-t-0 first:border-t p-6 flex max-md:flex-col gap-6 hover:bg-[#f5f5f5]/50 transition-colors">
                 <div className="w-28 flex-shrink-0 max-md:w-full">
@@ -123,15 +123,15 @@ export default function NewsPage() {
       {/* ===== MEDIA CONTACT ===== */}
       <section className="bg-[#111111] text-white py-16 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-2 max-md:grid-cols-1 gap-12 items-center">
-          <div>
+          <div data-animate="fade-left">
             <h2 className="text-2xl font-bold mb-3">Media & Press Inquiries</h2>
             <p className="text-white/60 leading-relaxed">
               For press kits, interview requests, and media inquiries, reach out to our communications team.
             </p>
           </div>
-          <div className="flex max-md:flex-col gap-4 justify-end max-md:justify-start">
-            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Contact Press Team
+          <div className="flex max-md:flex-col gap-4 justify-end max-md:justify-start" data-animate="fade-right">
+            <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+              Contact Press Team <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white/70 font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
               Download Press Kit

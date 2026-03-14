@@ -17,7 +17,7 @@ export default function SaasDevelopmentPage() {
         <div className="max-w-6xl mx-auto">
           <p className="text-sm text-[#555555] mb-8">Home / Solutions / SaaS Development</p>
           <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-16 items-center">
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6" data-animate="fade-up">
               <span className="inline-block bg-[#056CB8]/10 text-[#056CB8] text-xs font-semibold tracking-[0.1em] uppercase px-4 py-2 w-fit">
                 SAAS DEVELOPMENT
               </span>
@@ -30,8 +30,8 @@ export default function SaasDevelopmentPage() {
                 and grow revenue on autopilot.
               </p>
               <div className="flex gap-4 flex-wrap mt-2">
-                <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-                  Start Your Project
+                <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+                  Start Your Project <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
                 </a>
                 <a href="/resources/partners" className="inline-flex items-center justify-center px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white transition-colors">
                   See Our Portfolio
@@ -41,7 +41,7 @@ export default function SaasDevelopmentPage() {
             </div>
 
             {/* Browser Window Mockup */}
-            <div className="bg-white border border-[#e0e0e0] overflow-hidden max-lg:max-w-lg">
+            <div className="bg-white border border-[#e0e0e0] overflow-hidden max-lg:max-w-lg" data-animate="fade-right">
               {/* Toolbar */}
               <div className="bg-[#f5f5f5] border-b border-[#e0e0e0] px-4 py-3 flex items-center gap-3">
                 <div className="flex gap-1.5">
@@ -80,7 +80,7 @@ export default function SaasDevelopmentPage() {
 
       {/* ===== METRICS BAR ===== */}
       <section className="bg-[#056CB8] text-white py-6 px-6">
-        <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 text-center">
+        <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 text-center" data-animate="fade-in">
           {[
             { value: '50+', label: 'SaaS Products Launched' },
             { value: '99.9%', label: 'Average Uptime' },
@@ -98,14 +98,16 @@ export default function SaasDevelopmentPage() {
       {/* ===== FOUR PHASES ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
-            From Concept to Scale in Four Phases
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            A proven methodology that takes your idea from napkin sketch to production-ready product.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
+              From Concept to Scale in Four Phases
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              A proven methodology that takes your idea from napkin sketch to production-ready product.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-4 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-6">
+          <div className="grid grid-cols-4 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
               {
                 phase: 'STRATEGY', num: '01', title: 'Product Architecture',
@@ -152,14 +154,16 @@ export default function SaasDevelopmentPage() {
       {/* ===== WHY ZYNEX FOR SAAS ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
-            The SaaS Expertise Your Product Needs
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            Deep SaaS experience baked into every decision, from architecture to pricing.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
+              The SaaS Expertise Your Product Needs
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              Deep SaaS experience baked into every decision, from architecture to pricing.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6">
+          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
               { num: '01', title: 'Multi-Tenant Architecture', desc: 'Purpose-built with isolated tenant data, shared infrastructure, and flexible deployment models.' },
               { num: '02', title: 'Subscription Billing', desc: 'Freemium, usage-based, per-seat, and enterprise pricing models supported out of the box.' },
@@ -181,14 +185,16 @@ export default function SaasDevelopmentPage() {
       {/* ===== TECH STACK ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
-            Modern Stack, Battle-Tested Tools
-          </h2>
-          <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-            We use the best tools for the job — proven at scale.
-          </p>
+          <div data-animate="fade-up">
+            <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem]">
+              Modern Stack, Battle-Tested Tools
+            </h2>
+            <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
+              We use the best tools for the job — proven at scale.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6">
+          <div className="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
               { category: 'FRONTEND', items: ['React', 'Next.js', 'Vue.js', 'TypeScript'] },
               { category: 'BACKEND', items: ['Node.js', 'Python', 'Go', 'Java'] },
@@ -214,7 +220,7 @@ export default function SaasDevelopmentPage() {
 
       {/* ===== CTA ===== */}
       <section className="bg-[#111111] text-white py-24 px-6 text-center">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">
             Ready to Build Your Next SaaS Product?
           </h2>
@@ -223,8 +229,8 @@ export default function SaasDevelopmentPage() {
             timeline, and budget within 48 hours.
           </p>
           <div className="flex flex-col items-center gap-4">
-            <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Get a Free Consultation
+            <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+              Get a Free Consultation <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="/" className="text-white/50 text-sm hover:text-white transition-colors">
               Explore the platform &rarr;
