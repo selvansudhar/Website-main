@@ -23,6 +23,34 @@ export default function MarketingAutomation() {
                     <span className="text-[#e0e0e0]">/</span>
                     <span className="text-[#056CB8] uppercase">Marketing Automation</span>
                 </div>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                    { "@type": "ListItem", "position": 3, "name": "Marketing Automation" }
+                  ]
+                }) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  "name": "Zynex Marketing Automation",
+                  "description": "Create complete marketing campaigns in minutes. AI generates posters, ad copy, Instagram captions, email sequences, and Canva-ready designs from a single brief.",
+                  "url": "https://zynex.ai/products/marketing-automation",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                  },
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Zynex AI",
+                    "url": "https://zynex.ai"
+                  }
+                }) }} />
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
                 <div className="flex flex-col gap-6" data-animate="fade-up">
                     <div className="inline-flex items-center gap-2 bg-white border border-[#e0e0e0] rounded-[100px] px-4 py-1.5 w-fit max-lg:mx-auto max-sm:px-3 max-sm:py-1">
@@ -291,13 +319,13 @@ export default function MarketingAutomation() {
             <section className="py-28 px-12 bg-white max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
                 <div className="text-center max-w-[800px] mx-auto" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
-                        Stop designing. Start launching.
+                        Turn your marketing into a revenue engine
                     </h2>
                     <p className="text-[1.1rem] text-[#555555] leading-[1.7] mb-10 max-md:text-base max-sm:text-[0.9rem]">
-                        Your next campaign is 10 questions away. Let AI handle the creative so you can focus on strategy and results.
+                        Automate campaigns, nurture leads, and measure ROI across every channel — all from one intelligent platform.
                     </p>
                     <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
-                        Start your first campaign
+                        Automate Your Marketing
                      <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                 </div>
             </section>

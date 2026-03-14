@@ -13,28 +13,28 @@ export default function NewsPage() {
     {
       date: 'Mar 5, 2026',
       tag: 'PRESS RELEASE',
-      title: 'Zynex Raises $120M Series C to Accelerate Enterprise AI Adoption',
-      excerpt: 'The funding round, led by Sequoia Capital, will fuel product expansion across healthcare, manufacturing, and financial services sectors.',
+      title: 'Zynex Launches AI-Powered Enterprise Platform for Growing Businesses',
+      excerpt: 'The platform combines ERP, CRM, HR, and intelligent AI assistants in a single unified solution designed for modern enterprises.',
       featured: true,
     },
     {
       date: 'Feb 28, 2026',
       tag: 'PRODUCT',
-      title: 'Zynex Launches Finance Plus 3.0 with AI-Powered Forecasting',
-      excerpt: 'The latest release introduces predictive revenue modeling, automated reconciliation, and 40% faster financial reporting.',
+      title: 'Zynex Introduces Finance Plus with AI-Powered Forecasting',
+      excerpt: 'The latest product features automated invoicing, smart expense tracking, and real-time financial dashboards.',
       featured: true,
     },
   ];
 
   const news = [
-    { date: 'Feb 24, 2026', tag: 'PARTNERSHIP', title: 'Zynex Partners with AWS to Deliver AI Solutions at Scale', excerpt: 'Strategic collaboration brings Zynex AI capabilities to AWS Marketplace, enabling one-click deployment for enterprise customers.' },
-    { date: 'Feb 20, 2026', tag: 'AWARD', title: 'Zynex Named a Leader in Gartner Magic Quadrant for Enterprise AI Platforms', excerpt: 'Recognition for completeness of vision and ability to execute in the enterprise AI space.' },
-    { date: 'Feb 15, 2026', tag: 'COMPANY', title: 'Zynex Expands to Singapore, Opens Asia-Pacific Headquarters', excerpt: 'The new office will serve as a hub for the growing APAC customer base across healthcare and manufacturing.' },
-    { date: 'Feb 10, 2026', tag: 'PRODUCT', title: 'New: Real-Time Collaboration in Project Plus', excerpt: 'Teams can now co-edit sprint boards, share live cursors, and comment in-context across projects.' },
-    { date: 'Feb 5, 2026', tag: 'COMPANY', title: 'Zynex Surpasses 500 Enterprise Customers Worldwide', excerpt: 'Milestone driven by rapid adoption in healthcare, higher education, and financial services industries.' },
-    { date: 'Jan 30, 2026', tag: 'PARTNERSHIP', title: 'Zynex and Salesforce Announce Deep Integration Partnership', excerpt: 'Native bi-directional sync between Zynex CRM Lite and Salesforce, eliminating manual data transfers.' },
-    { date: 'Jan 25, 2026', tag: 'PRESS RELEASE', title: 'Zynex Publishes 2025 AI Impact Report', excerpt: 'Annual report details how enterprise AI deployments delivered $4.2B in combined client savings.' },
-    { date: 'Jan 18, 2026', tag: 'AWARD', title: 'Zynex Wins "Best Enterprise SaaS" at TechCrunch Disrupt Awards', excerpt: 'Recognized for innovation in AI-powered enterprise workflows and exceptional customer outcomes.' },
+    { date: 'Feb 24, 2026', tag: 'PARTNERSHIP', title: 'Zynex Partners with Cloud Providers for Seamless Deployment', excerpt: 'Strategic integrations enable one-click deployment of Zynex modules on major cloud platforms.' },
+    { date: 'Feb 20, 2026', tag: 'PRODUCT', title: 'YenAI Digital Twin Now Available for Early Access', excerpt: 'Create an AI persona that handles client conversations and meetings on your behalf.' },
+    { date: 'Feb 15, 2026', tag: 'COMPANY', title: 'Zynex Expands Product Suite to 10+ Enterprise Modules', excerpt: 'From CRM and HR to Knowledge Base and Marketing Automation — Zynex now covers the full enterprise stack.' },
+    { date: 'Feb 10, 2026', tag: 'PRODUCT', title: 'Project Plus: Real-Time Collaboration Features Released', excerpt: 'Teams can now co-edit sprint boards, assign tasks in real-time, and track project progress across departments.' },
+    { date: 'Feb 5, 2026', tag: 'COMPANY', title: 'Zynex Crosses 25+ Successfully Delivered Projects', excerpt: 'Milestone driven by growing adoption across healthcare, education, and financial services industries.' },
+    { date: 'Jan 30, 2026', tag: 'PRODUCT', title: 'Knowledge Base: AI-Powered Search Across All Enterprise Data', excerpt: 'New intelligent search delivers instant answers from documents, systems, and databases in seconds.' },
+    { date: 'Jan 25, 2026', tag: 'COMPANY', title: 'Zynex Publishes 2025 Year-in-Review', excerpt: 'Annual report highlights product launches, client milestones, and the roadmap for 2026.' },
+    { date: 'Jan 18, 2026', tag: 'PRODUCT', title: 'Marketing Automation: AI Campaign Builder Goes Live', excerpt: 'Generate complete marketing campaigns — posters, ad copy, email sequences, and social content — from a single brief.' },
   ];
 
   const tagColors = {
@@ -47,6 +47,15 @@ export default function NewsPage() {
 
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zynex.ai/resources" },
+          { "@type": "ListItem", "position": 3, "name": "News" }
+        ]
+      }) }} />
 
       {/* ===== HERO ===== */}
       <section className="bg-white pt-40 max-md:pt-24 pb-16 px-6">

@@ -31,6 +31,14 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Contact" }
+        ]
+      }) }} />
 
       {/* ===== HERO ===== */}
       <section className="bg-[#111111] text-white pt-40 max-md:pt-24 pb-24 px-6">

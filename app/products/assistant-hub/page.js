@@ -110,6 +110,34 @@ export default function AssistantHub() {
                     <span className="text-[#e0e0e0]">/</span>
                     <span className="text-[#056CB8] uppercase">Assistant Hub</span>
                 </div>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                    { "@type": "ListItem", "position": 3, "name": "Assistant Hub" }
+                  ]
+                }) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  "name": "Zynex Assistant Hub",
+                  "description": "Deploy 16 specialized AI assistants across every department. From sales to analytics, automate tasks and unlock insights with zero code.",
+                  "url": "https://zynex.ai/products/assistant-hub",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                  },
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Zynex AI",
+                    "url": "https://zynex.ai"
+                  }
+                }) }} />
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
                     {/* Left — Text */}
                     <div data-animate="fade-up">
@@ -421,13 +449,13 @@ export default function AssistantHub() {
                     {/* Left — CTA */}
                     <div data-animate="fade-left">
                         <h2 className="text-[2.2rem] font-extrabold text-white mb-4 tracking-[-0.02em] leading-[1.2] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
-                            Ready to deploy your AI workforce?
+                            Deploy your AI workforce today
                         </h2>
                         <p className="text-[1.05rem] text-white/60 leading-relaxed mb-10 max-w-[500px] max-lg:mx-auto max-md:text-base max-sm:text-[0.9rem]">
-                            Start with one assistant or deploy all 16. No code, no consultants — just results from day one.
+                            Start with one assistant or deploy all 16. Zero code required — just configure, launch, and watch your team's productivity multiply.
                         </p>
                         <button className="bg-white text-[#056CB8] border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:bg-white/90 max-lg:mx-auto max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
-                            Talk Sales
+                            Launch Your Assistants
                          <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                     </div>
 

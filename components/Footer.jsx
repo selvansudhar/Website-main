@@ -15,10 +15,10 @@ const Footer = () => {
                             AI-powered enterprise platform for growing teams. ERP, intelligence, and assistants — all in one place.
                         </p>
                         <div className="flex gap-3">
-                            <a href="#" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="X (Twitter)">X</a>
-                            <a href="#" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="LinkedIn">in</a>
-                            <a href="#" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="YouTube">YT</a>
-                            <a href="#" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="Instagram">IG</a>
+                            <Link href="/social/twitter" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="X (Twitter)">X</Link>
+                            <Link href="/social/linkedin" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="LinkedIn">in</Link>
+                            <Link href="/social/youtube" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="YouTube">YT</Link>
+                            <Link href="/social/instagram" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="Instagram">IG</Link>
                         </div>
                     </div>
 
@@ -80,7 +80,7 @@ const Footer = () => {
                             <span className="block text-[10px] font-bold text-white/30 uppercase tracking-[0.15em] mb-5">Company</span>
                             <ul className="list-none flex flex-col gap-3">
                                 <li><Link href="/enterprise" className="text-white/60 no-underline text-sm transition-colors hover:text-white">Enterprise</Link></li>
-                                <li><a href="#" className="text-white/60 no-underline text-sm transition-colors hover:text-white">About</a></li>
+                                <li><Link href="/about" className="text-white/60 no-underline text-sm transition-colors hover:text-white">About</Link></li>
                                 <li><Link href="/contact" className="text-white/60 no-underline text-sm transition-colors hover:text-white">Contact Us</Link></li>
                             </ul>
                         </div>
@@ -91,7 +91,7 @@ const Footer = () => {
                             <ul className="list-none flex flex-col gap-3">
                                 <li><Link href="/contact" className="text-white/60 no-underline text-sm transition-colors hover:text-white">Request a Demo</Link></li>
                                 <li><Link href="/resources/concierge" className="text-white/60 no-underline text-sm transition-colors hover:text-white">Free Consultation</Link></li>
-                                <li><a href="#" className="text-white/60 no-underline text-sm transition-colors hover:text-white">Sign In</a></li>
+                                <li><Link href="/contact" className="text-white/60 no-underline text-sm transition-colors hover:text-white">Sign In</Link></li>
                             </ul>
                         </div>
                     </nav>

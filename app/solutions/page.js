@@ -57,6 +57,14 @@ const industries = [
 export default function SolutionsIndex() {
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zynex.ai/solutions" }
+        ]
+      }) }} />
 
       {/* ===== HERO ===== */}
       <section className="bg-[#111111] text-white pt-40 max-md:pt-24 pb-24 px-6 text-center">
@@ -177,10 +185,10 @@ export default function SolutionsIndex() {
       <section className="bg-[#111111] text-white py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">
-            Not Sure Which Solution Fits?
+            Not sure which solution fits your business?
           </h2>
           <p className="text-white/60 mb-8">
-            Our Concierge team will map your needs to the right solution — free, no commitment.
+            Tell us about your challenges and our team will recommend the right combination of products and services.
           </p>
           <a href="/resources/concierge" className="group inline-flex items-center justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
             Book Free Consultation <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>

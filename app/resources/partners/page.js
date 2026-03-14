@@ -67,6 +67,15 @@ export default function Partners() {
 
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zynex.ai/resources" },
+          { "@type": "ListItem", "position": 3, "name": "Partners" }
+        ]
+      }) }} />
 
       {/* ===== HERO ===== */}
       <section className="bg-[#111111] text-white pt-40 max-md:pt-24 pb-24 px-6 text-center">
@@ -264,10 +273,10 @@ export default function Partners() {
       <section className="bg-[#111111] text-white py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">
-            Ready to Partner with Zynex?
+            Grow your business as a Zynex partner
           </h2>
           <p className="text-white/60 mb-8">
-            Apply today and our partner team will get back to you within 48 hours.
+            Join our partner ecosystem and unlock co-selling opportunities, technical training, and dedicated partner support.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">

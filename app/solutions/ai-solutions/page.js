@@ -14,6 +14,15 @@ export const metadata = {
 export default function AISolutionsPage() {
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zynex.ai/solutions" },
+          { "@type": "ListItem", "position": 3, "name": "AI Solutions" }
+        ]
+      }) }} />
 
       {/* ===== DARK HERO WITH AI DASHBOARD ===== */}
       <section className="bg-[#111111] text-white pt-40 pb-32 px-6 max-md:pt-24 max-md:pb-16 max-sm:pb-12 max-sm:px-4">
@@ -203,10 +212,10 @@ export default function AISolutionsPage() {
       <section className="bg-[#111111] text-white py-24 px-6 text-center max-md:py-16 max-sm:py-12 max-sm:px-4">
         <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem] max-sm:text-[1.5rem]">
-            Ready to Make AI Your Competitive Edge?
+            Ready to unlock the power of AI for your business?
           </h2>
           <p className="text-white/60 mb-8">
-            Talk to our AI specialists. Get a custom roadmap for your industry and use case.
+            Our AI specialists will assess your workflows and build a custom implementation roadmap tailored to your industry.
           </p>
           <div className="flex flex-col items-center gap-4">
             <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">

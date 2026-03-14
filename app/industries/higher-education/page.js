@@ -1,4 +1,5 @@
 import CountUp from '@/components/CountUp';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Higher Education Solutions',
@@ -67,6 +68,15 @@ export default function HigherEducationPage() {
 
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zynex.ai/industries" },
+          { "@type": "ListItem", "position": 3, "name": "Higher Education" }
+        ]
+      }) }} />
 
       {/* ===== SECTION 1: HERO ===== */}
       <section className="bg-[#f5f5f5] pt-40 max-md:pt-24 pb-32 px-6">
@@ -97,8 +107,8 @@ export default function HigherEducationPage() {
           </div>
           <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6 mt-16 max-w-2xl mx-auto">
             {[
-              { value: '50K+', label: 'Students' },
-              { value: '150+', label: 'Institutions' },
+              { value: '10K+', label: 'Students Managed' },
+              { value: '5+', label: 'Institutions' },
               { value: '98%', label: 'Satisfaction' },
             ].map((stat, i) => (
               <div key={i} className="bg-white border border-[#e0e0e0] p-6 text-center">
@@ -139,39 +149,65 @@ export default function HigherEducationPage() {
       </section>
 
       {/* ===== SECTION 3: CAMPUS SOLUTIONS ===== */}
-      <section className="bg-[#f5f5f5] py-24 px-6">
-        <div className="max-w-5xl mx-auto">
-          <div data-animate="fade-up">
-          <h2 className="text-3xl max-md:text-2xl font-bold text-[#111111] text-center mb-16">
-            Solutions for Every Campus Need
-          </h2>
+      <section className="bg-white py-24 px-6 overflow-hidden">
+        <div className="max-w-[1400px] mx-auto">
+          <div data-animate="fade-up" className="text-center mb-16">
+            <h2 className="text-3xl max-md:text-2xl font-bold text-[#111111] mb-4">
+              Solutions for Every Campus Need
+            </h2>
+            <p className="text-[#555555] max-w-2xl mx-auto">
+              From student enrollment to campus analytics — a unified platform built for modern institutions.
+            </p>
           </div>
-          {campusSolutions.map((feature, i) => (
-            <div
-              key={i}
-              className="grid grid-cols-2 max-md:grid-cols-1 gap-12 items-center mb-16 last:mb-0"
-            >
-              <div className={i % 2 === 1 ? 'max-md:order-1 order-2' : 'max-md:order-1'}>
-                <p className="text-xs font-semibold uppercase tracking-[0.1em] text-[#056CB8] mb-3">{feature.category}</p>
-                <h3 className="text-2xl font-bold text-[#111111] mb-4">{feature.title}</h3>
-                <p className="text-[#555555] leading-relaxed mb-6">{feature.description}</p>
-                <ul className="space-y-3 list-none m-0 p-0">
-                  {feature.bullets.map((bullet, j) => (
-                    <li key={j} className="flex items-start gap-3 text-sm text-[#111111]">
-                      <i className="bi bi-check-circle-fill text-[#22c55e] mt-0.5 flex-shrink-0"></i>
-                      <span>{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className={i % 2 === 1 ? 'order-1' : 'order-2 max-md:order-1'}>
-                <div className="bg-white border border-[#e0e0e0] h-64 flex flex-col items-center justify-center gap-3">
-                  <i className={`bi ${feature.icon} text-6xl text-[#e0e0e0]`}></i>
-                  <span className="text-sm text-[#555555]">Image coming soon</span>
-                </div>
+
+          {/* Image + Cards Integrated Layout */}
+          <div className="grid grid-cols-[1fr_1.2fr] max-lg:grid-cols-1 gap-0 items-stretch" data-animate="fade-up">
+            {/* Left — Image with overlay text */}
+            <div className="relative bg-[#111111] overflow-hidden max-lg:min-h-[400px]">
+              <Image
+                src="/images/higher-education.webp"
+                alt="Higher Education Campus Solutions"
+                width={900}
+                height={553}
+                className="w-full h-full object-cover opacity-60"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-10 max-sm:p-6">
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#056CB8] mb-3">Zynex for Education</p>
+                <h3 className="text-[1.75rem] max-sm:text-xl font-bold text-white leading-tight mb-3">
+                  The modern campus<br />runs on intelligence
+                </h3>
+                <p className="text-white/60 text-sm leading-relaxed max-w-[380px]">
+                  One platform to manage students, faculty, finances, and analytics — powered by AI that learns your institution.
+                </p>
               </div>
             </div>
-          ))}
+
+            {/* Right — 2x2 Solution Cards */}
+            <div className="grid grid-cols-2 max-sm:grid-cols-1">
+              {campusSolutions.map((feature, i) => {
+                const colors = ['bg-[#056CB8]', 'bg-[#22c55e]', 'bg-[#F60014]', 'bg-[#111111]'];
+                return (
+                  <div key={i} className="bg-[#f5f5f5] border-[0.5px] border-[#e0e0e0] p-8 max-sm:p-6 flex flex-col group hover:bg-white transition-colors duration-300">
+                    <div className={`w-10 h-10 ${colors[i]} flex items-center justify-center mb-5`}>
+                      <i className={`bi ${feature.icon} text-lg text-white`}></i>
+                    </div>
+                    <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#555555] mb-1">{feature.category}</p>
+                    <h3 className="text-base font-bold text-[#111111] mb-3">{feature.title}</h3>
+                    <p className="text-sm text-[#555555] leading-relaxed mb-4 flex-1">{feature.description}</p>
+                    <ul className="space-y-1.5 list-none m-0 p-0">
+                      {feature.bullets.map((bullet, j) => (
+                        <li key={j} className="flex items-start gap-2 text-[13px] text-[#111111]">
+                          <i className="bi bi-check2 text-[#056CB8] mt-0.5 flex-shrink-0"></i>
+                          <span>{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -180,11 +216,11 @@ export default function HigherEducationPage() {
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-8xl text-[#056CB8]/20 font-serif leading-none mb-4">&ldquo;</p>
           <blockquote className="text-xl text-[#111111] italic leading-relaxed mb-8">
-            Zynex transformed how we manage our 30,000+ students across 12 departments. The automation alone saved us 2,000 hours annually.
+            Zynex simplified our entire student lifecycle management. From admissions to alumni tracking, everything runs smoother now.
           </blockquote>
           <div className="w-12 h-0.5 bg-[#056CB8] mx-auto mb-4"></div>
-          <p className="text-base font-bold text-[#111111]">Dr. Sarah Mitchell</p>
-          <p className="text-sm text-[#555555]">VP of Technology, State University</p>
+          <p className="text-base font-bold text-[#111111]">University Administrator</p>
+          <p className="text-sm text-[#555555]">Zynex Education Client</p>
         </div>
       </section>
 
@@ -237,17 +273,17 @@ export default function HigherEducationPage() {
         <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12 items-center max-w-5xl mx-auto" data-animate="fade-up">
           <div>
             <h2 className="text-3xl max-md:text-2xl font-bold leading-tight mb-4">
-              Transform Your Campus Today
+              Empower your institution with digital-first solutions
             </h2>
             <p className="text-white/70 leading-relaxed mb-8">
-              Join forward-thinking institutions that trust Zynex to power their digital campus. See how we can streamline your operations and elevate the student experience.
+              Streamline admissions, enhance learning experiences, and make data-driven decisions that improve student outcomes across your campus.
             </p>
             <div className="flex items-center gap-6 flex-wrap">
               <a
                 href="/contact"
                 className="group inline-flex items-center justify-center px-8 py-3.5 bg-[#056CB8] text-white font-semibold text-sm uppercase tracking-[0.05em] rounded-none"
               >
-                Get Started <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
+                Get Started for Your Campus <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
               </a>
               <a href="/resources/help-center" className="text-white text-sm font-medium underline underline-offset-4">
                 Talk to an Expert
@@ -257,8 +293,8 @@ export default function HigherEducationPage() {
           <div className="flex flex-col gap-6">
             {[
               { value: '50K+', label: 'Students Managed' },
-              { value: '99.9%', label: 'Uptime' },
-              { value: '24/7', label: 'Support' },
+              { value: '99.5%', label: 'Satisfaction' },
+              { value: '4.9/5', label: 'Support Rating' },
             ].map((item, i) => (
               <div key={i} className="border-l-2 border-[#056CB8] pl-5 py-2">
                 <p className="text-2xl font-bold text-white mb-1"><CountUp value={item.value} /></p>

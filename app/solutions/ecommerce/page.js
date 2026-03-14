@@ -13,6 +13,15 @@ export const metadata = {
 export default function EcommercePage() {
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zynex.ai/solutions" },
+          { "@type": "ListItem", "position": 3, "name": "E-Commerce" }
+        ]
+      }) }} />
 
       {/* ===== HERO WITH STORE MOCKUP ===== */}
       <section className="bg-white pt-40 max-md:pt-24 pb-32 px-6 max-[480px]:px-4 max-[480px]:pb-16">
@@ -229,11 +238,10 @@ export default function EcommercePage() {
       <section className="bg-[#111111] text-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16 text-center">
         <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
-            Ready to Launch Your Commerce Platform?
+            Launch your online store with confidence
           </h2>
           <p className="text-white/60 mb-8">
-            Tell us about your product, your market, and your goals.
-            We will build the store that gets you there.
+            Custom e-commerce solutions built for performance, security, and scale. From storefront design to payment integration — we handle it all.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">

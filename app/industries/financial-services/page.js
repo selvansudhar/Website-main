@@ -13,6 +13,15 @@ export const metadata = {
 export default function FinancialServicesPage() {
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zynex.ai/industries" },
+          { "@type": "ListItem", "position": 3, "name": "Financial Services" }
+        ]
+      }) }} />
 
       {/* ===== DARK HERO WITH TRADING TERMINAL ===== */}
       <section className="bg-[#111111] text-white pt-40 max-md:pt-24 pb-32 px-6">
@@ -297,18 +306,17 @@ export default function FinancialServicesPage() {
       <section className="bg-white py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold text-[#111111] mb-4 max-md:text-[1.75rem]">
-            Ready to Modernize Your Financial Operations?
+            Future-proof your financial operations
           </h2>
           <p className="text-[#555555] mb-8">
-            Partner with Zynex to modernize your financial infrastructure, strengthen
-            compliance, and deliver intelligent experiences.
+            Bank-grade security meets intelligent automation. Streamline compliance, accelerate transactions, and deliver superior client experiences.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Schedule a Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
+              Schedule a Fintech Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#f5f5f5] transition-colors">
-              Contact Sales <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
+              Talk to a Finance Expert <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
           </div>
         </div>

@@ -101,6 +101,15 @@ export default function Developers() {
 
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zynex.ai/resources" },
+          { "@type": "ListItem", "position": 3, "name": "Developers" }
+        ]
+      }) }} />
 
       {/* ===== HERO ===== */}
       <section className="bg-[#111111] text-white pt-40 max-md:pt-24 pb-24 px-6">
@@ -314,14 +323,14 @@ export default function Developers() {
       <section className="bg-[#111111] text-white py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">
-            Let's Build Something Great
+            Start building with Zynex APIs today
           </h2>
           <p className="text-white/60 mb-8">
-            Whether you need to integrate Zynex with your existing systems or build a custom application from scratch — our engineering team is ready.
+            Access comprehensive documentation, SDKs, and developer tools. Build custom integrations that extend the Zynex platform.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Talk to Our Team <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
+              Explore Developer Docs <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="/enterprise" className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white/70 font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
               Explore the Platform

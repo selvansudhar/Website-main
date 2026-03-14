@@ -78,6 +78,15 @@ const metrics = [
 export default function HealthcarePage() {
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zynex.ai/industries" },
+          { "@type": "ListItem", "position": 3, "name": "Healthcare" }
+        ]
+      }) }} />
       {/* ===== Section 1: Split Hero with Patient Dashboard ===== */}
       <section className="bg-white pt-40 max-md:pt-24 pb-32 px-6 max-[480px]:px-4 max-[480px]:pb-16">
         <p className="text-sm text-[#555555] mb-8 max-w-6xl mx-auto max-[480px]:text-xs">
@@ -329,24 +338,23 @@ export default function HealthcarePage() {
       <section className="bg-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16 text-center">
         <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-3xl max-[480px]:text-2xl font-bold text-[#111111] mb-4">
-            Ready to Transform Patient Care?
+            Deliver better patient outcomes with smarter technology
           </h2>
           <p className="text-[#555555] text-lg leading-relaxed mb-8">
-            Join leading healthcare organizations already using Zynex to improve patient
-            outcomes, streamline operations, and stay ahead of regulatory demands.
+            HIPAA-compliant solutions that streamline clinical workflows, reduce administrative burden, and improve care coordination across your facility.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-6">
             <a
               href="/contact"
               className="group inline-block bg-[#056CB8] text-white px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
             >
-              Request a Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
+              Request a Healthcare Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a
               href="/contact"
               className="group inline-block border border-[#111111] text-[#111111] px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
             >
-              Talk to Sales <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
+              Speak with a Specialist <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
           </div>
           <p className="text-xs text-[#555555] tracking-[0.05em] uppercase font-medium">

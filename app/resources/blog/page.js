@@ -11,27 +11,36 @@ export const metadata = {
 export default function BlogPage() {
   const featuredPost = {
     category: 'AI & MACHINE LEARNING',
-    title: 'The Future of Enterprise AI: 5 Trends Shaping 2026',
-    excerpt: 'From autonomous agents to multimodal intelligence, discover the AI trends that will redefine how enterprises operate, compete, and innovate in the coming year.',
-    author: 'Dr. Arun Patel',
-    role: 'Chief AI Officer',
-    date: 'Mar 4, 2026',
+    title: 'How We Built Our AI Assistant Hub from Scratch',
+    excerpt: 'A behind-the-scenes look at how we designed, trained, and deployed 16 specialized AI assistants that automate enterprise workflows across departments.',
+    author: 'Sudhar',
+    role: 'Founder & CEO',
+    date: 'Mar 10, 2026',
     readTime: '8 min read',
   };
 
   const posts = [
-    { category: 'ENGINEERING', title: 'Building Multi-Tenant SaaS: Architecture Decisions That Scale', excerpt: 'A deep dive into tenant isolation, shared infrastructure, and the trade-offs we made building Zynex\'s platform.', author: 'Priya Sharma', date: 'Mar 1, 2026', readTime: '12 min read' },
-    { category: 'PRODUCT', title: 'Introducing Zynex Finance Plus 3.0', excerpt: 'Automated reconciliation, AI-powered forecasting, and 40% faster reporting — here\'s everything new.', author: 'James Chen', date: 'Feb 26, 2026', readTime: '5 min read' },
-    { category: 'INDUSTRY', title: 'How Healthcare Systems Are Using AI to Reduce Wait Times by 40%', excerpt: 'Real-world case studies from three hospital networks that deployed intelligent scheduling.', author: 'Dr. Sarah Mitchell', date: 'Feb 22, 2026', readTime: '10 min read' },
-    { category: 'ENGINEERING', title: 'Zero-Downtime Migrations: Our Playbook for Enterprise Clients', excerpt: 'How we migrated 2.4 billion records across 12 time zones without a single second of downtime.', author: 'Raj Krishnan', date: 'Feb 18, 2026', readTime: '15 min read' },
-    { category: 'AI & MACHINE LEARNING', title: 'Retrieval-Augmented Generation: Beyond the Hype', excerpt: 'A practical guide to implementing RAG systems that actually work in production environments.', author: 'Emily Zhang', date: 'Feb 14, 2026', readTime: '11 min read' },
-    { category: 'PRODUCT', title: 'Project Plus: The Sprint Board Reimagined', excerpt: 'Why we rebuilt our project management module from scratch and what we learned along the way.', author: 'Marco Silva', date: 'Feb 10, 2026', readTime: '7 min read' },
+    { category: 'ENGINEERING', title: 'Building a Multi-Tenant SaaS Architecture with Next.js', excerpt: 'How we designed Zynex\'s infrastructure to handle multiple enterprise clients with isolated data and shared resources.', author: 'Zynex Engineering', date: 'Mar 6, 2026', readTime: '12 min read', icon: 'bi-code-slash', color: 'bg-[#8b5cf6]' },
+    { category: 'PRODUCT', title: 'Introducing Zynex Finance Plus — Smarter Financial Management', excerpt: 'AI-powered invoicing, expense tracking, and real-time financial insights built for growing businesses.', author: 'Zynex Product', date: 'Feb 28, 2026', readTime: '5 min read', icon: 'bi-box-seam', color: 'bg-[#22c55e]' },
+    { category: 'INDUSTRY', title: 'Why Healthcare Organizations Need AI-Ready ERP Systems', excerpt: 'Exploring how intelligent automation is transforming patient management, scheduling, and compliance in healthcare.', author: 'Zynex Team', date: 'Feb 22, 2026', readTime: '10 min read', icon: 'bi-building', color: 'bg-[#f59e0b]' },
+    { category: 'ENGINEERING', title: 'From Monolith to Microservices: Our Migration Journey', excerpt: 'Lessons learned from refactoring our platform into modular services without disrupting existing clients.', author: 'Zynex Engineering', date: 'Feb 18, 2026', readTime: '15 min read', icon: 'bi-diagram-3', color: 'bg-[#8b5cf6]' },
+    { category: 'AI & MACHINE LEARNING', title: 'RAG in Production: What Actually Works', excerpt: 'A practical guide to implementing retrieval-augmented generation for enterprise knowledge base systems.', author: 'Zynex AI Team', date: 'Feb 14, 2026', readTime: '11 min read', icon: 'bi-lightning-charge-fill', color: 'bg-[#056CB8]' },
+    { category: 'PRODUCT', title: 'Project Plus: How We Redesigned Sprint Management', excerpt: 'The thinking behind our new project management module — built for teams that ship fast.', author: 'Zynex Product', date: 'Feb 10, 2026', readTime: '7 min read', icon: 'bi-kanban', color: 'bg-[#22c55e]' },
   ];
 
   const categories = ['All', 'AI & Machine Learning', 'Engineering', 'Product', 'Industry', 'Company'];
 
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zynex.ai/resources" },
+          { "@type": "ListItem", "position": 3, "name": "Blog" }
+        ]
+      }) }} />
 
       {/* ===== HERO ===== */}
       <section className="bg-[#111111] text-white pt-40 max-md:pt-24 pb-20 px-6">
@@ -67,22 +76,33 @@ export default function BlogPage() {
       {/* ===== FEATURED POST ===== */}
       <section className="bg-white py-16 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-12 items-center border border-[#e0e0e0] p-0 overflow-hidden" data-animate="fade-up">
-            <div className="bg-[#f5f5f5] h-full min-h-[300px] flex flex-col items-center justify-center">
-              <i className="bi bi-file-earmark-text text-5xl text-[#e0e0e0] mb-3"></i>
-              <p className="text-sm text-[#e0e0e0]">Featured image</p>
+          <div className="grid grid-cols-[1fr_1.3fr] max-md:grid-cols-1 gap-0 overflow-hidden" data-animate="fade-up">
+            {/* Left — Visual Block */}
+            <div className="bg-gradient-to-br from-[#056CB8] via-[#0856a0] to-[#111111] p-10 max-sm:p-6 flex flex-col justify-between min-h-[340px] relative overflow-hidden">
+              <div className="absolute top-6 right-6 w-32 h-32 border border-white/10 rounded-full" />
+              <div className="absolute bottom-[-20px] left-[-20px] w-40 h-40 border border-white/5 rounded-full" />
+              <div>
+                <span className="inline-block bg-white/15 text-white text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 mb-4">Featured</span>
+                <i className="bi bi-cpu text-[4rem] text-white/15 block mb-4"></i>
+              </div>
+              <div>
+                <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-white/60 block mb-2">{featuredPost.category}</span>
+                <p className="text-white/50 text-xs">{featuredPost.date} &middot; {featuredPost.readTime}</p>
+              </div>
             </div>
-            <div className="p-8 max-md:p-6">
+
+            {/* Right — Content */}
+            <div className="bg-[#f5f5f5] p-10 max-sm:p-6 flex flex-col justify-center">
               <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#056CB8] mb-3 block">{featuredPost.category}</span>
-              <h2 className="text-2xl font-bold text-[#111111] mb-3 leading-tight">{featuredPost.title}</h2>
-              <p className="text-[#555555] text-sm leading-relaxed mb-6">{featuredPost.excerpt}</p>
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-8 bg-[#056CB8]/10 rounded-full flex items-center justify-center">
-                  <i className="bi bi-person-check text-[#056CB8] text-sm"></i>
+              <h2 className="text-[1.6rem] max-sm:text-xl font-bold text-[#111111] mb-4 leading-tight">{featuredPost.title}</h2>
+              <p className="text-[#555555] text-sm leading-relaxed mb-8">{featuredPost.excerpt}</p>
+              <div className="flex items-center gap-3 pt-6 border-t border-[#e0e0e0]">
+                <div className="w-10 h-10 bg-[#056CB8] flex items-center justify-center">
+                  <span className="text-white text-sm font-bold">{featuredPost.author.charAt(0)}</span>
                 </div>
                 <div>
                   <p className="text-sm font-bold text-[#111111]">{featuredPost.author}</p>
-                  <p className="text-xs text-[#555555]">{featuredPost.date} &middot; {featuredPost.readTime}</p>
+                  <p className="text-xs text-[#555555]">{featuredPost.role}</p>
                 </div>
               </div>
             </div>
@@ -96,17 +116,23 @@ export default function BlogPage() {
           <h2 className="text-[2rem] font-bold text-[#111111] mb-12" data-animate="fade-up">Latest Articles</h2>
           <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {posts.map((post, i) => (
-              <article key={i} className="bg-white border border-[#e0e0e0] flex flex-col hover:border-[#056CB8] transition-colors">
-                <div className="bg-[#f5f5f5] h-40 flex items-center justify-center border-b border-[#e0e0e0]">
-                  <i className="bi bi-file-earmark-text text-3xl text-[#e0e0e0]"></i>
+              <article key={i} className="bg-white flex flex-col group hover:translate-y-[-4px] transition-all duration-300 hover:shadow-lg">
+                {/* Color Header with Icon */}
+                <div className={`${post.color} h-36 flex items-center justify-center relative overflow-hidden`}>
+                  <i className={`bi ${post.icon} text-[3.5rem] text-white/25`}></i>
+                  <div className="absolute top-3 left-4">
+                    <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-white/80 bg-black/15 px-2 py-1">{post.category}</span>
+                  </div>
+                  <div className="absolute bottom-3 right-4">
+                    <span className="text-[10px] text-white/60">{post.readTime}</span>
+                  </div>
                 </div>
                 <div className="p-6 flex flex-col flex-1">
-                  <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-[#056CB8] mb-2">{post.category}</span>
                   <h3 className="text-base font-bold text-[#111111] mb-2 leading-snug">{post.title}</h3>
                   <p className="text-sm text-[#555555] leading-relaxed mb-4 flex-1">{post.excerpt}</p>
                   <div className="flex items-center justify-between text-xs text-[#555555] pt-4 border-t border-[#e0e0e0]">
                     <span className="font-semibold">{post.author}</span>
-                    <span>{post.date} &middot; {post.readTime}</span>
+                    <span>{post.date}</span>
                   </div>
                 </div>
               </article>
@@ -114,8 +140,8 @@ export default function BlogPage() {
           </div>
 
           <div className="text-center mt-12">
-            <button className="px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#111111] hover:text-white transition-colors">
-              Load More Articles
+            <button className="group px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#111111] hover:text-white transition-colors">
+              Load More Articles <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </button>
           </div>
         </div>

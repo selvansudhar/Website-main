@@ -24,6 +24,34 @@ export default function YenAI() {
                     <span className="text-white/30">/</span>
                     <span className="text-white uppercase">YenAI</span>
                 </div>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                    { "@type": "ListItem", "position": 3, "name": "YenAI" }
+                  ]
+                }) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  "name": "Zynex YenAI",
+                  "description": "Create an AI persona that talks, thinks, and responds like you. Let YenAI handle client conversations, meetings, and support.",
+                  "url": "https://zynex.ai/products/yenai",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                  },
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Zynex AI",
+                    "url": "https://zynex.ai"
+                  }
+                }) }} />
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
                 <div className="flex flex-col gap-6" data-animate="fade-up">
                     <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-[100px] px-4 py-1.5 w-fit max-lg:mx-auto max-sm:px-3 max-sm:py-1">
@@ -275,10 +303,10 @@ export default function YenAI() {
                         Ready to clone yourself?
                     </h2>
                     <p className="text-[1.1rem] text-white/80 leading-[1.7] mb-10 max-md:text-base max-sm:text-[0.9rem]">
-                        Create your AI twin in under 10 minutes. Start handling conversations, emails, and calls — while you focus on the work that matters most.
+                        Build your AI persona in under 10 minutes. Handle conversations, emails, and calls autonomously — while you focus on growing your business.
                     </p>
                     <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
-                        Create your AI twin
+                        Create Your AI Twin
                      <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                 </div>
             </section>

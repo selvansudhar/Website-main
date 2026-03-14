@@ -41,6 +41,14 @@ export default function Enterprise() {
                     <span className="text-[#e0e0e0]">/</span>
                     <span className="text-[#056CB8] uppercase">Enterprise</span>
                 </div>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+                    { "@type": "ListItem", "position": 2, "name": "Enterprise" }
+                  ]
+                }) }} />
 
                 <div className="max-w-[900px] mx-auto flex flex-col items-center text-center gap-6 max-sm:gap-4" data-animate="fade-up">
                     <div className="inline-flex items-center gap-2 bg-white border border-[#e0e0e0] rounded-[100px] px-4 py-1.5 max-sm:px-3 max-sm:py-1">
@@ -62,7 +70,7 @@ export default function Enterprise() {
                          <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                     </div>
                     <p className="text-[0.78rem] text-[#888888] m-0">
-                        Trusted by 500+ businesses &nbsp;&bull;&nbsp; 16 data centers &nbsp;&bull;&nbsp; 150+ countries
+                        Powering businesses across 5+ industries worldwide &nbsp;&bull;&nbsp; 16 data centers &nbsp;&bull;&nbsp; 150+ countries
                     </p>
                 </div>
             </section>
@@ -264,10 +272,10 @@ export default function Enterprise() {
                         Explore how our solutions can help your enterprise
                     </h2>
                     <p className="text-[1.05rem] text-[#555555] leading-relaxed max-sm:text-[0.9rem]">
-                        Our team will get in touch with you for an exploratory call.
+                        Our team will walk you through the platform, understand your needs, and create a tailored implementation plan.
                     </p>
                     <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
-                        Contact sales
+                        Schedule a Demo
                      <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                 </div>
             </section>

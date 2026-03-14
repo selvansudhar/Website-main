@@ -21,6 +21,34 @@ export default function HumanResources() {
                     <span className="text-[#e0e0e0]">/</span>
                     <span className="text-[#056CB8] uppercase">Human Resources</span>
                 </div>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                    { "@type": "ListItem", "position": 3, "name": "Human Resources" }
+                  ]
+                }) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  "name": "Zynex Human Resources",
+                  "description": "Modern HRMS for recruitment, onboarding, payroll, and employee management with AI-driven workforce analytics.",
+                  "url": "https://zynex.ai/products/human-resources",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                  },
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Zynex AI",
+                    "url": "https://zynex.ai"
+                  }
+                }) }} />
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
                     {/* Left — Text */}
                     <div className="flex flex-col gap-6" data-animate="fade-up">
@@ -43,7 +71,7 @@ export default function HumanResources() {
                              <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                         </div>
                         <p className="text-[0.78rem] text-[#888888] m-0">
-                            Trusted by 500+ businesses &nbsp;&bull;&nbsp; Free setup &nbsp;&bull;&nbsp; No credit card
+                            Automate HR workflows &nbsp;&bull;&nbsp; Employee self-service &nbsp;&bull;&nbsp; Go live in days
                         </p>
                     </div>
 
@@ -296,13 +324,13 @@ export default function HumanResources() {
             <section className="py-32 px-12 bg-white flex justify-center items-center w-full border-t border-[#e0e0e0] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
                 <div className="max-w-[680px] w-full text-center flex flex-col items-center gap-6 max-sm:gap-4" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
-                        Ready to transform your HR operations?
+                        Modern HR starts here
                     </h2>
                     <p className="text-[1.05rem] text-[#555555] leading-relaxed max-sm:text-[0.9rem]">
-                        Experience the power of integrated workforce management. Start building a more engaged and productive team today.
+                        Simplify attendance, leave management, and performance reviews — so your HR team can focus on people, not paperwork.
                     </p>
                     <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
-                        Get started now
+                        Explore Zynex HR
                      <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                 </div>
             </section>

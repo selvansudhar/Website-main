@@ -11,6 +11,15 @@ export const metadata = {
 export default function CommunityPage() {
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zynex.ai/resources" },
+          { "@type": "ListItem", "position": 3, "name": "Community" }
+        ]
+      }) }} />
 
       {/* ===== HERO — CENTERED, BOLD ===== */}
       <section className="bg-[#056CB8] text-white pt-40 max-md:pt-24 pb-24 px-6">
@@ -37,10 +46,10 @@ export default function CommunityPage() {
           {/* Community Stats */}
           <div className="grid grid-cols-4 max-md:grid-cols-2 gap-4 mt-16 max-w-3xl mx-auto" data-animate="fade-in">
             {[
-              { value: '12K+', label: 'Members' },
-              { value: '500+', label: 'Contributors' },
-              { value: '80+', label: 'Countries' },
-              { value: '50+', label: 'Events/Year' },
+              { value: '500+', label: 'Members' },
+              { value: '50+', label: 'Contributors' },
+              { value: '5+', label: 'Industries' },
+              { value: '10+', label: 'Events/Year' },
             ].map((stat, i) => (
               <div key={i} className="bg-white/10 border border-white/20 p-4 text-center">
                 <p className="text-2xl font-bold">{stat.value}</p>
@@ -69,21 +78,21 @@ export default function CommunityPage() {
                 icon: 'bi-lightning-charge-fill',
                 title: 'Developer Forum',
                 desc: 'Ask questions, share code snippets, discuss APIs, and get help from Zynex engineers and fellow developers.',
-                stats: '4,200+ discussions',
+                stats: '200+ discussions',
                 color: 'bg-[#056CB8]',
               },
               {
                 icon: 'bi-people-fill',
                 title: 'User Groups',
                 desc: 'Local and virtual meetups organized by industry and product. Connect with peers solving similar challenges.',
-                stats: '35 active groups',
+                stats: '5 active groups',
                 color: 'bg-[#22c55e]',
               },
               {
                 icon: 'bi-star-fill',
                 title: 'Champions Program',
                 desc: 'Become a Zynex Champion — get early access to features, direct engineer support, and exclusive events.',
-                stats: '120 champions',
+                stats: '15 champions',
                 color: 'bg-[#111111]',
               },
             ].map((space, i) => (
@@ -146,9 +155,9 @@ export default function CommunityPage() {
 
           <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
-              { quote: 'The developer forum saved me weeks of work. Got a production-ready RAG implementation in 3 days with community help.', name: 'Alex Rivera', role: 'Senior Engineer, TechCorp' },
-              { quote: 'Zynex community events are the best networking opportunity in enterprise AI. Met my last two hires there.', name: 'Priya Nair', role: 'CTO, HealthBridge' },
-              { quote: 'Being a Zynex Champion gave me early access to features that transformed our manufacturing workflows.', name: 'Thomas Berg', role: 'VP Operations, AutoMfg' },
+              { quote: 'The developer forum helped us integrate Zynex APIs into our workflow in just a few days. Great community support.', name: 'Developer', role: 'Zynex User' },
+              { quote: 'Zynex community events are a great way to learn about new features and connect with other users.', name: 'Team Lead', role: 'Zynex Client' },
+              { quote: 'Being an early adopter gave us direct access to the engineering team. Our feedback actually shaped the product.', name: 'Early Adopter', role: 'Zynex Champion' },
             ].map((testimonial, i) => (
               <div key={i} className="border border-[#e0e0e0] p-6">
                 <p className="text-6xl text-[#056CB8]/15 font-serif leading-none mb-2">&ldquo;</p>

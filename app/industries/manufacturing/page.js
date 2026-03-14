@@ -3,12 +3,21 @@ import CountUp from '@/components/CountUp';
 export const metadata = {
   title: "Manufacturing Solutions | Zynex",
   description:
-    "Smart factory operations platform powering 500+ production facilities with AI-driven manufacturing intelligence, predictive maintenance, and real-time quality control.",
+    "Smart factory operations platform powering 300+ production facilities with AI-driven manufacturing intelligence, predictive maintenance, and real-time quality control.",
 };
 
 export default function ManufacturingPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zynex.ai/industries" },
+          { "@type": "ListItem", "position": 3, "name": "Manufacturing" }
+        ]
+      }) }} />
       {/* ───────── Section 1: Hero with Production Command Center Mockup ───────── */}
       <section className="bg-[#111111] text-white pt-40 max-md:pt-24 pb-32 px-6 max-[480px]:px-4 max-[480px]:pb-16">
         <p className="text-sm text-white/50 mb-8 max-w-6xl mx-auto max-[480px]:text-xs">
@@ -43,7 +52,7 @@ export default function ManufacturingPage() {
               </a>
             </div>
             <p className="text-white/40 text-sm">
-              Powering 500+ Production Facilities
+              Powering 300+ Production Facilities
             </p>
           </div>
 
@@ -107,7 +116,7 @@ export default function ManufacturingPage() {
       <section className="bg-[#F60014] text-white py-5 max-[480px]:py-4">
         <div className="grid grid-cols-4 max-md:grid-cols-2 gap-6 max-[480px]:gap-3 text-center max-w-6xl mx-auto px-6 max-[480px]:px-4" data-animate="fade-up">
           {[
-            { value: "500+", label: "Factories" },
+            { value: "300+", label: "Factories" },
             { value: "99.7%", label: "Quality Rate" },
             { value: "24/7", label: "Monitoring" },
             { value: "35%", label: "Cost Reduction" },
@@ -379,19 +388,17 @@ export default function ManufacturingPage() {
       <section className="bg-[#f5f5f5] py-24 px-6 max-[480px]:px-4 max-[480px]:py-16 text-center">
         <div data-animate="fade-up">
         <h2 className="text-4xl max-md:text-2xl max-[480px]:text-xl font-bold text-[#111111] mb-4">
-          Ready to Build Your Smart Factory?
+          Optimize your factory floor with intelligent automation
         </h2>
         <p className="text-[#555555] max-w-xl mx-auto mb-8">
-          Join hundreds of manufacturers who have transformed their operations
-          with our AI-powered platform. Get a personalized walkthrough of your
-          production optimization potential.
+          Reduce downtime, improve quality control, and maximize throughput with AI-powered manufacturing solutions built for Industry 4.0.
         </p>
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           <a
             href="/contact"
             className="group bg-[#F60014] text-white px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:opacity-90 transition"
           >
-            Schedule Factory Tour <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
+            Get Started with Manufacturing <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
           </a>
           <a
             href="/contact"

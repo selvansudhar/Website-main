@@ -11,6 +11,15 @@ export const metadata = {
 export default function SaasDevelopmentPage() {
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zynex.ai/solutions" },
+          { "@type": "ListItem", "position": 3, "name": "SaaS Development" }
+        ]
+      }) }} />
 
       {/* ===== HERO WITH BROWSER MOCKUP ===== */}
       <section className="bg-[#f5f5f5] pt-40 max-md:pt-24 pb-32 px-6">
@@ -222,15 +231,14 @@ export default function SaasDevelopmentPage() {
       <section className="bg-[#111111] text-white py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">
-            Ready to Build Your Next SaaS Product?
+            Turn your SaaS idea into a market-ready product
           </h2>
           <p className="text-white/60 mb-8">
-            Tell us about your idea. We will come back with a technical roadmap,
-            timeline, and budget within 48 hours.
+            From MVP to scale — our team builds robust, cloud-native SaaS platforms with multi-tenancy, billing, and analytics built in.
           </p>
           <div className="flex flex-col items-center gap-4">
             <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Get a Free Consultation <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
+              Start Your SaaS Project <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="/" className="text-white/50 text-sm hover:text-white transition-colors">
               Explore the platform &rarr;

@@ -118,6 +118,15 @@ export default function Concierge() {
 
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zynex.ai/resources" },
+          { "@type": "ListItem", "position": 3, "name": "Concierge" }
+        ]
+      }) }} />
 
       {/* ===== HERO ===== */}
       <section className="bg-white pt-40 max-md:pt-24 pb-24 px-6 max-[480px]:px-4 max-[480px]:pb-16">
@@ -361,13 +370,13 @@ export default function Concierge() {
       <section className="bg-[#111111] text-white py-24 px-6 max-[480px]:px-4 max-[480px]:py-16 text-center">
         <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
-            Your Perfect Setup Is One Conversation Away
+            Get personalized guidance for your business
           </h2>
           <p className="text-white/60 mb-8">
-            2,500+ businesses have found their ideal Zynex stack through Concierge. Book your free consultation today — no strings attached.
+            Book a free consultation with our concierge team. We'll understand your needs and connect you with the right solutions.
           </p>
           <a href="/contact" className="group inline-flex items-center justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-            Book Free Consultation <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
+            Book Your Free Call <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
           </a>
           <p className="text-white/40 text-xs mt-6">Average call: 25 minutes &nbsp;&bull;&nbsp; Written recommendation within 48 hours</p>
         </div>

@@ -21,6 +21,34 @@ export default function CRMLite() {
                     <span className="text-[#e0e0e0]">/</span>
                     <span className="text-[#056CB8] uppercase">CRM Lite</span>
                 </div>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                    { "@type": "ListItem", "position": 3, "name": "CRM Lite" }
+                  ]
+                }) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  "name": "Zynex CRM Lite",
+                  "description": "Lightweight yet powerful CRM to manage contacts, deals, and customer relationships with intelligent pipeline automation.",
+                  "url": "https://zynex.ai/products/crm-lite",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                  },
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Zynex AI",
+                    "url": "https://zynex.ai"
+                  }
+                }) }} />
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
                     {/* Left — Text */}
                     <div className="flex flex-col gap-6" data-animate="fade-up">
@@ -43,7 +71,7 @@ export default function CRMLite() {
                              <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                         </div>
                         <p className="text-[0.78rem] text-[#888888] m-0">
-                            Free forever plan &nbsp;&bull;&nbsp; No credit card &nbsp;&bull;&nbsp; Setup in minutes
+                            Close deals faster &nbsp;&bull;&nbsp; Visual pipeline &nbsp;&bull;&nbsp; Setup in minutes
                         </p>
                     </div>
 
@@ -336,13 +364,13 @@ export default function CRMLite() {
             <section className="py-28 px-12 bg-white max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
                 <div className="text-center max-w-[800px] mx-auto" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
-                        Your sales team deserves better than spreadsheets.
+                        Stop letting deals slip through the cracks
                     </h2>
                     <p className="text-[1.1rem] text-[#555555] leading-[1.7] mb-10 max-md:text-base max-sm:text-[0.9rem]">
-                        Start closing more deals today. Free forever for small teams — upgrade as you grow.
+                        See how CRM Lite helps you track every lead, automate follow-ups, and close more deals — all from one simple dashboard.
                     </p>
                     <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
-                        Get started free
+                        Try CRM Lite Free
                      <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                 </div>
             </section>

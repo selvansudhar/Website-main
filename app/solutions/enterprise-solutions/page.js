@@ -1,16 +1,25 @@
 export const metadata = {
-  title: 'Enterprise Solutions | Zynex',
-  description: 'End-to-end enterprise software solutions including ERP, CRM, HCM, and supply chain management for growing businesses.',
+  title: 'Enterprise Solutions — Custom Software for Complex Business Needs',
+  description: 'Tailored enterprise software solutions built for scale. From legacy modernization to custom integrations, we architect systems that grow with your business.',
   alternates: { canonical: 'https://zynex.ai/solutions/enterprise-solutions' },
   openGraph: {
-    title: 'Enterprise Solutions | Zynex',
-    description: 'End-to-end enterprise software solutions including ERP, CRM, HCM, and supply chain management for growing businesses.',
+    title: 'Enterprise Solutions — Custom Software for Complex Business Needs',
+    description: 'Tailored enterprise software solutions built for scale. From legacy modernization to custom integrations, we architect systems that grow with your business.',
   },
 };
 
 export default function EnterpriseSolutionsPage() {
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zynex.ai/solutions" },
+          { "@type": "ListItem", "position": 3, "name": "Enterprise Solutions" }
+        ]
+      }) }} />
 
       {/* ===== HERO WITH METRIC CARDS ===== */}
       <section className="bg-white pt-40 max-md:pt-24 pb-32 px-6">
@@ -173,10 +182,10 @@ export default function EnterpriseSolutionsPage() {
       <section className="bg-[#111111] text-white py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">
-            Your Enterprise Deserves Software That Keeps Up
+            Ready to modernize your enterprise systems?
           </h2>
           <p className="text-white/60 mb-8">
-            Let us architect a solution tailored to your scale, your industry, and your vision.
+            Our solutions architects will assess your current infrastructure and design a roadmap for digital transformation.
           </p>
           <div className="flex flex-col items-center gap-4">
             <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">

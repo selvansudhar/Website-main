@@ -11,6 +11,15 @@ export const metadata = {
 export default function B2BDevelopmentPage() {
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zynex.ai/solutions" },
+          { "@type": "ListItem", "position": 3, "name": "B2B Development" }
+        ]
+      }) }} />
 
       {/* ===== HERO WITH ARCHITECTURE DIAGRAM ===== */}
       <section className="bg-[#111111] text-white pt-40 max-md:pt-24 pb-32 px-6">
@@ -188,15 +197,14 @@ export default function B2BDevelopmentPage() {
       <section className="bg-[#111111] text-white py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">
-            Let&apos;s Build Something Your Business Depends On
+            Let&apos;s build something your clients will love
           </h2>
           <p className="text-white/60 mb-8">
-            Share your requirements. We will come back with a technical proposal,
-            architecture diagram, and estimate — free.
+            From complex B2B portals to custom integrations, our development team ships production-ready solutions on time and on budget.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
-              Start a Conversation <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
+              Discuss Your Project <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="/" className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white/70 font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
               Back to Home

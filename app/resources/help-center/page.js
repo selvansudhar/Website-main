@@ -83,6 +83,15 @@ export default function HelpCenter() {
 
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zynex.ai/resources" },
+          { "@type": "ListItem", "position": 3, "name": "Help Center" }
+        ]
+      }) }} />
 
       {/* ===== HERO ===== */}
       <section className="bg-[#056CB8] text-white pt-40 max-md:pt-24 pb-20 px-6">

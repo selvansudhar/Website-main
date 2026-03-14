@@ -1,4 +1,5 @@
 import CountUp from '@/components/CountUp';
+import Image from 'next/image';
 
 export const metadata = {
     title: 'Retail Industry Solutions — AI-Powered Commerce',
@@ -13,6 +14,15 @@ export const metadata = {
 export default function IndustryRetail() {
     return (
         <div className="bg-white text-[#111111]">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+                { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zynex.ai/industries" },
+                { "@type": "ListItem", "position": 3, "name": "Retail" }
+              ]
+            }) }} />
             {/* Hero Section */}
             <section className="max-w-[1400px] mx-auto px-12 pt-40 pb-32 max-md:px-6 max-md:pt-24 max-md:pb-12 max-sm:px-4">
                 {/* Nav Trail */}
@@ -208,13 +218,8 @@ export default function IndustryRetail() {
             {/* Omnichannel Showcase */}
             <section className="max-w-[1400px] mx-auto px-12 pb-32 max-md:px-6 max-md:pb-16 max-sm:px-4 max-sm:pb-12">
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:gap-10">
-                    {/* Image Placeholder */}
-                    <div className="w-full h-[380px] bg-[#f5f5f5] border border-[#e0e0e0] rounded-md flex items-center justify-center max-sm:h-[240px]">
-                        {/* Replace with: <Image src="/images/retail-omnichannel.webp" alt="Omnichannel Experience" width={640} height={380} className="w-full h-full object-cover rounded-md" /> */}
-                        <div className="flex flex-col items-center gap-2 text-[#d1d5db]">
-                            <i className="bi bi-diagram-3 text-4xl"></i>
-                            <span className="text-[0.75rem] font-medium">Omnichannel preview coming soon</span>
-                        </div>
+                    <div className="w-full overflow-hidden rounded-md">
+                        <Image src="/images/retail-omnichannel.webp" alt="Omnichannel Retail Experience" width={640} height={380} className="w-full h-auto object-cover" />
                     </div>
 
                     {/* Text */}
@@ -295,13 +300,13 @@ export default function IndustryRetail() {
             <section className="py-32 px-12 bg-white flex justify-center items-center w-full border-t border-[#e0e0e0] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
                 <div className="max-w-[680px] w-full text-center flex flex-col items-center gap-6 max-sm:gap-4" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
-                        Transform your retail business today
+                        Transform your retail operations with AI
                     </h2>
                     <p className="text-[1.05rem] text-[#555555] leading-relaxed max-sm:text-[0.9rem]">
-                        Join 500+ brands using Zynex to power smarter, faster, and more profitable retail operations.
+                        From inventory management to personalized customer experiences — see how Zynex helps retailers increase revenue and reduce operational costs.
                     </p>
                     <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
-                        Get started now
+                        Get a Retail Demo
                      <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                 </div>
             </section>

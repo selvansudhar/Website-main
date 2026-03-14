@@ -19,6 +19,34 @@ export default function KnowledgeBase() {
                     <span className="text-[#e0e0e0]">/</span>
                     <span className="text-[#056CB8] uppercase">Knowledge Base</span>
                 </div>
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                    { "@type": "ListItem", "position": 3, "name": "Knowledge Base" }
+                  ]
+                }) }} />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  "name": "Zynex Knowledge Base",
+                  "description": "Centralize your organization's knowledge. AI-powered search delivers instant, accurate answers from every document, system, and source.",
+                  "url": "https://zynex.ai/products/knowledge-base",
+                  "applicationCategory": "BusinessApplication",
+                  "operatingSystem": "Web",
+                  "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                  },
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Zynex AI",
+                    "url": "https://zynex.ai"
+                  }
+                }) }} />
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
                 {/* Left — Text */}
                 <div data-animate="fade-up">
@@ -320,10 +348,10 @@ export default function KnowledgeBase() {
                         Your team&apos;s knowledge deserves better than a shared drive.
                     </h2>
                     <p className="text-[1.1rem] text-[#555555] leading-[1.7] mb-10 max-md:text-base max-sm:text-[0.9rem]">
-                        Stop losing institutional knowledge when people leave. Start building a living, searchable brain for your entire organization.
+                        Build a living, searchable knowledge hub that grows smarter with every document. Your team finds answers in seconds, not hours.
                     </p>
                     <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
-                        Get started <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
+                        Build Your Knowledge Base <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
                     </button>
                 </div>
             </section>
