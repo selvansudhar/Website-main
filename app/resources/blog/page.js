@@ -20,12 +20,12 @@ export default function BlogPage() {
   };
 
   const posts = [
-    { category: 'ENGINEERING', title: 'Building a Multi-Tenant SaaS Architecture with Next.js', excerpt: 'How we designed Zynex\'s infrastructure to handle multiple enterprise clients with isolated data and shared resources.', author: 'Zynex Engineering', date: 'Mar 6, 2026', readTime: '12 min read', icon: 'bi-code-slash', color: 'bg-[#8b5cf6]' },
-    { category: 'PRODUCT', title: 'Introducing Zynex Finance Plus — Smarter Financial Management', excerpt: 'AI-powered invoicing, expense tracking, and real-time financial insights built for growing businesses.', author: 'Zynex Product', date: 'Feb 28, 2026', readTime: '5 min read', icon: 'bi-box-seam', color: 'bg-[#22c55e]' },
-    { category: 'INDUSTRY', title: 'Why Healthcare Organizations Need AI-Ready ERP Systems', excerpt: 'Exploring how intelligent automation is transforming patient management, scheduling, and compliance in healthcare.', author: 'Zynex Team', date: 'Feb 22, 2026', readTime: '10 min read', icon: 'bi-building', color: 'bg-[#f59e0b]' },
+    { category: 'ENGINEERING', title: 'Building a Multi-Tenant SaaS Architecture with Next.js', excerpt: 'How we designed Zynex\'s infrastructure to handle multiple enterprise clients with isolated data and shared resources.', author: 'Zynex Engineering', date: 'Mar 6, 2026', readTime: '12 min read', icon: 'bi-lightning-charge-fill', color: 'bg-[#8b5cf6]' },
+    { category: 'PRODUCT', title: 'Introducing Zynex Finance Plus — Smarter Financial Management', excerpt: 'AI-powered invoicing, expense tracking, and real-time financial insights built for growing businesses.', author: 'Zynex Product', date: 'Feb 28, 2026', readTime: '5 min read', icon: 'bi-inbox-fill', color: 'bg-[#22c55e]' },
+    { category: 'INDUSTRY', title: 'Why Healthcare Organizations Need AI-Ready ERP Systems', excerpt: 'Exploring how intelligent automation is transforming patient management, scheduling, and compliance in healthcare.', author: 'Zynex Team', date: 'Feb 22, 2026', readTime: '10 min read', icon: 'bi-diagram-3', color: 'bg-[#f59e0b]' },
     { category: 'ENGINEERING', title: 'From Monolith to Microservices: Our Migration Journey', excerpt: 'Lessons learned from refactoring our platform into modular services without disrupting existing clients.', author: 'Zynex Engineering', date: 'Feb 18, 2026', readTime: '15 min read', icon: 'bi-diagram-3', color: 'bg-[#8b5cf6]' },
     { category: 'AI & MACHINE LEARNING', title: 'RAG in Production: What Actually Works', excerpt: 'A practical guide to implementing retrieval-augmented generation for enterprise knowledge base systems.', author: 'Zynex AI Team', date: 'Feb 14, 2026', readTime: '11 min read', icon: 'bi-lightning-charge-fill', color: 'bg-[#056CB8]' },
-    { category: 'PRODUCT', title: 'Project Plus: How We Redesigned Sprint Management', excerpt: 'The thinking behind our new project management module — built for teams that ship fast.', author: 'Zynex Product', date: 'Feb 10, 2026', readTime: '7 min read', icon: 'bi-kanban', color: 'bg-[#22c55e]' },
+    { category: 'PRODUCT', title: 'Project Plus: How We Redesigned Sprint Management', excerpt: 'The thinking behind our new project management module — built for teams that ship fast.', author: 'Zynex Product', date: 'Feb 10, 2026', readTime: '7 min read', icon: 'bi-list-check', color: 'bg-[#22c55e]' },
   ];
 
   const categories = ['All', 'AI & Machine Learning', 'Engineering', 'Product', 'Industry', 'Company'];
@@ -83,7 +83,7 @@ export default function BlogPage() {
               <div className="absolute bottom-[-20px] left-[-20px] w-40 h-40 border border-white/5 rounded-full" />
               <div>
                 <span className="inline-block bg-white/15 text-white text-[10px] font-bold uppercase tracking-[0.15em] px-3 py-1.5 mb-4">Featured</span>
-                <i className="bi bi-cpu text-[4rem] text-white/15 block mb-4"></i>
+                <i className="bi bi-lightning-charge-fill text-[4rem] text-white/15 block mb-4"></i>
               </div>
               <div>
                 <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-white/60 block mb-2">{featuredPost.category}</span>
@@ -140,7 +140,7 @@ export default function BlogPage() {
           </div>
 
           <div className="text-center mt-12">
-            <button className="group px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#111111] hover:text-white transition-colors">
+            <button className="group inline-flex items-center gap-3 px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#111111] hover:text-white transition-colors">
               Load More Articles <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </button>
           </div>
@@ -158,7 +158,7 @@ export default function BlogPage() {
             <div className="flex-1 bg-white/10 border border-white/20 px-4 py-3 text-sm text-white/50">
               your@email.com
             </div>
-            <button className="group px-6 py-3 bg-white text-[#056CB8] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/90 transition-colors">
+            <button className="group inline-flex items-center gap-3 px-6 py-3 bg-white text-[#056CB8] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/90 transition-colors">
               Subscribe <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </button>
           </div>

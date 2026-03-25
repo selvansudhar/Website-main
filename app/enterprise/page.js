@@ -62,7 +62,7 @@ export default function Enterprise() {
                         We build scalable, enterprise-grade software that helps organizations work smarter and grow faster. Our solutions simplify operations, strengthen collaboration across teams, and transform data into meaningful insights.
                     </p>
                     <div className="flex gap-4 mt-2 max-sm:flex-col max-sm:items-center">
-                        <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                        <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                             Contact sales
                          <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                         <button className="bg-transparent text-[#111111] border-2 border-[#e0e0e0] px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">

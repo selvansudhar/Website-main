@@ -41,7 +41,7 @@ export default function FinancialServicesPage() {
                 deliver exceptional customer experiences.
               </p>
               <div className="flex gap-4 flex-wrap mt-2">
-                <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+                <a href="/contact" className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
                   Schedule a Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
                 </a>
                 <a href="/solutions" className="inline-flex items-center justify-center px-8 py-4 border border-white text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
@@ -312,10 +312,10 @@ export default function FinancialServicesPage() {
             Bank-grade security meets intelligent automation. Streamline compliance, accelerate transactions, and deliver superior client experiences.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+            <a href="/contact" className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
               Schedule a Fintech Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
-            <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#f5f5f5] transition-colors">
+            <a href="/contact" className="group inline-flex items-center justify-center gap-3 px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#f5f5f5] transition-colors">
               Talk to a Finance Expert <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
           </div>

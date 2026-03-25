@@ -15,10 +15,10 @@ const Footer = () => {
                             AI-powered enterprise platform for growing teams. ERP, intelligence, and assistants — all in one place.
                         </p>
                         <div className="flex gap-3">
-                            <Link href="/social/twitter" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="X (Twitter)">X</Link>
-                            <Link href="/social/linkedin" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="LinkedIn">in</Link>
-                            <Link href="/social/youtube" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="YouTube">YT</Link>
-                            <Link href="/social/instagram" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="Instagram">IG</Link>
+                            <a href="https://x.com/zynexai" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="X (Twitter)">X</a>
+                            <a href="https://linkedin.com/company/zynexai" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="LinkedIn">in</a>
+                            <a href="https://youtube.com/@zynexai" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="YouTube">YT</a>
+                            <a href="https://instagram.com/zynexai" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="Instagram">IG</a>
                         </div>
                     </div>
 

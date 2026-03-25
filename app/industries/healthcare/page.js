@@ -109,7 +109,7 @@ export default function HealthcarePage() {
             <div className="flex flex-wrap gap-4 mb-8">
               <a
                 href="/contact"
-                className="group inline-block bg-[#056CB8] text-white px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
+                className="group inline-flex items-center gap-3 bg-[#056CB8] text-white px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
               >
                 Request a Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
               </a>
@@ -346,13 +346,13 @@ export default function HealthcarePage() {
           <div className="flex flex-wrap justify-center gap-4 mb-6">
             <a
               href="/contact"
-              className="group inline-block bg-[#056CB8] text-white px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
+              className="group inline-flex items-center gap-3 bg-[#056CB8] text-white px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
             >
               Request a Healthcare Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a
               href="/contact"
-              className="group inline-block border border-[#111111] text-[#111111] px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
+              className="group inline-flex items-center gap-3 border border-[#111111] text-[#111111] px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
             >
               Speak with a Specialist <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>

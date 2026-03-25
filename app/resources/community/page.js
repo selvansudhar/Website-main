@@ -34,7 +34,7 @@ export default function CommunityPage() {
               building the future of enterprise technology with Zynex.
             </p>
             <div className="flex justify-center gap-4 flex-wrap">
-              <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-white text-[#056CB8] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/90 transition-colors">
+              <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-white text-[#056CB8] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/90 transition-colors">
                 Join the Community <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
               </a>
               <a href="/resources/developers" className="inline-flex items-center justify-center px-8 py-4 border border-white/50 text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
@@ -212,7 +212,7 @@ export default function CommunityPage() {
           <p className="text-white/60 mb-8">
             It takes 30 seconds to create your community account. Start connecting, learning, and building today.
           </p>
-          <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+          <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
             Join the Community <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
           </a>
         </div>

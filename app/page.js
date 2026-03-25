@@ -265,65 +265,8 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="flex justify-center items-center" data-animate="fade-right" aria-hidden="true">
-              <svg viewBox="0 0 400 400" fill="none" className="w-[360px] h-[360px] max-md:w-[280px] max-md:h-[280px]">
-                {/* Outer circle */}
-                <circle cx="200" cy="200" r="180" stroke="#111111" strokeWidth="1" strokeDasharray="6 6" opacity="0.15" />
-                <circle cx="200" cy="200" r="140" stroke="#111111" strokeWidth="1" opacity="0.1" />
-
-                {/* Shield */}
-                <path d="M200 80 L280 130 L280 220 C280 280 200 320 200 320 C200 320 120 280 120 220 L120 130 Z" stroke="#111111" strokeWidth="2" fill="#111111" fillOpacity="0.04" />
-                <path d="M200 100 L265 140 L265 215 C265 265 200 300 200 300 C200 300 135 265 135 215 L135 140 Z" stroke="#111111" strokeWidth="1.5" fill="white" />
-
-                {/* Lock on shield */}
-                <rect x="178" y="195" width="44" height="35" rx="6" stroke="#111111" strokeWidth="2" fill="#111111" fillOpacity="0.08" />
-                <path d="M188 195 L188 180 C188 170 194 163 200 163 C206 163 212 170 212 180 L212 195" stroke="#111111" strokeWidth="2" fill="none" />
-                <circle cx="200" cy="210" r="5" fill="#111111" />
-                <line x1="200" y1="215" x2="200" y2="222" stroke="#111111" strokeWidth="2" />
-
-                {/* Orbiting elements */}
-                {/* Key */}
-                <g transform="translate(310, 120)">
-                  <circle r="24" fill="white" stroke="#111111" strokeWidth="1" opacity="0.8" />
-                  <circle cx="0" cy="-4" r="6" stroke="#111111" strokeWidth="1.5" fill="none" />
-                  <line x1="0" y1="2" x2="0" y2="12" stroke="#111111" strokeWidth="1.5" />
-                  <line x1="0" y1="8" x2="4" y2="8" stroke="#111111" strokeWidth="1.5" />
-                  <line x1="0" y1="12" x2="4" y2="12" stroke="#111111" strokeWidth="1.5" />
-                </g>
-
-                {/* Fingerprint */}
-                <g transform="translate(90, 290)">
-                  <circle r="24" fill="white" stroke="#111111" strokeWidth="1" opacity="0.8" />
-                  <path d="M-6 4 C-6 -6 6 -6 6 4" stroke="#111111" strokeWidth="1.5" fill="none" />
-                  <path d="M-10 6 C-10 -10 10 -10 10 6" stroke="#111111" strokeWidth="1.5" fill="none" />
-                  <path d="M-2 4 C-2 0 2 0 2 4" stroke="#111111" strokeWidth="1.5" fill="none" />
-                </g>
-
-                {/* Checkmark badge */}
-                <g transform="translate(320, 270)">
-                  <circle r="24" fill="white" stroke="#111111" strokeWidth="1" opacity="0.8" />
-                  <path d="M-7 0 L-2 5 L7 -5" stroke="#111111" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-                </g>
-
-                {/* Eye/monitoring */}
-                <g transform="translate(80, 130)">
-                  <circle r="24" fill="white" stroke="#111111" strokeWidth="1" opacity="0.8" />
-                  <path d="M-10 0 C-5 -7 5 -7 10 0 C5 7 -5 7 -10 0 Z" stroke="#111111" strokeWidth="1.5" fill="none" />
-                  <circle cx="0" cy="0" r="3" fill="#111111" />
-                </g>
-
-                {/* Connection lines */}
-                <line x1="265" y1="160" x2="290" y2="130" stroke="#111111" strokeWidth="1" strokeDasharray="4 4" opacity="0.15" />
-                <line x1="135" y1="250" x2="110" y2="275" stroke="#111111" strokeWidth="1" strokeDasharray="4 4" opacity="0.15" />
-                <line x1="265" y1="250" x2="298" y2="265" stroke="#111111" strokeWidth="1" strokeDasharray="4 4" opacity="0.15" />
-                <line x1="135" y1="160" x2="105" y2="140" stroke="#111111" strokeWidth="1" strokeDasharray="4 4" opacity="0.15" />
-
-                {/* Small decorative dots */}
-                <circle cx="160" cy="90" r="3" fill="#111111" fillOpacity="0.15" />
-                <circle cx="250" cy="330" r="4" fill="#111111" fillOpacity="0.12" />
-                <circle cx="340" cy="200" r="3" fill="#111111" fillOpacity="0.15" />
-                <circle cx="60" cy="210" r="3.5" fill="#111111" fillOpacity="0.12" />
-              </svg>
+            <div className="flex justify-center items-center" data-animate="fade-right">
+              <Image src="/images/privacy-shield.webp" alt="Privacy and security illustration" width={520} height={520} className="w-full max-w-[420px] h-auto max-md:max-w-[320px]" />
             </div>
           </div>
         </div>

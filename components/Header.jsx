@@ -213,11 +213,21 @@ const Header = () => {
                                     </div>
 
                                     {/* View All Solutions */}
-                                    <div className="absolute bottom-0 left-0 right-0 mx-8 mb-3" onClick={closeMenu}>
-                                        <Link href="/solutions" className="block bg-[#f5f5f5] border border-[#e0e0e0] p-3 px-6 no-underline transition-colors hover:border-primary hover:bg-white">
+                                    <div className="absolute bottom-0 left-0 right-0 mx-8 mb-4" onClick={closeMenu}>
+                                        <Link href="/solutions" className="group relative block bg-gradient-to-br from-[#faf5ff] to-[#f3e8ff] overflow-hidden no-underline p-4 px-6 rounded-xl border border-[#8b5cf6]/15 transition-all duration-400 hover:border-[#8b5cf6]/40 hover:shadow-[0_4px_20px_rgba(139,92,246,0.12)] hover:-translate-y-0.5">
                                             <div className="flex justify-between items-center">
-                                                <span className="font-bold text-dark text-sm">View all solutions</span>
-                                                <span className="text-primary text-lg">→</span>
+                                                <div className="flex items-center gap-3.5">
+                                                    <div className="w-10 h-10 rounded-lg bg-[#8b5cf6] flex items-center justify-center shadow-[0_2px_8px_rgba(139,92,246,0.3)]">
+                                                        <svg width="18" height="18" viewBox="0 0 16 16" fill="none" className="text-white"><path d="M2 2h5v5H2V2zm7 0h5v5H9V2zM2 9h5v5H2V9zm7 0h5v5H9V9z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/></svg>
+                                                    </div>
+                                                    <div>
+                                                        <span className="font-bold text-[#111111] text-[0.88rem] block">Explore All Solutions</span>
+                                                        <span className="text-[#555555] text-[0.7rem] font-medium">5 solutions tailored for your business</span>
+                                                    </div>
+                                                </div>
+                                                <div className="w-8 h-8 rounded-full bg-[#8b5cf6]/10 flex items-center justify-center transition-all duration-300 group-hover:bg-[#8b5cf6] group-hover:scale-110">
+                                                    <span className="text-[#8b5cf6] text-sm transition-all duration-300 group-hover:text-white group-hover:translate-x-0.5 inline-block">→</span>
+                                                </div>
                                             </div>
                                         </Link>
                                     </div>
@@ -299,7 +309,7 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <span className="text-dark no-underline text-[0.95rem] font-medium relative transition-colors duration-300 cursor-pointer hover:text-primary" role="menuitem" tabIndex="0" onClick={closeMenu} onMouseEnter={closeMenu}>About</span>
+                    <Link href="/about" className="text-dark no-underline text-[0.95rem] font-medium relative transition-colors duration-300 cursor-pointer hover:text-primary" role="menuitem" tabIndex="0" onClick={closeMenu} onMouseEnter={closeMenu}>About</Link>
                 </nav>
 
                 <div className="hidden md:flex items-center gap-6" onMouseEnter={closeMenu}>
@@ -403,7 +413,7 @@ const Header = () => {
                         )}
                     </div>
 
-                    <span className="block py-[1.1rem] text-[1.05rem] font-semibold text-dark border-b border-border cursor-pointer max-[480px]:text-base max-[480px]:py-4" onClick={closeMobileMenu}>About</span>
+                    <Link href="/about" className="block py-[1.1rem] text-[1.05rem] font-semibold text-dark border-b border-border cursor-pointer no-underline max-[480px]:text-base max-[480px]:py-4" onClick={closeMobileMenu}>About</Link>
 
                     <div className="flex flex-col gap-3 pt-6">
                         <button className="w-full text-center py-3.5 px-6 text-[0.95rem] rounded-none font-semibold cursor-pointer transition-colors border-none bg-[#F60014] text-white hover:bg-[#d4000f]">Sign in</button>

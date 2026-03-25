@@ -13,262 +13,258 @@ export const metadata = {
 export default function CRMLite() {
     return (
         <div className="bg-white text-[#111111]">
-            {/* Hero Section */}
-            <section className="max-w-[1400px] mx-auto px-12 pt-40 pb-32 max-md:px-6 max-md:pt-24 max-md:pb-12 max-sm:px-4">
-                {/* Nav Trail */}
-                <div className="flex items-center gap-3 mb-8 text-xs font-medium tracking-wide max-sm:text-[0.65rem] max-sm:gap-2 max-sm:mb-4">
-                    <span className="text-[#555555]">Zynex AI</span>
-                    <span className="text-[#e0e0e0]">/</span>
-                    <span className="text-[#056CB8] uppercase">CRM Lite</span>
-                </div>
-                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-                  "@context": "https://schema.org",
-                  "@type": "BreadcrumbList",
-                  "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
-                    { "@type": "ListItem", "position": 3, "name": "CRM Lite" }
-                  ]
-                }) }} />
-                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-                  "@context": "https://schema.org",
-                  "@type": "SoftwareApplication",
-                  "name": "Zynex CRM Lite",
-                  "description": "Lightweight yet powerful CRM to manage contacts, deals, and customer relationships with intelligent pipeline automation.",
-                  "url": "https://zynex.ai/products/crm-lite",
-                  "applicationCategory": "BusinessApplication",
-                  "operatingSystem": "Web",
-                  "offers": {
-                    "@type": "Offer",
-                    "price": "0",
-                    "priceCurrency": "USD"
-                  },
-                  "provider": {
-                    "@type": "Organization",
-                    "name": "Zynex AI",
-                    "url": "https://zynex.ai"
-                  }
-                }) }} />
-                <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
-                    {/* Left — Text */}
-                    <div className="flex flex-col gap-6" data-animate="fade-up">
-                        <div className="inline-flex items-center gap-2 bg-white border border-[#e0e0e0] rounded-[100px] px-4 py-1.5 w-fit max-lg:mx-auto max-sm:px-3 max-sm:py-1">
+            {/* JSON-LD Structured Data */}
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+                { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                { "@type": "ListItem", "position": 3, "name": "CRM Lite" }
+              ]
+            }) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              "name": "Zynex CRM Lite",
+              "description": "Lightweight yet powerful CRM to manage contacts, deals, and customer relationships with intelligent pipeline automation.",
+              "url": "https://zynex.ai/products/crm-lite",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+              },
+              "provider": {
+                "@type": "Organization",
+                "name": "Zynex AI",
+                "url": "https://zynex.ai"
+              }
+            }) }} />
+
+            {/* Section 1: Full-Width Dark Hero with Horizontal Pipeline */}
+            <section className="bg-[#111111] text-white">
+                <div className="max-w-[1400px] mx-auto px-12 pt-40 pb-20 max-md:px-6 max-md:pt-24 max-md:pb-14 max-sm:px-4 max-sm:pt-20 max-sm:pb-10">
+                    {/* Nav Trail */}
+                    <div className="flex items-center justify-center gap-3 mb-8 text-xs font-medium tracking-wide max-sm:text-[0.65rem] max-sm:gap-2 max-sm:mb-4">
+                        <span className="text-white/50">Zynex AI</span>
+                        <span className="text-white/20">/</span>
+                        <span className="text-[#056CB8] uppercase">CRM Lite</span>
+                    </div>
+
+                    <div className="text-center max-w-[780px] mx-auto" data-animate="fade-up">
+                        <div className="inline-flex items-center gap-2 bg-white/10 rounded-[100px] px-5 py-2 mb-8 max-sm:px-4 max-sm:py-1.5 max-sm:mb-6">
                             <span className="w-1.5 h-1.5 rounded-full bg-[#056CB8]"></span>
-                            <span className="text-[0.82rem] font-medium text-[#555555]">Smart Sales Pipeline</span>
+                            <span className="text-[0.82rem] font-medium text-white/70">Smart Sales Pipeline</span>
                         </div>
-                        <h1 className="text-[2.8rem] font-extrabold leading-[1.08] text-[#111111] tracking-[-0.03em] max-md:text-[2.2rem] max-sm:text-[1.8rem]">
+
+                        <h1 className="text-[3.2rem] font-extrabold leading-[1.05] tracking-[-0.03em] mb-6 max-md:text-[2.4rem] max-sm:text-[1.9rem] max-sm:mb-4">
                             Close more deals.<br />Without the complexity.
                         </h1>
-                        <p className="text-[1.15rem] text-[#555555] leading-relaxed max-w-[520px] max-md:text-base max-sm:text-[0.9rem]">
+
+                        <p className="text-[1.15rem] text-white/60 leading-relaxed max-w-[600px] mx-auto mb-10 max-md:text-base max-sm:text-[0.9rem] max-sm:mb-8">
                             Transform raw inquiries into closed deals. Track leads, qualify opportunities, and drive revenue through an intuitive pipeline — built for teams that want results, not bloat.
                         </p>
-                        <div className="flex gap-4 mt-2 max-lg:justify-center max-sm:flex-col max-sm:items-center">
+
+                        <div className="flex gap-4 justify-center max-sm:flex-col max-sm:items-center">
                             <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                                 Start free
-                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
-                            <button className="bg-transparent text-[#111111] border-2 border-[#e0e0e0] px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
+                                <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
+                            </button>
+                            <button className="bg-transparent text-white border-2 border-white/30 px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-white/60 max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem] group">
                                 See demo
-                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
+                                <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
+                            </button>
                         </div>
-                        <p className="text-[0.78rem] text-[#888888] m-0">
-                            Close deals faster &nbsp;&bull;&nbsp; Visual pipeline &nbsp;&bull;&nbsp; Setup in minutes
+                    </div>
+                </div>
+
+                {/* Horizontal Pipeline Flow */}
+                <div className="max-w-[1000px] mx-auto px-12 pb-24 max-md:px-6 max-md:pb-16 max-sm:px-4 max-sm:pb-12" data-animate="fade-up">
+                    <div className="flex items-center justify-between max-sm:flex-col max-sm:gap-4">
+                        {[
+                            { stage: 'New Lead', icon: 'bi-person-check', color: '#056CB8' },
+                            { stage: 'Qualified', icon: 'bi-sliders', color: '#8b5cf6' },
+                            { stage: 'Proposal', icon: 'bi-file-earmark-text', color: '#fbbf24' },
+                            { stage: 'Negotiation', icon: 'bi-headset', color: '#f97316' },
+                            { stage: 'Won', icon: 'bi-star-fill', color: '#09983A' },
+                        ].map((item, i) => (
+                            <div key={item.stage} className="flex items-center max-sm:w-full">
+                                <div className="flex flex-col items-center gap-3 max-sm:flex-row max-sm:gap-4 max-sm:w-full">
+                                    <div
+                                        className="w-16 h-16 rounded-full flex items-center justify-center border-2 max-sm:w-12 max-sm:h-12 shrink-0"
+                                        style={{ borderColor: item.color, backgroundColor: `${item.color}15` }}
+                                    >
+                                        <i className={`bi ${item.icon} text-xl max-sm:text-base`} style={{ color: item.color }}></i>
+                                    </div>
+                                    <span className="text-[0.78rem] font-bold text-white/80 tracking-wide uppercase max-sm:text-[0.72rem]">{item.stage}</span>
+                                </div>
+                                {i < 4 && (
+                                    <div className="flex items-center mx-6 max-lg:mx-3 max-sm:hidden">
+                                        <div className="w-12 h-[2px] max-lg:w-6" style={{ backgroundColor: `${item.color}50` }}></div>
+                                        <i className="bi bi-arrow-left-right text-[0.7rem]" style={{ color: `${item.color}80` }}></i>
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Section 2: "How It Works" - Large Numbered Steps */}
+            <section className="py-28 px-12 bg-white max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
+                <div className="max-w-[1200px] mx-auto">
+                    <div className="text-center mb-20 max-sm:mb-12" data-animate="fade-up">
+                        <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
+                            How It Works
+                        </h2>
+                        <p className="text-[1.1rem] text-[#555555] leading-[1.7] max-w-[600px] mx-auto max-md:text-base max-sm:text-[0.9rem]">
+                            Four simple steps from first contact to closed deal
                         </p>
                     </div>
 
-                    {/* Right — Pipeline Kanban Mockup */}
-                    <div className="max-lg:mt-4">
-                        <div className="bg-white border border-[#e0e0e0] rounded-md shadow-[0_8px_24px_rgba(0,0,0,0.08)] overflow-hidden">
-                            {/* Window Chrome */}
-                            <div className="flex items-center gap-2 px-5 py-3 border-b border-[#e0e0e0] bg-[#f5f5f5]">
-                                <span className="w-2.5 h-2.5 rounded-full bg-[#e0e0e0]"></span>
-                                <span className="w-2.5 h-2.5 rounded-full bg-[#e0e0e0]"></span>
-                                <span className="w-2.5 h-2.5 rounded-full bg-[#e0e0e0]"></span>
-                                <span className="ml-3 text-[0.7rem] font-semibold text-[#555555] tracking-wide uppercase">CRM Lite — Pipeline</span>
-                            </div>
+                    <div className="grid grid-cols-2 gap-8 max-md:grid-cols-1 max-sm:gap-6">
+                        {[
+                            {
+                                num: '01',
+                                icon: 'bi-inbox-fill',
+                                iconBg: '#056CB8',
+                                title: 'Capture Leads',
+                                desc: 'Auto-capture from website forms, emails, social media, and imports. Every inquiry lands in your pipeline instantly — nothing slips through.',
+                            },
+                            {
+                                num: '02',
+                                icon: 'bi-sliders',
+                                iconBg: '#8b5cf6',
+                                title: 'Qualify & Score',
+                                desc: 'Smart scoring ranks leads by engagement, fit, and intent. Focus your energy on the prospects most likely to convert.',
+                            },
+                            {
+                                num: '03',
+                                icon: 'bi-arrow-repeat',
+                                iconBg: '#f97316',
+                                title: 'Nurture & Follow-up',
+                                desc: 'Automated reminders, scheduled touchpoints, and personalized sequences keep every lead warm and moving forward.',
+                            },
+                            {
+                                num: '04',
+                                icon: 'bi-star-fill',
+                                iconBg: '#09983A',
+                                title: 'Close & Win',
+                                desc: 'Track proposals, negotiations, and contracts in one view. See your win rate climb as deals flow through the pipeline.',
+                            },
+                        ].map((step, i) => (
+                            <div
+                                key={step.num}
+                                className="relative bg-white border border-[#e0e0e0] p-8 overflow-hidden transition-all duration-300 hover:border-[#111111] hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] max-sm:p-6"
+                                data-animate={i % 2 === 0 ? 'fade-left' : 'fade-right'}
+                            >
+                                {/* Large decorative number */}
+                                <span className="absolute top-4 right-6 text-[4rem] font-extrabold text-[#056CB8]/10 leading-none select-none pointer-events-none max-sm:text-[3rem] max-sm:top-3 max-sm:right-4">
+                                    {step.num}
+                                </span>
 
-                            <div className="p-5 max-sm:p-4">
-                                {/* Pipeline Columns */}
-                                <div className="grid grid-cols-3 gap-3 max-sm:gap-2">
-                                    {/* New Leads */}
-                                    <div>
-                                        <div className="flex items-center gap-2 mb-3 max-sm:mb-2">
-                                            <span className="w-2 h-2 rounded-full bg-[#056CB8]"></span>
-                                            <span className="text-[0.65rem] font-bold text-[#111111] uppercase tracking-wider">New</span>
-                                            <span className="text-[0.6rem] font-semibold text-[#555555] bg-[#f5f5f5] px-1.5 py-0.5 rounded">4</span>
-                                        </div>
-                                        {[
-                                            { name: 'Acme Corp', value: '$12,000', hot: true },
-                                            { name: 'TechFlow', value: '$8,500', hot: false },
-                                        ].map((deal) => (
-                                            <div key={deal.name} className="bg-[#f5f5f5] border border-[#e0e0e0] rounded-md p-3 mb-2 max-sm:p-2 max-sm:mb-1.5">
-                                                <div className="text-[0.75rem] font-semibold text-[#111111] mb-1 max-sm:text-[0.68rem]">{deal.name}</div>
-                                                <div className="flex items-center justify-between">
-                                                    <span className="text-[0.68rem] font-bold text-[#056CB8] max-sm:text-[0.6rem]">{deal.value}</span>
-                                                    {deal.hot && <span className="text-[0.55rem] font-bold text-[#F60014] bg-[#F60014]/10 px-1.5 py-0.5 rounded">Hot</span>}
-                                                </div>
-                                            </div>
-                                        ))}
+                                <div className="relative z-10">
+                                    <div
+                                        className="w-12 h-12 rounded-lg flex items-center justify-center mb-5 max-sm:w-10 max-sm:h-10 max-sm:mb-4"
+                                        style={{ backgroundColor: step.iconBg }}
+                                    >
+                                        <i className={`bi ${step.icon} text-white text-lg max-sm:text-base`}></i>
                                     </div>
-
-                                    {/* In Progress */}
-                                    <div>
-                                        <div className="flex items-center gap-2 mb-3 max-sm:mb-2">
-                                            <span className="w-2 h-2 rounded-full bg-[#fbbf24]"></span>
-                                            <span className="text-[0.65rem] font-bold text-[#111111] uppercase tracking-wider">Progress</span>
-                                            <span className="text-[0.6rem] font-semibold text-[#555555] bg-[#f5f5f5] px-1.5 py-0.5 rounded">3</span>
-                                        </div>
-                                        {[
-                                            { name: 'GlobalFin', value: '$24,000' },
-                                            { name: 'MedFirst', value: '$18,200' },
-                                        ].map((deal) => (
-                                            <div key={deal.name} className="bg-[#f5f5f5] border border-[#e0e0e0] rounded-md p-3 mb-2 max-sm:p-2 max-sm:mb-1.5">
-                                                <div className="text-[0.75rem] font-semibold text-[#111111] mb-1 max-sm:text-[0.68rem]">{deal.name}</div>
-                                                <span className="text-[0.68rem] font-bold text-[#056CB8] max-sm:text-[0.6rem]">{deal.value}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-
-                                    {/* Won */}
-                                    <div>
-                                        <div className="flex items-center gap-2 mb-3 max-sm:mb-2">
-                                            <span className="w-2 h-2 rounded-full bg-[#09983A]"></span>
-                                            <span className="text-[0.65rem] font-bold text-[#111111] uppercase tracking-wider">Won</span>
-                                            <span className="text-[0.6rem] font-semibold text-[#555555] bg-[#f5f5f5] px-1.5 py-0.5 rounded">7</span>
-                                        </div>
-                                        {[
-                                            { name: 'RetailPro', value: '$32,400' },
-                                            { name: 'DataSync', value: '$15,800' },
-                                        ].map((deal) => (
-                                            <div key={deal.name} className="bg-[#09983A]/5 border border-[#09983A]/20 rounded-md p-3 mb-2 max-sm:p-2 max-sm:mb-1.5">
-                                                <div className="flex items-center gap-1.5 mb-1">
-                                                    <i className="bi bi-check-circle-fill text-[#09983A] text-[0.6rem]"></i>
-                                                    <span className="text-[0.75rem] font-semibold text-[#111111] max-sm:text-[0.68rem]">{deal.name}</span>
-                                                </div>
-                                                <span className="text-[0.68rem] font-bold text-[#09983A] max-sm:text-[0.6rem]">{deal.value}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                {/* Bottom stats bar */}
-                                <div className="flex items-center justify-between mt-4 pt-3 border-t border-[#e0e0e0] max-sm:mt-3">
-                                    <div className="flex items-center gap-2">
-                                        <i className="bi bi-graph-up text-[#056CB8] text-xs"></i>
-                                        <span className="text-[0.72rem] text-[#555555]">Pipeline value: <strong className="text-[#111111]">$110,900</strong></span>
-                                    </div>
-                                    <span className="text-[0.65rem] font-bold text-[#09983A]">68% win rate</span>
+                                    <h3 className="text-[1.25rem] font-bold text-[#111111] mb-3 max-sm:text-[1.05rem]">{step.title}</h3>
+                                    <p className="text-[0.92rem] text-[#555555] leading-[1.7] max-sm:text-[0.85rem]">{step.desc}</p>
                                 </div>
                             </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </section>
 
-            {/* Core Capabilities — Bento Grid */}
+            {/* Section 3: Capabilities - Left Sticky Text + Right Scrolling Cards */}
             <section className="py-28 px-12 bg-[#f5f5f5] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]" data-animate="fade-up">
-                    Everything you need to close deals faster
-                </h2>
-                <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center max-w-[700px] mx-auto mb-20 max-md:text-base max-sm:text-[0.9rem] max-sm:mb-12" data-animate="fade-up">
-                    From first contact to signed contract — manage your entire sales cycle in one place
-                </p>
-
-                <div className="grid grid-cols-3 grid-rows-[auto_auto] gap-6 max-w-[1200px] mx-auto max-lg:grid-cols-2 max-md:grid-cols-1" data-animate="fade-up">
-                    {/* Hero Card — Pipeline (spans 2 cols) */}
-                    <div className="col-span-2 bg-white border border-[#e0e0e0] rounded-md p-8 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] hover:border-[#111111] max-lg:col-span-2 max-md:col-span-1 max-sm:p-6">
-                        <div>
-                            <div className="flex items-center gap-3 mb-4">
-                                <div className="w-11 h-11 bg-[#111111] rounded-lg flex items-center justify-center">
-                                    <i className="bi bi-bar-chart-fill text-lg text-white"></i>
-                                </div>
-                                <span className="text-[0.65rem] font-bold text-[#111111] bg-[#f5f5f5] px-2.5 py-0.5 rounded-full uppercase tracking-wider border border-[#e0e0e0]">Core</span>
-                            </div>
-                            <h3 className="text-[1.4rem] font-bold text-[#111111] mb-3 max-sm:text-[1.15rem]">Visual Pipeline Management</h3>
-                            <p className="text-[0.95rem] text-[#555555] leading-[1.7] max-w-[520px] max-sm:text-[0.85rem]">
-                                Drag-and-drop Kanban boards let you see every deal at a glance. Custom stages, probability scoring, and expected close dates — all in one view.
-                            </p>
-                        </div>
-                        {/* Mini pipeline illustration */}
-                        <div className="mt-8 flex items-center gap-3 max-sm:mt-6 max-sm:gap-2">
-                            {['New Lead', 'Qualified', 'Proposal', 'Negotiation', 'Won'].map((stage, i) => (
-                                <div key={stage} className="flex items-center gap-3 max-sm:gap-2">
-                                    <div className={`px-3 py-1.5 rounded text-[0.68rem] font-semibold border max-sm:px-2 max-sm:py-1 max-sm:text-[0.6rem] ${i === 4 ? 'bg-[#09983A]/10 border-[#09983A]/20 text-[#09983A]' : 'bg-[#f5f5f5] border-[#e0e0e0] text-[#555555]'}`}>
-                                        {stage}
-                                    </div>
-                                    {i < 4 && <span className="text-[#e0e0e0] text-xs max-sm:text-[0.6rem]">&rarr;</span>}
-                                </div>
-                            ))}
-                        </div>
+                <div className="max-w-[1200px] mx-auto grid grid-cols-[1fr_1.4fr] gap-16 max-lg:grid-cols-1 max-lg:gap-10 max-sm:gap-8">
+                    {/* Left — Sticky */}
+                    <div className="max-lg:text-center lg:sticky lg:top-32 lg:self-start" data-animate="fade-right">
+                        <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
+                            Everything you need to close deals faster
+                        </h2>
+                        <p className="text-[1.05rem] text-[#555555] leading-[1.7] max-md:text-base max-sm:text-[0.9rem]">
+                            From first contact to signed contract — manage your entire sales cycle in one place. No bloat, no complexity, just results.
+                        </p>
                     </div>
 
-                    {/* Smaller Cards */}
-                    {[
-                        {
-                            icon: 'bi-inbox-fill',
-                            title: 'Lead Capture',
-                            desc: 'Auto-capture from website forms, emails, and imports. Score and assign leads instantly.',
-                            tag: 'Leads',
-                        },
-                        {
-                            icon: 'bi-calendar-event-fill',
-                            title: 'Activity Tracking',
-                            desc: 'Schedule calls, meetings, and follow-ups with automated reminders. Never miss a touchpoint.',
-                            tag: 'Activities',
-                        },
-                        {
-                            icon: 'bi-people-fill',
-                            title: 'Contact Management',
-                            desc: 'Complete customer profiles with interaction history, notes, and deal associations.',
-                            tag: 'Contacts',
-                        },
-                        {
-                            icon: 'bi-graph-up-arrow',
-                            title: 'Sales Forecasting',
-                            desc: 'Win/loss ratios, conversion rates, and revenue forecasts powered by real-time data.',
-                            tag: 'Insights',
-                        },
-                        {
-                            icon: 'bi-lightning-charge-fill',
-                            title: 'Smart Automation',
-                            desc: 'Auto-assign leads, trigger follow-ups, and move deals through stages based on rules.',
-                            tag: 'Automation',
-                        },
-                    ].map((cap) => (
-                        <div key={cap.title} className="bg-white border border-[#e0e0e0] rounded-md p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] hover:border-[#111111] max-sm:p-5">
-                            <div className="flex items-center gap-3 mb-3">
-                                <div className="w-9 h-9 bg-[#f5f5f5] rounded-lg flex items-center justify-center text-[#111111]">
-                                    <i className={`bi ${cap.icon} text-base`}></i>
+                    {/* Right — Scrolling Cards */}
+                    <div className="flex flex-col gap-5 max-sm:gap-4" data-animate="fade-left">
+                        {[
+                            {
+                                icon: 'bi-bar-chart-fill',
+                                title: 'Pipeline Management',
+                                desc: 'Drag-and-drop Kanban boards let you see every deal at a glance. Custom stages, probability scoring, and expected close dates in one view.',
+                                borderColor: '#056CB8',
+                            },
+                            {
+                                icon: 'bi-inbox-fill',
+                                title: 'Lead Capture',
+                                desc: 'Auto-capture from website forms, emails, and imports. Score and assign leads instantly with smart routing rules.',
+                                borderColor: '#8b5cf6',
+                            },
+                            {
+                                icon: 'bi-calendar-event-fill',
+                                title: 'Activity Tracking',
+                                desc: 'Schedule calls, meetings, and follow-ups with automated reminders. Never miss a touchpoint across your entire pipeline.',
+                                borderColor: '#f97316',
+                            },
+                            {
+                                icon: 'bi-people-fill',
+                                title: 'Contact Management',
+                                desc: 'Complete customer profiles with interaction history, notes, deal associations, and communication preferences.',
+                                borderColor: '#09983A',
+                            },
+                            {
+                                icon: 'bi-graph-up-arrow',
+                                title: 'Sales Forecasting',
+                                desc: 'Win/loss ratios, conversion rates, and revenue forecasts powered by real-time pipeline data and historical trends.',
+                                borderColor: '#F60014',
+                            },
+                            {
+                                icon: 'bi-lightning-charge-fill',
+                                title: 'Smart Automation',
+                                desc: 'Auto-assign leads, trigger follow-ups, and move deals through stages based on custom rules and AI recommendations.',
+                                borderColor: '#056CB8',
+                            },
+                        ].map((cap) => (
+                            <div
+                                key={cap.title}
+                                className="bg-white p-6 flex gap-5 items-start transition-all duration-300 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] max-sm:p-5 max-sm:gap-4"
+                                style={{ borderLeft: `4px solid ${cap.borderColor}` }}
+                            >
+                                <div
+                                    className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 max-sm:w-9 max-sm:h-9"
+                                    style={{ backgroundColor: `${cap.borderColor}12` }}
+                                >
+                                    <i className={`bi ${cap.icon} text-base`} style={{ color: cap.borderColor }}></i>
                                 </div>
-                                <span className="text-[0.6rem] font-bold text-[#111111] bg-[#f5f5f5] px-2 py-0.5 rounded-full uppercase tracking-wider border border-[#e0e0e0]">{cap.tag}</span>
+                                <div>
+                                    <h3 className="text-[1.05rem] font-bold text-[#111111] mb-1.5 max-sm:text-[0.95rem]">{cap.title}</h3>
+                                    <p className="text-[0.88rem] text-[#555555] leading-[1.7] max-sm:text-[0.82rem]">{cap.desc}</p>
+                                </div>
                             </div>
-                            <h3 className="text-[1rem] font-bold text-[#111111] mb-2 max-sm:text-[0.95rem]">{cap.title}</h3>
-                            <p className="text-[0.85rem] text-[#555555] leading-[1.7] max-sm:text-[0.8rem]">{cap.desc}</p>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </section>
 
-            {/* Before / After — Why Switch */}
-            <section className="py-28 px-12 bg-white max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <div className="text-center max-w-[900px] mx-auto mb-20 max-sm:mb-12" data-animate="fade-up">
-                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] max-md:text-[1.8rem] max-sm:text-[1.5rem] max-sm:mb-4">
-                        Spreadsheets are costing you deals
-                    </h2>
-                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] max-md:text-base max-sm:text-[0.9rem]">
-                        See how CRM Lite transforms your sales process
-                    </p>
-                </div>
-
-                <div className="grid grid-cols-2 gap-8 max-w-[1100px] mx-auto max-md:grid-cols-1 max-sm:gap-6" data-animate="fade-up">
-                    {/* Without */}
-                    <div className="bg-white border border-[#e0e0e0] rounded-md p-8 max-sm:p-6">
-                        <div className="flex items-center gap-3 mb-8 max-sm:mb-6">
-                            <div className="w-10 h-10 bg-[#f5f5f5] rounded-lg flex items-center justify-center">
-                                <i className="bi bi-exclamation-triangle text-[#F60014] text-sm font-bold"></i>
-                            </div>
-                            <h3 className="text-[1.1rem] font-bold text-[#111111] max-sm:text-[1rem]">Without CRM Lite</h3>
+            {/* Section 4: Before/After as Dark Split Panel */}
+            <section className="grid grid-cols-2 max-md:grid-cols-1">
+                {/* Without CRM — Dark Panel */}
+                <div className="bg-[#111111] p-16 max-md:p-10 max-sm:p-8" data-animate="fade-right">
+                    <div className="max-w-[480px] ml-auto max-md:mx-auto max-sm:max-w-full">
+                        <div className="flex items-center gap-3 mb-10 max-sm:mb-8">
+                            <i className="bi bi-exclamation-triangle text-[#F60014] text-xl"></i>
+                            <h3 className="text-[1.3rem] font-bold text-white max-sm:text-[1.1rem]">Without CRM</h3>
                         </div>
-                        <div className="flex flex-col gap-5">
+                        <div className="flex flex-col gap-6 max-sm:gap-5">
                             {[
                                 'Leads lost in spreadsheets and email threads',
                                 'No visibility into pipeline value or deal stage',
@@ -276,23 +272,23 @@ export default function CRMLite() {
                                 'Manual data entry wastes 5+ hours per week',
                                 'No way to forecast revenue accurately',
                             ].map((pain) => (
-                                <div key={pain} className="flex gap-3 items-start">
-                                    <span className="text-[#F60014] font-bold text-sm mt-0.5 shrink-0">&times;</span>
-                                    <p className="text-[0.9rem] text-[#555555] leading-[1.6] max-sm:text-[0.85rem]">{pain}</p>
+                                <div key={pain} className="flex gap-4 items-start">
+                                    <span className="text-[#F60014] font-bold text-lg mt-0 shrink-0">&times;</span>
+                                    <p className="text-[0.92rem] text-white/60 leading-[1.6] max-sm:text-[0.85rem]">{pain}</p>
                                 </div>
                             ))}
                         </div>
                     </div>
+                </div>
 
-                    {/* With */}
-                    <div className="bg-white border-2 border-[#056CB8] rounded-md p-8 max-sm:p-6">
-                        <div className="flex items-center gap-3 mb-8 max-sm:mb-6">
-                            <div className="w-10 h-10 bg-[#056CB8]/10 rounded-lg flex items-center justify-center">
-                                <i className="bi bi-check-circle-fill text-[#056CB8] text-sm font-bold"></i>
-                            </div>
-                            <h3 className="text-[1.1rem] font-bold text-[#111111] max-sm:text-[1rem]">With CRM Lite</h3>
+                {/* With CRM Lite — Blue Panel */}
+                <div className="bg-[#056CB8] p-16 max-md:p-10 max-sm:p-8" data-animate="fade-left">
+                    <div className="max-w-[480px] max-md:mx-auto max-sm:max-w-full">
+                        <div className="flex items-center gap-3 mb-10 max-sm:mb-8">
+                            <i className="bi bi-check-circle-fill text-white text-xl"></i>
+                            <h3 className="text-[1.3rem] font-bold text-white max-sm:text-[1.1rem]">With CRM Lite</h3>
                         </div>
-                        <div className="flex flex-col gap-5">
+                        <div className="flex flex-col gap-6 max-sm:gap-5">
                             {[
                                 'Every lead captured, scored, and assigned automatically',
                                 'Visual pipeline shows every deal and its probability',
@@ -300,9 +296,9 @@ export default function CRMLite() {
                                 'One-click data entry with smart field suggestions',
                                 'Real-time forecasts based on pipeline data',
                             ].map((benefit) => (
-                                <div key={benefit} className="flex gap-3 items-start">
-                                    <i className="bi bi-check-circle-fill text-[#09983A] text-sm mt-0.5 shrink-0"></i>
-                                    <p className="text-[0.9rem] text-[#555555] leading-[1.6] max-sm:text-[0.85rem]">{benefit}</p>
+                                <div key={benefit} className="flex gap-4 items-start">
+                                    <i className="bi bi-check-circle-fill text-white text-lg mt-0 shrink-0"></i>
+                                    <p className="text-[0.92rem] text-white/80 leading-[1.6] max-sm:text-[0.85rem]">{benefit}</p>
                                 </div>
                             ))}
                         </div>
@@ -310,68 +306,43 @@ export default function CRMLite() {
                 </div>
             </section>
 
-            {/* Integrations */}
-            <section className="py-24 px-12 bg-[#f5f5f5] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <div className="max-w-[1200px] mx-auto">
-                    <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]" data-animate="fade-up">
-                        Works with your Zynex ecosystem
-                    </h2>
-                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center mb-16 max-md:text-base max-sm:text-[0.9rem] max-sm:mb-10" data-animate="fade-up">
-                        CRM Lite connects to every Zynex module for a seamless workflow
-                    </p>
-
-                    <div className="grid grid-cols-4 gap-4 max-lg:grid-cols-2 max-sm:grid-cols-2 max-sm:gap-3" data-animate="fade-up">
-                        {[
-                            { name: 'Finance Plus', icon: 'bi-bar-chart-line-fill', desc: 'Sync invoices and payment status' },
-                            { name: 'Assistant Hub', icon: 'bi-lightning-charge-fill', desc: 'AI assistants for sales tasks' },
-                            { name: 'Human Resources', icon: 'bi-people-fill', desc: 'Team performance tracking' },
-                            { name: 'Marketing', icon: 'bi-bullseye', desc: 'Campaign-to-lead attribution' },
-                            { name: 'Knowledge Base', icon: 'bi-file-earmark-text', desc: 'Sales playbooks and scripts' },
-                            { name: 'Project Plus', icon: 'bi-calendar-check-fill', desc: 'Deal-to-project handoff' },
-                            { name: 'YenAI', icon: 'bi-person-check', desc: 'AI-powered client follow-ups' },
-                            { name: 'Analytics', icon: 'bi-graph-up', desc: 'Cross-module reporting' },
-                        ].map((mod) => (
-                            <div key={mod.name} className="bg-white border border-[#e0e0e0] rounded-md p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)] max-sm:p-4">
-                                <div className="w-9 h-9 bg-[#f5f5f5] rounded-lg flex items-center justify-center mb-3 text-[#111111]">
-                                    <i className={`bi ${mod.icon} text-base`}></i>
-                                </div>
-                                <h4 className="text-[0.85rem] font-bold text-[#111111] mb-1">{mod.name}</h4>
-                                <p className="text-[0.75rem] text-[#555555] leading-[1.5]">{mod.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Stats */}
-            <section className="py-20 px-12 bg-[#111111] max-md:py-14 max-md:px-6 max-sm:py-10 max-sm:px-4">
-                <div className="grid grid-cols-4 gap-12 max-w-[1000px] mx-auto max-lg:grid-cols-2 max-sm:grid-cols-2 max-sm:gap-8">
+            {/* Section 5: Stats Ribbon */}
+            <section className="py-20 px-12 bg-white max-md:py-14 max-md:px-6 max-sm:py-10 max-sm:px-4">
+                <div className="max-w-[1000px] mx-auto flex items-center justify-between max-lg:flex-wrap max-lg:justify-center max-lg:gap-y-10 max-sm:flex-col max-sm:gap-6" data-animate="fade-up">
                     {[
                         { number: '68%', label: 'Average win rate increase' },
                         { number: '3x', label: 'Faster deal progression' },
                         { number: '< 5 min', label: 'Setup time' },
                         { number: '0', label: 'Lines of code needed' },
-                    ].map((stat) => (
-                        <div key={stat.label} className="text-center">
-                            <div className="text-[2.4rem] font-extrabold text-white mb-1 max-sm:text-[1.8rem]"><CountUp value={stat.number} /></div>
-                            <div className="text-[0.85rem] text-white/60 font-semibold max-sm:text-[0.8rem]">{stat.label}</div>
+                    ].map((stat, i, arr) => (
+                        <div key={stat.label} className="flex items-center">
+                            <div className="text-center px-10 max-lg:px-8 max-sm:px-6">
+                                <div className="text-[2.4rem] font-extrabold text-[#111111] mb-1 max-sm:text-[1.8rem]">
+                                    <CountUp value={stat.number} />
+                                </div>
+                                <div className="text-[0.85rem] text-[#555555] font-semibold max-sm:text-[0.78rem]">{stat.label}</div>
+                            </div>
+                            {i < arr.length - 1 && (
+                                <div className="w-[1px] h-14 bg-[#e0e0e0] shrink-0 max-lg:hidden"></div>
+                            )}
                         </div>
                     ))}
                 </div>
             </section>
 
-            {/* CTA */}
-            <section className="py-28 px-12 bg-white max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
-                <div className="text-center max-w-[800px] mx-auto" data-animate="fade-up">
+            {/* Section 6: CTA */}
+            <section className="py-28 px-12 bg-[#f5f5f5] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
+                <div className="text-center max-w-[700px] mx-auto" data-animate="fade-up">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-6 tracking-[-0.02em] leading-[1.2] max-md:text-[1.8rem] max-sm:text-[1.5rem]">
                         Stop letting deals slip through the cracks
                     </h2>
-                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] mb-10 max-md:text-base max-sm:text-[0.9rem]">
+                    <p className="text-[1.1rem] text-[#555555] leading-[1.7] mb-10 max-md:text-base max-sm:text-[0.9rem] max-sm:mb-8">
                         See how CRM Lite helps you track every lead, automate follow-ups, and close more deals — all from one simple dashboard.
                     </p>
                     <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                         Try CRM Lite Free
-                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
+                        <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
+                    </button>
                 </div>
             </section>
         </div>

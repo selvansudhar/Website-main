@@ -198,7 +198,7 @@ export default function HigherEducationPage() {
                     <ul className="space-y-1.5 list-none m-0 p-0">
                       {feature.bullets.map((bullet, j) => (
                         <li key={j} className="flex items-start gap-2 text-[13px] text-[#111111]">
-                          <i className="bi bi-check2 text-[#056CB8] mt-0.5 flex-shrink-0"></i>
+                          <i className="bi bi-check-circle-fill text-[#056CB8] mt-0.5 flex-shrink-0"></i>
                           <span>{bullet}</span>
                         </li>
                       ))}
@@ -281,7 +281,7 @@ export default function HigherEducationPage() {
             <div className="flex items-center gap-6 flex-wrap">
               <a
                 href="/contact"
-                className="group inline-flex items-center justify-center px-8 py-3.5 bg-[#056CB8] text-white font-semibold text-sm uppercase tracking-[0.05em] rounded-none"
+                className="group inline-flex items-center gap-3 justify-center px-8 py-3.5 bg-[#056CB8] text-white font-semibold text-sm uppercase tracking-[0.05em] rounded-none"
               >
                 Get Started for Your Campus <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
               </a>

@@ -139,7 +139,7 @@ export default function NewsPage() {
             </p>
           </div>
           <div className="flex max-md:flex-col gap-4 justify-end max-md:justify-start" data-animate="fade-right">
-            <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+            <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
               Contact Press Team <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white/70 font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">

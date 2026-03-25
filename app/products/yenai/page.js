@@ -79,7 +79,7 @@ export default function YenAI() {
 
                 {/* Hero Visual */}
                 <div className="relative flex items-end justify-center max-lg:mt-4 overflow-hidden" data-animate="fade-up" data-delay="2">
-                    <Image src="/images/yenai-banner.webp" alt="YenAI - AI assistant across devices" width={1536} height={1024} className="w-full h-auto scale-105 origin-bottom" priority sizes="(max-width: 768px) 100vw, 50vw" />
+                    <Image src="/images/yenai-assistant.webp" alt="YenAI - AI-powered digital twin assistant across devices" width={1536} height={1024} className="w-full h-auto scale-105 origin-bottom" priority sizes="(max-width: 768px) 100vw, 50vw" />
                 </div>
                 </div>
                 </div>

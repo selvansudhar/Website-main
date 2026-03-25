@@ -218,7 +218,7 @@ export default function AISolutionsPage() {
             Our AI specialists will assess your workflows and build a custom implementation roadmap tailored to your industry.
           </p>
           <div className="flex flex-col items-center gap-4">
-            <a href="/contact" className="group inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+            <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
               Schedule a Consultation <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="/" className="text-white/50 text-sm hover:text-white transition-colors">

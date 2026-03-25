@@ -40,7 +40,7 @@ export default function ManufacturingPage() {
             <div className="flex flex-wrap gap-4 mb-8">
               <a
                 href="/contact"
-                className="group bg-[#F60014] text-white px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:opacity-90 transition"
+                className="group inline-flex items-center gap-3 bg-[#F60014] text-white px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:opacity-90 transition"
               >
                 Get Started <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
               </a>
@@ -396,7 +396,7 @@ export default function ManufacturingPage() {
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           <a
             href="/contact"
-            className="group bg-[#F60014] text-white px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:opacity-90 transition"
+            className="group inline-flex items-center gap-3 bg-[#F60014] text-white px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:opacity-90 transition"
           >
             Get Started with Manufacturing <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
           </a>

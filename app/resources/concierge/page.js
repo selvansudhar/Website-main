@@ -143,7 +143,7 @@ export default function Concierge() {
             Let our experts do the thinking — tell us your challenges and we'll recommend exactly what you need.
           </p>
           <div className="flex gap-4 justify-center flex-wrap mb-6">
-            <a href="/contact" className="group inline-flex items-center justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+            <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
               Book Free Consultation <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
             <a href="#how-it-works" className="inline-flex items-center justify-center px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#f5f5f5] transition-colors">
@@ -272,7 +272,7 @@ export default function Concierge() {
           </div>
 
           <div className="text-center mt-12">
-            <a href="/contact" className="group inline-flex items-center justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+            <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
               Book Your Free Call <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
             </a>
           </div>
@@ -375,7 +375,7 @@ export default function Concierge() {
           <p className="text-white/60 mb-8">
             Book a free consultation with our concierge team. We'll understand your needs and connect you with the right solutions.
           </p>
-          <a href="/contact" className="group inline-flex items-center justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+          <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
             Book Your Free Call <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
           </a>
           <p className="text-white/40 text-xs mt-6">Average call: 25 minutes &nbsp;&bull;&nbsp; Written recommendation within 48 hours</p>

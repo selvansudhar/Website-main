@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export const metadata = {
     title: 'Assistant Hub — Your AI Workforce, Ready to Deploy',
     description: 'Deploy 16 specialized AI assistants across every department. From sales to analytics, automate tasks and unlock insights with zero code.',
@@ -240,6 +242,51 @@ export default function AssistantHub() {
                                     <p className="text-[0.85rem] text-[#555555] leading-[1.7] max-sm:text-[0.8rem]">{item.desc}</p>
                                 </div>
                             ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* ─── Image Showcase: AI Assistant in Action ─── */}
+            <section className="py-28 px-12 bg-white max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
+                <div className="max-w-[1100px] mx-auto">
+                    <div className="grid grid-cols-[1.1fr_1fr] gap-14 items-center max-lg:grid-cols-1 max-lg:gap-10">
+                        {/* Left — Image */}
+                        <div data-animate="fade-right">
+                            <div className="relative">
+                                <div className="absolute -top-4 -left-4 w-full h-full bg-[#056CB8]/5 -z-10 max-sm:hidden"></div>
+                                <Image
+                                    src="/images/assistant-hub-ai.webp"
+                                    alt="AI assistant helping users across departments"
+                                    width={1600}
+                                    height={1020}
+                                    className="w-full h-auto border border-[#e0e0e0]"
+                                />
+                            </div>
+                        </div>
+                        {/* Right — Text */}
+                        <div data-animate="fade-left">
+                            <span className="text-[0.72rem] font-bold text-[#056CB8] uppercase tracking-[0.15em] mb-4 block">How It Feels</span>
+                            <h2 className="text-[2rem] font-extrabold text-[#111111] mb-5 tracking-[-0.02em] leading-[1.15] max-md:text-[1.6rem] max-sm:text-[1.4rem]">
+                                Like having an expert in every department
+                            </h2>
+                            <p className="text-[1rem] text-[#555555] leading-[1.8] mb-8 max-sm:text-[0.9rem]">
+                                Each assistant understands your business context, communicates naturally, and resolves tasks in real time — just like a dedicated team member who never takes a day off.
+                            </p>
+                            <div className="flex flex-col gap-4">
+                                {[
+                                    { icon: 'bi-lightning-charge-fill', text: 'Responds in under 2 seconds' },
+                                    { icon: 'bi-shield-check', text: 'Enterprise-grade data privacy' },
+                                    { icon: 'bi-people-fill', text: 'Handles 100+ conversations simultaneously' },
+                                ].map((item) => (
+                                    <div key={item.text} className="flex items-center gap-3">
+                                        <div className="w-8 h-8 bg-[#056CB8]/10 flex items-center justify-center shrink-0">
+                                            <i className={`bi ${item.icon} text-[#056CB8] text-sm`}></i>
+                                        </div>
+                                        <span className="text-[0.9rem] font-medium text-[#111111] max-sm:text-[0.82rem]">{item.text}</span>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
