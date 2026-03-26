@@ -1,0 +1,24 @@
+[    4607ms] [ERROR] Attestation check for Attribution Reporting on https://www.facebook.com failed. @ https://www.dextratechnologies.com/:0
+[   31793ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://embed.tawk.to/_s/v4/app/69967ba6a3b/js/twk-chunk-2d0d2b7c.js:0
+[   31797ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://embed.tawk.to/_s/v4/app/69967ba6a3b/js/twk-chunk-3ea2c7ce.js:0
+[   31799ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://embed.tawk.to/_s/v4/app/69967ba6a3b/js/twk-chunk-2d0da3af.js:0
+[   31799ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://embed.tawk.to/_s/v4/app/69967ba6a3b/js/twk-chunk-2d224aff.js:0
+[   31799ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://embed.tawk.to/_s/v4/app/69967ba6a3b/js/twk-chunk-7941cc06.js:0
+[   31799ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://embed.tawk.to/_s/v4/app/69967ba6a3b/js/twk-chunk-2d0c8092.js:0
+[   31799ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://embed.tawk.to/_s/v4/app/69967ba6a3b/js/twk-chunk-4fe9d5dd.js:0
+[   31799ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://embed.tawk.to/_s/v4/app/69967ba6a3b/js/twk-chunk-6289ff8e.js:0
+[   37689ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://va.tawk.to/log-performance/v3:0
+[   37690ms] [ERROR] true @ https://embed.tawk.to/_s/v4/app/69967ba6a3b/js/twk-chunk-common.js:1
+[  208944ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://va.tawk.to/v1/session/start:0
+[  221958ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://va.tawk.to/v1/session/start:0
+[  235969ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://va.tawk.to/v1/session/start:0
+[  282982ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://va.tawk.to/v1/session/start:0
+[  602818ms] [ERROR] Failed to load resource: net::ERR_INTERNET_DISCONNECTED @ https://www.dextratechnologies.com/api/google-reviews:0
+[  602818ms] [ERROR] TypeError: Failed to fetch
+    at loadGoogleReviews (https://www.dextratechnologies.com/:1319:27) @ https://www.dextratechnologies.com/:1393
+[ 1224439ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://www.dextratechnologies.com/api/google-reviews:0
+[ 1224440ms] [ERROR] TypeError: Failed to fetch
+    at loadGoogleReviews (https://www.dextratechnologies.com/:1319:27) @ https://www.dextratechnologies.com/:1393
+[ 1831370ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://www.dextratechnologies.com/api/google-reviews:0
+[ 1831370ms] [ERROR] TypeError: Failed to fetch
+    at loadGoogleReviews (https://www.dextratechnologies.com/:1319:27) @ https://www.dextratechnologies.com/:1393
