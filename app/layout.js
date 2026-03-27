@@ -2,6 +2,7 @@ import { inter, outfit, bricolage, instrumentSerif, plusJakarta } from './fonts'
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ScrollAnimator from '@/components/ScrollAnimator';
+import LaunchGate from '@/components/LaunchGate';
 import './globals.css';
 
 export const metadata = {
@@ -77,11 +78,13 @@ export default function RootLayout({ children }) {
             })
           }}
         />
-        <a href="#main-content" className="skip-to-content">Skip to content</a>
-        <Header />
-        <main id="main-content">{children}</main>
-        <Footer />
-        <ScrollAnimator />
+        <LaunchGate>
+          <a href="#main-content" className="skip-to-content">Skip to content</a>
+          <Header />
+          <main id="main-content">{children}</main>
+          <Footer />
+          <ScrollAnimator />
+        </LaunchGate>
       </body>
     </html>
   );
