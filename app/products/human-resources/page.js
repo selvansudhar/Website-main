@@ -3,7 +3,7 @@ import Image from 'next/image';
 export const metadata = {
     title: 'Human Resources — Modern Workforce Management',
     description: 'Modern HRMS for recruitment, onboarding, payroll, and employee management with AI-driven workforce analytics.',
-    alternates: { canonical: 'https://zynex.ai/products/human-resources' },
+    alternates: { canonical: 'https://zenvict.com/products/human-resources' },
     openGraph: {
         title: 'Human Resources — Modern Workforce Management',
         description: 'Modern HRMS for recruitment, onboarding, payroll, and employee management with AI-driven workforce analytics.',
@@ -17,7 +17,7 @@ export default function HumanResources() {
             <section className="max-w-[1400px] mx-auto px-12 pt-40 pb-32 max-md:px-6 max-md:pt-24 max-md:pb-12 max-sm:px-4">
                 {/* Nav Trail */}
                 <div className="flex items-center gap-3 mb-8 text-xs font-medium tracking-wide max-sm:text-[0.65rem] max-sm:gap-2 max-sm:mb-4">
-                    <span className="text-[#555555]">Zynex AI</span>
+                    <span className="text-[#555555]">Zenvict AI</span>
                     <span className="text-[#e0e0e0]">/</span>
                     <span className="text-[#056CB8] uppercase">Human Resources</span>
                 </div>
@@ -25,17 +25,17 @@ export default function HumanResources() {
                   "@context": "https://schema.org",
                   "@type": "BreadcrumbList",
                   "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zenvict.com/products" },
                     { "@type": "ListItem", "position": 3, "name": "Human Resources" }
                   ]
                 }) }} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
                   "@context": "https://schema.org",
                   "@type": "SoftwareApplication",
-                  "name": "Zynex Human Resources",
+                  "name": "Zenvict Human Resources",
                   "description": "Modern HRMS for recruitment, onboarding, payroll, and employee management with AI-driven workforce analytics.",
-                  "url": "https://zynex.ai/products/human-resources",
+                  "url": "https://zenvict.com/products/human-resources",
                   "applicationCategory": "BusinessApplication",
                   "operatingSystem": "Web",
                   "offers": {
@@ -45,8 +45,8 @@ export default function HumanResources() {
                   },
                   "provider": {
                     "@type": "Organization",
-                    "name": "Zynex AI",
-                    "url": "https://zynex.ai"
+                    "name": "Zenvict AI",
+                    "url": "https://zenvict.com"
                   }
                 }) }} />
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
@@ -237,7 +237,7 @@ export default function HumanResources() {
                 <div className="max-w-[1400px] mx-auto px-12 py-28 max-md:px-6 max-md:py-16 max-sm:px-4 max-sm:py-12">
                     <div className="text-center mb-16 max-sm:mb-10" data-animate="fade-up">
                         <h2 className="text-[2.2rem] font-extrabold tracking-[-0.02em] mb-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]">
-                            Why businesses choose Zynex HR
+                            Why businesses choose Zenvict HR
                         </h2>
                         <p className="text-[1.05rem] text-white/50 max-w-[520px] mx-auto max-sm:text-[0.9rem]">
                             Built to save time, improve experience, and scale with you.
@@ -269,7 +269,7 @@ export default function HumanResources() {
                             {
                                 icon: 'bi-diagram-3',
                                 title: 'Seamless Integration',
-                                desc: 'Connect with Zynex Finance Plus for payroll and other enterprise modules. Data flows smoothly across your entire ecosystem.',
+                                desc: 'Connect with Zenvict Finance Plus for payroll and other enterprise modules. Data flows smoothly across your entire ecosystem.',
                             },
                             {
                                 icon: 'bi-bar-chart-fill',
@@ -330,7 +330,7 @@ export default function HumanResources() {
                         Simplify attendance, leave management, and performance reviews — so your HR team can focus on people, not paperwork.
                     </p>
                     <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
-                        Explore Zynex HR
+                        Explore Zenvict HR
                      <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                 </div>
             </section>

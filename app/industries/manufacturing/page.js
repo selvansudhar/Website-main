@@ -1,7 +1,7 @@
 import CountUp from '@/components/CountUp';
 
 export const metadata = {
-  title: "Manufacturing Solutions | Zynex",
+  title: "Manufacturing Solutions | Zenvict",
   description:
     "Smart factory operations platform powering 300+ production facilities with AI-driven manufacturing intelligence, predictive maintenance, and real-time quality control.",
 };
@@ -13,8 +13,8 @@ export default function ManufacturingPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zynex.ai/industries" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zenvict.com/industries" },
           { "@type": "ListItem", "position": 3, "name": "Manufacturing" }
         ]
       }) }} />

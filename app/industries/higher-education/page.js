@@ -4,7 +4,7 @@ import Image from 'next/image';
 export const metadata = {
   title: 'Higher Education Solutions',
   description: 'Digital campus solutions for student management, online learning, admissions, and academic analytics.',
-  alternates: { canonical: 'https://zynex.ai/industries/higher-education' },
+  alternates: { canonical: 'https://zenvict.com/industries/higher-education' },
   openGraph: {
     title: 'Higher Education Solutions',
     description: 'Digital campus solutions for student management, online learning, admissions, and academic analytics.',
@@ -72,8 +72,8 @@ export default function HigherEducationPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zynex.ai/industries" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zenvict.com/industries" },
           { "@type": "ListItem", "position": 3, "name": "Higher Education" }
         ]
       }) }} />
@@ -89,7 +89,7 @@ export default function HigherEducationPage() {
             Empowering the Future of Education
           </h1>
           <p className="text-lg text-[#555555] leading-relaxed mb-8 max-w-2xl mx-auto">
-            Zynex helps universities and colleges modernize operations, enhance learning outcomes, and create seamless digital campus experiences that put students first.
+            Zenvict helps universities and colleges modernize operations, enhance learning outcomes, and create seamless digital campus experiences that put students first.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a
@@ -173,7 +173,7 @@ export default function HigherEducationPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#111111] via-[#111111]/40 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-10 max-sm:p-6">
-                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#056CB8] mb-3">Zynex for Education</p>
+                <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#056CB8] mb-3">Zenvict for Education</p>
                 <h3 className="text-[1.75rem] max-sm:text-xl font-bold text-white leading-tight mb-3">
                   The modern campus<br />runs on intelligence
                 </h3>
@@ -216,11 +216,11 @@ export default function HigherEducationPage() {
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-8xl text-[#056CB8]/20 font-serif leading-none mb-4">&ldquo;</p>
           <blockquote className="text-xl text-[#111111] italic leading-relaxed mb-8">
-            Zynex simplified our entire student lifecycle management. From admissions to alumni tracking, everything runs smoother now.
+            Zenvict simplified our entire student lifecycle management. From admissions to alumni tracking, everything runs smoother now.
           </blockquote>
           <div className="w-12 h-0.5 bg-[#056CB8] mx-auto mb-4"></div>
           <p className="text-base font-bold text-[#111111]">University Administrator</p>
-          <p className="text-sm text-[#555555]">Zynex Education Client</p>
+          <p className="text-sm text-[#555555]">Zenvict Education Client</p>
         </div>
       </section>
 

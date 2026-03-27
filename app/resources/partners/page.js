@@ -6,19 +6,19 @@ const partnerTypes = [
   {
     icon: 'bi-diagram-3',
     title: 'Technology Partners',
-    desc: 'Integrate your platform with Zynex to deliver joint solutions. Co-build products, share APIs, and unlock new markets together across healthcare, manufacturing, and financial services.',
+    desc: 'Integrate your platform with Zenvict to deliver joint solutions. Co-build products, share APIs, and unlock new markets together across healthcare, manufacturing, and financial services.',
     benefits: ['Joint product development', 'Shared API access & sandbox', 'Co-marketing programs', 'Technical integration support', 'Early access to new modules'],
   },
   {
     icon: 'bi-people-fill',
     title: 'Solutions Partners',
-    desc: 'Help businesses implement and customize Zynex. Earn revenue by delivering consulting, integration, and managed services for Finance Plus, CRM Lite, HR, and the full product suite.',
+    desc: 'Help businesses implement and customize Zenvict. Earn revenue by delivering consulting, integration, and managed services for Finance Plus, CRM Lite, HR, and the full product suite.',
     benefits: ['Certified training programs', 'Lead referral pipeline', 'Revenue sharing model', 'Dedicated partner manager', 'Implementation playbooks'],
   },
   {
     icon: 'bi-graph-up-arrow',
     title: 'Reseller Partners',
-    desc: 'Distribute Zynex products to your customer base. Access wholesale pricing, sales enablement tools, deal registration, and co-sell support from our partnerships team.',
+    desc: 'Distribute Zenvict products to your customer base. Access wholesale pricing, sales enablement tools, deal registration, and co-sell support from our partnerships team.',
     benefits: ['Wholesale pricing tiers', 'Deal registration protection', 'Sales enablement kit', 'Quarterly business reviews', 'Demo environment access'],
   },
 ];
@@ -51,12 +51,12 @@ const stats = [
 
 const testimonials = [
   {
-    quote: 'Partnering with Zynex doubled our enterprise pipeline in six months. Their partner team is exceptional — always responsive, always invested in our mutual success.',
+    quote: 'Partnering with Zenvict doubled our enterprise pipeline in six months. Their partner team is exceptional — always responsive, always invested in our mutual success.',
     name: 'Arjun Mehta',
     role: 'CEO, CloudNine Solutions',
   },
   {
-    quote: 'The technology integration was seamless. Zynex APIs are well-documented and their partner engineering team helped us ship our joint healthcare solution in just 8 weeks.',
+    quote: 'The technology integration was seamless. Zenvict APIs are well-documented and their partner engineering team helped us ship our joint healthcare solution in just 8 weeks.',
     name: 'Sarah Chen',
     role: 'CTO, DataBridge',
   },
@@ -71,8 +71,8 @@ export default function Partners() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zynex.ai/resources" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zenvict.com/resources" },
           { "@type": "ListItem", "position": 3, "name": "Partners" }
         ]
       }) }} />
@@ -88,7 +88,7 @@ export default function Partners() {
             Grow Together. Win Together.
           </h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto mb-10">
-            Join the Zynex Partner Program and unlock new revenue streams, co-selling opportunities, and world-class support to accelerate your business.
+            Join the Zenvict Partner Program and unlock new revenue streams, co-selling opportunities, and world-class support to accelerate your business.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
@@ -246,7 +246,7 @@ export default function Partners() {
               Industries We Serve Together
             </h2>
             <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-              Our partners help Zynex deliver industry-specific solutions across five key verticals.
+              Our partners help Zenvict deliver industry-specific solutions across five key verticals.
             </p>
           </div>
 
@@ -273,7 +273,7 @@ export default function Partners() {
       <section className="bg-[#111111] text-white py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">
-            Grow your business as a Zynex partner
+            Grow your business as a Zenvict partner
           </h2>
           <p className="text-white/60 mb-8">
             Join our partner ecosystem and unlock co-selling opportunities, technical training, and dedicated partner support.

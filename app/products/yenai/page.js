@@ -4,7 +4,7 @@ export const metadata = {
     title: 'YenAI — Your AI-Powered Digital Twin',
     description: 'Create an AI persona that talks, thinks, and responds like you. Let YenAI handle client conversations, meetings, and support — while you focus on what matters.',
     alternates: {
-        canonical: 'https://zynex.ai/products/yenai',
+        canonical: 'https://zenvict.com/products/yenai',
     },
     openGraph: {
         title: 'YenAI — Your AI-Powered Digital Twin',
@@ -20,7 +20,7 @@ export default function YenAI() {
                 <div className="max-w-[1400px] mx-auto px-12 max-md:px-6 max-sm:px-4">
                 {/* Nav Trail */}
                 <div className="flex items-center gap-3 mb-8 text-xs font-medium tracking-wide max-sm:text-[0.65rem] max-sm:gap-2 max-sm:mb-4">
-                    <span className="text-white/60">Zynex AI</span>
+                    <span className="text-white/60">Zenvict AI</span>
                     <span className="text-white/30">/</span>
                     <span className="text-white uppercase">YenAI</span>
                 </div>
@@ -28,17 +28,17 @@ export default function YenAI() {
                   "@context": "https://schema.org",
                   "@type": "BreadcrumbList",
                   "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zenvict.com/products" },
                     { "@type": "ListItem", "position": 3, "name": "YenAI" }
                   ]
                 }) }} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
                   "@context": "https://schema.org",
                   "@type": "SoftwareApplication",
-                  "name": "Zynex YenAI",
+                  "name": "Zenvict YenAI",
                   "description": "Create an AI persona that talks, thinks, and responds like you. Let YenAI handle client conversations, meetings, and support.",
-                  "url": "https://zynex.ai/products/yenai",
+                  "url": "https://zenvict.com/products/yenai",
                   "applicationCategory": "BusinessApplication",
                   "operatingSystem": "Web",
                   "offers": {
@@ -48,15 +48,15 @@ export default function YenAI() {
                   },
                   "provider": {
                     "@type": "Organization",
-                    "name": "Zynex AI",
-                    "url": "https://zynex.ai"
+                    "name": "Zenvict AI",
+                    "url": "https://zenvict.com"
                   }
                 }) }} />
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
                 <div className="flex flex-col gap-6" data-animate="fade-up">
                     <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-[100px] px-4 py-1.5 w-fit max-lg:mx-auto max-sm:px-3 max-sm:py-1">
                         <span className="w-1.5 h-1.5 rounded-full bg-white"></span>
-                        <span className="text-[0.82rem] font-medium text-white/80">New from Zynex</span>
+                        <span className="text-[0.82rem] font-medium text-white/80">New from Zenvict</span>
                     </div>
                     <h1 className="text-[2.8rem] font-extrabold leading-[1.08] text-white tracking-[-0.03em] max-md:text-[2.2rem] max-sm:text-[1.8rem]">
                         You, But Always Available.

@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'Terms of Service | Zynex',
-  description: 'Zynex terms of service — the agreement governing your use of Zynex platform, modules, and services.',
-  alternates: { canonical: 'https://zynex.ai/terms-of-service' },
+  title: 'Terms of Service | Zenvict',
+  description: 'Zenvict terms of service — the agreement governing your use of Zenvict platform, modules, and services.',
+  alternates: { canonical: 'https://zenvict.com/terms-of-service' },
 };
 
 export default function TermsOfService() {
@@ -26,7 +26,7 @@ export default function TermsOfService() {
           {/* Intro */}
           <div className="bg-[#f5f5f5] border border-[#e0e0e0] p-8 mb-12">
             <p className="text-sm text-[#555555] leading-relaxed">
-              This agreement ("Terms") governs your access to and use of the Zynex platform, including all modules, services, and websites operated by Zynex Inc. ("Zynex", "we", "us"). By creating an account, accessing, or using any Zynex service, you agree to be bound by these Terms. If you are using Zynex on behalf of an organization, you represent that you have authority to bind that organization to these Terms.
+              This agreement ("Terms") governs your access to and use of the Zenvict platform, including all modules, services, and websites operated by Zenvict Technologies ("Zenvict", "we", "us"). By creating an account, accessing, or using any Zenvict service, you agree to be bound by these Terms. If you are using Zenvict on behalf of an organization, you represent that you have authority to bind that organization to these Terms.
             </p>
           </div>
 
@@ -34,14 +34,14 @@ export default function TermsOfService() {
           <h2 className="text-2xl font-bold text-[#111111] mb-2">1. Acceptance of Agreement</h2>
           <div className="w-12 h-0.5 bg-[#056CB8] mb-6"></div>
           <p className="text-sm text-[#555555] leading-relaxed mb-6">
-            By signing up for a Zynex account, clicking "I Agree," or otherwise accessing or using our services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our <a href="/privacy-policy" className="text-[#056CB8] underline">Privacy Policy</a>. You must be at least 18 years of age (or the age of legal majority in your jurisdiction) to use our services.
+            By signing up for a Zenvict account, clicking "I Agree," or otherwise accessing or using our services, you acknowledge that you have read, understood, and agree to be bound by these Terms and our <a href="/privacy-policy" className="text-[#056CB8] underline">Privacy Policy</a>. You must be at least 18 years of age (or the age of legal majority in your jurisdiction) to use our services.
           </p>
 
           {/* Section 2 */}
           <h2 className="text-2xl font-bold text-[#111111] mb-2">2. Description of Service</h2>
           <div className="w-12 h-0.5 bg-[#056CB8] mb-6"></div>
           <p className="text-sm text-[#555555] leading-relaxed mb-4">
-            Zynex provides a cloud-based enterprise platform comprising multiple modules including, but not limited to, YenAI, Assistant Hub, Knowledge Base, CRM Lite, Finance Plus, Human Resources, Project Plus, and Marketing Automation. We also offer custom development services including SaaS development, B2B web development, enterprise solutions, AI solutions, and e-commerce development.
+            Zenvict provides a cloud-based enterprise platform comprising multiple modules including, but not limited to, YenAI, Assistant Hub, Knowledge Base, CRM Lite, Finance Plus, Human Resources, Project Plus, and Marketing Automation. We also offer custom development services including SaaS development, B2B web development, enterprise solutions, AI solutions, and e-commerce development.
           </p>
           <p className="text-sm text-[#555555] leading-relaxed mb-6">
             We reserve the right to modify, update, or discontinue any feature or module with reasonable prior notice. New modules or features may be subject to additional terms.
@@ -66,13 +66,13 @@ export default function TermsOfService() {
           <div className="w-12 h-0.5 bg-[#056CB8] mb-6"></div>
           <p className="text-sm text-[#555555] leading-relaxed mb-4">You agree not to:</p>
           <ul className="list-disc pl-6 flex flex-col gap-2 text-sm text-[#555555] leading-relaxed mb-6">
-            <li>Use Zynex services for any unlawful or fraudulent purpose</li>
+            <li>Use Zenvict services for any unlawful or fraudulent purpose</li>
             <li>Upload, transmit, or store content that is harmful, threatening, defamatory, or infringes intellectual property rights</li>
-            <li>Attempt to gain unauthorized access to other accounts, servers, or networks connected to Zynex</li>
+            <li>Attempt to gain unauthorized access to other accounts, servers, or networks connected to Zenvict</li>
             <li>Reverse-engineer, decompile, or disassemble any part of the platform</li>
             <li>Use the service to send unsolicited messages (spam) or distribute malware</li>
             <li>Interfere with or disrupt the integrity or performance of the platform</li>
-            <li>Resell, sublicense, or redistribute Zynex services without prior written consent</li>
+            <li>Resell, sublicense, or redistribute Zenvict services without prior written consent</li>
             <li>Use automated tools to scrape data or overload our systems beyond reasonable usage</li>
           </ul>
 
@@ -80,56 +80,56 @@ export default function TermsOfService() {
           <h2 className="text-2xl font-bold text-[#111111] mb-2">5. Fees and Payments</h2>
           <div className="w-12 h-0.5 bg-[#056CB8] mb-6"></div>
           <p className="text-sm text-[#555555] leading-relaxed mb-4">
-            Certain Zynex modules and services require paid subscriptions. By subscribing, you agree to:
+            Certain Zenvict modules and services require paid subscriptions. By subscribing, you agree to:
           </p>
           <ul className="list-disc pl-6 flex flex-col gap-2 text-sm text-[#555555] leading-relaxed mb-6">
             <li>Pay all applicable fees based on the plan you select</li>
             <li>Subscriptions renew automatically at the end of each billing cycle unless cancelled before the renewal date</li>
             <li>Price changes will be communicated at least 30 days before taking effect</li>
             <li>You are responsible for all applicable taxes and duties</li>
-            <li>Refunds are handled on a case-by-case basis. Contact billing@zynex.ai for assistance</li>
+            <li>Refunds are handled on a case-by-case basis. Contact billing@zenvict.com for assistance</li>
           </ul>
 
           {/* Section 6 */}
           <h2 className="text-2xl font-bold text-[#111111] mb-2">6. Data Ownership</h2>
           <div className="w-12 h-0.5 bg-[#056CB8] mb-6"></div>
           <p className="text-sm text-[#555555] leading-relaxed mb-6">
-            You retain full ownership of all data you submit to the Zynex platform ("Service Data"), including customer records, financial data, employee records, documents, and AI training content. We do not claim any intellectual property rights over your data. We access your data only to provide the services, troubleshoot issues, or comply with legal requirements.
+            You retain full ownership of all data you submit to the Zenvict platform ("Service Data"), including customer records, financial data, employee records, documents, and AI training content. We do not claim any intellectual property rights over your data. We access your data only to provide the services, troubleshoot issues, or comply with legal requirements.
           </p>
 
           {/* Section 7 */}
           <h2 className="text-2xl font-bold text-[#111111] mb-2">7. Intellectual Property</h2>
           <div className="w-12 h-0.5 bg-[#056CB8] mb-6"></div>
           <p className="text-sm text-[#555555] leading-relaxed mb-6">
-            The Zynex platform, including its design, code, features, documentation, logos, and trademarks, is the exclusive property of Zynex Inc. and is protected by intellectual property laws. These Terms do not grant you any right to use Zynex branding or trademarks without prior written consent.
+            The Zenvict platform, including its design, code, features, documentation, logos, and trademarks, is the exclusive property of Zenvict Technologies and is protected by intellectual property laws. These Terms do not grant you any right to use Zenvict branding or trademarks without prior written consent.
           </p>
 
           {/* Section 8 */}
           <h2 className="text-2xl font-bold text-[#111111] mb-2">8. Third-Party Integrations</h2>
           <div className="w-12 h-0.5 bg-[#056CB8] mb-6"></div>
           <p className="text-sm text-[#555555] leading-relaxed mb-6">
-            Zynex integrates with third-party services such as Salesforce, Slack, Microsoft Teams, and others. These integrations are subject to the third party's own terms and privacy policies. Zynex is not responsible for the availability, accuracy, or practices of third-party services. You connect these services at your own discretion.
+            Zenvict integrates with third-party services such as Salesforce, Slack, Microsoft Teams, and others. These integrations are subject to the third party's own terms and privacy policies. Zenvict is not responsible for the availability, accuracy, or practices of third-party services. You connect these services at your own discretion.
           </p>
 
           {/* Section 9 */}
           <h2 className="text-2xl font-bold text-[#111111] mb-2">9. Disclaimer of Warranties</h2>
           <div className="w-12 h-0.5 bg-[#056CB8] mb-6"></div>
           <p className="text-sm text-[#555555] leading-relaxed mb-6">
-            ZYNEX SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR COMPLETELY SECURE.
+            ZENVICT SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR COMPLETELY SECURE.
           </p>
 
           {/* Section 10 */}
           <h2 className="text-2xl font-bold text-[#111111] mb-2">10. Limitation of Liability</h2>
           <div className="w-12 h-0.5 bg-[#056CB8] mb-6"></div>
           <p className="text-sm text-[#555555] leading-relaxed mb-6">
-            TO THE MAXIMUM EXTENT PERMITTED BY LAW, ZYNEX SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR BUSINESS OPPORTUNITIES, ARISING FROM YOUR USE OF OR INABILITY TO USE THE SERVICE. OUR TOTAL LIABILITY FOR ANY CLAIM SHALL NOT EXCEED THE AMOUNT YOU PAID TO ZYNEX IN THE 12 MONTHS PRECEDING THE CLAIM.
+            TO THE MAXIMUM EXTENT PERMITTED BY LAW, ZENVICT SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, OR BUSINESS OPPORTUNITIES, ARISING FROM YOUR USE OF OR INABILITY TO USE THE SERVICE. OUR TOTAL LIABILITY FOR ANY CLAIM SHALL NOT EXCEED THE AMOUNT YOU PAID TO ZENVICT IN THE 12 MONTHS PRECEDING THE CLAIM.
           </p>
 
           {/* Section 11 */}
           <h2 className="text-2xl font-bold text-[#111111] mb-2">11. Indemnification</h2>
           <div className="w-12 h-0.5 bg-[#056CB8] mb-6"></div>
           <p className="text-sm text-[#555555] leading-relaxed mb-6">
-            You agree to indemnify and hold harmless Zynex, its officers, employees, and partners from any claims, damages, losses, or expenses (including reasonable legal fees) arising from your violation of these Terms, misuse of the service, or infringement of any third-party rights.
+            You agree to indemnify and hold harmless Zenvict, its officers, employees, and partners from any claims, damages, losses, or expenses (including reasonable legal fees) arising from your violation of these Terms, misuse of the service, or infringement of any third-party rights.
           </p>
 
           {/* Section 12 */}
@@ -166,7 +166,7 @@ export default function TermsOfService() {
           <h2 className="text-2xl font-bold text-[#111111] mb-2">15. Contact</h2>
           <div className="w-12 h-0.5 bg-[#056CB8] mb-6"></div>
           <p className="text-sm text-[#555555] leading-relaxed">
-            If you have questions about these Terms, contact us at <strong>legal@zynex.ai</strong> or write to: Zynex Inc., Tech Park, Whitefield, Bangalore, India.
+            If you have questions about these Terms, contact us at <strong>legal@zenvict.com</strong> or write to: Zenvict Technologies, Tech Park, Whitefield, Bangalore, India.
           </p>
 
         </div>

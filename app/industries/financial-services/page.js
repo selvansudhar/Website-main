@@ -1,11 +1,11 @@
 import CountUp from '@/components/CountUp';
 
 export const metadata = {
-  title: 'Financial Services Solutions | Zynex',
+  title: 'Financial Services Solutions | Zenvict',
   description: 'Secure, compliant fintech solutions for banking, insurance, and investment management with AI-driven risk analysis.',
-  alternates: { canonical: 'https://zynex.ai/industries/financial-services' },
+  alternates: { canonical: 'https://zenvict.com/industries/financial-services' },
   openGraph: {
-    title: 'Financial Services Solutions | Zynex',
+    title: 'Financial Services Solutions | Zenvict',
     description: 'Secure, compliant fintech solutions for banking, insurance, and investment management with AI-driven risk analysis.',
   },
 };
@@ -17,8 +17,8 @@ export default function FinancialServicesPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zynex.ai/industries" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zenvict.com/industries" },
           { "@type": "ListItem", "position": 3, "name": "Financial Services" }
         ]
       }) }} />
@@ -36,7 +36,7 @@ export default function FinancialServicesPage() {
                 Transform Financial Operations with AI
               </h1>
               <p className="text-white/60 text-lg leading-relaxed">
-                Zynex powers banks, insurance companies, and fintech firms with secure,
+                Zenvict powers banks, insurance companies, and fintech firms with secure,
                 AI-driven solutions that modernize operations, strengthen compliance, and
                 deliver exceptional customer experiences.
               </p>
@@ -242,7 +242,7 @@ export default function FinancialServicesPage() {
             <div className="w-32 h-32 rounded-full bg-[#056CB8] flex items-center justify-center mb-8">
               <div className="text-center">
                 <i className="bi bi-lightning-charge-fill text-white text-2xl"></i>
-                <p className="text-white text-xs font-bold mt-1">Zynex Core</p>
+                <p className="text-white text-xs font-bold mt-1">Zenvict Core</p>
               </div>
             </div>
           </div>
@@ -272,7 +272,7 @@ export default function FinancialServicesPage() {
           <div>
             <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">Measure Your ROI</h2>
             <p className="text-white/60 leading-relaxed mb-6">
-              Financial institutions using Zynex see dramatic cost reductions through
+              Financial institutions using Zenvict see dramatic cost reductions through
               automation, error elimination, and streamlined compliance workflows. See
               what your organization could save.
             </p>
@@ -285,7 +285,7 @@ export default function FinancialServicesPage() {
             <div className="flex flex-col gap-4 mb-6">
               {[
                 { label: 'Manual Processing Cost', value: '$450K/yr', color: 'text-white/70' },
-                { label: 'With Zynex', value: '$120K/yr', color: 'text-white/70' },
+                { label: 'With Zenvict', value: '$120K/yr', color: 'text-white/70' },
                 { label: 'Annual Savings', value: '$330K/yr', color: 'text-[#22c55e]' },
               ].map((row, i) => (
                 <div key={i} className="flex items-center justify-between py-3 border-b border-white/10 last:border-b-0">

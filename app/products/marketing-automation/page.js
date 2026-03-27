@@ -4,7 +4,7 @@ export const metadata = {
     title: 'Marketing Automation — AI Campaign Builder',
     description: 'Create complete marketing campaigns in minutes. AI generates posters, ad copy, Instagram captions, email sequences, and Canva-ready designs from a single brief.',
     alternates: {
-        canonical: 'https://zynex.ai/products/marketing-automation',
+        canonical: 'https://zenvict.com/products/marketing-automation',
     },
     openGraph: {
         title: 'Marketing Automation — AI Campaign Builder',
@@ -19,7 +19,7 @@ export default function MarketingAutomation() {
             <section className="max-w-[1400px] mx-auto px-12 pt-40 pb-32 max-md:px-6 max-md:pt-24 max-md:pb-12 max-sm:px-4">
                 {/* Nav Trail */}
                 <div className="flex items-center gap-3 mb-8 text-xs font-medium tracking-wide max-sm:text-[0.65rem] max-sm:gap-2 max-sm:mb-4">
-                    <span className="text-[#555555]">Zynex AI</span>
+                    <span className="text-[#555555]">Zenvict AI</span>
                     <span className="text-[#e0e0e0]">/</span>
                     <span className="text-[#056CB8] uppercase">Marketing Automation</span>
                 </div>
@@ -27,17 +27,17 @@ export default function MarketingAutomation() {
                   "@context": "https://schema.org",
                   "@type": "BreadcrumbList",
                   "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zenvict.com/products" },
                     { "@type": "ListItem", "position": 3, "name": "Marketing Automation" }
                   ]
                 }) }} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
                   "@context": "https://schema.org",
                   "@type": "SoftwareApplication",
-                  "name": "Zynex Marketing Automation",
+                  "name": "Zenvict Marketing Automation",
                   "description": "Create complete marketing campaigns in minutes. AI generates posters, ad copy, Instagram captions, email sequences, and Canva-ready designs from a single brief.",
-                  "url": "https://zynex.ai/products/marketing-automation",
+                  "url": "https://zenvict.com/products/marketing-automation",
                   "applicationCategory": "BusinessApplication",
                   "operatingSystem": "Web",
                   "offers": {
@@ -47,8 +47,8 @@ export default function MarketingAutomation() {
                   },
                   "provider": {
                     "@type": "Organization",
-                    "name": "Zynex AI",
-                    "url": "https://zynex.ai"
+                    "name": "Zenvict AI",
+                    "url": "https://zenvict.com"
                   }
                 }) }} />
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">

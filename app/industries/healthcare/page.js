@@ -4,7 +4,7 @@ export const metadata = {
   title: 'Healthcare Solutions',
   description:
     'HIPAA-compliant healthcare technology for patient management, diagnostics support, and clinical workflow automation.',
-  alternates: { canonical: 'https://zynex.ai/industries/healthcare' },
+  alternates: { canonical: 'https://zenvict.com/industries/healthcare' },
   openGraph: {
     title: 'Healthcare Solutions',
     description:
@@ -82,8 +82,8 @@ export default function HealthcarePage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zynex.ai/industries" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zenvict.com/industries" },
           { "@type": "ListItem", "position": 3, "name": "Healthcare" }
         ]
       }) }} />
@@ -102,7 +102,7 @@ export default function HealthcarePage() {
               Intelligent Healthcare Management Platform
             </h1>
             <p className="text-[#555555] text-lg leading-relaxed mb-8">
-              Zynex delivers a unified platform purpose-built for healthcare organizations.
+              Zenvict delivers a unified platform purpose-built for healthcare organizations.
               Streamline patient workflows, ensure regulatory compliance, and empower your
               care teams with tools designed for clinical precision and operational efficiency.
             </p>
@@ -257,7 +257,7 @@ export default function HealthcarePage() {
               Healthcare-Grade Security &amp; Compliance
             </h2>
             <p className="text-gray-400 leading-relaxed text-base">
-              Every layer of the Zynex platform is engineered to meet the most stringent
+              Every layer of the Zenvict platform is engineered to meet the most stringent
               healthcare regulations. From end-to-end encryption and role-based access controls
               to continuous audit logging and automated compliance reporting, we ensure your
               patient data stays protected while you focus on delivering exceptional care.
@@ -289,17 +289,17 @@ export default function HealthcarePage() {
         <div className="max-w-3xl mx-auto">
           <div data-animate="fade-up">
           <h2 className="text-3xl max-[480px]:text-2xl font-bold text-[#111111] text-center mb-14 max-[480px]:mb-8">
-            The Zynex Difference
+            The Zenvict Difference
           </h2>
           </div>
           <div className="bg-white border border-[#e0e0e0]" data-animate="fade-up">
             {/* Table Header */}
             <div className="grid grid-cols-2 border-b border-[#e0e0e0]">
               <div className="p-4 text-sm font-bold text-[#555555] uppercase tracking-wider">
-                Before Zynex
+                Before Zenvict
               </div>
               <div className="p-4 text-sm font-bold text-[#111111] uppercase tracking-wider border-l border-[#e0e0e0]">
-                With Zynex
+                With Zenvict
               </div>
             </div>
             {/* Table Rows */}

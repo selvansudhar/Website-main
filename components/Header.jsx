@@ -79,7 +79,7 @@ const Header = () => {
         <header className="bg-white/90 backdrop-blur-[10px] fixed top-0 left-0 w-full z-[1000] border-b border-black/5" onMouseLeave={closeMenu}>
             <div className="flex items-center justify-between px-12 py-4 max-w-[1400px] mx-auto w-full max-md:px-6 max-[480px]:px-4 max-[480px]:py-3">
                 <Link href="/" className="text-2xl font-bold text-primary no-underline flex items-center gap-2 max-[480px]:text-xl" onClick={closeMobileMenu} onMouseEnter={closeMenu}>
-                    zynex
+                    zenvict
                 </Link>
 
                 <nav className="hidden md:flex items-center gap-8 flex-1 justify-center" aria-label="Main navigation" role="menubar">
@@ -92,18 +92,18 @@ const Header = () => {
                             <div className="max-w-[1400px] mx-auto px-12 grid grid-cols-[3fr_1fr] gap-16">
                                 <div>
                                     <div className="flex justify-between items-center mb-6 pb-4 border-b border-black/5">
-                                        <span className="text-xs font-bold text-muted tracking-[0.05em] block">ZYNEX PRODUCTS</span>
+                                        <span className="text-xs font-bold text-muted tracking-[0.05em] block">ZENVICT PRODUCTS</span>
                                     </div>
 
                                     <div className="grid grid-cols-3 gap-12 mb-8">
-                                        {/* Zynex Assistant */}
+                                        {/* Zenvict Assistant */}
                                         <div>
                                             <div className="flex gap-4 mb-6">
                                                 <div className="w-9 h-9 bg-transparent border border-primary rounded-[10px] flex items-center justify-center text-primary shrink-0">
                                                     <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
                                                 </div>
                                                 <div>
-                                                    <span className="block font-bold text-base text-primary mb-0.5">Zynex Assistant</span>
+                                                    <span className="block font-bold text-base text-primary mb-0.5">Zenvict Assistant</span>
                                                     <span className="block text-xs text-muted">Your personal AI assistant</span>
                                                 </div>
                                             </div>
@@ -113,14 +113,14 @@ const Header = () => {
                                             </ul>
                                         </div>
 
-                                        {/* Zynex AI */}
+                                        {/* Zenvict AI */}
                                         <div>
                                             <div className="flex gap-4 mb-6">
                                                 <div className="w-9 h-9 bg-transparent border border-primary rounded-[10px] flex items-center justify-center text-primary shrink-0">
                                                     <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                                                 </div>
                                                 <div>
-                                                    <span className="block font-bold text-base text-primary mb-0.5">Zynex AI</span>
+                                                    <span className="block font-bold text-base text-primary mb-0.5">Zenvict AI</span>
                                                     <span className="block text-xs text-muted">AI-powered tools for growth</span>
                                                 </div>
                                             </div>
@@ -130,14 +130,14 @@ const Header = () => {
                                             </ul>
                                         </div>
 
-                                        {/* Zynex ERP */}
+                                        {/* Zenvict ERP */}
                                         <div>
                                             <div className="flex gap-4 mb-6">
                                                 <div className="w-9 h-9 bg-transparent border border-primary rounded-[10px] flex items-center justify-center text-primary shrink-0">
                                                     <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 22"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
                                                 </div>
                                                 <div>
-                                                    <span className="block font-bold text-base text-primary mb-0.5">Zynex ERP</span>
+                                                    <span className="block font-bold text-base text-primary mb-0.5">Zenvict ERP</span>
                                                     <span className="block text-xs text-muted">The enterprise solutions</span>
                                                 </div>
                                             </div>
@@ -159,7 +159,7 @@ const Header = () => {
                                             <span className="text-5xl font-bold tracking-[0.05em] leading-none promo-title-gradient">IVA</span>
                                         </div>
                                         <div className="flex flex-col gap-3">
-                                            <h3 className="text-xl font-semibold m-0 leading-tight text-white">Zynex Powerful AI Assistant</h3>
+                                            <h3 className="text-xl font-semibold m-0 leading-tight text-white">Zenvict Powerful AI Assistant</h3>
                                             <p className="text-sm leading-relaxed m-0 text-white/85">Automate your business work faster with intelligent AI-powered solutions.</p>
                                             <a href="/products/yenai" className="inline-flex items-center gap-2 text-[#a78bfa] no-underline font-semibold text-[0.95rem] mt-2 transition-all duration-200 hover:translate-x-1 hover:text-[#c4b5fd]" onClick={closeMenu}>Know more →</a>
                                         </div>
@@ -236,11 +236,11 @@ const Header = () => {
                                 <div className="solutions-hero-area p-8 flex items-center justify-center flex-1 overflow-hidden rounded-2xl">
                                     <div className="flex flex-col gap-4 items-center text-center max-w-[380px]">
                                         <div className="flex items-center gap-2 bg-dark py-1.5 px-4 rounded-[50px] text-[0.8rem] font-bold text-white">
-                                            <span className="text-xs">▶</span> Webinar
+                                            <span className="text-xs">✦</span> Real Results
                                         </div>
-                                        <h3 className="text-[1.8rem] font-extrabold text-dark m-0 leading-[1.1] tracking-tight">AI Powered Engineering</h3>
-                                        <p className="text-sm text-[#334155] leading-relaxed m-0 font-medium">Expert insights and actionable strategies for accelerating developer productivity.</p>
-                                        <button className="bg-white text-primary py-2.5 px-6 rounded-[50px] border-none font-bold text-sm cursor-pointer transition-all duration-300 hover:bg-primary-dark hover:-translate-y-0.5 hover:shadow-blue hover:text-white" onClick={closeMenu}>Watch now</button>
+                                        <h3 className="text-[1.8rem] font-extrabold text-dark m-0 leading-[1.1] tracking-tight">40% Less Operational Cost. Day One.</h3>
+                                        <p className="text-sm text-[#334155] leading-relaxed m-0 font-medium">Enterprises running on Zenvict eliminated redundant tools, cut manual workflows, and reclaimed thousands of hours — in the first quarter alone.</p>
+                                        <Link href="/enterprise" className="bg-white text-primary py-2.5 px-6 rounded-[50px] border-none font-bold text-sm cursor-pointer transition-all duration-300 hover:bg-primary-dark hover:-translate-y-0.5 hover:shadow-blue hover:text-white no-underline" onClick={closeMenu}>See the Impact</Link>
                                     </div>
                                 </div>
                             </div>
@@ -285,23 +285,23 @@ const Header = () => {
                                         </ul>
                                     </div>
 
-                                    <div className="absolute bottom-0 left-0 right-0 work-ai-banner-gradient p-3 px-6 rounded-lg cursor-pointer transition-transform duration-200 border border-black/5 hover:-translate-y-0.5 hover:shadow-sm mx-8 mb-3" onClick={closeMenu}>
+                                    <Link href="/resources/news" className="absolute bottom-0 left-0 right-0 work-ai-banner-gradient p-3 px-6 rounded-lg cursor-pointer transition-transform duration-200 border border-black/5 hover:-translate-y-0.5 hover:shadow-sm mx-8 mb-3 no-underline" onClick={closeMenu}>
                                         <div className="flex justify-between items-center">
-                                            <span className="font-bold text-dark text-sm">Work AI Institute</span>
+                                            <span className="font-bold text-dark text-sm">Trusted by teams managing ₹500Cr+ in operations — See how they did it</span>
                                             <span className="text-muted text-lg">→</span>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
 
                                 <div className="resources-hero-area p-6 flex items-center justify-center flex-1 rounded-2xl">
                                     <div className="bg-white rounded-2xl w-full max-w-[380px] flex items-center justify-center p-8 px-6 relative shadow-[0_20px_50px_rgba(0,0,0,0.08)]">
                                         <div className="flex flex-col items-center text-center gap-3">
-                                            <div className="font-serif text-xl text-dark italic tracking-[0.02em]">
-                                                Work AI<span className="not-italic text-sm align-super ml-0.5">⁺</span> INSTITUTE
+                                            <div className="flex items-center gap-2 bg-primary/10 py-1.5 px-4 rounded-[50px] text-[0.75rem] font-bold text-primary tracking-[0.05em]">
+                                                📊 Industry Report
                                             </div>
-                                            <h3 className="text-xl font-extrabold text-dark m-0 leading-[1.15]">The AI Transformation 100</h3>
-                                            <p className="text-sm text-[#475569] leading-relaxed m-0 font-medium">Explore 100 real-world moves organizations are making to transform with AI.</p>
-                                            <button className="bg-dark text-white py-2.5 px-8 rounded-[50px] border-none font-bold text-sm cursor-pointer transition-all duration-300 mt-2 hover:bg-black hover:-translate-y-0.5 hover:shadow-[0_10px_25px_rgba(0,0,0,0.2)]" onClick={closeMenu}>Download the report ↗</button>
+                                            <h3 className="text-xl font-extrabold text-dark m-0 leading-[1.15]">The Hidden Cost of Tool Sprawl</h3>
+                                            <p className="text-sm text-[#475569] leading-relaxed m-0 font-medium">The average mid-size company spends 38% of its IT budget on overlapping software. Learn how unified platforms are changing that.</p>
+                                            <Link href="/resources/blog" className="bg-dark text-white py-2.5 px-8 rounded-[50px] border-none font-bold text-sm cursor-pointer transition-all duration-300 mt-2 hover:bg-black hover:-translate-y-0.5 hover:shadow-[0_10px_25px_rgba(0,0,0,0.2)] no-underline" onClick={closeMenu}>Read the Report</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -339,17 +339,17 @@ const Header = () => {
                         {mobileSubmenu === 'product' && (
                             <div className="pb-4 pl-2 flex flex-col gap-5">
                                 <div className="flex flex-col gap-1.5">
-                                    <span className="text-[0.7rem] font-bold tracking-[0.12em] text-primary uppercase py-1">Zynex Assistant</span>
+                                    <span className="text-[0.7rem] font-bold tracking-[0.12em] text-primary uppercase py-1">Zenvict Assistant</span>
                                     <Link href="/products/knowledge-base" className="block py-2 text-[0.95rem] text-[#475569] no-underline transition-colors duration-200 hover:text-primary" onClick={closeMobileMenu}>Knowledge Base</Link>
                                     <Link href="/products/assistant-hub" className="block py-2 text-[0.95rem] text-[#475569] no-underline transition-colors duration-200 hover:text-primary" onClick={closeMobileMenu}>Assistant Hub</Link>
                                 </div>
                                 <div className="flex flex-col gap-1.5">
-                                    <span className="text-[0.7rem] font-bold tracking-[0.12em] text-primary uppercase py-1">Zynex AI</span>
+                                    <span className="text-[0.7rem] font-bold tracking-[0.12em] text-primary uppercase py-1">Zenvict AI</span>
                                     <Link href="/products/yenai" className="block py-2 text-[0.95rem] text-[#475569] no-underline transition-colors duration-200 hover:text-primary" onClick={closeMobileMenu}>YenAI</Link>
                                     <Link href="/products/marketing-automation" className="block py-2 text-[0.95rem] text-[#475569] no-underline transition-colors duration-200 hover:text-primary" onClick={closeMobileMenu}>Marketing Automation</Link>
                                 </div>
                                 <div className="flex flex-col gap-1.5">
-                                    <span className="text-[0.7rem] font-bold tracking-[0.12em] text-primary uppercase py-1">Zynex ERP</span>
+                                    <span className="text-[0.7rem] font-bold tracking-[0.12em] text-primary uppercase py-1">Zenvict ERP</span>
                                     <Link href="/products/crm-lite" className="block py-2 text-[0.95rem] text-[#475569] no-underline transition-colors duration-200 hover:text-primary" onClick={closeMobileMenu}>CRM Lite</Link>
                                     <Link href="/products/finance-plus" className="block py-2 text-[0.95rem] text-[#475569] no-underline transition-colors duration-200 hover:text-primary" onClick={closeMobileMenu}>Finance Plus</Link>
                                     <Link href="/products/human-resources" className="block py-2 text-[0.95rem] text-[#475569] no-underline transition-colors duration-200 hover:text-primary" onClick={closeMobileMenu}>Human Resources</Link>

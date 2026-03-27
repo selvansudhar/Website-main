@@ -4,7 +4,7 @@ import CountUp from '@/components/CountUp';
 export const metadata = {
     title: 'Enterprise Platform — Intelligent Software for Growth',
     description: 'All-in-one enterprise management platform with inventory, sales, CRM, procurement, finance, and HR modules powered by AI.',
-    alternates: { canonical: 'https://zynex.ai/enterprise' },
+    alternates: { canonical: 'https://zenvict.com/enterprise' },
     openGraph: {
         title: 'Enterprise Platform — Intelligent Software for Growth',
         description: 'All-in-one enterprise management platform with inventory, sales, CRM, procurement, finance, and HR modules powered by AI.',
@@ -37,7 +37,7 @@ export default function Enterprise() {
             <section className="max-w-[1400px] mx-auto px-12 pt-40 pb-24 max-md:px-6 max-md:pt-24 max-md:pb-12 max-sm:px-4">
                 {/* Nav Trail */}
                 <div className="flex items-center gap-3 mb-8 text-xs font-medium tracking-wide max-sm:text-[0.65rem] max-sm:gap-2 max-sm:mb-4">
-                    <span className="text-[#555555]">Zynex AI</span>
+                    <span className="text-[#555555]">Zenvict AI</span>
                     <span className="text-[#e0e0e0]">/</span>
                     <span className="text-[#056CB8] uppercase">Enterprise</span>
                 </div>
@@ -45,7 +45,7 @@ export default function Enterprise() {
                   "@context": "https://schema.org",
                   "@type": "BreadcrumbList",
                   "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
                     { "@type": "ListItem", "position": 2, "name": "Enterprise" }
                   ]
                 }) }} />
@@ -80,7 +80,7 @@ export default function Enterprise() {
                 <div className="w-full overflow-hidden">
                     <Image
                         src="/images/enterprise-banner.webp"
-                        alt="Zynex Enterprise Platform Dashboard"
+                        alt="Zenvict Enterprise Platform Dashboard"
                         width={1536}
                         height={683}
                         sizes="(max-width: 768px) 100vw, 80vw"
@@ -124,7 +124,7 @@ export default function Enterprise() {
                             category: 'CUSTOMER EXPERIENCE',
                             title: 'Deliver meaningful engagement across every customer interaction',
                             text: 'Bring sales, marketing, and customer support together on a unified platform to ensure consistent communication, deeper context, and faster responses throughout the customer lifecycle.',
-                            brands: ['Zynex CRM Plus', 'Zynex Desk'],
+                            brands: ['Zenvict CRM Plus', 'Zenvict Desk'],
                             icon: 'bi-people-fill',
                         },
                         {

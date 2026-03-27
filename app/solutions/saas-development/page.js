@@ -1,9 +1,9 @@
 export const metadata = {
-  title: 'SaaS Development | Zynex',
+  title: 'SaaS Development | Zenvict',
   description: 'Full-stack SaaS development services from product architecture and multi-tenant design to launch and scale.',
-  alternates: { canonical: 'https://zynex.ai/solutions/saas-development' },
+  alternates: { canonical: 'https://zenvict.com/solutions/saas-development' },
   openGraph: {
-    title: 'SaaS Development | Zynex',
+    title: 'SaaS Development | Zenvict',
     description: 'Full-stack SaaS development services from product architecture and multi-tenant design to launch and scale.',
   },
 };
@@ -15,8 +15,8 @@ export default function SaasDevelopmentPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zynex.ai/solutions" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zenvict.com/solutions" },
           { "@type": "ListItem", "position": 3, "name": "SaaS Development" }
         ]
       }) }} />
@@ -160,7 +160,7 @@ export default function SaasDevelopmentPage() {
         </div>
       </section>
 
-      {/* ===== WHY ZYNEX FOR SAAS ===== */}
+      {/* ===== WHY ZENVICT FOR SAAS ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto">
           <div data-animate="fade-up">

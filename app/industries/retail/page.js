@@ -4,7 +4,7 @@ import Image from 'next/image';
 export const metadata = {
     title: 'Retail Industry Solutions — AI-Powered Commerce',
     description: 'AI-powered retail solutions for inventory management, omnichannel commerce, and personalized customer experiences.',
-    alternates: { canonical: 'https://zynex.ai/industries/retail' },
+    alternates: { canonical: 'https://zenvict.com/industries/retail' },
     openGraph: {
         title: 'Retail Industry Solutions — AI-Powered Commerce',
         description: 'AI-powered retail solutions for inventory management, omnichannel commerce, and personalized customer experiences.',
@@ -18,8 +18,8 @@ export default function IndustryRetail() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-                { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zynex.ai/industries" },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+                { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://zenvict.com/industries" },
                 { "@type": "ListItem", "position": 3, "name": "Retail" }
               ]
             }) }} />
@@ -27,7 +27,7 @@ export default function IndustryRetail() {
             <section className="max-w-[1400px] mx-auto px-12 pt-40 pb-32 max-md:px-6 max-md:pt-24 max-md:pb-12 max-sm:px-4">
                 {/* Nav Trail */}
                 <div className="flex items-center gap-3 mb-8 text-xs font-medium tracking-wide max-sm:text-[0.65rem] max-sm:gap-2 max-sm:mb-4">
-                    <span className="text-[#555555]">Zynex AI</span>
+                    <span className="text-[#555555]">Zenvict AI</span>
                     <span className="text-[#e0e0e0]">/</span>
                     <span className="text-[#555555]">Industries</span>
                     <span className="text-[#e0e0e0]">/</span>
@@ -255,7 +255,7 @@ export default function IndustryRetail() {
                             Results that speak
                         </h2>
                         <p className="text-[1.05rem] text-white/50 max-w-[560px] mx-auto max-sm:text-[0.9rem]">
-                            Real outcomes from real retailers who transformed their business with Zynex.
+                            Real outcomes from real retailers who transformed their business with Zenvict.
                         </p>
                     </div>
 
@@ -303,7 +303,7 @@ export default function IndustryRetail() {
                         Transform your retail operations with AI
                     </h2>
                     <p className="text-[1.05rem] text-[#555555] leading-relaxed max-sm:text-[0.9rem]">
-                        From inventory management to personalized customer experiences — see how Zynex helps retailers increase revenue and reduce operational costs.
+                        From inventory management to personalized customer experiences — see how Zenvict helps retailers increase revenue and reduce operational costs.
                     </p>
                     <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                         Get a Retail Demo

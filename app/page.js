@@ -4,9 +4,9 @@ import CountUp from '@/components/CountUp';
 
 export const metadata = {
   title: 'AI-Powered Business Platform for Growing Teams',
-  description: 'Zynex combines ERP, AI intelligence, and intelligent assistants in one platform. Built for small teams that want enterprise tools without the complexity.',
-  alternates: { canonical: 'https://zynex.ai/' },
-  openGraph: { title: 'AI-Powered Business Platform for Growing Teams', description: 'Zynex combines ERP, AI intelligence, and intelligent assistants in one platform.' },
+  description: 'Zenvict combines ERP, AI intelligence, and intelligent assistants in one platform. Built for small teams that want enterprise tools without the complexity.',
+  alternates: { canonical: 'https://zenvict.com/' },
+  openGraph: { title: 'AI-Powered Business Platform for Growing Teams', description: 'Zenvict combines ERP, AI intelligence, and intelligent assistants in one platform.' },
 };
 
 export default function Home() {
@@ -56,25 +56,25 @@ export default function Home() {
             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-[#f5f5f5] text-[#111111]">
               <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none"><rect x="3" y="11" width="18" height="10" rx="2" /><circle cx="12" cy="7" r="4" /><path d="M7 21v-2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" /></svg>
             </div>
-            <span>Zynex AI</span>
+            <span>Zenvict AI</span>
           </div>
 
           <div className="absolute top-[30%] right-[15%] w-[200px] h-[200px] flex items-center justify-center z-[4]">
-            <Image src="/images/home-page-bot.webp" alt="Zynex AI Bot" width={484} height={515} className="w-full h-full object-contain animate-floating-bot" priority />
+            <Image src="/images/home-page-bot.webp" alt="Zenvict AI Bot" width={484} height={515} className="w-full h-full object-contain animate-floating-bot" priority />
           </div>
 
           <div className="absolute bottom-[25%] right-[10%] bg-white rounded-md py-3 px-5 shadow-[0_8px_24px_rgba(0,0,0,0.08)] flex items-center gap-3 font-semibold text-sm text-[#111111] z-2 animate-fade-in-up-delay-2 transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.12)]">
             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-[#f5f5f5] text-[#111111]">
               <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /><path d="M8 9h8" /><path d="M8 13h6" /></svg>
             </div>
-            <span>Zynex Assistant</span>
+            <span>Zenvict Assistant</span>
           </div>
 
           <div className="absolute top-[40%] left-[8%] bg-white/95 rounded-md py-3 px-5 shadow-[0_8px_24px_rgba(0,0,0,0.08)] flex items-center gap-3 font-semibold text-sm text-[#111111] z-2 animate-fade-in-up transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_12px_32px_rgba(0,0,0,0.12)]">
             <div className="w-8 h-8 rounded-lg flex items-center justify-center bg-[#f5f5f5] text-[#111111]">
               <svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none"><path d="M3 3v18h18" /><path d="M18 9l-6 6-2-2-4 4" /></svg>
             </div>
-            <span>Zynex CRMOne</span>
+            <span>Zenvict CRMOne</span>
           </div>
 
           <div className="absolute top-[55%] left-[5%] bg-white/60 backdrop-blur-[10px] rounded-2xl p-5 w-[280px] z-2 border border-[#e0e0e0] animate-fade-in-left transition-transform duration-300 hover:-translate-y-1 max-md:w-[240px]">
@@ -93,10 +93,10 @@ export default function Home() {
         {/* Mobile: clean stacked layout */}
         <div className="hidden max-[480px]:flex flex-col items-center gap-6 px-4">
           <div className="w-[180px] h-[180px]">
-            <Image src="/images/home-page-bot.webp" alt="Zynex AI Bot" width={484} height={515} className="w-full h-full object-contain animate-floating-bot" priority />
+            <Image src="/images/home-page-bot.webp" alt="Zenvict AI Bot" width={484} height={515} className="w-full h-full object-contain animate-floating-bot" priority />
           </div>
           <div className="flex flex-wrap justify-center gap-2">
-            {['Zynex AI', 'Zynex CRMOne', 'Zynex Assistant'].map((label, i) => (
+            {['Zenvict AI', 'Zenvict CRMOne', 'Zenvict Assistant'].map((label, i) => (
               <div key={i} className="bg-white rounded-md py-2 px-4 shadow-[0_4px_12px_rgba(0,0,0,0.06)] text-xs font-semibold text-[#111111] border border-[#e0e0e0]">
                 {label}
               </div>
@@ -146,7 +146,7 @@ export default function Home() {
           </div>
           <h2 className="text-[1.8rem] font-extrabold text-[#111111] leading-[1.3] mb-4 max-md:text-2xl max-[480px]:text-xl">Meet IVA — your AI that knows your business</h2>
           <div className="w-[60px] h-[3px] bg-[#111111] mx-auto mb-6 rounded-sm"></div>
-          <p className="text-lg text-[#555555] leading-relaxed mb-8 px-16 max-md:px-0 max-md:text-base max-[480px]:text-sm">IVA lives inside every Zynex tool. It reads your data, understands context, and gives you answers — not just search results. Ask it anything about your customers, finances, projects, or team.</p>
+          <p className="text-lg text-[#555555] leading-relaxed mb-8 px-16 max-md:px-0 max-md:text-base max-[480px]:text-sm">IVA lives inside every Zenvict tool. It reads your data, understands context, and gives you answers — not just search results. Ask it anything about your customers, finances, projects, or team.</p>
           <Link href="/products/assistant-hub" className="bg-[#056CB8] text-white py-4 px-10 rounded-none border-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 uppercase tracking-[0.05em] no-underline group max-[480px]:py-3 max-[480px]:px-8 max-[480px]:text-[0.85rem]">EXPLORE IVA <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
         </div>
       </section>
@@ -160,7 +160,7 @@ export default function Home() {
                 <div key={i} className="absolute w-[160px] h-[160px] border border-white/10 rounded-full bg-white/[0.03] backdrop-blur-[4px]" style={{ transform: `rotateY(60deg) translateX(${tx})` }}></div>
               ))}
               <div className="relative z-10 flex items-center gap-2 text-2xl font-extrabold">
-                <span className="tracking-[-0.05em]">zynex</span>
+                <span className="tracking-[-0.05em]">zenvict</span>
                 <div className="w-3 h-3 bg-white rounded-full shadow-[0_0_10px_rgba(255,255,255,0.5)]"></div>
                 <span className="tracking-[0.1em]">LIVE</span>
               </div>
@@ -178,7 +178,7 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto rounded-3xl overflow-hidden bg-white">
           <div className="grid grid-cols-2 items-center max-lg:grid-cols-1">
             <div className="p-12 max-md:p-8 flex flex-col gap-6" data-animate="fade-up">
-              <span className="text-[0.75rem] font-bold uppercase tracking-[0.15em] text-[#09983A]">Zynex for Enterprise</span>
+              <span className="text-[0.75rem] font-bold uppercase tracking-[0.15em] text-[#09983A]">Zenvict for Enterprise</span>
               <h2 className="text-[1.8rem] font-extrabold text-[#111111] leading-[1.15] tracking-[-0.02em] max-md:text-[1.5rem]">One connected platform that replaces your disconnected tools</h2>
               <p className="text-base text-[#555555] leading-[1.7]">Your CRM talks to your invoicing, your HR syncs with payroll, your AI accesses everything — natively. Stop juggling separate tools that don&apos;t talk to each other.</p>
               <div className="flex flex-wrap gap-3 mt-2">
@@ -278,7 +278,7 @@ export default function Home() {
           <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-20 max-w-[800px] mx-auto leading-[1.2] tracking-[-0.02em] max-md:text-[1.8rem] max-sm:text-[1.5rem] max-sm:mb-12" data-animate="fade-up">What drives us</h2>
           <div className="grid grid-cols-3 gap-16 text-left max-lg:grid-cols-1 max-lg:max-w-[500px] max-lg:mx-auto max-lg:text-center">
             {[
-              { img: '/images/value-commitment.webp', w: 95, h: 83, title: 'AI at the core', desc: 'Not an afterthought or add-on. Every tool in Zynex has intelligence built in from day one — from automated workflows to predictive insights that help you make better decisions faster.' },
+              { img: '/images/value-commitment.webp', w: 95, h: 83, title: 'AI at the core', desc: 'Not an afterthought or add-on. Every tool in Zenvict has intelligence built in from day one — from automated workflows to predictive insights that help you make better decisions faster.' },
               { img: '/images/value-research.webp', w: 96, h: 89, title: 'Made for small teams', desc: "Enterprise power without the enterprise bloat. Simple to set up, easy to use, and priced for growing businesses. You shouldn't need a dedicated IT team to run your business software." },
               { img: '/images/value-customer.webp', w: 107, h: 82, title: 'Customer-first, always', desc: 'We grow when you grow. No lock-in contracts, no hidden fees, no selling your data. Just straightforward software that earns your trust by being genuinely useful every single day.' },
             ].map((v, i) => (

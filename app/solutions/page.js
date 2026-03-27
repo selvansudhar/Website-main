@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Solutions | Zynex',
-  description: 'Explore Zynex solutions — AI solutions, enterprise software, SaaS development, B2B web applications, and e-commerce platforms.',
-  alternates: { canonical: 'https://zynex.ai/solutions' },
+  title: 'Solutions | Zenvict',
+  description: 'Explore Zenvict solutions — AI solutions, enterprise software, SaaS development, B2B web applications, and e-commerce platforms.',
+  alternates: { canonical: 'https://zenvict.com/solutions' },
   openGraph: {
-    title: 'Solutions | Zynex',
-    description: 'Explore Zynex solutions — AI solutions, enterprise software, SaaS development, B2B web applications, and e-commerce platforms.',
+    title: 'Solutions | Zenvict',
+    description: 'Explore Zenvict solutions — AI solutions, enterprise software, SaaS development, B2B web applications, and e-commerce platforms.',
   },
 };
 
@@ -68,8 +68,8 @@ export default function SolutionsIndex() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zynex.ai/solutions" }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zenvict.com/solutions" }
         ]
       }) }} />
 
@@ -88,13 +88,13 @@ export default function SolutionsIndex() {
 
         <div className="relative max-w-4xl mx-auto" data-animate="fade-up">
           <span className="inline-block border border-white/20 text-white/60 text-xs font-semibold tracking-[0.15em] uppercase px-5 py-2 mb-7 rounded-full">
-            ZYNEX SOLUTIONS
+            ZENVICT SOLUTIONS
           </span>
           <h1 className="text-[3.25rem] max-lg:text-[2.5rem] max-md:text-[2rem] font-bold leading-[1.08] mb-7">
             The Right Solution for<br className="max-md:hidden" /> Every Challenge
           </h1>
           <p className="text-white/55 text-lg max-md:text-base max-w-2xl mx-auto mb-12 leading-relaxed">
-            From AI-powered automation to custom software development — Zynex delivers end-to-end solutions that transform how businesses operate, compete, and grow.
+            From AI-powered automation to custom software development — Zenvict delivers end-to-end solutions that transform how businesses operate, compete, and grow.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link href="/contact" className="group inline-flex items-center gap-3 px-9 py-4 bg-[#056CB8] text-white font-bold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
@@ -202,12 +202,12 @@ export default function SolutionsIndex() {
         </div>
       </section>
 
-      {/* ===== SECTION 4: WHY CHOOSE ZYNEX - SPLIT LAYOUT ===== */}
+      {/* ===== SECTION 4: WHY CHOOSE ZENVICT - SPLIT LAYOUT ===== */}
       <section className="bg-white py-28 max-sm:py-14 px-6 max-sm:px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-2 max-md:grid-cols-1 gap-20 max-sm:gap-10 items-center">
           <div data-animate="fade-left">
             <h2 className="text-[2.5rem] max-md:text-[1.75rem] max-sm:text-[1.4rem] font-bold text-[#111111] mb-6 leading-[1.1]">
-              Why businesses<br className="max-md:hidden" /> choose Zynex
+              Why businesses<br className="max-md:hidden" /> choose Zenvict
             </h2>
             <p className="text-[#555555] leading-relaxed mb-10">
               We don&apos;t just build software — we become your technology partner. Every solution is designed around your business logic, compliance requirements, and growth trajectory. From first conversation to production launch, we stay aligned with your vision.

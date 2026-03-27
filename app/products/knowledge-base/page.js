@@ -3,7 +3,7 @@ import CountUp from '@/components/CountUp';
 export const metadata = {
     title: 'Knowledge Base — AI-Powered Intelligence Hub',
     description: 'Centralize your organization\'s knowledge. AI-powered search delivers instant, accurate answers from every document, system, and source — in seconds.',
-    alternates: { canonical: 'https://zynex.ai/products/knowledge-base' },
+    alternates: { canonical: 'https://zenvict.com/products/knowledge-base' },
     openGraph: {
         title: 'Knowledge Base — AI-Powered Intelligence Hub',
         description: 'Centralize your organization\'s knowledge. AI-powered search delivers instant answers from every source.',
@@ -18,21 +18,21 @@ export default function KnowledgeBase() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-                { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+                { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zenvict.com/products" },
                 { "@type": "ListItem", "position": 3, "name": "Knowledge Base" }
               ]
             }) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              "name": "Zynex Knowledge Base",
+              "name": "Zenvict Knowledge Base",
               "description": "Centralize your organization's knowledge. AI-powered search delivers instant, accurate answers from every document, system, and source.",
-              "url": "https://zynex.ai/products/knowledge-base",
+              "url": "https://zenvict.com/products/knowledge-base",
               "applicationCategory": "BusinessApplication",
               "operatingSystem": "Web",
               "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-              "provider": { "@type": "Organization", "name": "Zynex AI", "url": "https://zynex.ai" }
+              "provider": { "@type": "Organization", "name": "Zenvict AI", "url": "https://zenvict.com" }
             }) }} />
 
             {/* ── Section 1: Dark Split Hero — Text Left + Search Demo Right ── */}
@@ -41,7 +41,7 @@ export default function KnowledgeBase() {
                 {/* Left — Text Content */}
                 <div data-animate="fade-right">
                     <div className="flex items-center gap-3 mb-8 text-xs font-medium tracking-wide max-sm:text-[0.65rem] max-sm:gap-2 max-sm:mb-5">
-                        <span className="text-white/40">Zynex AI</span>
+                        <span className="text-white/40">Zenvict AI</span>
                         <span className="text-white/20">/</span>
                         <span className="text-[#056CB8] uppercase">Knowledge Base</span>
                     </div>
@@ -288,7 +288,7 @@ export default function KnowledgeBase() {
                             Works with everything you use
                         </h2>
                         <p className="text-[1.05rem] text-[#555555] leading-[1.7] max-md:text-base max-sm:text-[0.9rem]">
-                            Upload documents directly or connect with your Zynex apps
+                            Upload documents directly or connect with your Zenvict apps
                         </p>
                     </div>
 
@@ -313,13 +313,13 @@ export default function KnowledgeBase() {
                             </div>
                         </div>
 
-                        {/* Zynex App Connections Card */}
+                        {/* Zenvict App Connections Card */}
                         <div className="bg-white border-2 border-[#056CB8] p-8 max-sm:p-5">
                             <div className="flex items-center gap-3 mb-7 max-sm:mb-5">
                                 <div className="w-10 h-10 bg-[#056CB8]/10 flex items-center justify-center">
                                     <i className="bi bi-diagram-3 text-[#056CB8] text-base"></i>
                                 </div>
-                                <h3 className="text-[1.05rem] font-bold text-[#111111]">Zynex Apps</h3>
+                                <h3 className="text-[1.05rem] font-bold text-[#111111]">Zenvict Apps</h3>
                             </div>
                             <div className="flex flex-wrap gap-2.5">
                                 {['CRM Lite', 'Finance Plus', 'Project Plus', 'Human Resources', 'Marketing Automation', 'YenAI', 'Assistant Hub', 'Knowledge Base'].map((app) => (

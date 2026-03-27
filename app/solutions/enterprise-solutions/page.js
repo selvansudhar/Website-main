@@ -1,7 +1,7 @@
 export const metadata = {
   title: 'Enterprise Solutions — Custom Software for Complex Business Needs',
   description: 'Tailored enterprise software solutions built for scale. From legacy modernization to custom integrations, we architect systems that grow with your business.',
-  alternates: { canonical: 'https://zynex.ai/solutions/enterprise-solutions' },
+  alternates: { canonical: 'https://zenvict.com/solutions/enterprise-solutions' },
   openGraph: {
     title: 'Enterprise Solutions — Custom Software for Complex Business Needs',
     description: 'Tailored enterprise software solutions built for scale. From legacy modernization to custom integrations, we architect systems that grow with your business.',
@@ -15,8 +15,8 @@ export default function EnterpriseSolutionsPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zynex.ai/solutions" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zenvict.com/solutions" },
           { "@type": "ListItem", "position": 3, "name": "Enterprise Solutions" }
         ]
       }) }} />

@@ -48,12 +48,12 @@ const integrations = [
   {
     icon: 'bi-inbox-fill',
     title: 'Communication Platforms',
-    desc: 'Native integrations with Slack, Microsoft Teams, Google Chat, and email — surface Zynex notifications and YenAI responses where your team already works.',
+    desc: 'Native integrations with Slack, Microsoft Teams, Google Chat, and email — surface Zenvict notifications and YenAI responses where your team already works.',
   },
   {
     icon: 'bi-bar-chart-fill',
     title: 'BI & Analytics Tools',
-    desc: 'Export data to Tableau, Power BI, Looker, or Google Data Studio. Scheduled exports and live dashboards powered by Zynex data.',
+    desc: 'Export data to Tableau, Power BI, Looker, or Google Data Studio. Scheduled exports and live dashboards powered by Zenvict data.',
   },
   {
     icon: 'bi-calendar-check-fill',
@@ -105,8 +105,8 @@ export default function Developers() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zynex.ai/resources" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zenvict.com/resources" },
           { "@type": "ListItem", "position": 3, "name": "Developers" }
         ]
       }) }} />
@@ -125,7 +125,7 @@ export default function Developers() {
                 <span className="text-[#056CB8]">Delivers Results</span>
               </h1>
               <p className="text-white/60 text-lg leading-relaxed mb-10 max-w-md">
-                Zynex builds enterprise-grade software using modern technologies. Explore our tech stack, integration capabilities, and custom development services.
+                Zenvict builds enterprise-grade software using modern technologies. Explore our tech stack, integration capabilities, and custom development services.
               </p>
               <div className="flex gap-4 flex-wrap">
                 <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
@@ -145,10 +145,10 @@ export default function Developers() {
                   <span className="w-2.5 h-2.5 rounded-full bg-yellow-400"></span>
                   <span className="w-2.5 h-2.5 rounded-full bg-[#22c55e]"></span>
                 </div>
-                <span className="text-xs text-white/40 font-mono ml-2">zynex-platform</span>
+                <span className="text-xs text-white/40 font-mono ml-2">zenvict-platform</span>
               </div>
               <div className="p-6 font-mono text-[0.78rem] leading-[1.8] text-white/70">
-                <p><span className="text-[#22c55e]">$</span> zynex deploy --production</p>
+                <p><span className="text-[#22c55e]">$</span> zenvict deploy --production</p>
                 <p className="text-white/40 mt-2">Building modules...</p>
                 <p className="text-white/40">&nbsp;&nbsp;&#10003; Finance Plus &nbsp;&nbsp;&nbsp;configured</p>
                 <p className="text-white/40">&nbsp;&nbsp;&#10003; CRM Lite &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;configured</p>
@@ -157,7 +157,7 @@ export default function Developers() {
                 <p className="text-white/40">&nbsp;&nbsp;&#10003; Project Plus &nbsp;&nbsp;configured</p>
                 <p className="text-white/40 mt-2">Running health checks...</p>
                 <p className="text-[#22c55e] mt-1">&#10003; All 9 modules deployed successfully</p>
-                <p className="text-[#056CB8] mt-1">&#8594; Platform live at app.zynex.ai</p>
+                <p className="text-[#056CB8] mt-1">&#8594; Platform live at app.zenvict.com</p>
               </div>
             </div>
           </div>
@@ -213,7 +213,7 @@ export default function Developers() {
               Integration Capabilities
             </h2>
             <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-              Connect Zynex with the tools your team already uses. Pre-built integrations and custom connectors for seamless workflows.
+              Connect Zenvict with the tools your team already uses. Pre-built integrations and custom connectors for seamless workflows.
             </p>
           </div>
 
@@ -290,7 +290,7 @@ export default function Developers() {
               Built-In Platform Modules
             </h2>
             <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
-              The Zynex platform comes with 8 integrated modules — each designed to work together seamlessly.
+              The Zenvict platform comes with 8 integrated modules — each designed to work together seamlessly.
             </p>
           </div>
 
@@ -323,10 +323,10 @@ export default function Developers() {
       <section className="bg-[#111111] text-white py-24 px-6 text-center">
         <div className="max-w-2xl mx-auto" data-animate="fade-up">
           <h2 className="text-[2.25rem] font-bold mb-4 max-md:text-[1.75rem]">
-            Start building with Zynex APIs today
+            Start building with Zenvict APIs today
           </h2>
           <p className="text-white/60 mb-8">
-            Access comprehensive documentation, SDKs, and developer tools. Build custom integrations that extend the Zynex platform.
+            Access comprehensive documentation, SDKs, and developer tools. Build custom integrations that extend the Zenvict platform.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">

@@ -6,12 +6,12 @@ const benefits = [
   {
     icon: 'bi-person-check',
     title: 'Personalized Module Mapping',
-    desc: 'We match your workflows to the right Zynex modules — Finance Plus, CRM Lite, HR, Project Plus, or any combination your business actually needs.',
+    desc: 'We match your workflows to the right Zenvict modules — Finance Plus, CRM Lite, HR, Project Plus, or any combination your business actually needs.',
   },
   {
     icon: 'bi-diagram-3',
     title: 'Integration Blueprint',
-    desc: 'Already using Salesforce, SAP, or Slack? We map how Zynex fits into your existing stack without disrupting what works.',
+    desc: 'Already using Salesforce, SAP, or Slack? We map how Zenvict fits into your existing stack without disrupting what works.',
   },
   {
     icon: 'bi-shield-check',
@@ -47,7 +47,7 @@ const steps = [
   },
   {
     num: '2',
-    title: 'Talk to a Zynex Expert',
+    title: 'Talk to a Zenvict Expert',
     desc: 'A product specialist (not a salesperson) reviews your needs and walks you through which modules and configurations make sense for your workflows.',
   },
   {
@@ -80,7 +80,7 @@ const testimonials = [
 
 const faqs = [
   {
-    q: 'Is Zynex Concierge really free?',
+    q: 'Is Zenvict Concierge really free?',
     a: 'Yes, completely free — no credit card, no contract, no obligation. We believe that when you get the right setup, you stay. That\'s our incentive.',
   },
   {
@@ -89,7 +89,7 @@ const faqs = [
   },
   {
     q: 'Who will I be talking to?',
-    a: 'A Zynex product specialist — someone who knows the platform deeply and has helped hundreds of businesses find the right configuration. Not a sales rep reading a script.',
+    a: 'A Zenvict product specialist — someone who knows the platform deeply and has helped hundreds of businesses find the right configuration. Not a sales rep reading a script.',
   },
   {
     q: 'What should I prepare before the call?',
@@ -100,7 +100,7 @@ const faqs = [
     a: 'Yes. Fill out the consultation form with enough detail and we\'ll email you a written recommendation within 48 hours. Some businesses prefer async — that\'s fine.',
   },
   {
-    q: 'What if I\'m already using some Zynex modules?',
+    q: 'What if I\'m already using some Zenvict modules?',
     a: 'Even better. We\'ll review your current setup, identify gaps, and suggest optimizations or additional modules that integrate with what you already have.',
   },
 ];
@@ -122,8 +122,8 @@ export default function Concierge() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zynex.ai/resources" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zenvict.com/resources" },
           { "@type": "ListItem", "position": 3, "name": "Concierge" }
         ]
       }) }} />
@@ -136,7 +136,7 @@ export default function Concierge() {
             FREE CONSULTATION
           </span>
           <h1 className="text-[3rem] font-bold text-[#111111] leading-[1.1] mb-6 max-md:text-[2.2rem] max-[480px]:text-[1.7rem]">
-            Stop Guessing.<br />Get Your Perfect Zynex Stack.
+            Stop Guessing.<br />Get Your Perfect Zenvict Stack.
           </h1>
           <p className="text-[#555555] text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
             With 9 modules and endless configurations, choosing the right setup can feel overwhelming.
@@ -222,7 +222,7 @@ export default function Concierge() {
         <div className="max-w-5xl mx-auto">
           <div data-animate="fade-up">
             <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-4 max-md:text-[1.75rem] max-[480px]:text-[1.4rem]">
-              Why Zynex Concierge?
+              Why Zenvict Concierge?
             </h2>
             <p className="text-[#555555] text-center mb-16 max-w-2xl mx-auto">
               Skip the months of trial and error. Get expert guidance tailored to your business from day one.

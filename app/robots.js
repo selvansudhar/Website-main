@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: ['/api/', '/_next/'],
     },
-    sitemap: 'https://zynex.ai/sitemap.xml',
+    sitemap: 'https://zenvict.com/sitemap.xml',
   };
 }

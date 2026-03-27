@@ -6,7 +6,7 @@ const categories = [
   {
     icon: 'bi-lightning-charge-fill',
     title: 'Getting Started',
-    desc: 'Set up your Zynex workspace, configure your first modules, and onboard your team in minutes.',
+    desc: 'Set up your Zenvict workspace, configure your first modules, and onboard your team in minutes.',
     articles: 14,
   },
   {
@@ -36,7 +36,7 @@ const categories = [
   {
     icon: 'bi-diagram-3',
     title: 'Integrations & API',
-    desc: 'Connect Zynex with Slack, Teams, Salesforce, and 100+ tools via REST APIs and webhooks.',
+    desc: 'Connect Zenvict with Slack, Teams, Salesforce, and 100+ tools via REST APIs and webhooks.',
     articles: 21,
   },
 ];
@@ -87,8 +87,8 @@ export default function HelpCenter() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zynex.ai/resources" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zenvict.com/resources" },
           { "@type": "ListItem", "position": 3, "name": "Help Center" }
         ]
       }) }} />
@@ -104,7 +104,7 @@ export default function HelpCenter() {
             How can we help you?
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto mb-10">
-            Search our knowledge base or browse categories to find answers, guides, and best practices for every Zynex product.
+            Search our knowledge base or browse categories to find answers, guides, and best practices for every Zenvict product.
           </p>
 
           {/* Search bar */}
@@ -171,7 +171,7 @@ export default function HelpCenter() {
           <div className="flex max-md:flex-col justify-between items-end mb-12 gap-4" data-animate="fade-up">
             <div>
               <h2 className="text-[2.25rem] font-bold text-[#111111] max-md:text-[1.75rem]">Popular Articles</h2>
-              <p className="text-[#555555] mt-2">Most read by the Zynex community this month</p>
+              <p className="text-[#555555] mt-2">Most read by the Zenvict community this month</p>
             </div>
             <a href="/contact" className="text-sm text-[#056CB8] font-semibold">View all articles &rarr;</a>
           </div>
@@ -250,13 +250,13 @@ export default function HelpCenter() {
               {
                 icon: 'bi-inbox-fill',
                 title: 'Email Support',
-                desc: 'Send us a detailed message at support@zynex.ai. We respond within 4 business hours.',
+                desc: 'Send us a detailed message at support@zenvict.com. We respond within 4 business hours.',
                 cta: 'Send an email',
               },
               {
                 icon: 'bi-people-fill',
                 title: 'Community Forum',
-                desc: 'Join 12,000+ Zynex users sharing tips, solutions, and product feedback.',
+                desc: 'Join 12,000+ Zenvict users sharing tips, solutions, and product feedback.',
                 cta: 'Join the community',
               },
             ].map((channel, i) => (

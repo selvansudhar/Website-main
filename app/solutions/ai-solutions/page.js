@@ -2,11 +2,11 @@ import CapabilitySelector from './CapabilitySelector';
 import CountUp from '@/components/CountUp';
 
 export const metadata = {
-  title: 'AI Solutions | Zynex',
+  title: 'AI Solutions | Zenvict',
   description: 'Enterprise AI capabilities including generative AI, intelligent automation, predictive analytics, and conversational interfaces.',
-  alternates: { canonical: 'https://zynex.ai/solutions/ai-solutions' },
+  alternates: { canonical: 'https://zenvict.com/solutions/ai-solutions' },
   openGraph: {
-    title: 'AI Solutions | Zynex',
+    title: 'AI Solutions | Zenvict',
     description: 'Enterprise AI capabilities including generative AI, intelligent automation, predictive analytics, and conversational interfaces.',
   },
 };
@@ -18,8 +18,8 @@ export default function AISolutionsPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zynex.ai/solutions" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zenvict.com/solutions" },
           { "@type": "ListItem", "position": 3, "name": "AI Solutions" }
         ]
       }) }} />
@@ -37,7 +37,7 @@ export default function AISolutionsPage() {
                 Deploy Production-Ready AI in Weeks, Not Years
               </h1>
               <p className="text-white/60 text-lg leading-relaxed max-sm:text-base">
-                From generative models to predictive analytics — Zynex AI adapts to your
+                From generative models to predictive analytics — Zenvict AI adapts to your
                 data, your workflows, and your industry. Enterprise-grade intelligence
                 that compounds over time.
               </p>
@@ -194,7 +194,7 @@ export default function AISolutionsPage() {
               Works With Your Existing Stack
             </h2>
             <p className="text-[#555555] mb-12 max-w-2xl mx-auto">
-              Zynex AI integrates seamlessly with 200+ enterprise tools and platforms.
+              Zenvict AI integrates seamlessly with 200+ enterprise tools and platforms.
               REST APIs, webhooks, SDKs for Python, Node.js, and Java.
             </p>
           </div>

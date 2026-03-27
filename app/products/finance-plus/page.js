@@ -4,7 +4,7 @@ import CountUp from '@/components/CountUp';
 export const metadata = {
     title: 'Finance Plus',
     description: 'Streamline invoicing, expense tracking, budgeting, and financial reporting with AI-powered automation and real-time insights.',
-    alternates: { canonical: 'https://zynex.ai/products/finance-plus' },
+    alternates: { canonical: 'https://zenvict.com/products/finance-plus' },
     openGraph: {
         title: 'Finance Plus',
         description: 'Streamline invoicing, expense tracking, budgeting, and financial reporting with AI-powered automation and real-time insights.',
@@ -18,7 +18,7 @@ export default function FinancePlus() {
             <section className="max-w-[1400px] mx-auto px-12 pt-40 pb-32 max-md:px-6 max-md:pt-24 max-md:pb-12 max-sm:px-4">
                 {/* Nav Trail */}
                 <div className="flex items-center gap-3 mb-8 text-xs font-medium tracking-wide max-sm:text-[0.65rem] max-sm:gap-2 max-sm:mb-4">
-                    <span className="text-[#555555]">Zynex AI</span>
+                    <span className="text-[#555555]">Zenvict AI</span>
                     <span className="text-[#e0e0e0]">/</span>
                     <span className="text-[#056CB8] uppercase">Finance Plus</span>
                 </div>
@@ -26,17 +26,17 @@ export default function FinancePlus() {
                   "@context": "https://schema.org",
                   "@type": "BreadcrumbList",
                   "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zenvict.com/products" },
                     { "@type": "ListItem", "position": 3, "name": "Finance Plus" }
                   ]
                 }) }} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
                   "@context": "https://schema.org",
                   "@type": "SoftwareApplication",
-                  "name": "Zynex Finance Plus",
+                  "name": "Zenvict Finance Plus",
                   "description": "Streamline invoicing, expense tracking, budgeting, and financial reporting with AI-powered automation and real-time insights.",
-                  "url": "https://zynex.ai/products/finance-plus",
+                  "url": "https://zenvict.com/products/finance-plus",
                   "applicationCategory": "BusinessApplication",
                   "operatingSystem": "Web",
                   "offers": {
@@ -46,8 +46,8 @@ export default function FinancePlus() {
                   },
                   "provider": {
                     "@type": "Organization",
-                    "name": "Zynex AI",
-                    "url": "https://zynex.ai"
+                    "name": "Zenvict AI",
+                    "url": "https://zenvict.com"
                   }
                 }) }} />
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
@@ -183,7 +183,7 @@ export default function FinancePlus() {
                             num: '01',
                             icon: 'bi-diagram-3',
                             title: 'Unified Applications, One Platform',
-                            desc: 'All Zynex Finance applications operate as a single ecosystem. Data entered anywhere flows automatically across the suite, ensuring consistency, accuracy, and real-time visibility.',
+                            desc: 'All Zenvict Finance applications operate as a single ecosystem. Data entered anywhere flows automatically across the suite, ensuring consistency, accuracy, and real-time visibility.',
                         },
                         {
                             num: '02',

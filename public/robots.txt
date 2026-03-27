@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zynex.ai/sitemap.xml
+Sitemap: https://zenvict.com/sitemap.xml

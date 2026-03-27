@@ -3,7 +3,7 @@ import Image from 'next/image';
 export const metadata = {
     title: 'Assistant Hub — Your AI Workforce, Ready to Deploy',
     description: 'Deploy 16 specialized AI assistants across every department. From sales to analytics, automate tasks and unlock insights with zero code.',
-    alternates: { canonical: 'https://zynex.ai/products/assistant-hub' },
+    alternates: { canonical: 'https://zenvict.com/products/assistant-hub' },
     openGraph: {
         title: 'Assistant Hub — Your AI Workforce, Ready to Deploy',
         description: 'Deploy 16 specialized AI assistants across every department. Automate tasks and unlock insights with zero code.',
@@ -30,7 +30,7 @@ const departments = [
 ];
 
 const howItWorks = [
-    { step: '01', icon: 'bi-diagram-3', title: 'Connect', desc: 'Link your Zynex modules — Finance, CRM, HR, and more — so assistants can access live data.' },
+    { step: '01', icon: 'bi-diagram-3', title: 'Connect', desc: 'Link your Zenvict modules — Finance, CRM, HR, and more — so assistants can access live data.' },
     { step: '02', icon: 'bi-sliders', title: 'Configure', desc: 'Set permissions, define workflows, and choose which assistants each team gets access to.' },
     { step: '03', icon: 'bi-lightning-charge-fill', title: 'Deploy', desc: 'Activate assistants in under 5 minutes. No code, no consultants, no downtime.' },
     { step: '04', icon: 'bi-bar-chart-fill', title: 'Monitor', desc: 'Track task automation rates, response quality, and team adoption from a single dashboard.' },
@@ -77,12 +77,12 @@ const intelligenceFeatures = [
     { icon: 'bi-shield-fill-check', title: 'Role-Based Permissions', desc: 'Assistants only access data their user is authorized to see. Zero data leakage by design.' },
     { icon: 'bi-arrow-repeat', title: 'Self-Learning', desc: 'Assistants improve over time by learning from corrections, preferences, and usage patterns.' },
     { icon: 'bi-clock-history', title: 'Audit Trail', desc: 'Every action logged. Full transparency for compliance, governance, and internal reviews.' },
-    { icon: 'bi-diagram-3', title: 'Cross-Module Awareness', desc: 'Assistants share context across Zynex modules so insights flow between departments.' },
+    { icon: 'bi-diagram-3', title: 'Cross-Module Awareness', desc: 'Assistants share context across Zenvict modules so insights flow between departments.' },
     { icon: 'bi-sliders', title: 'Human-in-the-Loop', desc: 'Set approval gates for critical actions. Assistants suggest — humans decide when it matters.' },
 ];
 
 const timeline = [
-    { day: 'Day 1', title: 'Connect Your Modules', desc: 'Link Finance, CRM, HR, and other Zynex apps. Assistants begin indexing your data immediately.' },
+    { day: 'Day 1', title: 'Connect Your Modules', desc: 'Link Finance, CRM, HR, and other Zenvict apps. Assistants begin indexing your data immediately.' },
     { day: 'Day 2', title: 'Choose Your Assistants', desc: 'Pick from 16 specialized assistants. Assign them to teams based on department needs.' },
     { day: 'Day 3', title: 'Set Rules & Permissions', desc: 'Define approval workflows, data access levels, and escalation paths for each assistant.' },
     { day: 'Day 5', title: 'Go Live', desc: 'Activate assistants across your organization. Teams start interacting immediately — no training needed.' },
@@ -108,7 +108,7 @@ export default function AssistantHub() {
             <section className="max-w-[1400px] mx-auto px-12 pt-40 pb-32 max-md:px-6 max-md:pt-24 max-md:pb-12 max-sm:px-4">
                 {/* Nav Trail */}
                 <div className="flex items-center gap-3 mb-8 text-xs font-medium tracking-wide max-sm:text-[0.65rem] max-sm:gap-2 max-sm:mb-4">
-                    <span className="text-[#555555]">Zynex AI</span>
+                    <span className="text-[#555555]">Zenvict AI</span>
                     <span className="text-[#e0e0e0]">/</span>
                     <span className="text-[#056CB8] uppercase">Assistant Hub</span>
                 </div>
@@ -116,17 +116,17 @@ export default function AssistantHub() {
                   "@context": "https://schema.org",
                   "@type": "BreadcrumbList",
                   "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+                    { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zenvict.com/products" },
                     { "@type": "ListItem", "position": 3, "name": "Assistant Hub" }
                   ]
                 }) }} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
                   "@context": "https://schema.org",
                   "@type": "SoftwareApplication",
-                  "name": "Zynex Assistant Hub",
+                  "name": "Zenvict Assistant Hub",
                   "description": "Deploy 16 specialized AI assistants across every department. From sales to analytics, automate tasks and unlock insights with zero code.",
-                  "url": "https://zynex.ai/products/assistant-hub",
+                  "url": "https://zenvict.com/products/assistant-hub",
                   "applicationCategory": "BusinessApplication",
                   "operatingSystem": "Web",
                   "offers": {
@@ -136,8 +136,8 @@ export default function AssistantHub() {
                   },
                   "provider": {
                     "@type": "Organization",
-                    "name": "Zynex AI",
-                    "url": "https://zynex.ai"
+                    "name": "Zenvict AI",
+                    "url": "https://zenvict.com"
                   }
                 }) }} />
                 <div className="grid grid-cols-[1fr_1fr] gap-16 items-center max-lg:grid-cols-1 max-lg:text-center max-md:gap-10 max-sm:gap-8">
@@ -461,7 +461,7 @@ export default function AssistantHub() {
             <section className="py-28 px-12 bg-[#f5f5f5] max-md:py-16 max-md:px-6 max-sm:py-12 max-sm:px-4">
                 <div className="max-w-[1200px] mx-auto">
                     <h2 className="text-[2.2rem] font-extrabold text-[#111111] mb-4 tracking-[-0.02em] leading-[1.2] text-center max-md:text-[1.8rem] max-sm:text-[1.5rem]" data-animate="fade-up">
-                        Connected to your entire Zynex ecosystem
+                        Connected to your entire Zenvict ecosystem
                     </h2>
                     <p className="text-[1.1rem] text-[#555555] leading-[1.7] text-center mb-16 max-w-[600px] mx-auto max-md:text-base max-sm:text-[0.9rem] max-sm:mb-10" data-animate="fade-up">
                         Every module, every assistant — working together

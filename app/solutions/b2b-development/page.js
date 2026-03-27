@@ -1,9 +1,9 @@
 export const metadata = {
-  title: 'B2B Web Development | Zynex',
+  title: 'B2B Web Development | Zenvict',
   description: 'Custom B2B web portals, API platforms, and integration solutions built for enterprise-grade security and performance.',
-  alternates: { canonical: 'https://zynex.ai/solutions/b2b-development' },
+  alternates: { canonical: 'https://zenvict.com/solutions/b2b-development' },
   openGraph: {
-    title: 'B2B Web Development | Zynex',
+    title: 'B2B Web Development | Zenvict',
     description: 'Custom B2B web portals, API platforms, and integration solutions built for enterprise-grade security and performance.',
   },
 };
@@ -15,8 +15,8 @@ export default function B2BDevelopmentPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zynex.ai/solutions" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zenvict.com/solutions" },
           { "@type": "ListItem", "position": 3, "name": "B2B Development" }
         ]
       }) }} />
@@ -134,7 +134,7 @@ export default function B2BDevelopmentPage() {
         </div>
       </section>
 
-      {/* ===== WHY ZYNEX FOR B2B — Split Layout ===== */}
+      {/* ===== WHY ZENVICT FOR B2B — Split Layout ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-5 max-md:grid-cols-1 gap-12">
           <div className="col-span-2 max-md:col-span-1" data-animate="fade-left">

@@ -15,8 +15,8 @@ const financeData = {
                 <line x1="7" y1="16" x2="13" y2="16" />
             </svg>
         ),
-        title: 'Zynex Invoice',
-        description: 'Create professional invoices and get paid on time with Zynex Invoice.',
+        title: 'Zenvict Invoice',
+        description: 'Create professional invoices and get paid on time with Zenvict Invoice.',
         features: [
             'Generate detailed quotes and invoices in minutes',
             'Accept payments through multiple online payment options',
@@ -32,7 +32,7 @@ const financeData = {
                 <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
             </svg>
         ),
-        title: 'Zynex Books',
+        title: 'Zenvict Books',
         description: 'A powerful cloud-based accounting solution built for growing businesses.',
         features: [
             'Sync bank transactions and manage online payments with ease',
@@ -52,7 +52,7 @@ const financeData = {
                 <path d="M16 10a4 4 0 0 1-8 0" />
             </svg>
         ),
-        title: 'Zynex Checkout',
+        title: 'Zenvict Checkout',
         description: 'Design branded payment pages and collect payments effortlessly.',
         features: [
             'Personalize hosted checkout pages with your brand identity',
@@ -69,7 +69,7 @@ const financeData = {
                 <path d="M7 11V7a5 5 0 0 1 10 0v4" />
             </svg>
         ),
-        title: 'Zynex Commerce',
+        title: 'Zenvict Commerce',
         description: 'An all-in-one ecommerce platform to launch and scale your online store.',
         features: [
             'Build modern, responsive online storefronts',
@@ -88,8 +88,8 @@ const financeData = {
                 <path d="M16 3.13a4 4 0 0 1 0 7.75" />
             </svg>
         ),
-        title: 'Zynex Payroll',
-        description: 'Run payroll accurately, securely, and on schedule with Zynex Payroll.',
+        title: 'Zenvict Payroll',
+        description: 'Run payroll accurately, securely, and on schedule with Zenvict Payroll.',
         features: [
             'Automatically calculate salaries, taxes, deductions, and benefits',
             'Support compliance across India, UAE, and the USA',
@@ -107,7 +107,7 @@ const financeData = {
                 <rect x="3" y="14" width="7" height="7" />
             </svg>
         ),
-        title: 'Zynex Inventory',
+        title: 'Zenvict Inventory',
         description: 'Stay in control of stock levels and warehouse operations in real time.',
         features: [
             'Track inventory across locations with precision',
@@ -124,7 +124,7 @@ const financeData = {
                 <path d="M12 6v6l4 2" />
             </svg>
         ),
-        title: 'Zynex Billing',
+        title: 'Zenvict Billing',
         description: 'Simplify recurring and usage-based billing with complete transparency.',
         features: [
             'Set up subscription plans and automated billing cycles',
@@ -142,7 +142,7 @@ const financeData = {
                 <path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4z" />
             </svg>
         ),
-        title: 'Zynex Expense',
+        title: 'Zenvict Expense',
         description: 'Manage business expenses smarter with automation and visibility.',
         features: [
             'Record, categorize, and approve expenses effortlessly',

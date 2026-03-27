@@ -2,20 +2,20 @@ import Link from 'next/link';
 import CountUp from '@/components/CountUp';
 
 export const metadata = {
-  title: 'About Zynex — AI-Powered Enterprise Platform Built in India',
-  description: 'Zynex delivers AI-native business software to enterprises across 5+ industries. One platform for CRM, finance, HR, and projects — trusted by 30+ clients with 99.9% uptime.',
-  alternates: { canonical: 'https://zynex.ai/about' },
+  title: 'About Zenvict — AI-Powered Enterprise Platform Built in India',
+  description: 'Zenvict delivers AI-native business software to enterprises across 5+ industries. One platform for CRM, finance, HR, and projects — trusted by 30+ clients with 99.9% uptime.',
+  alternates: { canonical: 'https://zenvict.com/about' },
   openGraph: {
-    title: 'About Zynex — AI-Powered Enterprise Platform Built in India',
-    description: 'Zynex delivers AI-native business software to enterprises across 5+ industries. One platform for CRM, finance, HR, and projects — trusted by 30+ clients with 99.9% uptime.',
+    title: 'About Zenvict — AI-Powered Enterprise Platform Built in India',
+    description: 'Zenvict delivers AI-native business software to enterprises across 5+ industries. One platform for CRM, finance, HR, and projects — trusted by 30+ clients with 99.9% uptime.',
   },
 };
 
 export default function About() {
   const leadership = [
-    { name: 'Sudharsan R', role: 'Founder & CEO', bio: 'Visionary technologist driving Zynex\'s mission to democratize enterprise software through AI innovation.' },
+    { name: 'Sudhar', role: 'Founder & CEO', bio: 'Visionary technologist driving Zenvict\'s mission to democratize enterprise software through AI innovation.' },
     { name: 'Engineering Team', role: 'Core Development', bio: 'A passionate team of full-stack engineers, AI researchers, and product designers building the future of business software.' },
-    { name: 'AI Research Lab', role: 'Intelligence Division', bio: 'Dedicated AI specialists developing IVA, YenAI, and the 16+ intelligent assistants powering the Zynex platform.' },
+    { name: 'AI Research Lab', role: 'Intelligence Division', bio: 'Dedicated AI specialists developing IVA, YenAI, and the 16+ intelligent assistants powering the Zenvict platform.' },
   ];
 
   return (
@@ -27,7 +27,7 @@ export default function About() {
 
         <div className="max-w-[1400px] mx-auto px-12 pt-40 pb-28 max-md:px-6 max-md:pt-28 max-md:pb-20 max-sm:px-4 relative z-10 w-full">
           <div className="flex items-center gap-3 mb-10 text-xs font-medium tracking-wide max-sm:text-[0.65rem] max-sm:gap-2 max-sm:mb-6">
-            <span className="text-[#555555]">Zynex AI</span>
+            <span className="text-[#555555]">Zenvict AI</span>
             <span className="text-[#e0e0e0]">/</span>
             <span className="text-[#056CB8] uppercase">About</span>
           </div>
@@ -35,7 +35,7 @@ export default function About() {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
               { "@type": "ListItem", "position": 2, "name": "About" }
             ]
           }) }} />
@@ -45,7 +45,7 @@ export default function About() {
               One platform to run your entire business — with AI built in.
             </h1>
             <p className="text-[1.2rem] text-[#555555] leading-[1.8] max-w-[600px] max-md:text-base">
-              Zynex replaces your disconnected CRM, invoicing, HR, and project tools with a single AI-powered platform. Serving enterprises across healthcare, finance, manufacturing, retail, and education — from India to the world.
+              Zenvict replaces your disconnected CRM, invoicing, HR, and project tools with a single AI-powered platform. Serving enterprises across healthcare, finance, manufacturing, retail, and education — from India to the world.
             </p>
             <div className="flex gap-6 mt-10 max-sm:flex-col max-sm:gap-4">
               <Link href="/contact" className="bg-[#056CB8] text-white py-4 px-10 rounded-none border-none text-[0.9rem] font-bold cursor-pointer inline-flex items-center gap-3 uppercase tracking-[0.06em] no-underline group max-sm:px-8 max-sm:py-3.5 max-sm:text-[0.82rem] max-sm:justify-center">
@@ -92,10 +92,10 @@ export default function About() {
             </div>
             <div className="flex flex-col gap-6" data-animate="fade-up" data-delay="1">
               <p className="text-[1.1rem] text-[#333333] leading-[1.85] font-medium">
-                Zynex is an AI-powered business platform that combines CRM, finance, HR, project management, knowledge base, and marketing automation into one unified system.
+                Zenvict is an AI-powered business platform that combines CRM, finance, HR, project management, knowledge base, and marketing automation into one unified system.
               </p>
               <p className="text-[1rem] text-[#555555] leading-[1.85]">
-                Unlike traditional tools that require separate subscriptions, complex integrations, and months of setup — Zynex modules share the same database, the same AI layer, and the same user context. Your sales data flows into your invoicing. Your HR syncs with payroll. Your AI assistant accesses everything — natively.
+                Unlike traditional tools that require separate subscriptions, complex integrations, and months of setup — Zenvict modules share the same database, the same AI layer, and the same user context. Your sales data flows into your invoicing. Your HR syncs with payroll. Your AI assistant accesses everything — natively.
               </p>
               <div className="flex flex-wrap gap-3 mt-2">
                 {['CRM', 'Finance', 'HR', 'Projects', 'Knowledge Base', 'Marketing', 'AI Assistants', 'Analytics'].map((tag) => (
@@ -107,11 +107,11 @@ export default function About() {
         </div>
       </section>
 
-      {/* ═══ WHY ZYNEX — Competitive differentiators ═══ */}
+      {/* ═══ WHY ZENVICT — Competitive differentiators ═══ */}
       <section className="bg-[#FAFAFA] border-y border-[#eaeaea]">
         <div className="max-w-[1400px] mx-auto px-12 py-28 max-md:px-6 max-md:py-20 max-sm:px-4 max-sm:py-14">
           <div className="mb-16 max-sm:mb-10" data-animate="fade-up">
-            <span className="text-[0.7rem] font-bold uppercase tracking-[0.2em] text-[#056CB8]">Why Zynex</span>
+            <span className="text-[0.7rem] font-bold uppercase tracking-[0.2em] text-[#056CB8]">Why Zenvict</span>
             <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] mt-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]" style={{ fontFamily: 'var(--font-outfit)' }}>
               What makes us different.
             </h2>
@@ -196,7 +196,7 @@ export default function About() {
       <section className="max-w-[1400px] mx-auto px-12 py-32 max-md:px-6 max-md:py-20 max-sm:px-4 max-sm:py-14">
         <div className="text-center mb-20 max-sm:mb-12" data-animate="fade-up">
           <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] mb-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]">
-            The People Behind Zynex
+            The People Behind Zenvict
           </h2>
           <p className="text-[1.05rem] text-[#555555] max-w-[550px] mx-auto max-sm:text-[0.9rem]">
             A passionate team of engineers, designers, and AI researchers building from India for the world.
@@ -259,7 +259,7 @@ export default function About() {
         <div className="max-w-[1400px] mx-auto px-12 py-28 max-md:px-6 max-md:py-20 max-sm:px-4 max-sm:py-14 relative z-10">
           <div className="max-w-[600px]" data-animate="fade-up">
             <h2 className="text-[2.5rem] font-extrabold text-white m-0 leading-[1.12] tracking-[-0.03em] mb-6 max-md:text-[2rem] max-sm:text-[1.6rem]" style={{ fontFamily: 'var(--font-outfit)' }}>
-              See how Zynex can simplify your operations.
+              See how Zenvict can simplify your operations.
             </h2>
             <p className="text-[1.05rem] text-white/50 leading-[1.75] m-0 mb-10 max-sm:text-[0.9rem]">
               Our team will walk you through the platform, understand your needs, and create a tailored implementation plan — no commitment required.

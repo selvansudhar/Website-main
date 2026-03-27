@@ -5,21 +5,21 @@ import ScrollAnimator from '@/components/ScrollAnimator';
 import './globals.css';
 
 export const metadata = {
-  metadataBase: new URL('https://zynex.ai'),
+  metadataBase: new URL('https://zenvict.com'),
   title: {
-    default: 'Zynex — AI-Powered Enterprise Platform',
-    template: '%s | Zynex',
+    default: 'Zenvict — AI-Powered Enterprise Platform',
+    template: '%s | Zenvict',
   },
-  description: 'Zynex is an AI-powered enterprise platform that helps businesses automate workflows, deploy intelligent AI solutions, and scale operations with cutting-edge AI technology.',
-  keywords: 'Zynex, AI, enterprise, intelligence, ERP, CRM, automation, machine learning',
+  description: 'Zenvict is an AI-powered enterprise platform that helps businesses automate workflows, deploy intelligent AI solutions, and scale operations with cutting-edge AI technology.',
+  keywords: 'Zenvict, AI, enterprise, intelligence, ERP, CRM, automation, machine learning',
   openGraph: {
-    title: 'Zynex — AI-Powered Enterprise Platform',
+    title: 'Zenvict — AI-Powered Enterprise Platform',
     description: 'AI-powered enterprise platform for modern businesses.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Zynex — AI-Powered Enterprise Platform',
+    title: 'Zenvict — AI-Powered Enterprise Platform',
     description: 'AI-powered enterprise platform for modern businesses.',
   },
   icons: {
@@ -43,15 +43,15 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Zynex",
-              "url": "https://zynex.ai",
-              "logo": "https://zynex.ai/images/zynex-logo.png",
+              "name": "Zenvict",
+              "url": "https://zenvict.com",
+              "logo": "https://zenvict.com/images/zenvict-logo.png",
               "description": "AI-powered enterprise platform combining ERP, CRM, HR, Finance, and intelligent assistants for growing businesses.",
               "sameAs": [],
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "sales",
-                "url": "https://zynex.ai/contact"
+                "url": "https://zenvict.com/contact"
               },
               "foundingDate": "2024",
               "numberOfEmployees": {
@@ -67,11 +67,11 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "Zynex",
-              "url": "https://zynex.ai",
+              "name": "Zenvict",
+              "url": "https://zenvict.com",
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://zynex.ai/resources/help-center?q={search_term_string}",
+                "target": "https://zenvict.com/resources/help-center?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
             })

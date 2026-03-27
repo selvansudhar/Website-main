@@ -1,10 +1,10 @@
 export const metadata = {
-  title: 'Blog | Zynex',
-  description: 'Insights, guides, and thought leadership on AI, enterprise technology, and digital transformation from the Zynex team.',
-  alternates: { canonical: 'https://zynex.ai/resources/blog' },
+  title: 'Blog | Zenvict',
+  description: 'Insights, guides, and thought leadership on AI, enterprise technology, and digital transformation from the Zenvict team.',
+  alternates: { canonical: 'https://zenvict.com/resources/blog' },
   openGraph: {
-    title: 'Blog | Zynex',
-    description: 'Insights, guides, and thought leadership on AI, enterprise technology, and digital transformation from the Zynex team.',
+    title: 'Blog | Zenvict',
+    description: 'Insights, guides, and thought leadership on AI, enterprise technology, and digital transformation from the Zenvict team.',
   },
 };
 
@@ -20,12 +20,12 @@ export default function BlogPage() {
   };
 
   const posts = [
-    { category: 'ENGINEERING', title: 'Building a Multi-Tenant SaaS Architecture with Next.js', excerpt: 'How we designed Zynex\'s infrastructure to handle multiple enterprise clients with isolated data and shared resources.', author: 'Zynex Engineering', date: 'Mar 6, 2026', readTime: '12 min read', icon: 'bi-lightning-charge-fill', color: 'bg-[#8b5cf6]' },
-    { category: 'PRODUCT', title: 'Introducing Zynex Finance Plus — Smarter Financial Management', excerpt: 'AI-powered invoicing, expense tracking, and real-time financial insights built for growing businesses.', author: 'Zynex Product', date: 'Feb 28, 2026', readTime: '5 min read', icon: 'bi-inbox-fill', color: 'bg-[#22c55e]' },
-    { category: 'INDUSTRY', title: 'Why Healthcare Organizations Need AI-Ready ERP Systems', excerpt: 'Exploring how intelligent automation is transforming patient management, scheduling, and compliance in healthcare.', author: 'Zynex Team', date: 'Feb 22, 2026', readTime: '10 min read', icon: 'bi-diagram-3', color: 'bg-[#f59e0b]' },
-    { category: 'ENGINEERING', title: 'From Monolith to Microservices: Our Migration Journey', excerpt: 'Lessons learned from refactoring our platform into modular services without disrupting existing clients.', author: 'Zynex Engineering', date: 'Feb 18, 2026', readTime: '15 min read', icon: 'bi-diagram-3', color: 'bg-[#8b5cf6]' },
-    { category: 'AI & MACHINE LEARNING', title: 'RAG in Production: What Actually Works', excerpt: 'A practical guide to implementing retrieval-augmented generation for enterprise knowledge base systems.', author: 'Zynex AI Team', date: 'Feb 14, 2026', readTime: '11 min read', icon: 'bi-lightning-charge-fill', color: 'bg-[#056CB8]' },
-    { category: 'PRODUCT', title: 'Project Plus: How We Redesigned Sprint Management', excerpt: 'The thinking behind our new project management module — built for teams that ship fast.', author: 'Zynex Product', date: 'Feb 10, 2026', readTime: '7 min read', icon: 'bi-list-check', color: 'bg-[#22c55e]' },
+    { category: 'ENGINEERING', title: 'Building a Multi-Tenant SaaS Architecture with Next.js', excerpt: 'How we designed Zenvict\'s infrastructure to handle multiple enterprise clients with isolated data and shared resources.', author: 'Zenvict Engineering', date: 'Mar 6, 2026', readTime: '12 min read', icon: 'bi-lightning-charge-fill', color: 'bg-[#8b5cf6]' },
+    { category: 'PRODUCT', title: 'Introducing Zenvict Finance Plus — Smarter Financial Management', excerpt: 'AI-powered invoicing, expense tracking, and real-time financial insights built for growing businesses.', author: 'Zenvict Product', date: 'Feb 28, 2026', readTime: '5 min read', icon: 'bi-inbox-fill', color: 'bg-[#22c55e]' },
+    { category: 'INDUSTRY', title: 'Why Healthcare Organizations Need AI-Ready ERP Systems', excerpt: 'Exploring how intelligent automation is transforming patient management, scheduling, and compliance in healthcare.', author: 'Zenvict Team', date: 'Feb 22, 2026', readTime: '10 min read', icon: 'bi-diagram-3', color: 'bg-[#f59e0b]' },
+    { category: 'ENGINEERING', title: 'From Monolith to Microservices: Our Migration Journey', excerpt: 'Lessons learned from refactoring our platform into modular services without disrupting existing clients.', author: 'Zenvict Engineering', date: 'Feb 18, 2026', readTime: '15 min read', icon: 'bi-diagram-3', color: 'bg-[#8b5cf6]' },
+    { category: 'AI & MACHINE LEARNING', title: 'RAG in Production: What Actually Works', excerpt: 'A practical guide to implementing retrieval-augmented generation for enterprise knowledge base systems.', author: 'Zenvict AI Team', date: 'Feb 14, 2026', readTime: '11 min read', icon: 'bi-lightning-charge-fill', color: 'bg-[#056CB8]' },
+    { category: 'PRODUCT', title: 'Project Plus: How We Redesigned Sprint Management', excerpt: 'The thinking behind our new project management module — built for teams that ship fast.', author: 'Zenvict Product', date: 'Feb 10, 2026', readTime: '7 min read', icon: 'bi-list-check', color: 'bg-[#22c55e]' },
   ];
 
   const categories = ['All', 'AI & Machine Learning', 'Engineering', 'Product', 'Industry', 'Company'];
@@ -36,8 +36,8 @@ export default function BlogPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zynex.ai/resources" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zenvict.com/resources" },
           { "@type": "ListItem", "position": 3, "name": "Blog" }
         ]
       }) }} />
@@ -47,7 +47,7 @@ export default function BlogPage() {
         <div className="max-w-5xl mx-auto text-center" data-animate="fade-up">
           <p className="text-sm text-white/50 mb-8">Home / Resources / Blog</p>
           <span className="inline-block bg-white/10 text-white/70 text-xs font-semibold tracking-[0.1em] uppercase px-4 py-2 mb-6">
-            ZYNEX BLOG
+            ZENVICT BLOG
           </span>
           <h1 className="text-[3rem] font-bold leading-[1.1] mb-6 max-md:text-[2.2rem]">
             Insights & Engineering

@@ -1,10 +1,10 @@
 export const metadata = {
-  title: 'Community | Zynex',
-  description: 'Join the Zynex community — connect with developers, share knowledge, attend events, and shape the future of enterprise AI.',
-  alternates: { canonical: 'https://zynex.ai/resources/community' },
+  title: 'Community | Zenvict',
+  description: 'Join the Zenvict community — connect with developers, share knowledge, attend events, and shape the future of enterprise AI.',
+  alternates: { canonical: 'https://zenvict.com/resources/community' },
   openGraph: {
-    title: 'Community | Zynex',
-    description: 'Join the Zynex community — connect with developers, share knowledge, attend events, and shape the future of enterprise AI.',
+    title: 'Community | Zenvict',
+    description: 'Join the Zenvict community — connect with developers, share knowledge, attend events, and shape the future of enterprise AI.',
   },
 };
 
@@ -15,8 +15,8 @@ export default function CommunityPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zynex.ai/resources" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zenvict.com/resources" },
           { "@type": "ListItem", "position": 3, "name": "Community" }
         ]
       }) }} />
@@ -31,7 +31,7 @@ export default function CommunityPage() {
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-8">
               Join thousands of developers, operators, and business leaders who are
-              building the future of enterprise technology with Zynex.
+              building the future of enterprise technology with Zenvict.
             </p>
             <div className="flex justify-center gap-4 flex-wrap">
               <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-white text-[#056CB8] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/90 transition-colors">
@@ -77,7 +77,7 @@ export default function CommunityPage() {
               {
                 icon: 'bi-lightning-charge-fill',
                 title: 'Developer Forum',
-                desc: 'Ask questions, share code snippets, discuss APIs, and get help from Zynex engineers and fellow developers.',
+                desc: 'Ask questions, share code snippets, discuss APIs, and get help from Zenvict engineers and fellow developers.',
                 stats: '200+ discussions',
                 color: 'bg-[#056CB8]',
               },
@@ -91,7 +91,7 @@ export default function CommunityPage() {
               {
                 icon: 'bi-star-fill',
                 title: 'Champions Program',
-                desc: 'Become a Zynex Champion — get early access to features, direct engineer support, and exclusive events.',
+                desc: 'Become a Zenvict Champion — get early access to features, direct engineer support, and exclusive events.',
                 stats: '15 champions',
                 color: 'bg-[#111111]',
               },
@@ -122,10 +122,10 @@ export default function CommunityPage() {
 
           <div className="flex flex-col gap-4" data-animate="fade-up" data-delay="2">
             {[
-              { date: 'Mar 15', month: 'MAR', title: 'Zynex AI Summit 2026', type: 'VIRTUAL', desc: 'Annual community conference — keynotes, workshops, and product roadmap reveals.' },
-              { date: 'Mar 22', month: 'MAR', title: 'Building RAG Systems Workshop', type: 'WORKSHOP', desc: 'Hands-on session on implementing retrieval-augmented generation with Zynex AI.' },
+              { date: 'Mar 15', month: 'MAR', title: 'Zenvict AI Summit 2026', type: 'VIRTUAL', desc: 'Annual community conference — keynotes, workshops, and product roadmap reveals.' },
+              { date: 'Mar 22', month: 'MAR', title: 'Building RAG Systems Workshop', type: 'WORKSHOP', desc: 'Hands-on session on implementing retrieval-augmented generation with Zenvict AI.' },
               { date: 'Apr 5', month: 'APR', title: 'Healthcare User Group — Q1 Meetup', type: 'MEETUP', desc: 'Industry-specific discussion on AI adoption in clinical workflows.' },
-              { date: 'Apr 12', month: 'APR', title: 'Zynex Hackathon: Build the Future', type: 'HACKATHON', desc: '48-hour hackathon with $50K in prizes. Build on Zynex APIs and win.' },
+              { date: 'Apr 12', month: 'APR', title: 'Zenvict Hackathon: Build the Future', type: 'HACKATHON', desc: '48-hour hackathon with $50K in prizes. Build on Zenvict APIs and win.' },
             ].map((event, i) => (
               <div key={i} className="bg-white border border-[#e0e0e0] p-6 flex max-md:flex-col gap-6 items-center hover:border-[#056CB8] transition-colors">
                 <div className="w-16 h-16 bg-[#056CB8]/10 flex flex-col items-center justify-center flex-shrink-0">
@@ -155,9 +155,9 @@ export default function CommunityPage() {
 
           <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
-              { quote: 'The developer forum helped us integrate Zynex APIs into our workflow in just a few days. Great community support.', name: 'Developer', role: 'Zynex User' },
-              { quote: 'Zynex community events are a great way to learn about new features and connect with other users.', name: 'Team Lead', role: 'Zynex Client' },
-              { quote: 'Being an early adopter gave us direct access to the engineering team. Our feedback actually shaped the product.', name: 'Early Adopter', role: 'Zynex Champion' },
+              { quote: 'The developer forum helped us integrate Zenvict APIs into our workflow in just a few days. Great community support.', name: 'Developer', role: 'Zenvict User' },
+              { quote: 'Zenvict community events are a great way to learn about new features and connect with other users.', name: 'Team Lead', role: 'Zenvict Client' },
+              { quote: 'Being an early adopter gave us direct access to the engineering team. Our feedback actually shaped the product.', name: 'Early Adopter', role: 'Zenvict Champion' },
             ].map((testimonial, i) => (
               <div key={i} className="border border-[#e0e0e0] p-6">
                 <p className="text-6xl text-[#056CB8]/15 font-serif leading-none mb-2">&ldquo;</p>
@@ -187,7 +187,7 @@ export default function CommunityPage() {
           <div className="grid grid-cols-4 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
               { icon: 'bi-file-earmark-text', title: 'Write', desc: 'Author blog posts, tutorials, or case studies.' },
-              { icon: 'bi-headset', title: 'Mentor', desc: 'Help newcomers get started with Zynex tools.' },
+              { icon: 'bi-headset', title: 'Mentor', desc: 'Help newcomers get started with Zenvict tools.' },
               { icon: 'bi-people', title: 'Organize', desc: 'Host or co-host local meetups and workshops.' },
               { icon: 'bi-patch-check-fill', title: 'Review', desc: 'Test beta features and provide early feedback.' },
             ].map((way, i) => (

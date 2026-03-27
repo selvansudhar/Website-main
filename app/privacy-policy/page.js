@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'Privacy Policy | Zynex',
-  description: 'Zynex privacy policy — how we collect, use, store, and protect your personal information and service data.',
-  alternates: { canonical: 'https://zynex.ai/privacy-policy' },
+  title: 'Privacy Policy | Zenvict',
+  description: 'Zenvict privacy policy — how we collect, use, store, and protect your personal information and service data.',
+  alternates: { canonical: 'https://zenvict.com/privacy-policy' },
 };
 
 export default function PrivacyPolicy() {
@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
           <div className="bg-[#f5f5f5] border border-[#e0e0e0] p-8 mb-12">
             <h2 className="text-lg font-bold text-[#111111] mb-4">Summary of Our Privacy Commitment</h2>
             <p className="text-sm text-[#555555] leading-relaxed mb-4">
-              At Zynex, your privacy is fundamental to how we build and operate our platform. Here's what you should know:
+              At Zenvict, your privacy is fundamental to how we build and operate our platform. Here's what you should know:
             </p>
             <ul className="flex flex-col gap-3">
               {[
@@ -47,12 +47,12 @@ export default function PrivacyPolicy() {
 
           {/* Part I */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-[#111111] mb-2">Part I — Information Zynex Collects and Controls</h2>
+            <h2 className="text-2xl font-bold text-[#111111] mb-2">Part I — Information Zenvict Collects and Controls</h2>
             <div className="w-12 h-0.5 bg-[#056CB8] mb-6"></div>
 
             <h3 className="text-base font-bold text-[#111111] mt-8 mb-3">1. Information You Provide to Us</h3>
             <p className="text-sm text-[#555555] leading-relaxed mb-4">
-              When you sign up for a Zynex account, request a demo, contact sales, or use our Concierge service, we may collect:
+              When you sign up for a Zenvict account, request a demo, contact sales, or use our Concierge service, we may collect:
             </p>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-sm text-[#555555] leading-relaxed mb-6">
               <li>Name, email address, phone number, and company name</li>
@@ -63,7 +63,7 @@ export default function PrivacyPolicy() {
 
             <h3 className="text-base font-bold text-[#111111] mt-8 mb-3">2. Information We Collect Automatically</h3>
             <p className="text-sm text-[#555555] leading-relaxed mb-4">
-              When you use the Zynex platform or visit our website, we automatically collect:
+              When you use the Zenvict platform or visit our website, we automatically collect:
             </p>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-sm text-[#555555] leading-relaxed mb-6">
               <li>Device information (browser type, operating system, device identifiers)</li>
@@ -75,13 +75,13 @@ export default function PrivacyPolicy() {
 
             <h3 className="text-base font-bold text-[#111111] mt-8 mb-3">3. Information from Third Parties</h3>
             <p className="text-sm text-[#555555] leading-relaxed mb-6">
-              We may receive information from integration partners (e.g., when you connect Salesforce, Slack, or Google Workspace to Zynex), single sign-on providers, or publicly available business directories. This is used solely to enhance your experience and enable integrations you have authorized.
+              We may receive information from integration partners (e.g., when you connect Salesforce, Slack, or Google Workspace to Zenvict), single sign-on providers, or publicly available business directories. This is used solely to enhance your experience and enable integrations you have authorized.
             </p>
 
             <h3 className="text-base font-bold text-[#111111] mt-8 mb-3">4. How We Use Your Information</h3>
             <p className="text-sm text-[#555555] leading-relaxed mb-4">We use your information for the following purposes:</p>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-sm text-[#555555] leading-relaxed mb-6">
-              <li>To provide, maintain, and improve the Zynex platform and its modules (Finance Plus, CRM Lite, YenAI, etc.)</li>
+              <li>To provide, maintain, and improve the Zenvict platform and its modules (Finance Plus, CRM Lite, YenAI, etc.)</li>
               <li>To process transactions and send billing-related communications</li>
               <li>To respond to your inquiries, support requests, and Concierge consultations</li>
               <li>To send product updates, security alerts, and administrative messages</li>
@@ -94,7 +94,7 @@ export default function PrivacyPolicy() {
             <p className="text-sm text-[#555555] leading-relaxed mb-4">We do not sell your personal information. We may share data with:</p>
             <ul className="list-disc pl-6 flex flex-col gap-2 text-sm text-[#555555] leading-relaxed mb-6">
               <li><strong>Service providers</strong> — Hosting, payment processing, analytics, and customer support tools that operate under strict data processing agreements</li>
-              <li><strong>Integration partners</strong> — Only when you explicitly connect a third-party service to your Zynex account</li>
+              <li><strong>Integration partners</strong> — Only when you explicitly connect a third-party service to your Zenvict account</li>
               <li><strong>Legal authorities</strong> — When required by law, subpoena, or to protect our rights and safety</li>
               <li><strong>Business transfers</strong> — In the event of a merger, acquisition, or asset sale, with prior notice to affected users</li>
             </ul>
@@ -111,18 +111,18 @@ export default function PrivacyPolicy() {
               <li>Lodge a complaint with your local data protection authority</li>
             </ul>
             <p className="text-sm text-[#555555] leading-relaxed">
-              To exercise any of these rights, contact us at <strong>privacy@zynex.ai</strong>.
+              To exercise any of these rights, contact us at <strong>privacy@zenvict.com</strong>.
             </p>
           </div>
 
           {/* Part II */}
           <div className="mb-12">
-            <h2 className="text-2xl font-bold text-[#111111] mb-2">Part II — Information Zynex Processes on Your Behalf</h2>
+            <h2 className="text-2xl font-bold text-[#111111] mb-2">Part II — Information Zenvict Processes on Your Behalf</h2>
             <div className="w-12 h-0.5 bg-[#056CB8] mb-6"></div>
 
             <h3 className="text-base font-bold text-[#111111] mt-8 mb-3">1. Service Data</h3>
             <p className="text-sm text-[#555555] leading-relaxed mb-6">
-              Information that you or your users submit to the Zynex platform — such as customer records in CRM Lite, financial data in Finance Plus, employee records in Human Resources, documents in Knowledge Base, or conversations with YenAI — is your <strong>service data</strong>. You own it. We process it solely to deliver the service you have subscribed to.
+              Information that you or your users submit to the Zenvict platform — such as customer records in CRM Lite, financial data in Finance Plus, employee records in Human Resources, documents in Knowledge Base, or conversations with YenAI — is your <strong>service data</strong>. You own it. We process it solely to deliver the service you have subscribed to.
             </p>
 
             <h3 className="text-base font-bold text-[#111111] mt-8 mb-3">2. Ownership and Control</h3>
@@ -137,7 +137,7 @@ export default function PrivacyPolicy() {
 
             <h3 className="text-base font-bold text-[#111111] mt-8 mb-3">4. YenAI and AI Processing</h3>
             <p className="text-sm text-[#555555] leading-relaxed mb-6">
-              YenAI and other AI features within Zynex process your data within the boundaries of your account. Your data is not used to train models for other customers. AI responses are generated using retrieval-augmented generation (RAG) from your Knowledge Base and configured data sources — your data stays within your tenant.
+              YenAI and other AI features within Zenvict process your data within the boundaries of your account. Your data is not used to train models for other customers. AI responses are generated using retrieval-augmented generation (RAG) from your Knowledge Base and configured data sources — your data stays within your tenant.
             </p>
           </div>
 
@@ -153,22 +153,22 @@ export default function PrivacyPolicy() {
 
             <h3 className="text-base font-bold text-[#111111] mt-8 mb-3">Children's Privacy</h3>
             <p className="text-sm text-[#555555] leading-relaxed mb-6">
-              Zynex services are not directed to individuals under 16. We do not knowingly collect personal information from children. If we become aware that a child has provided us with personal information, we will delete it promptly.
+              Zenvict services are not directed to individuals under 16. We do not knowingly collect personal information from children. If we become aware that a child has provided us with personal information, we will delete it promptly.
             </p>
 
             <h3 className="text-base font-bold text-[#111111] mt-8 mb-3">International Data Transfers</h3>
             <p className="text-sm text-[#555555] leading-relaxed mb-6">
-              Zynex operates data centers in multiple regions. When data is transferred across borders, we rely on Standard Contractual Clauses (SCCs), adequacy decisions, or other lawful transfer mechanisms to ensure your data is protected to the same standard regardless of location.
+              Zenvict operates data centers in multiple regions. When data is transferred across borders, we rely on Standard Contractual Clauses (SCCs), adequacy decisions, or other lawful transfer mechanisms to ensure your data is protected to the same standard regardless of location.
             </p>
 
             <h3 className="text-base font-bold text-[#111111] mt-8 mb-3">Changes to This Policy</h3>
             <p className="text-sm text-[#555555] leading-relaxed mb-6">
-              We may update this policy from time to time. When we make material changes, we will notify you via email or a prominent notice on our platform at least 30 days before the changes take effect. Continued use of Zynex after changes constitutes acceptance of the updated policy.
+              We may update this policy from time to time. When we make material changes, we will notify you via email or a prominent notice on our platform at least 30 days before the changes take effect. Continued use of Zenvict after changes constitutes acceptance of the updated policy.
             </p>
 
             <h3 className="text-base font-bold text-[#111111] mt-8 mb-3">Contact Our Privacy Team</h3>
             <p className="text-sm text-[#555555] leading-relaxed">
-              If you have questions about this policy or our data practices, contact our Data Protection Officer at <strong>privacy@zynex.ai</strong> or write to us at: Zynex Inc., Tech Park, Whitefield, Bangalore, India.
+              If you have questions about this policy or our data practices, contact our Data Protection Officer at <strong>privacy@zenvict.com</strong> or write to us at: Zenvict Technologies, Tech Park, Whitefield, Bangalore, India.
             </p>
           </div>
 

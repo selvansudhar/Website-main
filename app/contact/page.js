@@ -35,7 +35,7 @@ export default function Contact() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
           { "@type": "ListItem", "position": 2, "name": "Contact" }
         ]
       }) }} />
@@ -51,7 +51,7 @@ export default function Contact() {
             Let's Talk About What's Next
           </h1>
           <p className="text-white/60 text-lg max-w-2xl mx-auto">
-            Whether you're exploring Zynex for the first time or ready to scale — our team is here to help.
+            Whether you're exploring Zenvict for the first time or ready to scale — our team is here to help.
           </p>
         </div>
       </section>
@@ -74,7 +74,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-bold text-[#111111] mb-1">Email</p>
-                  <p className="text-sm text-[#555555]">contact@zynex.ai</p>
+                  <p className="text-sm text-[#555555]">contact@zenvict.com</p>
                 </div>
               </div>
 
@@ -254,7 +254,7 @@ export default function Contact() {
             Not Sure Where to Start?
           </h2>
           <p className="text-white/60 mb-8">
-            Book a free Concierge consultation and let our experts recommend the perfect Zynex setup for your business.
+            Book a free Concierge consultation and let our experts recommend the perfect Zenvict setup for your business.
           </p>
           <a href="/resources/concierge" className="inline-flex items-center justify-center px-10 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
             Book Free Consultation

@@ -3,7 +3,7 @@ import CountUp from '@/components/CountUp';
 export const metadata = {
     title: 'CRM Lite — Smart Sales Pipeline for Growing Teams',
     description: 'Lightweight yet powerful CRM to manage contacts, deals, and customer relationships with intelligent pipeline automation.',
-    alternates: { canonical: 'https://zynex.ai/products/crm-lite' },
+    alternates: { canonical: 'https://zenvict.com/products/crm-lite' },
     openGraph: {
         title: 'CRM Lite — Smart Sales Pipeline for Growing Teams',
         description: 'Lightweight yet powerful CRM to manage contacts, deals, and customer relationships with intelligent pipeline automation.',
@@ -18,17 +18,17 @@ export default function CRMLite() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-                { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+                { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zenvict.com/products" },
                 { "@type": "ListItem", "position": 3, "name": "CRM Lite" }
               ]
             }) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              "name": "Zynex CRM Lite",
+              "name": "Zenvict CRM Lite",
               "description": "Lightweight yet powerful CRM to manage contacts, deals, and customer relationships with intelligent pipeline automation.",
-              "url": "https://zynex.ai/products/crm-lite",
+              "url": "https://zenvict.com/products/crm-lite",
               "applicationCategory": "BusinessApplication",
               "operatingSystem": "Web",
               "offers": {
@@ -38,8 +38,8 @@ export default function CRMLite() {
               },
               "provider": {
                 "@type": "Organization",
-                "name": "Zynex AI",
-                "url": "https://zynex.ai"
+                "name": "Zenvict AI",
+                "url": "https://zenvict.com"
               }
             }) }} />
 
@@ -48,7 +48,7 @@ export default function CRMLite() {
                 <div className="max-w-[1400px] mx-auto px-12 pt-40 pb-20 max-md:px-6 max-md:pt-24 max-md:pb-14 max-sm:px-4 max-sm:pt-20 max-sm:pb-10">
                     {/* Nav Trail */}
                     <div className="flex items-center justify-center gap-3 mb-8 text-xs font-medium tracking-wide max-sm:text-[0.65rem] max-sm:gap-2 max-sm:mb-4">
-                        <span className="text-white/50">Zynex AI</span>
+                        <span className="text-white/50">Zenvict AI</span>
                         <span className="text-white/20">/</span>
                         <span className="text-[#056CB8] uppercase">CRM Lite</span>
                     </div>

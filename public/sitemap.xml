@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Core -->
-  <url><loc>https://zynex.ai/</loc><priority>1.0</priority></url>
-  <url><loc>https://zynex.ai/enterprise</loc><priority>0.9</priority></url>
-  <url><loc>https://zynex.ai/contact</loc><priority>0.9</priority></url>
-  <url><loc>https://zynex.ai/about</loc><priority>0.8</priority></url>
+  <url><loc>https://zenvict.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://zenvict.com/enterprise</loc><priority>0.9</priority></url>
+  <url><loc>https://zenvict.com/contact</loc><priority>0.9</priority></url>
+  <url><loc>https://zenvict.com/about</loc><priority>0.8</priority></url>
 
   <!-- Products -->
-  <url><loc>https://zynex.ai/products/yenai</loc><priority>0.8</priority></url>
-  <url><loc>https://zynex.ai/products/assistant-hub</loc><priority>0.8</priority></url>
-  <url><loc>https://zynex.ai/products/knowledge-base</loc><priority>0.8</priority></url>
-  <url><loc>https://zynex.ai/products/crm-lite</loc><priority>0.8</priority></url>
-  <url><loc>https://zynex.ai/products/finance-plus</loc><priority>0.8</priority></url>
-  <url><loc>https://zynex.ai/products/human-resources</loc><priority>0.8</priority></url>
-  <url><loc>https://zynex.ai/products/project-plus</loc><priority>0.8</priority></url>
-  <url><loc>https://zynex.ai/products/marketing-automation</loc><priority>0.8</priority></url>
+  <url><loc>https://zenvict.com/products/yenai</loc><priority>0.8</priority></url>
+  <url><loc>https://zenvict.com/products/assistant-hub</loc><priority>0.8</priority></url>
+  <url><loc>https://zenvict.com/products/knowledge-base</loc><priority>0.8</priority></url>
+  <url><loc>https://zenvict.com/products/crm-lite</loc><priority>0.8</priority></url>
+  <url><loc>https://zenvict.com/products/finance-plus</loc><priority>0.8</priority></url>
+  <url><loc>https://zenvict.com/products/human-resources</loc><priority>0.8</priority></url>
+  <url><loc>https://zenvict.com/products/project-plus</loc><priority>0.8</priority></url>
+  <url><loc>https://zenvict.com/products/marketing-automation</loc><priority>0.8</priority></url>
 
   <!-- Solutions -->
-  <url><loc>https://zynex.ai/solutions</loc><priority>0.8</priority></url>
-  <url><loc>https://zynex.ai/solutions/ai-solutions</loc><priority>0.7</priority></url>
-  <url><loc>https://zynex.ai/solutions/enterprise-solutions</loc><priority>0.7</priority></url>
-  <url><loc>https://zynex.ai/solutions/saas-development</loc><priority>0.7</priority></url>
-  <url><loc>https://zynex.ai/solutions/b2b-development</loc><priority>0.7</priority></url>
-  <url><loc>https://zynex.ai/solutions/ecommerce</loc><priority>0.7</priority></url>
+  <url><loc>https://zenvict.com/solutions</loc><priority>0.8</priority></url>
+  <url><loc>https://zenvict.com/solutions/ai-solutions</loc><priority>0.7</priority></url>
+  <url><loc>https://zenvict.com/solutions/enterprise-solutions</loc><priority>0.7</priority></url>
+  <url><loc>https://zenvict.com/solutions/saas-development</loc><priority>0.7</priority></url>
+  <url><loc>https://zenvict.com/solutions/b2b-development</loc><priority>0.7</priority></url>
+  <url><loc>https://zenvict.com/solutions/ecommerce</loc><priority>0.7</priority></url>
 
   <!-- Industries -->
-  <url><loc>https://zynex.ai/industries/healthcare</loc><priority>0.7</priority></url>
-  <url><loc>https://zynex.ai/industries/financial-services</loc><priority>0.7</priority></url>
-  <url><loc>https://zynex.ai/industries/manufacturing</loc><priority>0.7</priority></url>
-  <url><loc>https://zynex.ai/industries/higher-education</loc><priority>0.7</priority></url>
-  <url><loc>https://zynex.ai/industries/retail</loc><priority>0.7</priority></url>
+  <url><loc>https://zenvict.com/industries/healthcare</loc><priority>0.7</priority></url>
+  <url><loc>https://zenvict.com/industries/financial-services</loc><priority>0.7</priority></url>
+  <url><loc>https://zenvict.com/industries/manufacturing</loc><priority>0.7</priority></url>
+  <url><loc>https://zenvict.com/industries/higher-education</loc><priority>0.7</priority></url>
+  <url><loc>https://zenvict.com/industries/retail</loc><priority>0.7</priority></url>
 
   <!-- Resources -->
-  <url><loc>https://zynex.ai/resources/blog</loc><priority>0.6</priority></url>
-  <url><loc>https://zynex.ai/resources/news</loc><priority>0.6</priority></url>
-  <url><loc>https://zynex.ai/resources/community</loc><priority>0.6</priority></url>
-  <url><loc>https://zynex.ai/resources/concierge</loc><priority>0.7</priority></url>
-  <url><loc>https://zynex.ai/resources/help-center</loc><priority>0.6</priority></url>
-  <url><loc>https://zynex.ai/resources/developers</loc><priority>0.6</priority></url>
-  <url><loc>https://zynex.ai/resources/partners</loc><priority>0.6</priority></url>
+  <url><loc>https://zenvict.com/resources/blog</loc><priority>0.6</priority></url>
+  <url><loc>https://zenvict.com/resources/news</loc><priority>0.6</priority></url>
+  <url><loc>https://zenvict.com/resources/community</loc><priority>0.6</priority></url>
+  <url><loc>https://zenvict.com/resources/concierge</loc><priority>0.7</priority></url>
+  <url><loc>https://zenvict.com/resources/help-center</loc><priority>0.6</priority></url>
+  <url><loc>https://zenvict.com/resources/developers</loc><priority>0.6</priority></url>
+  <url><loc>https://zenvict.com/resources/partners</loc><priority>0.6</priority></url>
 
   <!-- Legal -->
-  <url><loc>https://zynex.ai/privacy-policy</loc><priority>0.4</priority></url>
-  <url><loc>https://zynex.ai/terms-of-service</loc><priority>0.4</priority></url>
-  <url><loc>https://zynex.ai/cookie-policy</loc><priority>0.4</priority></url>
+  <url><loc>https://zenvict.com/privacy-policy</loc><priority>0.4</priority></url>
+  <url><loc>https://zenvict.com/terms-of-service</loc><priority>0.4</priority></url>
+  <url><loc>https://zenvict.com/cookie-policy</loc><priority>0.4</priority></url>
 </urlset>

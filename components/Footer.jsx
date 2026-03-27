@@ -10,15 +10,15 @@ const Footer = () => {
 
                     {/* Brand column */}
                     <div>
-                        <Link href="/" className="text-3xl font-extrabold text-white no-underline inline-block mb-4">zynex</Link>
+                        <Link href="/" className="text-3xl font-extrabold text-white no-underline inline-block mb-4">zenvict</Link>
                         <p className="text-sm text-white/50 leading-relaxed max-w-[280px] mb-8">
                             AI-powered enterprise platform for growing teams. ERP, intelligence, and assistants — all in one place.
                         </p>
                         <div className="flex gap-3">
-                            <a href="https://x.com/zynexai" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="X (Twitter)">X</a>
-                            <a href="https://linkedin.com/company/zynexai" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="LinkedIn">in</a>
-                            <a href="https://youtube.com/@zynexai" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="YouTube">YT</a>
-                            <a href="https://instagram.com/zynexai" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="Instagram">IG</a>
+                            <a href="https://x.com/zenvictai" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="X (Twitter)">X</a>
+                            <a href="https://linkedin.com/company/zenvictai" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="LinkedIn">in</a>
+                            <a href="https://youtube.com/@zenvictai" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="YouTube">YT</a>
+                            <a href="https://instagram.com/zenvictai" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-white/10 flex items-center justify-center text-white/60 no-underline text-sm font-bold transition-colors hover:bg-[#056CB8] hover:text-white" aria-label="Instagram">IG</a>
                         </div>
                     </div>
 
@@ -100,7 +100,7 @@ const Footer = () => {
                 {/* Bottom bar */}
                 <div className="pt-8 flex justify-between items-center flex-wrap gap-6 max-sm:flex-col max-sm:items-center max-sm:text-center">
                     <p className="text-white/30 text-xs">
-                        &copy; 2026 Zynex Inc. All rights reserved.
+                        &copy; 2026 Zenvict Technologies All rights reserved.
                     </p>
                     <div className="flex gap-6 max-sm:justify-center">
                         <Link href="/privacy-policy" className="text-white/30 no-underline text-xs transition-colors hover:text-white/60">Privacy Policy</Link>

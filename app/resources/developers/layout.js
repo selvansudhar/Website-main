@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'Developers | Zynex',
-  description: 'Explore Zynex tech stack, integration capabilities, platform modules, and custom development services.',
-  alternates: { canonical: 'https://zynex.ai/resources/developers' },
+  title: 'Developers | Zenvict',
+  description: 'Explore Zenvict tech stack, integration capabilities, platform modules, and custom development services.',
+  alternates: { canonical: 'https://zenvict.com/resources/developers' },
 };
 
 export default function DevelopersLayout({ children }) {

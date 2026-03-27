@@ -1,10 +1,10 @@
 export const metadata = {
-  title: 'News & Newsroom | Zynex',
-  description: 'The latest announcements, press releases, and company updates from Zynex.',
-  alternates: { canonical: 'https://zynex.ai/resources/news' },
+  title: 'News & Newsroom | Zenvict',
+  description: 'The latest announcements, press releases, and company updates from Zenvict.',
+  alternates: { canonical: 'https://zenvict.com/resources/news' },
   openGraph: {
-    title: 'News & Newsroom | Zynex',
-    description: 'The latest announcements, press releases, and company updates from Zynex.',
+    title: 'News & Newsroom | Zenvict',
+    description: 'The latest announcements, press releases, and company updates from Zenvict.',
   },
 };
 
@@ -13,27 +13,27 @@ export default function NewsPage() {
     {
       date: 'Mar 5, 2026',
       tag: 'PRESS RELEASE',
-      title: 'Zynex Launches AI-Powered Enterprise Platform for Growing Businesses',
+      title: 'Zenvict Launches AI-Powered Enterprise Platform for Growing Businesses',
       excerpt: 'The platform combines ERP, CRM, HR, and intelligent AI assistants in a single unified solution designed for modern enterprises.',
       featured: true,
     },
     {
       date: 'Feb 28, 2026',
       tag: 'PRODUCT',
-      title: 'Zynex Introduces Finance Plus with AI-Powered Forecasting',
+      title: 'Zenvict Introduces Finance Plus with AI-Powered Forecasting',
       excerpt: 'The latest product features automated invoicing, smart expense tracking, and real-time financial dashboards.',
       featured: true,
     },
   ];
 
   const news = [
-    { date: 'Feb 24, 2026', tag: 'PARTNERSHIP', title: 'Zynex Partners with Cloud Providers for Seamless Deployment', excerpt: 'Strategic integrations enable one-click deployment of Zynex modules on major cloud platforms.' },
+    { date: 'Feb 24, 2026', tag: 'PARTNERSHIP', title: 'Zenvict Partners with Cloud Providers for Seamless Deployment', excerpt: 'Strategic integrations enable one-click deployment of Zenvict modules on major cloud platforms.' },
     { date: 'Feb 20, 2026', tag: 'PRODUCT', title: 'YenAI Digital Twin Now Available for Early Access', excerpt: 'Create an AI persona that handles client conversations and meetings on your behalf.' },
-    { date: 'Feb 15, 2026', tag: 'COMPANY', title: 'Zynex Expands Product Suite to 10+ Enterprise Modules', excerpt: 'From CRM and HR to Knowledge Base and Marketing Automation — Zynex now covers the full enterprise stack.' },
+    { date: 'Feb 15, 2026', tag: 'COMPANY', title: 'Zenvict Expands Product Suite to 10+ Enterprise Modules', excerpt: 'From CRM and HR to Knowledge Base and Marketing Automation — Zenvict now covers the full enterprise stack.' },
     { date: 'Feb 10, 2026', tag: 'PRODUCT', title: 'Project Plus: Real-Time Collaboration Features Released', excerpt: 'Teams can now co-edit sprint boards, assign tasks in real-time, and track project progress across departments.' },
-    { date: 'Feb 5, 2026', tag: 'COMPANY', title: 'Zynex Crosses 25+ Successfully Delivered Projects', excerpt: 'Milestone driven by growing adoption across healthcare, education, and financial services industries.' },
+    { date: 'Feb 5, 2026', tag: 'COMPANY', title: 'Zenvict Crosses 25+ Successfully Delivered Projects', excerpt: 'Milestone driven by growing adoption across healthcare, education, and financial services industries.' },
     { date: 'Jan 30, 2026', tag: 'PRODUCT', title: 'Knowledge Base: AI-Powered Search Across All Enterprise Data', excerpt: 'New intelligent search delivers instant answers from documents, systems, and databases in seconds.' },
-    { date: 'Jan 25, 2026', tag: 'COMPANY', title: 'Zynex Publishes 2025 Year-in-Review', excerpt: 'Annual report highlights product launches, client milestones, and the roadmap for 2026.' },
+    { date: 'Jan 25, 2026', tag: 'COMPANY', title: 'Zenvict Publishes 2025 Year-in-Review', excerpt: 'Annual report highlights product launches, client milestones, and the roadmap for 2026.' },
     { date: 'Jan 18, 2026', tag: 'PRODUCT', title: 'Marketing Automation: AI Campaign Builder Goes Live', excerpt: 'Generate complete marketing campaigns — posters, ad copy, email sequences, and social content — from a single brief.' },
   ];
 
@@ -51,8 +51,8 @@ export default function NewsPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zynex.ai/resources" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://zenvict.com/resources" },
           { "@type": "ListItem", "position": 3, "name": "News" }
         ]
       }) }} />
@@ -67,7 +67,7 @@ export default function NewsPage() {
                 NEWSROOM
               </span>
               <h1 className="text-[3rem] font-bold text-[#111111] leading-[1.1] max-md:text-[2.2rem]">
-                Latest from Zynex
+                Latest from Zenvict
               </h1>
             </div>
             <p className="text-[#555555] max-w-sm text-right max-md:text-left">

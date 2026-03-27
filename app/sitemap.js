@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://zynex.ai';
+  const baseUrl = 'https://zenvict.com';
   const lastModified = new Date();
 
   return [

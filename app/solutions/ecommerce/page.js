@@ -1,11 +1,11 @@
 import CountUp from '@/components/CountUp';
 
 export const metadata = {
-  title: 'E-Commerce Solutions | Zynex',
+  title: 'E-Commerce Solutions | Zenvict',
   description: 'Headless commerce development with custom storefronts, payment integration, and AI-powered personalization.',
-  alternates: { canonical: 'https://zynex.ai/solutions/ecommerce' },
+  alternates: { canonical: 'https://zenvict.com/solutions/ecommerce' },
   openGraph: {
-    title: 'E-Commerce Solutions | Zynex',
+    title: 'E-Commerce Solutions | Zenvict',
     description: 'Headless commerce development with custom storefronts, payment integration, and AI-powered personalization.',
   },
 };
@@ -17,8 +17,8 @@ export default function EcommercePage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zynex.ai/solutions" },
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+          { "@type": "ListItem", "position": 2, "name": "Solutions", "item": "https://zenvict.com/solutions" },
           { "@type": "ListItem", "position": 3, "name": "E-Commerce" }
         ]
       }) }} />
@@ -143,7 +143,7 @@ export default function EcommercePage() {
         </div>
       </section>
 
-      {/* ===== WHY ZYNEX — Checklist + Revenue Card ===== */}
+      {/* ===== WHY ZENVICT — Checklist + Revenue Card ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6 max-[480px]:px-4 max-[480px]:py-16">
         <div className="max-w-5xl mx-auto grid grid-cols-2 max-md:grid-cols-1 gap-16 max-[480px]:gap-10 items-center">
           <div data-animate="fade-left">

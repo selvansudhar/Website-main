@@ -3,7 +3,7 @@ import Image from 'next/image';
 export const metadata = {
     title: 'Project Plus — Deliver Projects On Time, Every Time',
     description: 'Collaborative project management with task tracking, resource allocation, and AI-assisted planning for teams of any size.',
-    alternates: { canonical: 'https://zynex.ai/products/project-plus' },
+    alternates: { canonical: 'https://zenvict.com/products/project-plus' },
     openGraph: {
         title: 'Project Plus — Deliver Projects On Time, Every Time',
         description: 'Collaborative project management with task tracking, resource allocation, and AI-assisted planning for teams of any size.',
@@ -17,17 +17,17 @@ export default function ProjectPlus() {
               "@context": "https://schema.org",
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zynex.ai" },
-                { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zynex.ai/products" },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenvict.com" },
+                { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://zenvict.com/products" },
                 { "@type": "ListItem", "position": 3, "name": "Project Plus" }
               ]
             }) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
-              "name": "Zynex Project Plus",
+              "name": "Zenvict Project Plus",
               "description": "Collaborative project management with task tracking, resource allocation, and AI-assisted planning for teams of any size.",
-              "url": "https://zynex.ai/products/project-plus",
+              "url": "https://zenvict.com/products/project-plus",
               "applicationCategory": "BusinessApplication",
               "operatingSystem": "Web",
               "offers": {
@@ -37,8 +37,8 @@ export default function ProjectPlus() {
               },
               "provider": {
                 "@type": "Organization",
-                "name": "Zynex AI",
-                "url": "https://zynex.ai"
+                "name": "Zenvict AI",
+                "url": "https://zenvict.com"
               }
             }) }} />
 
@@ -50,7 +50,7 @@ export default function ProjectPlus() {
                     <div data-animate="fade-right">
                         {/* Nav Trail */}
                         <div className="flex items-center gap-3 mb-8 text-xs font-medium tracking-wide max-sm:text-[0.65rem] max-sm:gap-2 max-sm:mb-5">
-                            <span className="text-white/40">Zynex AI</span>
+                            <span className="text-white/40">Zenvict AI</span>
                             <span className="text-white/20">/</span>
                             <span className="text-[#056CB8] uppercase">Project Plus</span>
                         </div>
@@ -279,7 +279,7 @@ export default function ProjectPlus() {
                 <div className="max-w-[1100px] mx-auto px-12 max-md:px-6 max-sm:px-4">
                     <div className="text-center mb-16 max-sm:mb-10" data-animate="fade-up">
                         <h2 className="text-[2.2rem] font-extrabold text-[#111111] tracking-[-0.02em] mb-4 max-md:text-[1.8rem] max-sm:text-[1.5rem]">
-                            Why teams choose Zynex Project Plus
+                            Why teams choose Zenvict Project Plus
                         </h2>
                         <p className="text-[1.05rem] text-[#555555] max-w-[520px] mx-auto max-sm:text-[0.9rem]">
                             Built for teams that need results, not complexity.
