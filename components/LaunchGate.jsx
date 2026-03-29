@@ -1,8 +1,9 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 
-const LAUNCH_DATE = new Date('2026-03-30T00:00:00+05:30').getTime();
+const LAUNCH_DATE = new Date('2026-02-30T00:00:00+05:30').getTime();
 
 function getTimeLeft() {
   const now = Date.now();
@@ -123,8 +124,8 @@ function LaunchTransition({ onComplete }) {
             transitionDuration: '0.8s',
           }}
         >
-          <div className="w-20 h-20 rounded-3xl bg-gradient-to-br from-[#4353ff] to-[#8b5cf6] flex items-center justify-center shadow-[0_0_60px_rgba(67,83,255,0.6)]">
-            <span className="text-white font-heading font-bold text-4xl">Z</span>
+          <div className="w-20 h-20 rounded-3xl flex items-center justify-center shadow-[0_0_60px_rgba(67,83,255,0.6)]">
+            <Image src="/images/zenvict-logo.svg" alt="Zenvict" width={70} height={62} className="h-16 w-auto brightness-0 invert" priority />
           </div>
         </div>
 
@@ -267,18 +268,18 @@ export default function LaunchGate({ children }) {
       <div className="relative z-10 flex flex-col items-center gap-12 max-sm:gap-8 px-6 max-w-[680px] w-full">
 
         {/* Logo & Brand */}
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-5">
           <div
-            className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#4353ff] to-[#8b5cf6] flex items-center justify-center transition-all duration-1000"
+            className="transition-all duration-1000 rounded-2xl p-3"
             style={{
               boxShadow: isFinalCountdown
                 ? '0 0 60px rgba(67,83,255,0.7), 0 0 120px rgba(139,92,246,0.3)'
-                : '0 0 40px rgba(67,83,255,0.4)',
+                : '0 0 40px rgba(67,83,255,0.2)',
             }}
           >
-            <span className="text-white font-heading font-bold text-2xl">Z</span>
+            <Image src="/images/zenvict-logo.svg" alt="Zenvict" width={60} height={53} className="h-14 w-auto brightness-0 invert" priority />
           </div>
-          <h1 className="text-white font-heading font-bold text-xl tracking-wide">ZENVICT</h1>
+          <Image src="/images/zenvict-name.svg" alt="Zenvict" width={160} height={52} className="h-8 w-auto brightness-0 invert" priority />
         </div>
 
         {/* Main message */}

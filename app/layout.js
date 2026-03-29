@@ -8,19 +8,19 @@ import './globals.css';
 export const metadata = {
   metadataBase: new URL('https://zenvict.com'),
   title: {
-    default: 'Zenvict — AI-Powered Enterprise Platform',
+    default: 'Zenvict',
     template: '%s | Zenvict',
   },
   description: 'Zenvict is an AI-powered enterprise platform that helps businesses automate workflows, deploy intelligent AI solutions, and scale operations with cutting-edge AI technology.',
   keywords: 'Zenvict, AI, enterprise, intelligence, ERP, CRM, automation, machine learning',
   openGraph: {
-    title: 'Zenvict — AI-Powered Enterprise Platform',
+    title: 'Zenvict',
     description: 'AI-powered enterprise platform for modern businesses.',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Zenvict — AI-Powered Enterprise Platform',
+    title: 'Zenvict',
     description: 'AI-powered enterprise platform for modern businesses.',
   },
   icons: {

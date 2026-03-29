@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 const Header = () => {
@@ -78,8 +79,9 @@ const Header = () => {
     return (
         <header className="bg-white/90 backdrop-blur-[10px] fixed top-0 left-0 w-full z-[1000] border-b border-black/5" onMouseLeave={closeMenu}>
             <div className="flex items-center justify-between px-12 py-4 max-w-[1400px] mx-auto w-full max-md:px-6 max-[480px]:px-4 max-[480px]:py-3">
-                <Link href="/" className="text-2xl font-bold text-primary no-underline flex items-center gap-2 max-[480px]:text-xl" onClick={closeMobileMenu} onMouseEnter={closeMenu}>
-                    zenvict
+                <Link href="/" className="no-underline flex items-center" onClick={closeMobileMenu} onMouseEnter={closeMenu}>
+                    <Image src="/images/zenvict-side.svg" alt="Zenvict" width={220} height={70} className="h-12 w-auto max-[480px]:hidden" priority />
+                    <Image src="/images/zenvict-logo.svg" alt="Zenvict" width={50} height={44} className="h-10 w-auto hidden max-[480px]:block" priority />
                 </Link>
 
                 <nav className="hidden md:flex items-center gap-8 flex-1 justify-center" aria-label="Main navigation" role="menubar">

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
     return (
@@ -10,7 +11,9 @@ const Footer = () => {
 
                     {/* Brand column */}
                     <div>
-                        <Link href="/" className="text-3xl font-extrabold text-white no-underline inline-block mb-4">zenvict</Link>
+                        <Link href="/" className="no-underline inline-block mb-4">
+                            <Image src="/images/zenvict-side.svg" alt="Zenvict" width={160} height={50} className="h-9 w-auto brightness-0 invert" />
+                        </Link>
                         <p className="text-sm text-white/50 leading-relaxed max-w-[280px] mb-8">
                             AI-powered enterprise platform for growing teams. ERP, intelligence, and assistants — all in one place.
                         </p>
