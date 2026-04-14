@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import CountUp from '@/components/CountUp';
 
 export const metadata = {
@@ -68,14 +69,10 @@ export default function CRMLite() {
                         </p>
 
                         <div className="flex gap-4 justify-center max-sm:flex-col max-sm:items-center">
-                            <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                            <Link href="/contact" className="no-underline bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                                 Start free
                                 <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-                            </button>
-                            <button className="bg-transparent text-white border-2 border-white/30 px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-white/60 max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem] group">
-                                See demo
-                                <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -269,7 +266,7 @@ export default function CRMLite() {
                                 'Leads lost in spreadsheets and email threads',
                                 'No visibility into pipeline value or deal stage',
                                 'Follow-ups forgotten — deals go cold',
-                                'Manual data entry wastes 5+ hours per week',
+                                'Manual data entry wastes valuable time every week',
                                 'No way to forecast revenue accurately',
                             ].map((pain) => (
                                 <div key={pain} className="flex gap-4 items-start">
@@ -310,9 +307,9 @@ export default function CRMLite() {
             <section className="py-20 px-12 bg-white max-md:py-14 max-md:px-6 max-sm:py-10 max-sm:px-4">
                 <div className="max-w-[1000px] mx-auto flex items-center justify-between max-lg:flex-wrap max-lg:justify-center max-lg:gap-y-10 max-sm:flex-col max-sm:gap-6" data-animate="fade-up">
                     {[
-                        { number: '68%', label: 'Average win rate increase' },
-                        { number: '3x', label: 'Faster deal progression' },
-                        { number: '< 5 min', label: 'Setup time' },
+                        { number: 'Higher', label: 'Win rates' },
+                        { number: 'Faster', label: 'Deal progression' },
+                        { number: 'Quick', label: 'Setup time' },
                         { number: '0', label: 'Lines of code needed' },
                     ].map((stat, i, arr) => (
                         <div key={stat.label} className="flex items-center">
@@ -339,10 +336,10 @@ export default function CRMLite() {
                     <p className="text-[1.1rem] text-[#555555] leading-[1.7] mb-10 max-md:text-base max-sm:text-[0.9rem] max-sm:mb-8">
                         See how CRM Lite helps you track every lead, automate follow-ups, and close more deals — all from one simple dashboard.
                     </p>
-                    <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                    <Link href="/contact" className="no-underline bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                         Try CRM Lite Free
                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-                    </button>
+                    </Link>
                 </div>
             </section>
         </div>

@@ -219,9 +219,9 @@ export default function SolutionsIndex() {
 
           <div className="flex flex-col gap-5" data-animate="fade-right">
             {[
-              { num: '10+', label: 'Products Built' },
-              { num: '25+', label: 'Projects Delivered' },
-              { num: '30+', label: 'Happy Clients' },
+              { num: '5+', label: 'Products Built' },
+              { num: '5+', label: 'Clients Served' },
+              { num: '15+', label: 'Team Members' },
               { num: '5+', label: 'Industries Served' },
             ].map((stat, i) => (
               <div key={i} className="bg-white border border-[#e0e0e0] p-6 max-sm:p-4 flex items-center gap-6 border-l-[3px] border-l-[#056CB8]">

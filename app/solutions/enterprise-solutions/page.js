@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export const metadata = {
   title: 'Enterprise Solutions — Custom Software for Complex Business Needs',
   description: 'Tailored enterprise software solutions built for scale. From legacy modernization to custom integrations, we architect systems that grow with your business.',
@@ -39,22 +41,19 @@ export default function EnterpriseSolutionsPage() {
                 From ERP to CRM to BI — one integrated ecosystem.
               </p>
               <div className="flex gap-4 flex-wrap mt-2">
-                <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+                <Link href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors no-underline">
                   Talk to an Expert <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-                </a>
-                <a href="/resources/partners" className="inline-flex items-center justify-center px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#f5f5f5] transition-colors">
-                  View Case Studies
-                </a>
+                </Link>
               </div>
-              <p className="text-xs text-[#555555] mt-2">Trusted by Fortune 500 companies</p>
+              <p className="text-xs text-[#555555] mt-2">Built for growing enterprises</p>
             </div>
 
             {/* Stacked Metric Cards */}
             <div className="flex flex-col gap-4 max-lg:max-w-md" data-animate="fade-right">
               {[
-                { icon: 'bi-graph-up-arrow', label: 'Revenue Growth', value: '+34%' },
-                { icon: 'bi-clock-history', label: 'Time Saved', value: '120h/mo', indent: true },
-                { icon: 'bi-shield-fill-check', label: 'Uptime', value: '99.99%' },
+                { icon: 'bi-graph-up-arrow', label: 'Revenue Growth', value: 'Higher' },
+                { icon: 'bi-clock-history', label: 'Saved monthly', value: 'Hours', indent: true },
+                { icon: 'bi-shield-fill-check', label: 'Uptime', value: 'Reliable' },
               ].map((card, i) => (
                 <div key={i} className={`bg-white border border-[#e0e0e0] p-5 flex items-center gap-4 hover:border-[#056CB8] transition-colors ${card.indent ? 'ml-6 max-md:ml-0' : ''}`}>
                   <div className="w-11 h-11 bg-[#056CB8]/10 flex items-center justify-center flex-shrink-0">
@@ -77,7 +76,7 @@ export default function EnterpriseSolutionsPage() {
           Trusted by Industry Leaders
         </p>
         <div className="flex justify-center flex-wrap gap-10">
-          {['Fortune 500 Companies', 'Global Banks', 'Healthcare Systems', 'Manufacturing Giants', 'Logistics Leaders'].map((name, i) => (
+          {['Growing Enterprises', 'Financial Services', 'Healthcare Systems', 'Manufacturing', 'Logistics & Supply Chain'].map((name, i) => (
             <span key={i} className="text-sm font-semibold text-[#555555]/50">{name}</span>
           ))}
         </div>
@@ -102,7 +101,7 @@ export default function EnterpriseSolutionsPage() {
               { icon: 'bi-bar-chart-fill', title: 'Business Intelligence', desc: 'Transform raw data into strategic decisions with real-time dashboards and predictive analytics.', modules: ['Data Visualization', 'KPI Tracking', 'Predictive Models'] },
               { icon: 'bi-shield-fill-check', title: 'Compliance & Security', desc: 'Enterprise-grade security with SOC 2, GDPR, HIPAA compliance built into every layer.', modules: ['Access Control', 'Audit Trails', 'Data Encryption'] },
               { icon: 'bi-sliders', title: 'Workflow Automation', desc: 'Eliminate manual bottlenecks with intelligent process automation that learns and adapts.', modules: ['Process Designer', 'Rule Engine', 'API Orchestration'] },
-              { icon: 'bi-arrow-left-right', title: 'System Integration', desc: 'Connect legacy systems with modern platforms through 500+ enterprise connectors.', modules: ['API Gateway', 'Data Sync', 'Legacy Migration'] },
+              { icon: 'bi-arrow-left-right', title: 'System Integration', desc: 'Connect legacy systems with modern platforms through enterprise connectors.', modules: ['API Gateway', 'Data Sync', 'Legacy Migration'] },
             ].map((sol, i) => (
               <div key={i} className="border border-[#e0e0e0] p-8 hover:border-[#056CB8] transition-colors">
                 <div className="w-12 h-12 bg-[#056CB8]/10 flex items-center justify-center mb-4">
@@ -161,10 +160,10 @@ export default function EnterpriseSolutionsPage() {
           </div>
           <div className="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
-              { stat: '45%', label: 'Reduction in production waste', industry: 'Manufacturing' },
-              { stat: '3x', label: 'Faster regulatory reporting', industry: 'Financial Services' },
-              { stat: '60%', label: 'Improvement in patient flow', industry: 'Healthcare' },
-              { stat: '28%', label: 'Decrease in operational costs', industry: 'Logistics' },
+              { stat: 'Less', label: 'Production waste', industry: 'Manufacturing' },
+              { stat: 'Faster', label: 'Regulatory reporting', industry: 'Financial Services' },
+              { stat: 'Better', label: 'Patient flow', industry: 'Healthcare' },
+              { stat: 'Lower', label: 'Operational costs', industry: 'Logistics' },
             ].map((ind, i) => (
               <div key={i} className="border border-[#e0e0e0] p-8 text-center">
                 <p className="text-4xl font-bold text-[#056CB8] mb-2">{ind.stat}</p>
@@ -188,9 +187,9 @@ export default function EnterpriseSolutionsPage() {
             Our solutions architects will assess your current infrastructure and design a roadmap for digital transformation.
           </p>
           <div className="flex flex-col items-center gap-4">
-            <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+            <Link href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors no-underline">
               Schedule a Discovery Call <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-            </a>
+            </Link>
             <a href="/" className="text-white/50 text-sm hover:text-white transition-colors">
               Back to home &rarr;
             </a>

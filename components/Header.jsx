@@ -240,8 +240,8 @@ const Header = () => {
                                         <div className="flex items-center gap-2 bg-dark py-1.5 px-4 rounded-[50px] text-[0.8rem] font-bold text-white">
                                             <span className="text-xs">✦</span> Real Results
                                         </div>
-                                        <h3 className="text-[1.8rem] font-extrabold text-dark m-0 leading-[1.1] tracking-tight">40% Less Operational Cost. Day One.</h3>
-                                        <p className="text-sm text-[#334155] leading-relaxed m-0 font-medium">Enterprises running on Zenvict eliminated redundant tools, cut manual workflows, and reclaimed thousands of hours — in the first quarter alone.</p>
+                                        <h3 className="text-[1.8rem] font-extrabold text-dark m-0 leading-[1.1] tracking-tight">One Platform. Every Department.</h3>
+                                        <p className="text-sm text-[#334155] leading-relaxed m-0 font-medium">Replace disconnected tools with a single AI-powered platform for CRM, finance, HR, and projects — designed for growing businesses.</p>
                                         <Link href="/enterprise" className="bg-white text-primary py-2.5 px-6 rounded-[50px] border-none font-bold text-sm cursor-pointer transition-all duration-300 hover:bg-primary-dark hover:-translate-y-0.5 hover:shadow-blue hover:text-white no-underline" onClick={closeMenu}>See the Impact</Link>
                                     </div>
                                 </div>
@@ -289,7 +289,7 @@ const Header = () => {
 
                                     <Link href="/resources/news" className="absolute bottom-0 left-0 right-0 work-ai-banner-gradient p-3 px-6 rounded-lg cursor-pointer transition-transform duration-200 border border-black/5 hover:-translate-y-0.5 hover:shadow-sm mx-8 mb-3 no-underline" onClick={closeMenu}>
                                         <div className="flex justify-between items-center">
-                                            <span className="font-bold text-dark text-sm">Trusted by teams managing ₹500Cr+ in operations — See how they did it</span>
+                                            <span className="font-bold text-dark text-sm">Explore how Zenvict helps businesses streamline operations</span>
                                             <span className="text-muted text-lg">→</span>
                                         </div>
                                     </Link>
@@ -301,8 +301,8 @@ const Header = () => {
                                             <div className="flex items-center gap-2 bg-primary/10 py-1.5 px-4 rounded-[50px] text-[0.75rem] font-bold text-primary tracking-[0.05em]">
                                                 📊 Industry Report
                                             </div>
-                                            <h3 className="text-xl font-extrabold text-dark m-0 leading-[1.15]">The Hidden Cost of Tool Sprawl</h3>
-                                            <p className="text-sm text-[#475569] leading-relaxed m-0 font-medium">The average mid-size company spends 38% of its IT budget on overlapping software. Learn how unified platforms are changing that.</p>
+                                            <h3 className="text-xl font-extrabold text-dark m-0 leading-[1.15]">Why Unified Platforms Win</h3>
+                                            <p className="text-sm text-[#475569] leading-relaxed m-0 font-medium">Businesses using multiple disconnected tools waste time and money. Learn how a single platform simplifies everything.</p>
                                             <Link href="/resources/blog" className="bg-dark text-white py-2.5 px-8 rounded-[50px] border-none font-bold text-sm cursor-pointer transition-all duration-300 mt-2 hover:bg-black hover:-translate-y-0.5 hover:shadow-[0_10px_25px_rgba(0,0,0,0.2)] no-underline" onClick={closeMenu}>Read the Report</Link>
                                         </div>
                                     </div>
@@ -315,7 +315,7 @@ const Header = () => {
                 </nav>
 
                 <div className="hidden md:flex items-center gap-6" onMouseEnter={closeMenu}>
-                    <button className={`py-2.5 px-6 rounded-none text-[0.95rem] font-semibold cursor-pointer transition-all duration-300 border ${scrolled ? 'bg-[#F60014] text-white border-[#F60014] hover:bg-[#d4000f]' : 'bg-white text-[#F60014] border-[#F60014] hover:bg-[#F60014] hover:text-white'}`} onClick={closeMenu}>Sign in</button>
+                    <Link href="/contact" className={`py-2.5 px-6 rounded-none text-[0.95rem] font-semibold cursor-pointer transition-all duration-300 border no-underline ${scrolled ? 'bg-[#F60014] text-white border-[#F60014] hover:bg-[#d4000f]' : 'bg-white text-[#F60014] border-[#F60014] hover:bg-[#F60014] hover:text-white'}`} onClick={closeMenu}>Contact Us</Link>
                 </div>
 
                 <button
@@ -418,7 +418,7 @@ const Header = () => {
                     <Link href="/about" className="block py-[1.1rem] text-[1.05rem] font-semibold text-dark border-b border-border cursor-pointer no-underline max-[480px]:text-base max-[480px]:py-4" onClick={closeMobileMenu}>About</Link>
 
                     <div className="flex flex-col gap-3 pt-6">
-                        <button className="w-full text-center py-3.5 px-6 text-[0.95rem] rounded-none font-semibold cursor-pointer transition-colors border-none bg-[#F60014] text-white hover:bg-[#d4000f]">Sign in</button>
+                        <Link href="/contact" className="w-full block text-center py-3.5 px-6 text-[0.95rem] rounded-none font-semibold cursor-pointer transition-colors border-none bg-[#F60014] text-white hover:bg-[#d4000f] no-underline" onClick={closeMobileMenu}>Contact Us</Link>
                     </div>
                 </div>
             </div>

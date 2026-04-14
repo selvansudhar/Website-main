@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata = {
     title: 'Project Plus — Deliver Projects On Time, Every Time',
@@ -69,14 +70,10 @@ export default function ProjectPlus() {
                         </p>
 
                         <div className="flex gap-4 mb-6 max-sm:flex-col max-sm:items-start">
-                            <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                            <Link href="/contact" className="no-underline bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                                 Talk Sales
                                 <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-                            </button>
-                            <button className="bg-transparent text-white border-2 border-white/20 px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-white/50 max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem] group">
-                                See demo
-                                <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-                            </button>
+                            </Link>
                         </div>
                         <p className="text-[0.78rem] text-white/30 m-0">
                             Unlimited projects &nbsp;&bull;&nbsp; Real-time collaboration &nbsp;&bull;&nbsp; Get started free
@@ -363,9 +360,9 @@ export default function ProjectPlus() {
                 <div className="max-w-[1400px] mx-auto px-12 py-20 max-md:px-6 max-md:py-14 max-sm:px-4 max-sm:py-10">
                     <div className="grid grid-cols-3 max-md:grid-cols-1" data-animate="fade-up">
                         {[
-                            { value: '60%', label: 'Less project delays' },
-                            { value: '3x', label: 'Faster reporting' },
-                            { value: '40%', label: 'More team output' },
+                            { value: 'Fewer', label: 'Project delays' },
+                            { value: 'Faster', label: 'Reporting' },
+                            { value: 'More', label: 'Team output' },
                         ].map((stat, idx) => (
                             <div key={stat.label} className={`flex flex-col items-center text-center py-8 max-md:py-6 ${idx < 2 ? 'border-r border-white/10 max-md:border-r-0 max-md:border-b max-sm:border-b-0' : ''}`}>
                                 <div className="text-[3rem] font-extrabold leading-none mb-2 max-md:text-[2.4rem] max-sm:text-[2rem]">{stat.value}</div>
@@ -385,10 +382,10 @@ export default function ProjectPlus() {
                     <p className="text-[1.05rem] text-[#555555] leading-relaxed max-sm:text-[0.9rem]">
                         From sprint planning to delivery tracking — manage every project with clarity and confidence.
                     </p>
-                    <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                    <Link href="/contact" className="no-underline bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                         Start Managing Projects
                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-                    </button>
+                    </Link>
                 </div>
             </section>
         </div>

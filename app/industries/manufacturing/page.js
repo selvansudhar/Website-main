@@ -1,9 +1,10 @@
+import Link from 'next/link';
 import CountUp from '@/components/CountUp';
 
 export const metadata = {
   title: "Manufacturing Solutions | Zenvict",
   description:
-    "Smart factory operations platform powering 300+ production facilities with AI-driven manufacturing intelligence, predictive maintenance, and real-time quality control.",
+    "Smart factory operations platform built for modern production facilities with AI-driven manufacturing intelligence, predictive maintenance, and real-time quality control.",
 };
 
 export default function ManufacturingPage() {
@@ -38,21 +39,15 @@ export default function ManufacturingPage() {
               materials to final dispatch — in a single command center.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
-              <a
+              <Link
                 href="/contact"
-                className="group inline-flex items-center gap-3 bg-[#F60014] text-white px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:opacity-90 transition"
+                className="group inline-flex items-center gap-3 bg-[#F60014] text-white px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:opacity-90 transition no-underline"
               >
                 Get Started <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-              </a>
-              <a
-                href="/contact"
-                className="border border-white text-white px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:bg-white/10 transition"
-              >
-                Watch Demo
-              </a>
+              </Link>
             </div>
             <p className="text-white/40 text-sm">
-              Powering 300+ Production Facilities
+              Built for Production Facilities
             </p>
           </div>
 
@@ -116,10 +111,10 @@ export default function ManufacturingPage() {
       <section className="bg-[#F60014] text-white py-5 max-[480px]:py-4">
         <div className="grid grid-cols-4 max-md:grid-cols-2 gap-6 max-[480px]:gap-3 text-center max-w-6xl mx-auto px-6 max-[480px]:px-4" data-animate="fade-up">
           {[
-            { value: "300+", label: "Factories" },
-            { value: "99.7%", label: "Quality Rate" },
+            { value: "Built for", label: "Manufacturers" },
+            { value: "High", label: "Quality Rate" },
             { value: "24/7", label: "Monitoring" },
-            { value: "35%", label: "Cost Reduction" },
+            { value: "Lower", label: "Costs" },
           ].map((stat) => (
             <div key={stat.label}>
               <p className="text-2xl font-bold"><CountUp value={stat.value} /></p>
@@ -237,7 +232,7 @@ export default function ManufacturingPage() {
               icon: "bi-activity",
               name: "Predictive Maintenance",
               description:
-                "Forecast equipment failures before they happen. Reduce unplanned downtime by up to 45% with sensor-driven anomaly detection.",
+                "Forecast equipment failures before they happen. Achieve significant reduction in unplanned downtime with sensor-driven anomaly detection.",
               tag: "AI-Powered",
             },
             {
@@ -304,7 +299,7 @@ export default function ManufacturingPage() {
             Measurable Production Impact
           </h2>
           <p className="text-white/60 max-w-xl mx-auto">
-            Real results from real factories. Here is what our customers achieve
+            Potential results for your factory. Here is what you can achieve
             within the first year of deployment.
           </p>
         </div>
@@ -312,23 +307,23 @@ export default function ManufacturingPage() {
         <div className="grid grid-cols-3 max-md:grid-cols-1 gap-8 max-w-4xl mx-auto" data-animate="fade-up">
           {[
             {
-              value: "35%",
+              value: "Less",
               color: "#22c55e",
-              label: "Reduction in Downtime",
+              label: "Downtime",
               description:
                 "Predictive maintenance and real-time alerts keep your lines running longer with fewer unplanned stops.",
             },
             {
-              value: "2.4x",
+              value: "Higher",
               color: "#056CB8",
-              label: "Production Throughput",
+              label: "Throughput",
               description:
                 "Intelligent scheduling and automated workflows multiply output without adding headcount or shifts.",
             },
             {
-              value: "$4.2M",
+              value: "Significant",
               color: "#F60014",
-              label: "Average Annual Savings",
+              label: "Cost Savings",
               description:
                 "Reduced waste, optimized energy, and streamlined operations add up to significant bottom-line savings.",
             },
@@ -394,12 +389,12 @@ export default function ManufacturingPage() {
           Reduce downtime, improve quality control, and maximize throughput with AI-powered manufacturing solutions built for Industry 4.0.
         </p>
         <div className="flex flex-wrap justify-center gap-4 mb-8">
-          <a
+          <Link
             href="/contact"
-            className="group inline-flex items-center gap-3 bg-[#F60014] text-white px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:opacity-90 transition"
+            className="group inline-flex items-center gap-3 bg-[#F60014] text-white px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:opacity-90 transition no-underline"
           >
             Get Started with Manufacturing <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-          </a>
+          </Link>
           <a
             href="/contact"
             className="border border-[#111111] text-[#111111] px-7 py-3 rounded-none uppercase tracking-[0.05em] text-sm font-semibold hover:bg-[#111111] hover:text-white transition"
@@ -408,7 +403,7 @@ export default function ManufacturingPage() {
           </a>
         </div>
         <p className="text-sm text-[#555555]">
-          Trusted by manufacturers in 30+ countries
+          Trusted by manufacturers
         </p>
         </div>
       </section>

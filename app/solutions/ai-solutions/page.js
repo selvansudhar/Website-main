@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import CapabilitySelector from './CapabilitySelector';
 import CountUp from '@/components/CountUp';
 
@@ -42,14 +43,11 @@ export default function AISolutionsPage() {
                 that compounds over time.
               </p>
               <div className="flex gap-4 flex-wrap mt-2 max-sm:flex-col max-sm:items-start">
-                <a href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
+                <Link href="/contact" className="no-underline inline-flex items-center justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
                   Start Building with AI
-                </a>
-                <a href="/resources/developers" className="inline-flex items-center justify-center px-8 py-4 border border-white text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
-                  Watch Platform Demo
-                </a>
+                </Link>
               </div>
-              <p className="text-white/40 text-sm mt-2">Trusted by 300+ enterprise teams</p>
+              <p className="text-white/40 text-sm mt-2">Built for enterprise teams</p>
             </div>
 
             {/* AI Model Dashboard Mockup */}
@@ -96,10 +94,10 @@ export default function AISolutionsPage() {
       <section className="bg-[#056CB8] text-white py-6 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 text-center" data-animate="fade-in">
           {[
-            { value: '10x', label: 'Faster Deployment' },
-            { value: '99.9%', label: 'Uptime SLA' },
-            { value: '40+', label: 'Pre-trained Models' },
-            { value: '300%', label: 'Average ROI' },
+            { value: 'Fast', label: 'Deployment' },
+            { value: 'Reliable', label: 'Uptime' },
+            { value: 'Multiple', label: 'Pre-trained Models' },
+            { value: 'Strong', label: 'ROI' },
           ].map((stat, i) => (
             <div key={i}>
               <p className="text-2xl font-bold"><CountUp value={stat.value} /></p>
@@ -168,12 +166,12 @@ export default function AISolutionsPage() {
           </div>
           <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
             {[
-              { num: '01', industry: 'HEALTHCARE', title: 'Diagnostic Assistance', desc: 'AI-powered imaging analysis reducing diagnostic time by 60% with 99.2% accuracy across radiology workflows.' },
-              { num: '02', industry: 'FINANCE', title: 'Risk Intelligence', desc: 'Real-time fraud detection and credit scoring processing 10M+ transactions daily with sub-second latency.' },
-              { num: '03', industry: 'RETAIL', title: 'Demand Prediction', desc: 'ML-driven inventory optimization achieving 94% forecast accuracy, reducing stockouts by 40%.' },
-              { num: '04', industry: 'MANUFACTURING', title: 'Predictive Maintenance', desc: 'IoT + AI models detecting equipment failures 72 hours in advance, cutting downtime by 55%.' },
+              { num: '01', industry: 'HEALTHCARE', title: 'Diagnostic Assistance', desc: 'AI-powered imaging analysis reducing diagnostic time significantly with high accuracy across radiology workflows.' },
+              { num: '02', industry: 'FINANCE', title: 'Risk Intelligence', desc: 'Real-time fraud detection and credit scoring processing transactions at scale with sub-second latency.' },
+              { num: '03', industry: 'RETAIL', title: 'Demand Prediction', desc: 'ML-driven inventory optimization with improved forecast accuracy, reducing stockouts across retail operations.' },
+              { num: '04', industry: 'MANUFACTURING', title: 'Predictive Maintenance', desc: 'IoT + AI models detecting equipment failures early, cutting downtime across production environments.' },
               { num: '05', industry: 'EDUCATION', title: 'Adaptive Learning', desc: 'Personalized learning paths that adjust difficulty in real-time based on student performance patterns.' },
-              { num: '06', industry: 'LOGISTICS', title: 'Route Optimization', desc: 'Dynamic routing algorithms reducing delivery times by 30% and fuel costs by 22% across fleet operations.' },
+              { num: '06', industry: 'LOGISTICS', title: 'Route Optimization', desc: 'Dynamic routing algorithms reducing delivery times and fuel costs across fleet operations.' },
             ].map((uc, i) => (
               <div key={i} className="border border-[#e0e0e0] p-6 hover:border-[#056CB8] transition-colors">
                 <p className="text-4xl font-bold text-[#e0e0e0] mb-3">{uc.num}</p>
@@ -194,7 +192,7 @@ export default function AISolutionsPage() {
               Works With Your Existing Stack
             </h2>
             <p className="text-[#555555] mb-12 max-w-2xl mx-auto">
-              Zenvict AI integrates seamlessly with 200+ enterprise tools and platforms.
+              Zenvict AI integrates seamlessly with enterprise tools and platforms.
               REST APIs, webhooks, SDKs for Python, Node.js, and Java.
             </p>
           </div>
@@ -218,9 +216,9 @@ export default function AISolutionsPage() {
             Our AI specialists will assess your workflows and build a custom implementation roadmap tailored to your industry.
           </p>
           <div className="flex flex-col items-center gap-4">
-            <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+            <Link href="/contact" className="no-underline group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
               Schedule a Consultation <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-            </a>
+            </Link>
             <a href="/" className="text-white/50 text-sm hover:text-white transition-colors">
               Explore the platform &rarr;
             </a>

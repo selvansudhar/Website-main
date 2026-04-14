@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
@@ -154,12 +155,9 @@ export default function AssistantHub() {
                             Deploy specialized AI assistants across sales, finance, HR, support, and more. They learn your data, follow your rules, and work 24/7 — no code required.
                         </p>
                         <div className="flex gap-4 max-lg:justify-center max-sm:flex-col max-sm:items-center">
-                            <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                            <Link href="/contact" className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] no-underline group">
                                 Deploy assistants
-                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
-                            <button className="bg-transparent text-[#111111] border-2 border-[#e0e0e0] px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
-                                Watch demo
-                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
+                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
                         </div>
                     </div>
 
@@ -208,7 +206,7 @@ export default function AssistantHub() {
                                 {/* Footer stat */}
                                 <div className="flex items-center gap-2 mt-4 pt-3 border-t border-[#e0e0e0]">
                                     <i className="bi bi-activity text-[#555555] text-xs"></i>
-                                    <span className="text-[0.72rem] text-[#555555]">85% tasks automated · 12 departments connected</span>
+                                    <span className="text-[0.72rem] text-[#555555]">Automate tasks · Connect departments</span>
                                 </div>
                             </div>
                         </div>
@@ -275,9 +273,9 @@ export default function AssistantHub() {
                             </p>
                             <div className="flex flex-col gap-4">
                                 {[
-                                    { icon: 'bi-lightning-charge-fill', text: 'Responds in under 2 seconds' },
+                                    { icon: 'bi-lightning-charge-fill', text: 'Fast response times' },
                                     { icon: 'bi-shield-check', text: 'Enterprise-grade data privacy' },
-                                    { icon: 'bi-people-fill', text: 'Handles 100+ conversations simultaneously' },
+                                    { icon: 'bi-people-fill', text: 'Handles multiple conversations simultaneously' },
                                 ].map((item) => (
                                     <div key={item.text} className="flex items-center gap-3">
                                         <div className="w-8 h-8 bg-[#056CB8]/10 flex items-center justify-center shrink-0">
@@ -501,17 +499,17 @@ export default function AssistantHub() {
                         <p className="text-[1.05rem] text-white/60 leading-relaxed mb-10 max-w-[500px] max-lg:mx-auto max-md:text-base max-sm:text-[0.9rem]">
                             Start with one assistant or deploy all 16. Zero code required — just configure, launch, and watch your team's productivity multiply.
                         </p>
-                        <button className="bg-white text-[#056CB8] border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:bg-white/90 max-lg:mx-auto max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">
+                        <Link href="/contact" className="bg-white text-[#056CB8] border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:bg-white/90 max-lg:mx-auto max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] no-underline group">
                             Launch Your Assistants
-                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
+                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
                     </div>
 
                     {/* Right — Stats */}
                     <div className="grid grid-cols-2 gap-6 max-sm:gap-4" data-animate="fade-right">
                         {[
                             { value: '16', label: 'Specialized assistants' },
-                            { value: '<5 min', label: 'Average deploy time' },
-                            { value: '85%', label: 'Task reduction rate' },
+                            { value: 'Minutes', label: 'To deploy' },
+                            { value: 'Fast', label: 'Task automation' },
                             { value: '0', label: 'Lines of code needed' },
                         ].map((stat) => (
                             <div key={stat.label} className="border-l-2 border-white/30 pl-5 py-2">

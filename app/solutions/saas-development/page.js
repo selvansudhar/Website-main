@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export const metadata = {
   title: 'SaaS Development | Zenvict',
   description: 'Full-stack SaaS development services from product architecture and multi-tenant design to launch and scale.',
@@ -39,14 +41,11 @@ export default function SaasDevelopmentPage() {
                 and grow revenue on autopilot.
               </p>
               <div className="flex gap-4 flex-wrap mt-2">
-                <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+                <Link href="/contact" className="no-underline group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
                   Start Your Project <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-                </a>
-                <a href="/resources/partners" className="inline-flex items-center justify-center px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white transition-colors">
-                  See Our Portfolio
-                </a>
+                </Link>
               </div>
-              <p className="text-xs text-[#555555] mt-2">50+ SaaS products launched successfully</p>
+              <p className="text-xs text-[#555555] mt-2">SaaS products launched successfully</p>
             </div>
 
             {/* Browser Window Mockup */}
@@ -91,10 +90,10 @@ export default function SaasDevelopmentPage() {
       <section className="bg-[#056CB8] text-white py-6 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 text-center" data-animate="fade-in">
           {[
-            { value: '50+', label: 'SaaS Products Launched' },
-            { value: '99.9%', label: 'Average Uptime' },
-            { value: '2-3x', label: 'Faster Time-to-Market' },
-            { value: '$2B+', label: 'Client Revenue' },
+            { value: 'Multiple', label: 'SaaS Products Launched' },
+            { value: 'High', label: 'Uptime' },
+            { value: 'Faster', label: 'Time-to-Market' },
+            { value: 'Growing', label: 'Client Success' },
           ].map((stat, i) => (
             <div key={i}>
               <p className="text-2xl font-bold">{stat.value}</p>
@@ -179,7 +178,7 @@ export default function SaasDevelopmentPage() {
               { num: '03', title: 'API-First Design', desc: 'Every feature exposed as a documented API. Enable integrations and developer ecosystems from day one.' },
               { num: '04', title: 'Security & Compliance', desc: 'SOC 2 Type II, GDPR, HIPAA-ready with role-based access, audit logging, and encryption.' },
               { num: '05', title: 'Analytics Built-In', desc: 'Product analytics, cohort analysis, funnel tracking, and revenue metrics in the application layer.' },
-              { num: '06', title: 'Global CDN & Edge', desc: 'Sub-100ms load times worldwide with edge computing, CDN distribution, and intelligent caching.' },
+              { num: '06', title: 'Global CDN & Edge', desc: 'Fast load times with edge computing, CDN distribution, and intelligent caching.' },
             ].map((item, i) => (
               <div key={i} className="bg-white border border-[#e0e0e0] p-6">
                 <p className="text-2xl font-bold text-[#e0e0e0] mb-3">{item.num}</p>
@@ -237,9 +236,9 @@ export default function SaasDevelopmentPage() {
             From MVP to scale — our team builds robust, cloud-native SaaS platforms with multi-tenancy, billing, and analytics built in.
           </p>
           <div className="flex flex-col items-center gap-4">
-            <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+            <Link href="/contact" className="no-underline group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
               Start Your SaaS Project <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-            </a>
+            </Link>
             <a href="/" className="text-white/50 text-sm hover:text-white transition-colors">
               Explore the platform &rarr;
             </a>

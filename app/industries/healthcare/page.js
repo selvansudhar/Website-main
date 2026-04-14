@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import CountUp from '@/components/CountUp';
 
 export const metadata = {
@@ -69,10 +70,10 @@ const comparisonRows = [
 ];
 
 const metrics = [
-  { value: '35%', label: 'Faster Patient Processing' },
-  { value: '60%', label: 'Less Paperwork' },
-  { value: '99.9%', label: 'System Uptime' },
-  { value: '4.8/5', label: 'Provider Satisfaction' },
+  { value: 'Faster', label: 'Patient Processing' },
+  { value: 'Less', label: 'Paperwork' },
+  { value: 'Reliable', label: 'System Uptime' },
+  { value: 'High', label: 'Provider Satisfaction' },
 ];
 
 export default function HealthcarePage() {
@@ -107,18 +108,12 @@ export default function HealthcarePage() {
               care teams with tools designed for clinical precision and operational efficiency.
             </p>
             <div className="flex flex-wrap gap-4 mb-8">
-              <a
+              <Link
                 href="/contact"
                 className="group inline-flex items-center gap-3 bg-[#056CB8] text-white px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
               >
                 Request a Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-              </a>
-              <a
-                href="/solutions"
-                className="inline-block border border-[#111111] text-[#111111] px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
-              >
-                Learn More
-              </a>
+              </Link>
             </div>
             <p className="text-xs text-[#555555] tracking-[0.05em] uppercase font-medium">
               HIPAA Compliant | SOC 2 Certified | HL7 Ready
@@ -344,18 +339,12 @@ export default function HealthcarePage() {
             HIPAA-compliant solutions that streamline clinical workflows, reduce administrative burden, and improve care coordination across your facility.
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-6">
-            <a
+            <Link
               href="/contact"
               className="group inline-flex items-center gap-3 bg-[#056CB8] text-white px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
             >
               Request a Healthcare Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-            </a>
-            <a
-              href="/contact"
-              className="group inline-flex items-center gap-3 border border-[#111111] text-[#111111] px-8 py-3.5 rounded-none uppercase tracking-[0.05em] text-sm font-semibold no-underline"
-            >
-              Speak with a Specialist <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-            </a>
+            </Link>
           </div>
           <p className="text-xs text-[#555555] tracking-[0.05em] uppercase font-medium">
             HIPAA Compliant | 24/7 Support | No Setup Fees

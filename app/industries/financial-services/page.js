@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import CountUp from '@/components/CountUp';
 
 export const metadata = {
@@ -41,14 +42,11 @@ export default function FinancialServicesPage() {
                 deliver exceptional customer experiences.
               </p>
               <div className="flex gap-4 flex-wrap mt-2">
-                <a href="/contact" className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+                <Link href="/contact" className="no-underline group inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
                   Schedule a Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-                </a>
-                <a href="/solutions" className="inline-flex items-center justify-center px-8 py-4 border border-white text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
-                  Explore Solutions
-                </a>
+                </Link>
               </div>
-              <p className="text-white/40 text-sm mt-2">Trusted by 200+ financial institutions</p>
+              <p className="text-white/40 text-sm mt-2">Built for financial institutions</p>
             </div>
 
             {/* Trading Terminal Mockup */}
@@ -98,10 +96,10 @@ export default function FinancialServicesPage() {
       <section className="bg-[#056CB8] text-white py-6 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 text-center" data-animate="fade-up">
           {[
-            { value: '99.99%', label: 'Uptime' },
-            { value: '$2.4B+', label: 'Processed' },
-            { value: '50ms', label: 'Latency' },
-            { value: '200+', label: 'Institutions' },
+            { value: 'High', label: 'Uptime' },
+            { value: 'Secure', label: 'Transaction processing' },
+            { value: 'Low', label: 'Latency' },
+            { value: 'Built for', label: 'Financial teams' },
           ].map((stat, i) => (
             <div key={i}>
               <CountUp value={stat.value} className="text-2xl font-bold" />
@@ -262,7 +260,7 @@ export default function FinancialServicesPage() {
               </div>
             ))}
           </div>
-          <p className="text-center text-sm text-[#555555] mt-8">50+ pre-built connectors available</p>
+          <p className="text-center text-sm text-[#555555] mt-8">Pre-built connectors available</p>
         </div>
       </section>
 
@@ -284,9 +282,9 @@ export default function FinancialServicesPage() {
           <div className="bg-white/5 border border-white/10 p-8">
             <div className="flex flex-col gap-4 mb-6">
               {[
-                { label: 'Manual Processing Cost', value: '$450K/yr', color: 'text-white/70' },
-                { label: 'With Zenvict', value: '$120K/yr', color: 'text-white/70' },
-                { label: 'Annual Savings', value: '$330K/yr', color: 'text-[#22c55e]' },
+                { label: 'Manual Processing Cost', value: 'High', color: 'text-white/70' },
+                { label: 'With Zenvict', value: 'Lower', color: 'text-white/70' },
+                { label: 'Annual Savings', value: 'Significant', color: 'text-[#22c55e]' },
               ].map((row, i) => (
                 <div key={i} className="flex items-center justify-between py-3 border-b border-white/10 last:border-b-0">
                   <span className="text-sm text-white/50">{row.label}</span>
@@ -295,7 +293,7 @@ export default function FinancialServicesPage() {
               ))}
             </div>
             <div className="bg-[#056CB8]/20 border border-[#056CB8]/30 p-4 text-center">
-              <CountUp value="73%" className="text-2xl font-bold text-[#056CB8]" />
+              <p className="text-2xl font-bold text-[#056CB8]">Major</p>
               <p className="text-xs text-white/60 uppercase tracking-wider">Cost Reduction</p>
             </div>
           </div>
@@ -312,12 +310,9 @@ export default function FinancialServicesPage() {
             Bank-grade security meets intelligent automation. Streamline compliance, accelerate transactions, and deliver superior client experiences.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <a href="/contact" className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+            <Link href="/contact" className="no-underline group inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
               Schedule a Fintech Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-            </a>
-            <a href="/contact" className="group inline-flex items-center justify-center gap-3 px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#f5f5f5] transition-colors">
-              Talk to a Finance Expert <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

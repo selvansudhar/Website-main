@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import CountUp from '@/components/CountUp';
 
 export const metadata = {
@@ -59,12 +60,9 @@ export default function KnowledgeBase() {
                     </p>
 
                     <div className="flex gap-4 mb-8 max-sm:flex-col max-sm:items-start">
-                        <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                        <Link href="/contact" className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] no-underline group">
                             Get Started <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-                        </button>
-                        <button className="bg-transparent text-white border-2 border-white/20 px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 transition-all duration-200 hover:border-white/50 max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem] group">
-                            See Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-                        </button>
+                        </Link>
                     </div>
 
                     {/* File format pills */}
@@ -93,7 +91,7 @@ export default function KnowledgeBase() {
                                 <i className="bi bi-lightning-charge-fill text-white text-[0.7rem]"></i>
                             </div>
                             <span className="text-[0.75rem] font-bold text-[#056CB8] uppercase tracking-wider">AI Answer</span>
-                            <span className="ml-auto text-[0.65rem] font-bold text-white bg-[#09983A] px-2.5 py-0.5">95% match</span>
+                            <span className="ml-auto text-[0.65rem] font-bold text-white bg-[#09983A] px-2.5 py-0.5">Best match</span>
                         </div>
                         <p className="text-[0.88rem] text-white/50 leading-[1.8] mb-4 max-sm:text-[0.8rem]">
                             Enterprise clients on annual plans are eligible for a full refund within the first 30 days. After 30 days, refunds are prorated based on remaining contract months...
@@ -101,15 +99,15 @@ export default function KnowledgeBase() {
                         <div className="flex items-center gap-2 text-[0.72rem] text-white/30 pt-3 border-t border-white/10">
                             <i className="bi bi-file-earmark-text text-xs"></i>
                             <span className="font-semibold">Source:</span>
-                            <span className="text-[#056CB8]">Enterprise Terms of Service v4.2</span>
+                            <span className="text-[#056CB8]">Company Policy Document</span>
                         </div>
                     </div>
 
                     {/* Mini Stats Row under search */}
                     <div className="grid grid-cols-3 gap-3 mt-4">
                         {[
-                            { icon: 'bi-file-earmark-text', value: '20+', label: 'Formats' },
-                            { icon: 'bi-lightning-charge-fill', value: '< 3s', label: 'Avg Response' },
+                            { icon: 'bi-file-earmark-text', value: 'Multiple', label: 'Formats' },
+                            { icon: 'bi-lightning-charge-fill', value: 'Fast', label: 'Avg Response' },
                             { icon: 'bi-shield-check', value: '100%', label: 'Private' },
                         ].map((stat) => (
                             <div key={stat.label} className="bg-white/5 border border-white/10 p-3 text-center">
@@ -267,10 +265,10 @@ export default function KnowledgeBase() {
             <section className="py-20 px-12 bg-[#056CB8] max-md:py-14 max-md:px-6 max-sm:py-10 max-sm:px-4">
                 <div className="grid grid-cols-4 gap-12 max-w-[1000px] mx-auto max-lg:grid-cols-2 max-sm:grid-cols-2 max-sm:gap-8 max-[480px]:grid-cols-1">
                     {[
-                        { value: '95%', label: 'Faster answer discovery' },
-                        { value: '20+', label: 'File formats supported' },
-                        { value: '< 3s', label: 'Average query response' },
-                        { value: '99.9%', label: 'Uptime SLA guaranteed' },
+                        { value: 'Faster', label: 'Answer discovery' },
+                        { value: 'Multiple', label: 'File formats supported' },
+                        { value: 'Fast', label: 'Query response' },
+                        { value: 'Reliable', label: 'Platform uptime' },
                     ].map((stat) => (
                         <div key={stat.label} className="text-center">
                             <CountUp value={stat.value} className="text-[2.6rem] font-extrabold text-white mb-2 block max-sm:text-[1.8rem]" />
@@ -345,9 +343,9 @@ export default function KnowledgeBase() {
                     <p className="text-[1.1rem] text-white/60 leading-[1.7] mb-10 max-md:text-base max-sm:text-[0.9rem]">
                         Build a living, searchable knowledge hub that grows smarter with every document. Your team finds answers in seconds, not hours.
                     </p>
-                    <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                    <Link href="/contact" className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] no-underline group">
                         Build Your Knowledge Base <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-                    </button>
+                    </Link>
                 </div>
             </section>
         </div>

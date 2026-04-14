@@ -7,47 +7,41 @@ const categories = [
     icon: 'bi-lightning-charge-fill',
     title: 'Getting Started',
     desc: 'Set up your Zenvict workspace, configure your first modules, and onboard your team in minutes.',
-    articles: 14,
   },
   {
     icon: 'bi-bar-chart-fill',
     title: 'Finance Plus',
     desc: 'Invoicing, reconciliation, AI-powered forecasting, and financial reporting guides.',
-    articles: 22,
   },
   {
     icon: 'bi-people-fill',
     title: 'Human Resources',
     desc: 'Employee onboarding, payroll setup, leave management, and performance reviews.',
-    articles: 19,
   },
   {
     icon: 'bi-bullseye',
     title: 'CRM Lite & Marketing',
     desc: 'Pipeline management, lead scoring, campaign automation, and customer engagement.',
-    articles: 26,
   },
   {
     icon: 'bi-shield-fill-check',
     title: 'Security & Compliance',
     desc: 'SSO configuration, role-based access, encryption policies, SOC 2, GDPR, and HIPAA.',
-    articles: 15,
   },
   {
     icon: 'bi-diagram-3',
     title: 'Integrations & API',
     desc: 'Connect Zenvict with Slack, Teams, Salesforce, and 100+ tools via REST APIs and webhooks.',
-    articles: 21,
   },
 ];
 
 const popularArticles = [
-  { title: 'How to configure YenAI assistant for your department', category: 'Getting Started', views: '14.2k' },
-  { title: 'Setting up SSO with SAML 2.0 for your organization', category: 'Security & Compliance', views: '9.1k' },
-  { title: 'Connecting Finance Plus to your bank accounts', category: 'Finance Plus', views: '8.4k' },
-  { title: 'Building automated campaign workflows in Marketing Automation', category: 'CRM Lite & Marketing', views: '7.6k' },
-  { title: 'Configuring Knowledge Base with your company documents', category: 'Getting Started', views: '6.9k' },
-  { title: 'Setting up webhook notifications for Project Plus events', category: 'Integrations & API', views: '5.8k' },
+  { title: 'How to configure YenAI assistant for your department', category: 'Getting Started' },
+  { title: 'Setting up SSO with SAML 2.0 for your organization', category: 'Security & Compliance' },
+  { title: 'Connecting Finance Plus to your bank accounts', category: 'Finance Plus' },
+  { title: 'Building automated campaign workflows in Marketing Automation', category: 'CRM Lite & Marketing' },
+  { title: 'Configuring Knowledge Base with your company documents', category: 'Getting Started' },
+  { title: 'Setting up webhook notifications for Project Plus events', category: 'Integrations & API' },
 ];
 
 const faqs = [
@@ -154,7 +148,7 @@ export default function HelpCenter() {
                 <h3 className="text-lg font-bold text-[#111111] mb-2">{cat.title}</h3>
                 <p className="text-sm text-[#555555] leading-relaxed mb-5">{cat.desc}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-xs text-[#555555] font-medium">{cat.articles} articles</span>
+                  <span className="text-xs text-[#555555] font-medium">Articles</span>
                   <span className="text-sm text-[#056CB8] font-semibold group-hover:translate-x-1 transition-transform">
                     Browse &rarr;
                   </span>
@@ -189,7 +183,7 @@ export default function HelpCenter() {
                   <h4 className="text-sm font-bold text-[#111111] mb-2 leading-snug group-hover:text-[#056CB8] transition-colors">{article.title}</h4>
                   <div className="flex items-center gap-3">
                     <span className="text-xs text-[#555555] font-medium">{article.category}</span>
-                    <span className="text-xs text-[#555555]">{article.views} views</span>
+                    <span className="text-xs text-[#056CB8] font-semibold">Popular</span>
                   </div>
                 </div>
               </div>
@@ -244,19 +238,19 @@ export default function HelpCenter() {
               {
                 icon: 'bi-headset',
                 title: 'Live Chat',
-                desc: 'Get instant help from our team. Average response time under 2 minutes during business hours.',
+                desc: 'Get instant help from our team. Fast response times during business hours.',
                 cta: 'Start a conversation',
               },
               {
                 icon: 'bi-inbox-fill',
                 title: 'Email Support',
-                desc: 'Send us a detailed message at support@zenvict.com. We respond within 4 business hours.',
+                desc: 'Send us a detailed message at zenvictsoftware@gmail.com. We respond as quickly as possible.',
                 cta: 'Send an email',
               },
               {
                 icon: 'bi-people-fill',
                 title: 'Community Forum',
-                desc: 'Join 12,000+ Zenvict users sharing tips, solutions, and product feedback.',
+                desc: 'Join the Zenvict community sharing tips, solutions, and product feedback.',
                 cta: 'Join the community',
               },
             ].map((channel, i) => (

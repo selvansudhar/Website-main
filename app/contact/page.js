@@ -74,7 +74,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-bold text-[#111111] mb-1">Email</p>
-                  <p className="text-sm text-[#555555]">contact@zenvict.com</p>
+                  <p className="text-sm text-[#555555]">zenvictsoftware@gmail.com</p>
                 </div>
               </div>
 
@@ -84,7 +84,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm font-bold text-[#111111] mb-1">Phone</p>
-                  <p className="text-sm text-[#555555]">+1 (800) 123-4567</p>
+                  <p className="text-sm text-[#555555]">+91 93604 88648</p>
                 </div>
               </div>
 
@@ -215,34 +215,12 @@ export default function Contact() {
             Our Offices
           </h2>
 
-          <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
-            {[
-              {
-                city: 'Bangalore',
-                country: 'India',
-                address: 'Tech Park, Whitefield',
-                label: 'Headquarters',
-              },
-              {
-                city: 'Dubai',
-                country: 'UAE',
-                address: 'Business Bay, Tower A',
-                label: 'Middle East',
-              },
-              {
-                city: 'Singapore',
-                country: 'Singapore',
-                address: 'One Raffles Place',
-                label: 'Asia Pacific',
-              },
-            ].map((office, i) => (
-              <div key={i} className="bg-white border border-[#e0e0e0] p-8">
-                <span className="text-[10px] font-bold text-[#056CB8] bg-[#056CB8]/10 px-3 py-1 uppercase tracking-wider">{office.label}</span>
-                <h3 className="text-xl font-bold text-[#111111] mt-4 mb-1">{office.city}</h3>
-                <p className="text-sm text-[#555555] mb-1">{office.country}</p>
-                <p className="text-sm text-[#555555]">{office.address}</p>
+          <div className="max-w-md mx-auto" data-animate="fade-up" data-delay="2">
+              <div className="bg-white border border-[#e0e0e0] p-8 text-center">
+                <span className="text-[10px] font-bold text-[#056CB8] bg-[#056CB8]/10 px-3 py-1 uppercase tracking-wider">Headquarters</span>
+                <h3 className="text-xl font-bold text-[#111111] mt-4 mb-1">Coimbatore</h3>
+                <p className="text-sm text-[#555555] mb-1">Tamil Nadu, India</p>
               </div>
-            ))}
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import CountUp from '@/components/CountUp';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata = {
     title: 'Retail Industry Solutions — AI-Powered Commerce',
@@ -47,15 +48,12 @@ export default function IndustryRetail() {
                             Build the future of retail with omnichannel commerce, smart inventory management, and deeply personalized customer experiences — all powered by intelligent automation that scales with your business.
                         </p>
                         <div className="flex gap-4 mt-2 max-lg:justify-center max-sm:flex-col max-sm:items-center">
-                            <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                            <Link href="/contact" className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] no-underline group">
                                 Get started
-                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
-                            <button className="bg-transparent text-[#111111] border-2 border-[#e0e0e0] px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
-                                See demo
-                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
+                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
                         </div>
                         <p className="text-[0.78rem] text-[#888888] m-0">
-                            500+ retail brands &nbsp;&bull;&nbsp; Omnichannel ready &nbsp;&bull;&nbsp; Setup in days
+                            Retail businesses &nbsp;&bull;&nbsp; Omnichannel ready &nbsp;&bull;&nbsp; Setup in days
                         </p>
                     </div>
 
@@ -261,10 +259,10 @@ export default function IndustryRetail() {
 
                     <div className="grid grid-cols-4 gap-5 max-lg:grid-cols-2 max-sm:grid-cols-1" data-animate="fade-up">
                         {[
-                            { value: '3.2x', label: 'Revenue Growth', desc: 'Average increase in revenue within the first 12 months of deployment.' },
-                            { value: '67%', label: 'Less Stockouts', desc: 'Reduction in out-of-stock incidents with predictive inventory management.' },
-                            { value: '89%', label: 'Customer Retention', desc: 'Retention rate achieved through personalized loyalty and engagement.' },
-                            { value: '42%', label: 'Higher AOV', desc: 'Average order value boost driven by AI-powered recommendations.' },
+                            { value: 'Higher', label: 'Revenue Growth', desc: 'Drive revenue growth for your business.' },
+                            { value: 'Fewer', label: 'Stockouts', desc: 'Reduction in out-of-stock incidents with predictive inventory management.' },
+                            { value: 'Better', label: 'Customer Retention', desc: 'Retention rate achieved through personalized loyalty and engagement.' },
+                            { value: 'Improved', label: 'AOV', desc: 'Average order value boost driven by AI-powered recommendations.' },
                         ].map((m) => (
                             <div key={m.label} className="bg-white/5 border border-white/10 rounded-md p-6 text-center max-sm:p-5">
                                 <div className="text-[2.4rem] font-extrabold text-[#056CB8] leading-none mb-2 max-sm:text-[2rem]"><CountUp value={m.value} /></div>
@@ -305,9 +303,9 @@ export default function IndustryRetail() {
                     <p className="text-[1.05rem] text-[#555555] leading-relaxed max-sm:text-[0.9rem]">
                         From inventory management to personalized customer experiences — see how Zenvict helps retailers increase revenue and reduce operational costs.
                     </p>
-                    <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                    <Link href="/contact" className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] no-underline group">
                         Get a Retail Demo
-                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
+                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
                 </div>
             </section>
         </div>

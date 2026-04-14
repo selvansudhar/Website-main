@@ -32,11 +32,10 @@ export default function Home() {
           Run your entire business,<br />with AI built in
         </h1>
         <p className="text-[1.15rem] text-[#555555] leading-relaxed m-0 max-md:text-base">
-          One platform for ERP, AI intelligence, and intelligent assistants — built for teams that want to move fast without the enterprise price tag.
+          One platform for ERP, AI intelligence, and intelligent assistants — built for business that want to move fast without the enterprise price tag.
         </p>
         <div className="flex gap-4 mt-2 max-sm:flex-col max-sm:items-start">
-          <Link href="/enterprise" className="inline-flex items-center justify-center py-4 px-10 bg-[#056CB8] text-white font-bold text-[0.95rem] border-none rounded-none cursor-pointer no-underline uppercase tracking-[0.05em] max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem]">Start Free</Link>
-          <Link href="/solutions/ai-solutions" className="inline-flex items-center justify-center py-3.5 px-8 bg-transparent text-[#111111] font-semibold text-[0.95rem] border-2 border-[#e0e0e0] rounded-none cursor-pointer no-underline transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">See How It Works</Link>
+          <Link href="/solutions" className="inline-flex items-center gap-3 justify-center py-4 px-10 bg-[#056CB8] text-white font-bold text-[0.95rem] border-none rounded-none cursor-pointer no-underline uppercase tracking-[0.05em] max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">EXPLORE IVA <span className="inline-block transition-transform duration-300 group-hover:translate-x-2" aria-hidden="true">&rsaquo;</span></Link>
         </div>
         <p className="text-[0.78rem] text-[#888888] m-0">
           Trusted by growing teams &nbsp;&bull;&nbsp; Enterprise-grade AI &nbsp;&bull;&nbsp; Deploy in days, not months
@@ -168,7 +167,7 @@ export default function Home() {
           </div>
           <div className="flex-[1.5]">
             <h2 className="text-[2rem] font-bold m-0 mb-4 text-white max-sm:text-[1.5rem]">Intelligence That <span className="italic">Transforms</span></h2>
-            <p className="text-base text-white/70 leading-relaxed m-0 max-w-[450px] max-lg:mx-auto">AI-powered automation that handles repetitive work around the clock. Build custom workflows with our visual builder or deploy from 200+ pre-built solutions in minutes.</p>
+            <p className="text-base text-white/70 leading-relaxed m-0 max-w-[450px] max-lg:mx-auto">AI-powered automation that handles repetitive work around the clock. Build custom workflows with our visual builder and deploy intelligent solutions in minutes.</p>
           </div>
         </div>
       </section>
@@ -202,10 +201,10 @@ export default function Home() {
             <h2 className="text-[2.2rem] font-extrabold leading-[1.2] mb-16 max-md:text-[1.8rem] max-md:mb-10">Made in India.<br />Build for the World.</h2>
             <div className="grid grid-cols-2 gap-x-20 gap-y-12 max-w-[600px] max-md:gap-x-10 max-md:gap-y-8">
               {[
-                { value: '10+', label: 'Products\nBuilt' },
-                { value: '25+', label: 'Projects\nDelivered' },
-                { value: '30+', label: 'Happy\nClients' },
-                { value: '99.9%', label: 'Uptime' },
+                { value: '5+', label: 'Products\nBuilt' },
+                { value: '5+', label: 'Clients\nServed' },
+                { value: '15+', label: 'Team\nMembers' },
+                { value: '3+', label: 'Years of\nInnovation' },
                 { value: '5+', label: 'Industries\nServed' },
               ].map((stat, i) => (
                 <div key={i} className="flex items-baseline gap-4">
@@ -257,7 +256,7 @@ export default function Home() {
               <h2 className="text-[1.8rem] font-extrabold text-[#111111] leading-[1.15] tracking-[-0.02em] max-md:text-[1.5rem]">Your privacy, our promise.</h2>
               <p className="text-base text-[#555555] leading-[1.7]">We don&apos;t sell your data. We don&apos;t show you ads. We don&apos;t let third parties peek at your business information. Our only revenue comes from the software you choose to pay for.</p>
               <div className="flex flex-col gap-4 mt-2">
-                {['End-to-end encryption on all data', 'SOC 2 Type II compliant infrastructure', 'You own 100% of your data, always'].map((text, i) => (
+                {['End-to-end encryption on all data', 'Secure cloud infrastructure', 'You own 100% of your data, always'].map((text, i) => (
                   <div key={i} className="flex items-center gap-3 text-[0.95rem] text-[#333333]">
                     <span className="text-[#111111] font-bold">&#10003;</span>
                     <span>{text}</span>
@@ -300,7 +299,7 @@ export default function Home() {
           <h2 className="text-[2.5rem] font-extrabold text-[#111111] m-0 leading-[1.2] tracking-[-0.02em] max-md:text-[2rem] max-sm:text-[1.6rem]">Ready to simplify your stack?</h2>
           <p className="text-lg text-[#555555] leading-relaxed m-0">Stop paying for 10 different tools. Get one platform that does it all — with AI that actually helps.</p>
           <div className="mt-2">
-            <Link href="/solutions/enterprise-solutions" className="bg-[#EE0014] text-white py-4 px-10 rounded-none border-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 uppercase tracking-[0.05em] no-underline group">TALK TO US <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
+            <Link href="/contact" className="bg-[#EE0014] text-white py-4 px-10 rounded-none border-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 uppercase tracking-[0.05em] no-underline group">TALK TO US <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
           </div>
         </div>
       </section>

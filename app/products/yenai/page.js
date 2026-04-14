@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata = {
@@ -65,15 +66,12 @@ export default function YenAI() {
                         YenAI learns how you talk, think, and respond — then handles conversations on your behalf. Clients get the experience of speaking with you, even when you&apos;re not there.
                     </p>
                     <div className="flex gap-4 mt-2 max-lg:justify-center max-sm:flex-col max-sm:items-center">
-                        <button className="bg-white text-[#4a6cc9] border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:bg-white/90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                        <Link href="/contact" className="bg-white text-[#4a6cc9] border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:bg-white/90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] no-underline group">
                             Create your AI twin
-                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
-                        <button className="bg-transparent text-white border-2 border-white/30 px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-white/60 max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
-                            Watch demo
-                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
+                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
                     </div>
                     <p className="text-[0.78rem] text-white/50 m-0">
-                        99.2% voice accuracy &nbsp;&bull;&nbsp; 50+ languages &nbsp;&bull;&nbsp; Always available
+                        High voice accuracy &nbsp;&bull;&nbsp; Multiple languages &nbsp;&bull;&nbsp; Always available
                     </p>
                 </div>
 
@@ -208,21 +206,21 @@ export default function YenAI() {
                             icon: 'bi bi-lightning-charge-fill',
                             title: 'Never miss a lead again',
                             desc: 'A SaaS founder trained YenAI on 2 years of sales emails and pitch decks. Now inbound leads get instant, personalized responses at 2 AM — in the founder\'s exact voice.',
-                            result: 'Response time dropped from 8 hours to 12 seconds',
+                            result: 'Response time dropped dramatically',
                         },
                         {
                             persona: 'Consultant',
                             icon: 'bi bi-people',
                             title: 'Scale without hiring',
-                            desc: 'A management consultant created an AI twin that handles initial client discovery calls. It asks the right questions, takes notes, and schedules the real meeting — freeing up 15 hours per week.',
-                            result: 'Client capacity increased 3x without new hires',
+                            desc: 'A management consultant created an AI twin that handles initial client discovery calls. It asks the right questions, takes notes, and schedules the real meeting — freeing up significant time every week.',
+                            result: 'Client capacity increased without new hires',
                         },
                         {
                             persona: 'Sales Team Lead',
                             icon: 'bi bi-graph-up-arrow',
                             title: 'Consistent team performance',
                             desc: 'A VP of Sales created YenAI personas for their top 3 reps. New team members use these AI twins to learn objection handling, pricing conversations, and closing techniques in real scenarios.',
-                            result: 'New rep ramp time cut from 90 days to 30',
+                            result: 'New rep ramp time reduced significantly',
                         },
                     ].map((card) => (
                         <div key={card.title} className="bg-white rounded-md overflow-hidden border border-[#e0e0e0] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.06)]">
@@ -246,9 +244,9 @@ export default function YenAI() {
             <section className="py-20 px-12 bg-white max-md:py-12 max-md:px-6 max-sm:py-10 max-sm:px-4">
                 <div className="grid grid-cols-4 gap-12 max-w-[1000px] mx-auto max-lg:grid-cols-2 max-sm:grid-cols-2 max-sm:gap-6">
                     {[
-                        { number: '99.2%', label: 'Voice accuracy match' },
-                        { number: '<2s', label: 'Average response time' },
-                        { number: '50+', label: 'Languages supported' },
+                        { number: 'High', label: 'Voice accuracy' },
+                        { number: 'Fast', label: 'Response time' },
+                        { number: 'Multiple', label: 'Languages supported' },
                         { number: '24/7', label: 'Always available' },
                     ].map((stat) => (
                         <div key={stat.label} className="text-center">
@@ -305,9 +303,9 @@ export default function YenAI() {
                     <p className="text-[1.1rem] text-white/80 leading-[1.7] mb-10 max-md:text-base max-sm:text-[0.9rem]">
                         Build your AI persona in under 10 minutes. Handle conversations, emails, and calls autonomously — while you focus on growing your business.
                     </p>
-                    <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                    <Link href="/contact" className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] no-underline group">
                         Create Your AI Twin
-                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
+                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
                 </div>
             </section>
         </div>

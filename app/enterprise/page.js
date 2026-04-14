@@ -70,7 +70,7 @@ export default function Enterprise() {
                          <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
                     </div>
                     <p className="text-[0.78rem] text-[#888888] m-0">
-                        Powering businesses across 5+ industries worldwide &nbsp;&bull;&nbsp; 16 data centers &nbsp;&bull;&nbsp; 150+ countries
+                        Powering businesses across 5+ industries &nbsp;&bull;&nbsp; 5+ products &nbsp;&bull;&nbsp; 3+ years of innovation
                     </p>
                 </div>
             </section>
@@ -92,14 +92,12 @@ export default function Enterprise() {
 
             {/* Stats Ribbon */}
             <section className="bg-[#111111] text-white">
-                <div className="max-w-[1400px] mx-auto px-12 py-14 grid grid-cols-6 gap-8 max-lg:grid-cols-3 max-md:px-6 max-md:py-10 max-sm:px-4 max-sm:grid-cols-2 max-sm:gap-6" data-animate="fade-in">
+                <div className="max-w-[1400px] mx-auto px-12 py-14 grid grid-cols-4 gap-8 max-lg:grid-cols-2 max-md:px-6 max-md:py-10 max-sm:px-4 max-sm:grid-cols-2 max-sm:gap-6" data-animate="fade-in">
                     {[
-                        { value: '130M+', label: 'Users Worldwide' },
-                        { value: '29+', label: 'Years' },
-                        { value: '150+', label: 'Countries' },
-                        { value: '16', label: 'Data Centers' },
-                        { value: '18K+', label: 'Employees' },
-                        { value: '55+', label: 'Apps' },
+                        { value: '5+', label: 'Clients' },
+                        { value: '3+', label: 'Years' },
+                        { value: '15+', label: 'Team Members' },
+                        { value: '5+', label: 'Products' },
                     ].map((stat) => (
                         <div key={stat.label} className="text-center">
                             <div className="text-[2.2rem] font-extrabold leading-none tracking-tight max-sm:text-[1.8rem]">
@@ -173,7 +171,7 @@ export default function Enterprise() {
                             Enterprise Software Hub
                         </h2>
                         <p className="text-[1.05rem] text-[#555555] text-center max-w-[560px] mx-auto mb-12 max-sm:text-[0.9rem] max-sm:mb-8">
-                            16 integrated modules powering every department.
+                            5 integrated products powering every department.
                         </p>
                     </div>
                 </div>

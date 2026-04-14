@@ -1,5 +1,6 @@
 import CountUp from '@/components/CountUp';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Higher Education Solutions',
@@ -92,24 +93,18 @@ export default function HigherEducationPage() {
             Zenvict helps universities and colleges modernize operations, enhance learning outcomes, and create seamless digital campus experiences that put students first.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <a
+            <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-3.5 bg-[#056CB8] text-white font-semibold text-sm uppercase tracking-[0.05em] rounded-none"
+              className="inline-flex items-center justify-center px-8 py-3.5 bg-[#056CB8] text-white font-semibold text-sm uppercase tracking-[0.05em] rounded-none no-underline"
             >
               Request a Demo
-            </a>
-            <a
-              href="/solutions"
-              className="inline-flex items-center justify-center px-8 py-3.5 border border-[#111111] text-[#111111] font-semibold text-sm uppercase tracking-[0.05em] rounded-none"
-            >
-              Explore Solutions
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-3 max-md:grid-cols-1 gap-6 mt-16 max-w-2xl mx-auto">
             {[
-              { value: '10K+', label: 'Students Managed' },
-              { value: '5+', label: 'Institutions' },
-              { value: '98%', label: 'Satisfaction' },
+              { value: 'Growing', label: 'Student base managed' },
+              { value: 'Multiple', label: 'Institutions' },
+              { value: 'High', label: 'Satisfaction' },
             ].map((stat, i) => (
               <div key={i} className="bg-white border border-[#e0e0e0] p-6 text-center">
                 <p className="text-3xl font-bold text-[#056CB8] mb-1"><CountUp value={stat.value} /></p>
@@ -211,16 +206,13 @@ export default function HigherEducationPage() {
         </div>
       </section>
 
-      {/* ===== SECTION 4: TESTIMONIAL ===== */}
+      {/* ===== SECTION 4: VALUE PROPOSITION ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-8xl text-[#056CB8]/20 font-serif leading-none mb-4">&ldquo;</p>
-          <blockquote className="text-xl text-[#111111] italic leading-relaxed mb-8">
-            Zenvict simplified our entire student lifecycle management. From admissions to alumni tracking, everything runs smoother now.
-          </blockquote>
-          <div className="w-12 h-0.5 bg-[#056CB8] mx-auto mb-4"></div>
-          <p className="text-base font-bold text-[#111111]">University Administrator</p>
-          <p className="text-sm text-[#555555]">Zenvict Education Client</p>
+          <p className="text-xl text-[#111111] leading-relaxed mb-8">
+            Zenvict brings together student lifecycle management, academic tools, and campus analytics into one unified platform — helping institutions operate smarter and deliver better outcomes for every student.
+          </p>
+          <div className="w-12 h-0.5 bg-[#056CB8] mx-auto"></div>
         </div>
       </section>
 
@@ -234,10 +226,10 @@ export default function HigherEducationPage() {
           </div>
           <div className="grid grid-cols-4 max-md:grid-cols-2 max-[480px]:grid-cols-1 gap-6 max-w-5xl mx-auto" data-animate="fade-up">
             {[
-              { number: '40%', metric: 'Reduction in Admin Time', description: 'Automated workflows free up staff to focus on student success instead of paperwork.' },
-              { number: '3x', metric: 'Faster Enrollment', description: 'Streamlined processes cut enrollment cycle times from weeks to days.' },
-              { number: '95%', metric: 'Data Accuracy', description: 'Centralized records eliminate duplicate entries and ensure reliable reporting.' },
-              { number: '$2M+', metric: 'Annual Savings', description: 'Institutions save significantly through operational efficiency and resource optimization.' },
+              { number: 'Less', metric: 'Admin Time', description: 'Automated workflows free up staff to focus on student success instead of paperwork.' },
+              { number: 'Faster', metric: 'Enrollment', description: 'Streamlined processes cut enrollment cycle times from weeks to days.' },
+              { number: 'High', metric: 'Data Accuracy', description: 'Centralized records eliminate duplicate entries and ensure reliable reporting.' },
+              { number: 'Significant', metric: 'Cost Savings', description: 'Institutions save significantly through operational efficiency and resource optimization.' },
             ].map((stat, i) => (
               <div key={i} className="bg-white border border-[#e0e0e0] p-6 text-center">
                 <p className="text-4xl font-bold text-[#056CB8] mb-2"><CountUp value={stat.number} /></p>
@@ -279,12 +271,12 @@ export default function HigherEducationPage() {
               Streamline admissions, enhance learning experiences, and make data-driven decisions that improve student outcomes across your campus.
             </p>
             <div className="flex items-center gap-6 flex-wrap">
-              <a
+              <Link
                 href="/contact"
-                className="group inline-flex items-center gap-3 justify-center px-8 py-3.5 bg-[#056CB8] text-white font-semibold text-sm uppercase tracking-[0.05em] rounded-none"
+                className="group inline-flex items-center gap-3 justify-center px-8 py-3.5 bg-[#056CB8] text-white font-semibold text-sm uppercase tracking-[0.05em] rounded-none no-underline"
               >
                 Get Started for Your Campus <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-              </a>
+              </Link>
               <a href="/resources/help-center" className="text-white text-sm font-medium underline underline-offset-4">
                 Talk to an Expert
               </a>
@@ -292,9 +284,9 @@ export default function HigherEducationPage() {
           </div>
           <div className="flex flex-col gap-6">
             {[
-              { value: '50K+', label: 'Students Managed' },
-              { value: '99.5%', label: 'Satisfaction' },
-              { value: '4.9/5', label: 'Support Rating' },
+              { value: 'Growing', label: 'Student communities' },
+              { value: 'High', label: 'Satisfaction' },
+              { value: 'Top', label: 'Support rating' },
             ].map((item, i) => (
               <div key={i} className="border-l-2 border-[#056CB8] pl-5 py-2">
                 <p className="text-2xl font-bold text-white mb-1"><CountUp value={item.value} /></p>

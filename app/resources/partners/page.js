@@ -25,42 +25,31 @@ const partnerTypes = [
 
 const tiers = [
   {
-    name: 'Silver',
-    revenue: 'Up to $50K',
+    name: 'Starter',
+    revenue: 'Getting Started',
     benefits: ['Partner portal access', 'Basic training & certification', 'Co-branded materials', 'Email support'],
   },
   {
-    name: 'Gold',
-    revenue: '$50K - $200K',
-    benefits: ['Everything in Silver', 'Dedicated partner manager', 'Lead referral program', 'Priority support', 'Joint marketing budget'],
+    name: 'Growth',
+    revenue: 'Scaling Together',
+    benefits: ['Everything in Starter', 'Dedicated partner manager', 'Lead referral program', 'Priority support', 'Joint marketing support'],
     popular: true,
   },
   {
-    name: 'Platinum',
-    revenue: '$200K+',
-    benefits: ['Everything in Gold', 'Executive sponsorship', 'Custom integration support', 'Event co-sponsorship', 'Strategic planning sessions', 'Early access to product roadmap'],
+    name: 'Strategic',
+    revenue: 'Long-term Partnership',
+    benefits: ['Everything in Growth', 'Executive sponsorship', 'Custom integration support', 'Event co-sponsorship', 'Strategic planning sessions', 'Early access to product roadmap'],
   },
 ];
 
 const stats = [
-  { value: '500+', label: 'Active Partners' },
-  { value: '$12M+', label: 'Partner Revenue (2025)' },
-  { value: '40+', label: 'Countries Covered' },
-  { value: '95%', label: 'Partner Satisfaction' },
+  { value: '3', label: 'Partner Types' },
+  { value: '5+', label: 'Industries Covered' },
+  { value: '5+', label: 'Products to Resell' },
+  { value: '24/7', label: 'Partner Support' },
 ];
 
-const testimonials = [
-  {
-    quote: 'Partnering with Zenvict doubled our enterprise pipeline in six months. Their partner team is exceptional — always responsive, always invested in our mutual success.',
-    name: 'Arjun Mehta',
-    role: 'CEO, CloudNine Solutions',
-  },
-  {
-    quote: 'The technology integration was seamless. Zenvict APIs are well-documented and their partner engineering team helped us ship our joint healthcare solution in just 8 weeks.',
-    name: 'Sarah Chen',
-    role: 'CTO, DataBridge',
-  },
-];
+const testimonials = [];
 
 export default function Partners() {
   const [activeType, setActiveType] = useState(0);
@@ -200,7 +189,7 @@ export default function Partners() {
                 )}
 
                 <h3 className="text-xl font-bold text-[#111111] mb-1">{tier.name}</h3>
-                <p className="text-sm text-[#555555] mb-6">Annual revenue: {tier.revenue}</p>
+                <p className="text-sm text-[#555555] mb-6">{tier.revenue}</p>
 
                 <div className="flex flex-col gap-3">
                   {tier.benefits.map((benefit, j) => (
@@ -216,27 +205,7 @@ export default function Partners() {
         </div>
       </section>
 
-      {/* ===== TESTIMONIALS ===== */}
-      <section className="bg-white py-24 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-[2.25rem] font-bold text-[#111111] text-center mb-16 max-md:text-[1.75rem]" data-animate="fade-up">
-            Partner Stories
-          </h2>
-
-          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-6" data-animate="fade-up" data-delay="2">
-            {testimonials.map((t, i) => (
-              <div key={i} className="border border-[#e0e0e0] p-8">
-                <p className="text-6xl text-[#056CB8]/15 font-serif leading-none mb-2">&ldquo;</p>
-                <p className="text-sm text-[#111111] italic leading-relaxed mb-6">{t.quote}</p>
-                <div className="pt-4 border-t border-[#e0e0e0]">
-                  <p className="text-sm font-bold text-[#111111]">{t.name}</p>
-                  <p className="text-xs text-[#555555]">{t.role}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ===== TESTIMONIALS (hidden until real partner stories are available) ===== */}
 
       {/* ===== INDUSTRY FOCUS ===== */}
       <section className="bg-[#f5f5f5] py-24 px-6">

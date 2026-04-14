@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata = {
     title: 'Human Resources — Modern Workforce Management',
@@ -63,12 +64,9 @@ export default function HumanResources() {
                             Empower your HR team with comprehensive tools to manage employees, track attendance, handle leave requests, and conduct performance reviews — all from one integrated platform.
                         </p>
                         <div className="flex gap-4 mt-2 max-lg:justify-center max-sm:flex-col max-sm:items-center">
-                            <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                            <Link href="/contact" className="no-underline bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                                 Talk Sales
-                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
-                            <button className="bg-transparent text-[#111111] border-2 border-[#e0e0e0] px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
-                                See demo
-                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
+                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
                         </div>
                         <p className="text-[0.78rem] text-[#888888] m-0">
                             Automate HR workflows &nbsp;&bull;&nbsp; Employee self-service &nbsp;&bull;&nbsp; Go live in days
@@ -248,7 +246,7 @@ export default function HumanResources() {
                         {[
                             {
                                 icon: 'bi-lightning-charge-fill',
-                                title: 'Save 70% Admin Time',
+                                title: 'Save Admin Time',
                                 desc: 'Automate repetitive HR processes and reduce manual paperwork. Focus your team on strategic initiatives that drive growth.',
                             },
                             {
@@ -329,9 +327,9 @@ export default function HumanResources() {
                     <p className="text-[1.05rem] text-[#555555] leading-relaxed max-sm:text-[0.9rem]">
                         Simplify attendance, leave management, and performance reviews — so your HR team can focus on people, not paperwork.
                     </p>
-                    <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                    <Link href="/contact" className="no-underline bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                         Explore Zenvict HR
-                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
+                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
                 </div>
             </section>
         </div>

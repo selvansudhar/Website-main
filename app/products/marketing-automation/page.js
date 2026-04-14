@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import CampaignStepExplorer from './CampaignStepExplorer';
 
 export const metadata = {
@@ -64,15 +65,12 @@ export default function MarketingAutomation() {
                         Tell us about your business, pick your platforms, and let AI generate everything — posters, ad copy, Instagram captions, email sequences, and Canva-ready designs. One input, every format.
                     </p>
                     <div className="flex gap-4 mt-2 max-lg:justify-center max-sm:flex-col max-sm:items-center">
-                        <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                        <Link href="/contact" className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] no-underline group">
                             Launch a campaign
-                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
-                        <button className="bg-transparent text-[#111111] border-2 border-[#e0e0e0] px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
-                            See examples
-                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
+                         <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
                     </div>
                     <p className="text-[0.78rem] text-[#888888] m-0">
-                        10x faster than manual design &nbsp;&bull;&nbsp; 6+ platforms &nbsp;&bull;&nbsp; 50+ template styles
+                        Faster than manual design &nbsp;&bull;&nbsp; Multiple platforms &nbsp;&bull;&nbsp; Many template styles
                     </p>
                 </div>
 
@@ -256,10 +254,10 @@ export default function MarketingAutomation() {
             <section className="py-20 px-12 bg-white max-md:py-12 max-md:px-6 max-sm:py-10 max-sm:px-4">
                 <div className="grid grid-cols-4 gap-12 max-w-[1000px] mx-auto max-lg:grid-cols-2 max-sm:grid-cols-2 max-sm:gap-6">
                     {[
-                        { number: '10x', label: 'Faster than manual design' },
-                        { number: '6+', label: 'Platforms supported' },
-                        { number: '50+', label: 'Template styles' },
-                        { number: '90%', label: 'Less production cost' },
+                        { number: 'Much faster', label: 'Than manual design' },
+                        { number: 'Multiple', label: 'Platforms supported' },
+                        { number: 'Many', label: 'Template styles' },
+                        { number: 'Lower', label: 'Production cost' },
                     ].map((stat) => (
                         <div key={stat.label} className="text-center">
                             <div className="text-[2.2rem] font-extrabold text-[#111111] mb-1 max-sm:text-[1.8rem]">{stat.number}</div>
@@ -283,19 +281,19 @@ export default function MarketingAutomation() {
                         {
                             title: 'Product Launch Campaign',
                             desc: 'A D2C brand used Marketing Automation to launch their new skincare line. From brief to 48 unique assets — Instagram posts, Stories, email drip, and Google Shopping ads — in 20 minutes.',
-                            result: '4.2x ROAS in the first week',
+                            result: 'Strong return on ad spend',
                             icon: 'bi bi-lightning-charge-fill',
                         },
                         {
                             title: 'Holiday Sales Blitz',
                             desc: 'An e-commerce store generated Black Friday campaigns across 5 platforms simultaneously. AI created platform-specific copy, sized creatives, and scheduled posts — all from a single brief.',
-                            result: '62% increase in holiday revenue',
+                            result: 'Significant increase in holiday revenue',
                             icon: 'bi bi-calendar-check-fill',
                         },
                         {
                             title: 'B2B Lead Gen Campaign',
                             desc: 'A SaaS company ran a LinkedIn + email campaign targeting CFOs. AI wrote personalized ad variants, email sequences with follow-up logic, and retargeting creatives — all matching their enterprise tone.',
-                            result: 'Cost per lead dropped 58%',
+                            result: 'Lower cost per lead',
                             icon: 'bi bi-graph-up-arrow',
                         },
                     ].map((card) => (
@@ -324,9 +322,9 @@ export default function MarketingAutomation() {
                     <p className="text-[1.1rem] text-[#555555] leading-[1.7] mb-10 max-md:text-base max-sm:text-[0.9rem]">
                         Automate campaigns, nurture leads, and measure ROI across every channel — all from one intelligent platform.
                     </p>
-                    <button className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                    <Link href="/contact" className="bg-[#F60014] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] no-underline group">
                         Automate Your Marketing
-                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
+                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
                 </div>
             </section>
         </div>

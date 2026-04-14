@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export const metadata = {
   title: 'B2B Web Development | Zenvict',
   description: 'Custom B2B web portals, API platforms, and integration solutions built for enterprise-grade security and performance.',
@@ -39,14 +41,11 @@ export default function B2BDevelopmentPage() {
                 purpose-built for complex B2B workflows.
               </p>
               <div className="flex gap-4 flex-wrap mt-2">
-                <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+                <Link href="/contact" className="no-underline group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
                   Discuss Your Project <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-                </a>
-                <a href="/resources/partners" className="inline-flex items-center justify-center px-8 py-4 border border-white text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
-                  View Case Studies
-                </a>
+                </Link>
               </div>
-              <p className="text-white/40 text-sm mt-2">200+ B2B applications delivered</p>
+              <p className="text-white/40 text-sm mt-2">B2B applications delivered</p>
             </div>
 
             {/* Architecture Diagram Mockup */}
@@ -88,10 +87,10 @@ export default function B2BDevelopmentPage() {
       <section className="bg-[#056CB8] text-white py-6 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 text-center" data-animate="fade-in">
           {[
-            { value: '200+', label: 'B2B Apps Delivered' },
-            { value: '96%', label: 'Client Retention' },
-            { value: '40%', label: 'Efficiency Gain' },
-            { value: '< 4mo', label: 'Avg Time to MVP' },
+            { value: 'Multiple', label: 'B2B Apps Delivered' },
+            { value: 'High', label: 'Client Retention' },
+            { value: 'Better', label: 'Efficiency' },
+            { value: 'Fast', label: 'Time to MVP' },
           ].map((stat, i) => (
             <div key={i}>
               <p className="text-2xl font-bold">{stat.value}</p>
@@ -203,9 +202,9 @@ export default function B2BDevelopmentPage() {
             From complex B2B portals to custom integrations, our development team ships production-ready solutions on time and on budget.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+            <Link href="/contact" className="no-underline group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
               Discuss Your Project <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-            </a>
+            </Link>
             <a href="/" className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white/70 font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
               Back to Home
             </a>

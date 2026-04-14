@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import FinanceTabs from './FinanceTabs';
 import CountUp from '@/components/CountUp';
 
@@ -64,12 +65,9 @@ export default function FinancePlus() {
                             Simplify billing, order processing, and financial management with a single, integrated system designed for accuracy, efficiency, and full GST compliance.
                         </p>
                         <div className="flex gap-4 mt-2 max-lg:justify-center max-sm:flex-col max-sm:items-center">
-                            <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                            <Link href="/contact" className="no-underline bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                                 Talk Sales
-                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
-                            <button className="bg-transparent text-[#111111] border-2 border-[#e0e0e0] px-8 py-3.5 rounded-none text-[0.95rem] font-semibold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-200 hover:border-[#111111] max-sm:px-6 max-sm:py-3 max-sm:text-[0.8rem]">
-                                See demo
-                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
+                             <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
                         </div>
                         <p className="text-[0.78rem] text-[#888888] m-0">
                             GST-ready &nbsp;&bull;&nbsp; Real-time financial insights &nbsp;&bull;&nbsp; Bank-grade security
@@ -149,9 +147,9 @@ export default function FinancePlus() {
                 <div className="max-w-[1400px] mx-auto px-12 py-10 grid grid-cols-4 gap-8 max-md:grid-cols-2 max-md:px-6 max-md:py-8 max-sm:px-4 max-sm:gap-6 max-[480px]:grid-cols-1">
                     {[
                         { value: '8', label: 'Integrated modules', suffix: '' },
-                        { value: '99.8', label: 'Accuracy Rate', suffix: '%' },
-                        { value: '60', label: 'Faster invoicing', suffix: '%' },
-                        { value: '400', label: 'Finance teams active', suffix: '+' },
+                        { value: 'High', label: 'Accuracy', suffix: '' },
+                        { value: 'Faster', label: 'Invoicing', suffix: '' },
+                        { value: 'Built for', label: 'Growing teams', suffix: '' },
                     ].map((stat) => (
                         <div key={stat.label} className="text-center">
                             <div className="text-[2.4rem] font-extrabold text-[#111111] leading-none tracking-tight max-sm:text-[2rem]">
@@ -286,9 +284,9 @@ export default function FinancePlus() {
                     <p className="text-[1.05rem] text-[#555555] leading-relaxed max-sm:text-[0.9rem]">
                         Automate invoicing, track expenses in real-time, and get AI-powered financial insights that help you make smarter decisions.
                     </p>
-                    <button className="bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
+                    <Link href="/contact" className="no-underline bg-[#056CB8] text-white border-0 px-10 py-4 rounded-none text-[0.95rem] font-bold cursor-pointer inline-flex items-center gap-3 w-fit transition-all duration-300 uppercase tracking-[0.05em] hover:opacity-90 mt-4 max-sm:px-8 max-sm:py-3 max-sm:text-[0.8rem] group">
                         Start Free Trial
-                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></button>
+                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span></Link>
                 </div>
             </section>
         </div>

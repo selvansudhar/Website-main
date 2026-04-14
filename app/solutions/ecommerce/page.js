@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import CountUp from '@/components/CountUp';
 
 export const metadata = {
@@ -40,14 +41,11 @@ export default function EcommercePage() {
                 platforms. We build online commerce experiences that turn browsers into buyers.
               </p>
               <div className="flex gap-4 flex-wrap mt-2">
-                <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+                <Link href="/contact" className="no-underline group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
                   Launch Your Store <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-                </a>
-                <a href="/resources/partners" className="inline-flex items-center justify-center px-8 py-4 border border-[#111111] text-[#111111] font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#f5f5f5] transition-colors">
-                  See Our Work
-                </a>
+                </Link>
               </div>
-              <p className="text-xs text-[#555555] mt-2">150+ stores launched globally</p>
+              <p className="text-xs text-[#555555] mt-2">Stores launched globally</p>
             </div>
 
             {/* Store Mockup */}
@@ -97,10 +95,10 @@ export default function EcommercePage() {
       <section className="bg-[#056CB8] text-white py-6 px-6 max-[480px]:px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-4 max-md:grid-cols-2 gap-8 max-[480px]:gap-4 text-center" data-animate="fade-in">
           {[
-            { value: '$500M+', label: 'Revenue Processed' },
-            { value: '150+', label: 'Stores Launched' },
-            { value: '3.2x', label: 'Conversion Lift' },
-            { value: '< 1s', label: 'Page Load Time' },
+            { value: 'Secure', label: 'Revenue Processing' },
+            { value: 'Multiple', label: 'Stores Launched' },
+            { value: 'Higher', label: 'Conversions' },
+            { value: 'Fast', label: 'Page Load' },
           ].map((stat, i) => (
             <div key={i}>
               <p className="text-2xl font-bold"><CountUp value={stat.value} /></p>
@@ -127,7 +125,7 @@ export default function EcommercePage() {
               { icon: 'bi-inbox-fill', title: 'Storefront Development', desc: 'Custom storefronts with lightning-fast performance, SEO optimization, and conversion-focused UX on headless architecture.' },
               { icon: 'bi-shield-check', title: 'Payment & Checkout', desc: 'Seamless checkout with multi-gateway support, one-click payments, subscription billing, and PCI-DSS compliance.' },
               { icon: 'bi-list-check', title: 'Inventory & Orders', desc: 'Real-time inventory sync across channels, automated reorder points, and intelligent fulfillment routing.' },
-              { icon: 'bi-lightning-charge-fill', title: 'AI Personalization', desc: 'Dynamic product recommendations, personalized search, and behavioral targeting that increases AOV by 35%.' },
+              { icon: 'bi-lightning-charge-fill', title: 'AI Personalization', desc: 'Dynamic product recommendations, personalized search, and behavioral targeting that helps increase AOV.' },
               { icon: 'bi-arrow-left-right', title: 'Multi-Channel Commerce', desc: 'Sell everywhere — web, mobile, marketplaces, social, and in-store POS — from a single unified platform.' },
               { icon: 'bi-graph-up-arrow', title: 'Analytics & Growth', desc: 'Revenue dashboards, funnel analytics, cohort analysis, and A/B testing built into every deployment.' },
             ].map((feat, i) => (
@@ -244,9 +242,9 @@ export default function EcommercePage() {
             Custom e-commerce solutions built for performance, security, and scale. From storefront design to payment integration — we handle it all.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
-            <a href="/contact" className="group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
+            <Link href="/contact" className="no-underline group inline-flex items-center gap-3 justify-center px-8 py-4 bg-[#056CB8] text-white font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-[#045a9e] transition-colors">
               Get a Free Quote <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
-            </a>
+            </Link>
             <a href="/" className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white/70 font-semibold text-sm rounded-none uppercase tracking-[0.05em] hover:bg-white/10 transition-colors">
               Explore Platform
             </a>

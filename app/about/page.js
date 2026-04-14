@@ -3,11 +3,11 @@ import CountUp from '@/components/CountUp';
 
 export const metadata = {
   title: 'About Zenvict — AI-Powered Enterprise Platform Built in India',
-  description: 'Zenvict delivers AI-native business software to enterprises across 5+ industries. One platform for CRM, finance, HR, and projects — trusted by 30+ clients with 99.9% uptime.',
+  description: 'Zenvict delivers AI-native business software to enterprises across 5+ industries. One platform for CRM, finance, HR, and projects — trusted by 5+ clients.',
   alternates: { canonical: 'https://zenvict.com/about' },
   openGraph: {
     title: 'About Zenvict — AI-Powered Enterprise Platform Built in India',
-    description: 'Zenvict delivers AI-native business software to enterprises across 5+ industries. One platform for CRM, finance, HR, and projects — trusted by 30+ clients with 99.9% uptime.',
+    description: 'Zenvict delivers AI-native business software to enterprises across 5+ industries. One platform for CRM, finance, HR, and projects — trusted by 5+ clients.',
   },
 };
 
@@ -51,9 +51,6 @@ export default function About() {
               <Link href="/contact" className="bg-[#056CB8] text-white py-4 px-10 rounded-none border-none text-[0.9rem] font-bold cursor-pointer inline-flex items-center gap-3 uppercase tracking-[0.06em] no-underline group max-sm:px-8 max-sm:py-3.5 max-sm:text-[0.82rem] max-sm:justify-center">
                 Request a Demo <span className="inline-block transition-transform duration-300 group-hover:translate-x-2">&rsaquo;</span>
               </Link>
-              <Link href="/solutions" className="bg-transparent text-[#111111] py-4 px-10 rounded-none border-2 border-[#e0e0e0] text-[0.9rem] font-semibold cursor-pointer inline-flex items-center gap-3 no-underline transition-all duration-200 hover:border-[#111111] max-sm:px-8 max-sm:py-3.5 max-sm:text-[0.82rem] max-sm:justify-center">
-                View Solutions
-              </Link>
             </div>
           </div>
         </div>
@@ -63,11 +60,11 @@ export default function About() {
       <section className="bg-[#111111] text-white">
         <div className="max-w-[1400px] mx-auto px-12 py-16 grid grid-cols-5 gap-8 max-lg:grid-cols-3 max-md:px-6 max-md:py-12 max-sm:px-4 max-sm:grid-cols-2 max-sm:gap-6" data-animate="fade-in">
           {[
-            { value: '30+', label: 'Enterprise Clients' },
+            { value: '5+', label: 'Clients' },
             { value: '5+', label: 'Industries Served' },
-            { value: '99.9%', label: 'Platform Uptime' },
-            { value: '8', label: 'Integrated Modules' },
-            { value: '16+', label: 'AI Assistants' },
+            { value: '3+', label: 'Years' },
+            { value: '5', label: 'Products' },
+            { value: '15+', label: 'Team Members' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-[2.2rem] font-extrabold leading-none tracking-tight max-sm:text-[1.8rem]">
@@ -176,10 +173,10 @@ export default function About() {
           </div>
           <div className="grid grid-cols-4 gap-0 max-md:grid-cols-2 max-md:gap-10 max-sm:grid-cols-1 max-sm:gap-8" data-animate="fade-up" data-delay="1">
             {[
-              { year: '2023', title: 'Founded', desc: 'Company established in India. Core platform architecture designed and first modules built.' },
-              { year: '2024', title: '8 Products Launched', desc: 'CRM Lite, Finance Plus, HR, Project Plus, Knowledge Base, Marketing Automation, and AI assistants shipped.' },
-              { year: '2025', title: 'YenAI & IVA Released', desc: 'AI engine launched — contextual business intelligence across all modules. 30+ enterprise clients onboarded.' },
-              { year: '2026', title: 'Scaling Operations', desc: 'Enterprise partnerships, expanded industry coverage, and investment in global infrastructure.' },
+              { year: '2023', title: 'Founded', desc: 'Company established in Coimbatore, India. Core platform architecture designed and first modules built.' },
+              { year: '2024', title: '5 Products Launched', desc: 'CRM Lite, Finance Plus, HR, Project Plus, and Knowledge Base shipped.' },
+              { year: '2025', title: 'YenAI & IVA Released', desc: 'AI engine launched — contextual business intelligence across all modules. First enterprise clients onboarded.' },
+              { year: '2026', title: 'Scaling Operations', desc: 'Expanding product capabilities, industry coverage, and growing the team.' },
             ].map((item, i) => (
               <div key={i} className="relative px-8 max-md:px-0">
                 {i > 0 && <div className="absolute left-0 top-0 bottom-0 w-[1px] bg-[#e0e0e0] max-md:hidden" aria-hidden="true"></div>}
@@ -236,9 +233,9 @@ export default function About() {
             <div className="grid grid-cols-2 gap-5 max-sm:grid-cols-1" data-animate="fade-up" data-delay="1">
               {[
                 { title: 'End-to-End Encryption', desc: 'All data encrypted in transit and at rest using industry-standard protocols.' },
-                { title: 'SOC 2 Compliant', desc: 'Infrastructure designed to meet SOC 2 Type II security and availability standards.' },
-                { title: 'GDPR & CCPA Ready', desc: 'Built-in data privacy controls for global regulatory compliance.' },
-                { title: '99.9% Uptime SLA', desc: 'Redundant infrastructure with automated failover and real-time monitoring.' },
+                { title: 'Secure Infrastructure', desc: 'Infrastructure designed with security best practices and industry-standard protocols.' },
+                { title: 'Privacy First', desc: 'Built-in data privacy controls to protect your business information.' },
+                { title: 'Reliable Hosting', desc: 'Cloud infrastructure with monitoring and automated failover for consistent availability.' },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-3 p-5 rounded-xl bg-white border border-[#eaeaea]">
                   <span className="text-[#056CB8] font-bold text-lg mt-0.5">&#10003;</span>
